@@ -1,0 +1,77 @@
+// team
+.team-title-4{
+    text-align: right;
+    padding-top: 140px;
+    padding-bottom: 80px;
+    margin-right: 0;
+    .title{
+        background: linear-gradient(92deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: Hanken Grotesk;
+        font-size: 140px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 4.2px;
+        text-transform: uppercase;
+    }
+}
+
+.single-team-style-one{
+    position: relative;
+    overflow: hidden;
+    .thumbnail{
+        img{
+            transform: scale(1);
+            transition: .8s;
+        }
+    }
+    .inner-content{
+        position: absolute;
+        left: 40px;
+        bottom: 40px;
+        opacity: 0;
+        left: -50px;
+        transition: .8s;
+        span{
+            display: block;
+            padding: 11px 20px;
+            max-width: max-content;
+            background: #141414;
+            color: #fff;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 1.4px;
+            text-transform: uppercase;
+        }
+        a{
+            padding: 18px 25px;
+            background: #fff;
+            display: block;
+            .name{
+                color: #141414;
+                color: #141414;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin-bottom: 0;
+            }
+        }
+    }   
+    &:hover{
+        .thumbnail{
+            img{
+                transform: scalex(-1);
+            }
+        }
+        .inner-content{
+            left: 40px;
+            opacity: 1;
+        }
+    }
+}

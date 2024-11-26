@@ -1,0 +1,68 @@
+// portfolio
+.rts-portfolio-grid-area{
+    position: relative;
+    &.masonry{
+        .main-isotop{
+            position: relative;
+            .button-group{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                max-width: max-content;
+                margin: 80px 0 60px;
+                background: #393939;
+                padding: 12px 20px;
+                border-radius: 3px;
+                @media #{$large-mobile} {
+                    flex-wrap: wrap;
+                }
+                .button{
+                    padding: 10px 22px;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 18px;
+                    color: #FFFFFF;
+                    border-radius: 3px;
+                    display: block;
+                    max-width: max-content;
+                    &.is-checked{
+                        background: #141414;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+            .portfolio-wrap{
+                overflow: hidden;
+                .filter{
+                    .signle-portfolio-style-four-inner{
+                        padding-left: 10px !important;
+                        padding-right: 10px !important;
+                        .inner-content{
+                            bottom: 50px;
+                        }
+                        &::after{
+                            display: none;
+                        }
+                    }
+                }
+                .separetor-portfolio-bottom::after{
+                    display: none;
+                }
+            }
+        }
+    }
+    &.column{
+        .separetor-portfolio-bottom{
+            padding: 80px 0;
+        }
+        .signle-portfolio-style-four-inner{
+            padding: 20px;
+            &::after{
+                display: none;
+            }
+            .inner-content{
+                bottom: 50px;
+            }
+        }
+    }
+}

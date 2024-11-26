@@ -1,0 +1,125 @@
+// brand style
+
+.brand-style-two{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media #{$md-layout} {
+        flex-wrap: wrap;
+        gap: 25px;
+        justify-content: center;
+    }
+    @media #{$sm-layout} {
+        flex-wrap: wrap;
+        gap: 25px;
+        justify-content: center;
+    }
+    img{
+        transition: .3s;
+        &:hover{
+            transform: scale(1.02) translateY(-5px);
+        }
+        @media #{$large-mobile} {
+            max-width: 120px;
+        }
+    }
+}
+
+.brand-style-one{
+    text-align: center;
+    .title-brand{
+        color: #D9D9D9;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.8px;
+        margin-bottom: 50px;
+    }
+    .brand-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media #{$md-layout} {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        @media #{$sm-layout} {
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+        img{
+            transition: .3s;
+            @media #{$large-mobile} {
+                max-width: 120px;
+            }
+        }
+        a{
+            &:hover{
+                img{
+                    filter: invert(1);
+                }
+            }
+        }
+    }
+}
+.brand-main-wrapper-about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    @media #{$sm-layout} {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+    a{
+        display: flex;
+        align-items: center;
+        height: 160px;
+        justify-content: center;
+        border-right: 1px solid #1E1E1E;
+        // border-left: 1px solid #1E1E1E;
+        width: 215px;
+        @media #{$large-mobile} {
+            border: none;
+            width: max-content;
+            height: 60px;
+        }
+        img{
+            max-width: 120px;
+            transition: .3s;
+            @media #{$large-mobile} {
+                max-width: 90px;
+            }
+        }
+        &:last-child{
+            border: none;
+        }
+        &:hover{
+            img{
+                filter: invert(1);
+            }
+        }
+    }
+    &::after{
+        position: absolute;
+        content: '';
+        left: -15%;
+        width: 130%;
+        height: 1px;
+        background: #1E1E1E;
+        bottom: 0;
+    }
+    &::before{
+        position: absolute;
+        content: '';
+        left: -15%;
+        width: 130%;
+        height: 1px;
+        background: #1E1E1E;
+        top: 0;
+    }
+}

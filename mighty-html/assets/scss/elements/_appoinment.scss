@@ -1,0 +1,148 @@
+
+// appoinment area
+.appoinment-area-two{
+    @media(max-width:576px){
+        padding: 0 !important;
+    }
+    .title-area-appoinment{
+        span.pre{
+            color: #141414;
+            font-family: Hanken Grotesk;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+        }
+        .title{
+            color: #141414;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-top: 15px;
+            @media(max-width:576px){
+                font-size: 40px;
+                line-height: 1.1;
+            }
+            @media(max-width:450px){
+                font-size: 28px;
+                line-height: 1.1;
+            }
+            span{
+                font-style: italic;
+                position: relative;
+                font-weight: 400;
+                max-width: max-content;
+                margin-top: 10px;
+                &::after{
+                    position: absolute;
+                    left: 0;
+                    bottom: 5px;
+                    height: 1px;
+                    width: 100%;
+                    background: #141414;
+                    content: '';
+                }
+            }
+        }
+    }
+}
+
+.appoinment-h2{
+    margin-top: 60px;
+    .input-line{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        @media(max-width:768px){
+            display: block;
+        }
+        .input-half{
+            flex-basis: 49%;
+            @media(max-width:768px){
+                margin-top: 40px;
+            }
+        }
+    }
+    label{
+        margin-bottom: 15px;
+        color: #141414;
+        font-weight: 500;
+        font-size: 16px;
+    }
+    input,
+    select{
+        border-radius: 8px;
+        background: #F6F6F6;
+        height: 65px;
+        font-size: 16px;
+        color: #141414;
+        border: 1px solid transparent;
+        padding: 10px 30px;
+        &::placeholder{
+            color: #74787C;
+        }
+        &:focus{
+            background: transparent;
+            border: 1px solid #141414;
+        }
+    }
+    select{
+        color: #74787C;
+        position: relative;
+        &:focus{
+            box-shadow: none;
+        }
+        &::after{
+            transform: none;
+            background-image: none;
+            content: "+";
+            top: 0;
+            position: absolute;
+            right: 25px;
+            top: 33%;
+            font-family: "fontawesome";
+        }
+    }
+    .text-area{
+        textarea{
+            border-radius: 8px;
+            background: #F6F6F6;
+            height: 180px;
+            padding: 20px;
+            color: #74787C;
+            border: 1px solid transparent;
+            color: #141414;
+            &::placeholder{
+                color: #74787C;
+            }
+            &:focus{
+                border: 1px solid #141414;
+                background: transparent;
+            }
+        }
+    }
+}
+
+.rts-btn.btn-subnit-h2{
+    border-radius: 100px;
+    background: #141414;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 60px;
+    min-width: 200px;
+    transition: .3s;
+    &:hover{
+        background: #4d4d4d;
+    }
+}
