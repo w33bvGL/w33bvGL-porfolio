@@ -3,5 +3,15 @@ export default defineNuxtConfig({
     compatibilityDate: '2024-11-01',
     devtools: {enabled: true},
 
-    css: '~/assets/sass/_root.sass',
+    vite: {
+        css: {
+            preprocessorOptions: {
+                sass: {
+                    api: 'modern-compiler'
+                }
+            }
+        }
+    },
+    
+    css: ['~/assets/sass/_root.sass'],
 })
