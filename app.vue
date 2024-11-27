@@ -6,7 +6,9 @@
         <NuxtLayout>
             <NuxtPage/>
         </NuxtLayout>
-        <UiCursor/>
     </div>
+
+    <UiCursor/>
+    <UiBackToTop/>
 </template>
 

@@ -14,4 +14,13 @@ export default defineNuxtConfig({
     },
     
     css: ['~/assets/sass/_root.sass'],
+
+    modules: ['@nuxt/icon'],
+
+    icon: {
+        componentName: 'NuxtIcon',
+        serverBundle: {
+            collections: ['bi']
+        }
+    }
 })

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue';
+import {ref, onMounted, onUnmounted} from 'vue';
 
 const cursorInner = ref<HTMLElement | null>(null);
 const cursorOuter = ref<HTMLElement | null>(null);
@@ -14,7 +14,7 @@ let isHovering = false;
 const moveCursor = (event: MouseEvent) => {
     if (!cursorInner.value || !cursorOuter.value) return;
 
-    const { clientX, clientY } = event;
+    const {clientX, clientY} = event;
     posX = clientX;
     posY = clientY;
 
@@ -89,7 +89,7 @@ onUnmounted(() => {
     </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .rts-cursor[data-default=no] {
     opacity: 0;
 }
@@ -140,15 +140,15 @@ onUnmounted(() => {
     height: 30px;
     margin-left: -15px;
     margin-top: -15px;
-    border: 2px solid rgba(0, 0, 0, 0.2);
-    z-index: 1000;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    z-index: 10000000;
     -webkit-transition: all 0.08s ease-out;
     -o-transition: all 0.08s ease-out;
     transition: all 0.08s ease-out;
 }
 
 .cursor-outer {
-    z-index: 1000;
+    z-index: 10000000;
     -webkit-transition: transform 0.08s ease-out, opacity 1s ease;
     -webkit-transition: opacity 1s ease, -webkit-transform 0.08s ease-out;
     transition: opacity 1s ease, -webkit-transform 0.08s ease-out;
@@ -204,7 +204,7 @@ onUnmounted(() => {
 }
 
 .cursor-inner.cursor-remove.cursor-hover .fn-cursor {
-    display: none;
+    display: none
 }
 
 .cursor-outer.cursor-remove {

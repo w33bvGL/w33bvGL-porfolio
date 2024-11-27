@@ -10,11 +10,14 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "gsap": "^3.12.5",
     "nuxt": "^3.14.1592",
     "vue": "latest",
     "vue-router": "latest"
   },
   "devDependencies": {
+    "@iconify-json/bi": "^1.2.1",
+    "@nuxt/icon": "^1.8.2",
     "sass-embedded": "^1.81.0"
   }
 }
