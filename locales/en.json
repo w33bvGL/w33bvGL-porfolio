@@ -1,4 +1,6 @@
 {
-    "title": "Welcome to my website",
-    "description": "This is an example of localization"
+    "translation": {
+        "title": "Welcome to my website",
+        "description": "This is an example of localization"
+    }
 }

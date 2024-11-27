@@ -2,9 +2,13 @@ function saveLanguageInStorage(language) {
     localStorage.setItem('language', language);
 }
 
-// function removeLanguageInStorage(language) {
-//     localStorage.removeItem('language');
-// }
+function getLanguageInStorage() {
+    return localStorage.getItem('language');
+}
+
+function removeLanguageInStorage() {
+    localStorage.removeItem('language');
+}
 
 function getDefaultLanguage() {
     const userLanguage = navigator.language || navigator.userLanguage;
@@ -12,42 +16,61 @@ function getDefaultLanguage() {
     return userLanguage.split('-')[0];
 }
 
-i18next.init({
-    lng: localStorage.getItem('language') || getDefaultLanguage() || 'en',
-    resources: {
-        en: {
-            translation: {
-                "title": "Welcome to my website",
-                "description": "This is an example of localization"
-            }
+function loadResources(language) {
+    return $.ajax({
+        url: `/locales/${language}.json`,
+        method: 'GET',
+        dataType: 'json',
+        success: function (data) {
+            return data;
         },
-        ru: {
-            translation: {
-                "title": "Добро пожаловать на мой сайт",
-                "description": "Это пример локализации"
-            }
+        error: function (err) {
+            console.error('Error loading resources:', err);
+            return {};
         }
-    }
+    });
+}
+
+i18next.init({
+    lng: getLanguageInStorage() || getDefaultLanguage() || 'hy',
+    resources: {}
 }, function (err, t) {
     if (err) {
         console.error("Error during i18next initialization", err);
         return;
     }
 
-    updateContent();
+    loadResources(i18next.language).then(function (resources) {
+        if (resources && resources.translation) {
+            i18next.addResourceBundle(i18next.language, 'translation', resources.translation, true, true);
+            updateContent();
+        } else {
+            console.error('Error: translation data is missing or malformed.');
+        }
+    });
 });
 
 function updateContent() {
-    document.querySelectorAll('[data-i18n]').forEach((element) => {
-        const key = element.getAttribute('data-i18n');
-        element.textContent = i18next.t(key); // Переводим ключ
+    $('[data-i18n]').each(function () {
+        const key = $(this).attr('data-i18n');
+        $(this).text(i18next.t(key));
     });
 }
 
 function changeLanguage(language) {
-    i18next.changeLanguage(language, (err, t) => {
-        if (err) return console.error("Error changing language:", err);
+    i18next.changeLanguage(language, function (err, t) {
+        if (err) {
+            console.error("Error changing language:", err);
+            return;
+        }
         saveLanguageInStorage(language);
-        updateContent();
+        loadResources(language).then(function (resources) {
+            if (resources && resources.translation) {
+                i18next.addResourceBundle(language, 'translation', resources.translation, true, true);
+                updateContent();
+            } else {
+                console.error('Error: translation data is missing or malformed.');
+            }
+        });
     });
 }
