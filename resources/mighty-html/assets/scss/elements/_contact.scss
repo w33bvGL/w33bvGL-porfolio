@@ -1,0 +1,82 @@
+// contact style Css
+.inner-page.contact-page{
+    .appoinment-area-two .title-area-appoinment .title{
+        color: #fff;
+        span{
+            display: block;
+        }
+        &.quote2{
+            max-width: max-content;
+            overflow: visible;
+            .split-parent{
+                overflow: visible;
+                .split-line{
+                    overflow: visible;
+                }
+            }
+        }
+    }
+    .appoinment-area-two .title-area-appoinment .title span::after{
+        background: #fff;
+    }
+    .appoinment-area-two .title-area-appoinment span.pre{
+        color: #fff;
+    }
+     label{
+        color: #74787C;
+     }
+     .appoinment-area-two input{
+        border-radius: 5px;
+        background: #212121 !important;
+        color: #ffd;
+     }
+     .appoinment-area-two textarea{
+        border-radius: 5px;
+        background: #212121 !important;
+        color: #ffd;
+     }
+     .appoinment-area-two select{
+        border-radius: 5px;
+        background: #212121 !important;
+     }
+     .appoinment-h2{
+        .submit-pd{
+            width: 180px;
+            height: 55px;
+            border-radius: 5px;
+            background: #FFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #141414;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin-top: 40px;
+            display: block;
+            transition: .3s;
+            &:hover{
+                color: #fff;
+                background: #141414;
+            }
+        }
+     }
+}
+
+.container-430{
+    max-width: 1060px;
+    margin: auto;
+      @media #{$smlg-device} {
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+      @media #{$md-layout} {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+      @media #{$sm-layout} {
+        padding-left: 20px;
+        padding-right: 20px;
+      }   
+}

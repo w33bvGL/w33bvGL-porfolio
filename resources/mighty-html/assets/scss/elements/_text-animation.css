@@ -1,0 +1,50 @@
+// text animation
+
+.wrap{
+  width:100%; 
+  height:auto; 
+  max-width:768px; 
+  background-color:transparent; 
+  margin:0 auto; padding:20px; 
+  padding-top:60px; 
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .quote {
+    overflow:hidden; 
+  }
+  
+  .quote-2 {
+     overflow:hidden; 
+  }
+  
+  .split-line {
+    overflow: hidden;
+  }
+  
+  .split-parent {
+    overflow: hidden;
+  }
+
+
+.gsap-marker-end{
+display: none !important;
+}
+
+.gsap-marker-start{
+display: none !important;
+}
+.gsap-marker-scroller-end{
+display: none !important;
+}
+.gsap-marker-scroller-start{
+display: none !important;
+}
+
+.title-area-left-wrapper{
+.title{
+  text-align: left;
+}
+}

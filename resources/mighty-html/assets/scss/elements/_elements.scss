@@ -1,0 +1,144 @@
+
+// style for elements pages
+
+.section-separator{
+    position: relative;
+    &::after{
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 0;
+        width: 1290px;
+        height: 1px;
+        background: #E8E8E8;
+        margin: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.section-separator-bg-dark{
+    position: relative;
+    &::after{
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 0;
+        width: 1290px;
+        height: 1px;
+        background: #272727;
+        margin: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.title-elements-parent{
+    font-size: 70px;
+    margin-bottom: 80px;
+    text-align: center;
+    @media #{$md-layout} {
+        font-size: 54px;
+        line-height: 1.2;
+    }
+    @media #{$sm-layout} {
+        font-size: 46px;
+        line-height: 1.2;
+    }
+    @media #{$large-mobile} {
+        font-size: 36px;
+        line-height: 1.2;
+    }
+}
+
+.bg-white{
+    .title-elements-parent{
+        color: #141414;
+        font-size: 70px;
+        margin-bottom: 80px;
+        text-align: center;
+        @media #{$md-layout} {
+            font-size: 54px;
+            line-height: 1.2;
+        }
+        @media #{$sm-layout} {
+            font-size: 46px;
+            line-height: 1.2;
+        }
+        @media #{$large-mobile} {
+            font-size: 36px;
+            line-height: 1.2;
+        }
+    }
+}
+
+.title-area-main-elements{
+    .title{
+        font-size: 80px;
+        margin-bottom: 80px;
+    }
+}
+
+.b1{
+    &.uppercase{
+        text-transform: uppercase;
+    }
+}
+.b2{
+    &.uppercase{
+        text-transform: uppercase;
+    }
+}
+.b3{
+    &.uppercase{
+        text-transform: uppercase;
+    }
+}
+.b4{
+    &.uppercase{
+        text-transform: uppercase;
+    }
+}
+
+body.servi-ce-details{
+    .rts-footer-two-area{
+        margin-top: 120px;
+        @media #{$smlg-device} {
+            margin-top: 100px;
+        }
+        @media #{$md-layout} {
+            margin-top: 80px;
+        }
+        @media #{$sm-layout} {
+            margin-top: 60px;
+        }
+    }
+}
+.inner-page.team-area-elements{
+    .team-title-4 {
+        padding-top: 0;
+        .title{
+            line-height: 140px;
+        }
+    }
+}
+
+.buttons-main-wrapper-elements{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    .plus-btn{
+        display: flex;
+        align-items: center;
+        color: #fff;
+        gap: 12px;
+        &.btn-md{
+            font-size: 18px;
+        }
+        &.btn-lg{
+            font-size: 20px;
+        }
+        &.btn-xl{
+            font-size: 22px;
+        }
+    }
+}

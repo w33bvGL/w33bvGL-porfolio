@@ -26,8 +26,13 @@ services:
             - db
             - cache
             - mailpit
+        ports:
+            - "5173:5173"
+            - "8000:8000"
         command: >
             sh -c "composer install &&
+            npm install &&
+            npm run build &&
             php artisan key:generate &&
             php artisan lcc &&
             chmod -R 775 storage &&
@@ -35,7 +40,7 @@ services:
             php artisan migrate &&
             php artisan db:seed &&
             php artisan storage:link &&
-            php-fpm"
+            npm run dev"
         working_dir: /var/www
         container_name: app
         networks:

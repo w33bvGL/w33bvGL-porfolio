@@ -1,0 +1,110 @@
+/*=== Scss File indexing Here===========
+
+1. variables
+2.typography
+3.spacing
+4.reset
+5.forms
+6.mixins
+7.shortcode
+8.animations
+9.text-animation'
+10.common'
+11.header
+12.banner
+13.button
+14.about
+15.gsap style
+16.serviue
+17.product
+18.pricing
+19.clients
+20.approch area
+21.progress-bar
+22.cta 
+23.social area
+24. footer
+25. testimonials
+26.brand
+27.faq
+28.appoinment
+29.progress-bar
+30.BLog
+31.feature
+32.courser
+33.banner-video
+34.video
+35.text-animation
+36.team
+37.offcanvas-menu
+38.drop-down
+39.pre-loading
+40.contact
+41.back-to-top
+42.masonry
+43.elements
+43.switcher
+43. dark-light-mood
+
+
+
+========================================*/
+
+
+
+/* Default  */
+
+@import'default/variables';
+@import'default/typography';
+@import'default/spacing';
+@import'default/reset';
+@import'default/forms';
+@import'default/mixins';
+@import'default/shortcode';
+@import'default/animations';
+@import'default/text-animation';
+@import'elements/common';
+
+
+
+/* elements */
+
+@import'header/header';
+
+
+/* elements */
+@import'elements/banner';
+@import'elements/button';
+@import'elements/about';
+@import'elements/gsap-style';
+@import'elements/service';
+@import'elements/product';
+@import'elements/pricing';
+@import'elements/clients';
+@import'elements/approch-area';
+@import'elements/cta';
+@import'elements/social-area';
+@import'elements/footer';
+@import'elements/testimonials';
+@import'elements/brand';
+@import'elements/faq';
+@import'elements/appoinment';
+@import'elements/progress-bar';
+@import'elements/blog';
+@import'elements/feature';
+@import'elements/courser';
+@import'elements/banner-video';
+@import'elements/video';
+@import'elements/text-animation';
+@import'elements/team';
+@import'header/offcanvas-menu';
+@import'header/drop-down';
+@import'elements/pre-loading';
+@import'elements/contact';
+@import'elements/back-to-top';
+@import'elements/masonry';
+@import'elements/elements';
+@import'elements/switcher';
+@import'elements/working-process';
+@import'elements/dark-light-mood';
+

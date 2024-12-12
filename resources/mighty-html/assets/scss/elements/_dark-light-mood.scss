@@ -1,0 +1,953 @@
+// dark light mood
+
+.rts-dark{
+    .swiper.mySwiper_portfolio-3.swiper-container-horizontal {
+        .swiper-pagination{
+            bottom: 9%;
+            .swiper-pagination-bullet{
+                background: #fff;  
+            }
+            .swiper-pagination-bullet-active{
+                background: #fff;
+            }
+        }
+    
+    }
+
+    .inner-page.six{
+        background: #000;
+    }
+    .rts-footer-area-one{
+        .footer-left-area{
+            .logo-footer{
+                .logo-1{
+                    display: none;
+                }
+                .logo-2{
+                    display: block;
+                }
+            }
+        }
+    }
+    .shape-about-one{
+        display: none;
+    }
+    .inner-page.service-3{
+        .single-service-card-box-1 .icon{
+            svg{
+                path{
+                    fill: #141414 !important;
+                }
+            }
+        }
+    }
+    .inner-page.service-3 .single-service-card-box-1 .title{
+        color: #141414;
+    }
+    .rts-about-area-1,
+    .rts-section-gap.rts-service-area,
+    .rts-pricing-area.rts-section-gap.position-relative,
+    .trusted-clients-area-start,
+    .rts-footer-area-one,
+    .rts-brand-area.home-2.rts-section-gap,
+    .rts-faq-style-two.rts-section-gapBottom,
+    .rts-testimonials-area.rts-section-gap,
+    .appoinmnet-area-two.rts-section-gapBottom,
+    .rts-marquree-area-start-bottom,
+    .rts-service-area.rts-section-gap,
+    .rts-about-area-4.parallax-about.rts-section-gapBottom,
+    .rts-case-studys-area.rts-section-gap.parallax-case,
+    .rts-features-area.rts-section-gapBottom.rts-feature-animation-active,
+    .rts-faq-section-area.rts-section-gapTop,
+    .rts-blog-area.rts-section-gap,
+    .copy-right-4-area,
+    body.inner-page.portfolio-nine.vertical-split{
+        background: #090909 !important;
+    }
+    .grid-lines-wrapper .grid-lines .grid-line {
+        background: #111111;
+    }
+    .about-area-right-start .inner-about-wrapper .title,
+    .text-split-wrap-about h2,
+    .single-progress-area-one .progress-bottom p.name,
+    .single-progress-area-one .progress-bottom span,
+    .learn-more-btn,
+    .sub-title,
+    .title-top-service-varticle .title,
+    .service-area-one-main-wrapper .single-item-service-one a .list-title h3,
+    .title-area .title,
+    .accordion-area-start-one .accordion .accordion-item .accordion-header .accordion-button,
+    .brad-pricing-area-start .pricing-wrapper-main p,
+    .single-testimonials-main-wrapper .body p.disc,
+    .single-testimonials-main-wrapper .star-area-start i,
+    .single-testimonials-main-wrapper .body .author-area .info-wrapper .title,
+    .footer-main-wrapper-one .footer-single-wized-start .title,
+    .footer-main-wrapper-one .footer-single-wized-start .mail-contact-area .single-con-info.mail a,
+    .brand-sm-title p,
+    h2.title.title-white.mt--20.quote,
+    .faq-right-wrapper-two .title-left-h2-wrapper span.pre-title,
+    .single-testimonial-2 .content-area p.disc,
+    .single-testimonial-2 .content-area .author p.name,
+    .swiper-testimonials-wrapper-main-2 .swiper-button-next::after,
+    .swiper-testimonials-wrapper-main-2 .swiper-button-prev::after,
+    .appoinment-area-two .title-area-appoinment .title,
+    .appoinment-area-two .title-area-appoinment span.pre,
+    .appoinment-h2 label,
+    .about-content-inner-4 .title,
+    .title-area-four-w .title,
+    .title-area-four-w .pre,
+    .title-faq-4 .title,
+    .four-accordion-area-faq .accordion-item .accordion-header button,
+    .blog-title-area-h4 .title,
+    .single-blog-area-4 .inner-content_b--4 .top span.date,
+    .single-blog-area-4 .inner-content_b--4 .body .title,
+    .single-blog-area-4 .inner-content_b--4 .body .read-more-arrow-btn,
+    .footer-four-wrapper-four .left-area .title,
+    .footer-four-wrapper-four .right-area .f-nav li a,
+    .copy-right-4-area .border-top p,
+    .footer-four-wrapper-four .left-area .title a,
+    .single-service-card-box-1 .title,
+    .single-service-card-box-1 .plus-btn,
+    .page-title-area-portfolio-7 .title-work,
+    .inner-page.portfolio-nine .portfolio-nine-wrapper-main .title,
+    .inner-page.portfolio-nine .portfolio-nine-wrapper-main span.pre{
+        color: #fff !important;
+    }
+    .single-progress-area-one .progress .progress-bar{
+        background: #fff;
+    }
+    .single-progress-area-one .progress {
+        background: #363636;
+    }
+    .service-area-one-main-wrapper .single-item-service-one a .button-area svg path{
+        fill: #fff;
+    }
+    .single-service-card-box-1 .right-icon{
+        color: rgb(39 39 39 / 49%);
+    }
+
+    .single-service-card-box-1 .plus-btn{
+        i{
+            color: #000000;
+        }
+    }
+    
+    // border color here
+    .service-area-one-main-wrapper .single-item-service-one a,
+    .accordion-area-start-one .accordion .accordion-item,
+    .after-effect-testi-right-img::after,
+    .rts-footer-area-one .copyright-area,
+    .four-accordion-area-faq,
+    .four-accordion-area-faq .accordion-item,
+    .copy-right-4-area .border-top{
+        border-color: #141414;
+    }
+    .single-testimonials-main-wrapper .body .quote-img {
+        opacity: .03;
+    }
+    .single-testimonials-main-wrapper .body p.disc::after{
+        background: #141414;
+    }
+    .faq-thumbnail-two .main,
+    .four-accordion-area-faq .accordion-item::after{
+        background: #141414; 
+    }
+    // border color here end
+    .appoinment-h2 input, 
+    .appoinment-h2 select,
+    .appoinment-h2 .text-area textarea{
+        background: transparent;
+        border: 1px solid #111111;
+        color: #fff;
+    }
+
+    .single-blog-area-4 .inner-content_b--4 .body .read-more-arrow-btn{
+        background: rgb(35 35 35 / 53%);
+    }
+    .rts-footer-four-start.rts-section-gap.border-top{
+        background: #141414; 
+        border-top: 1px solid #1f1f1f !important;
+    }
+    .copy-right-4-area{
+        .border-top{
+            border: none !important;
+        }
+    }
+    .single-service-card-box-1{
+        background: #121212;
+        .icon{
+            svg{
+                path{
+                    fill: #fff;
+                }
+            }
+        }
+    }
+    .index-six{
+        .large-image-option-start,
+        .about-area-7-start.rts-section-gapBottom,
+        .working-process-area.rts-section-gapTop,
+        .rts-pricing-area.rts-section-gapTop.position-relative{
+            background: #090909;
+        }
+        .title-area-inner.large-image .title,
+        .title-area-four-w .title,
+        .single-working-process-three .title{
+            color: #fff !important;
+        }
+        .title-area-inner.large-image .title span{
+            color: #fff !important;
+        }
+        .single-working-process-three .icon {
+            margin-bottom: 25px;
+            mix-blend-mode: exclusion;
+            background: #fff;
+            min-width: max-content;
+            display: inline-block;
+            padding: 12px;
+            border-radius: 5px;
+            img{
+                max-width: 40px;
+            }
+        }
+    }
+    .index-three{
+        .rts-offcanvas-wrapper .container-menu .action-menu .burger .icon-close{
+            svg{
+                line{
+                    stroke: #fff;
+                }
+            }
+        }
+        .header-three .rts-offcanvas-wrapper .container-menu .action-menu .burger .icon-burger{
+            color: #fff !important;
+            svg{
+                line{
+                    stroke: #fff;
+                    fill: #000;
+                }
+            }
+        }
+        .header-three .inner .header-right .menu-btn{
+            color: #fff !important;
+        }
+    }
+    .inner-page.service-3{
+        .single-service-card-box-1 .plus-btn{
+            color: #141414 !important;
+        }
+        &:hover{
+            .title{
+                color: #141414 !important;
+            }
+            svg{
+                path{
+                    fill: #fff !important;
+                }
+            }
+            .single-service-card-box-1 .plus-btn{
+                color: #fff;
+            }
+        }
+    }
+    .index-two{
+        .rts-testimonials-area.rts-section-gapBottom{
+            background: #141414;
+        }
+    }
+    .rts-breadcrumb-area .inner .title{
+        color: #fff;
+    }
+    .inner-page .rts-breadcrumb-area .inner .title{
+        color: #fff !important;
+        &:hover{
+            color: #fff !important;
+        }
+    }
+    .inner-page.service-3{
+        .single-service-card-box-1{
+            &:hover{
+                .icon{
+                    svg{
+                        path{
+                            fill: #fff !important;
+                        }
+                    }
+                }
+                .title{
+                    color: #fff !important;
+                }
+                .plus-btn{
+                    color: #fff !important;
+                    i{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+// Light Mood area start
+.rts-light-mood{
+    .index-five{
+        .rts-service-accordion-area.rts-section-gapTop,
+        .rts-storya-area.rts-section-gap{
+            background: #fff;
+        }
+        .service-collups-area .accordion-item .accordion-header .accordion-button .mid-title .title,
+        .service-collups-area .accordion-item .accordion-header .accordion-button .left-icon i,
+        .history-nav .nav .nav-link .title,
+        .left-content-story-5 .learn-more-btn{
+            color: #141414;
+        }
+        .service-collups-area .accordion-item{
+            border-left: none;
+        }
+        .service-collups-area .accordion-item{
+            border-right: none;
+        }
+        .service-collups-area .accordion-item .accordion-header .accordion-button{
+            box-shadow: none;
+        }
+        .history-nav .nav .nav-link,
+        .history-nav,
+        .left-content-story-5 .learn-more-btn i{
+            border-color: #c9c9c9 !important;
+        }
+        .left-content-story-5 .learn-more-btn i{
+            color: #141414;
+        }
+        .left-content-story-5 .learn-more-btn:hover{
+            color: #141414;
+            border-color: #141414 !important;
+        }
+        .service-collups-area .accordion-item::after {
+            color: #cdcdcd4d;
+        }
+        .service-collups-area .accordion-item::before{
+            background: #cdcdcd4d;
+        }
+        .service-collups-area .accordion-item{
+            border-color: #cdcdcd4d;
+        }
+    }
+    .index-three{
+        .about-three-bg,
+        .rts-service-area.three.bg-dark-2{
+            background: #fff;
+        }
+        .title-area-left-three .title,
+        .skill-area-h3 .single p,
+        .skill-area-h3 .single i,
+        .about-three-right-content .learn-more-btn,
+        .rts-service-area.three .title-area-left-three-large .title{
+            color: #141414;
+        }
+        .about-three-right-content .learn-more-btn i{
+            border: 1px solid #1f1f1f;
+        }
+        .single-service-area-start .title-area .title,
+        .single-service-area-start .discription-area .sm-service-area-wrapper .sm-service p,
+        .single-service-area-start .discription-area .sm-service-area-wrapper .sm-service i{
+            color: #141414;
+        }
+        .rts-service-item-1{
+            border-color: #eaeaea !important ;
+        }
+        .title-area-left-three-large .left-m-para::after{
+            background: #eaeaea !important;
+        }
+        .rts-case-studies-three .title-area-left-three-large .left-m-para::after{
+            background: #2c2c2c !important;
+        }
+        .rts-news-area-three-start .title-area-left-three-large .left-m-para::after{
+            background: #2c2c2c !important;
+        }
+    }
+    .rts-portfolio-grid-area,
+    .portfolio-six-single-swiper,
+    .slide-div.mt--150,
+    .inner-page.portfolio-five{
+        background: #fff;
+    }
+    .portfolio-six-single-swiper .left-content .pre-tag,
+    .portfolio-six-single-swiper .left-content .title,
+    .mySwiper_portfolio-5-scale-none .swiper-slide.swiper-slide-active .single-portfolio-style-five .inner-content a .name{
+        color: #817f7ff5;
+    }
+    .portfolio-six-single-swiper .left-content .title span {
+        -webkit-text-stroke: 1px #cacaca;
+        -webkit-text-fill-color: #ffffff;
+    }
+    
+    .inner-page.portfolio-five{
+        .burger{
+            svg{
+                line{
+                    stroke: #141414;
+                }
+            }
+        }
+        .header-three .inner .header-right .menu-btn{
+            color: #141414;
+        }
+    }
+    .rts-fs-menu{
+        background-color: #fff;
+    }
+    .rts-fs-menu * .menu-item > a{
+        color: #141414 !important;
+    }
+    .rts-fs-container .sub-menu.active > .menu-item--back a,
+    .rts-fs--contacts .contact-inner .contact-information .heading-title,
+    .rts-fs--contacts .contact-inner .contact-information ul li p,
+    .rts-fs--contacts .contact-inner .contact-information ul li a,
+    .banner-wrapper-seven .title,
+    .banner-wrapper-seven .learn-more-btn,
+    .short-breadcrumb-wrapper .title{
+        color: #141414;
+    }
+    // .mySwiper_portfolio-5-scale-none .swiper-button-next::after, .mySwiper_portfolio-5-scale-none .swiper-button-prev::after{
+    //     content: "CLICK";
+    // }
+    .header-three{
+        .logo-area{
+            display: none;
+        }
+        .logo-area-white{
+            display: block;
+        }
+    }
+    .mySwiper_portfolio-5-scale-none .swiper-button-next, .mySwiper_portfolio-5-scale-none .swiper-button-prev,
+    .banner-wrapper-seven .learn-more-btn i {
+        border: 1px solid #787878;
+    }
+    .inner-page.portfolio-seven,
+    .portfolio-short-breadcrumb,
+    .inner-page.portfolio-grid,
+    .bg-case_service,
+    .rts-section-gap.rts-service-area.list,
+    .rts-service-accordion-area.rts-section-gap,
+    .our-approch-area-style-one.rts-section-gap.bg-dark-1{
+        background: #fff;
+    }
+    .thumbnail-image-banner-7 img {
+        padding: 80px;
+        border-radius: 50%;
+        border: 1px solid #e0e0e0;
+        background: rgb(255 255 255 / 39%);
+        box-shadow: 0px 4px 113px 0px rgb(123 123 123 / 17%);
+    }
+    .swiper.mySwiper_portfolio-3.swiper-container-horizontal .swiper-pagination .swiper-pagination-bullet-active,
+    .short-breadcrumb-wrapper .learn-more-btn i {
+        border: 1px solid #525252;
+    }
+
+    .header-three .inner .header-right .menu-btn,
+    .short-breadcrumb-wrapper .learn-more-btn,
+    .rts-signle-case_varticle .left-area a .title,
+    .rts-signle-case_varticle .left-area span,
+    .rts-service-area.list .service-area-one-main-wrapper .single-item-service-one a .list-title h3{
+        color: #141414;
+    }
+    .rts-case-service-area-h2{
+        .rts-btn.btn-radious{
+            color: #141414;
+            border:1px solid #787878;
+        }
+    }
+    .header-three{
+        .rts-offcanvas-wrapper .container-menu .action-menu .burger .icon-burger{
+            color: #000;
+        }
+        .open-event.style-open .icon-close{
+            color: #000;
+        }
+    }
+    .service-area-one-main-wrapper .single-item-service-one a .button-area svg{
+        path{
+            fill: #141414 !important;
+        }
+    }
+    .rts-service-area.list .service-area-one-main-wrapper .single-item-service-one a,
+    .bg-dark-1 a.learn-more-btn i{
+        border-color: #d4d3d3;
+    }
+    .service-collups-area .accordion-item .accordion-header .accordion-button{
+        box-shadow: none;
+    }
+    .service-collups-area .accordion-item .accordion-header .accordion-button .mid-title .title{
+        color: #141414;
+    }
+    .service-collups-area .accordion-item .accordion-header .accordion-button .left-icon i{
+        color: #141414;
+    }
+    .service-collups-area .accordion-item{
+        border-left: none;
+        border-right: none;
+        border-color: #cdcdcd85;
+    }
+    .service-collups-area .accordion-item::before{
+        background: #cdcdcd85;
+    }
+    .service-collups-area .accordion-item::after{
+        color: #cdcdcd85;
+    }
+    .rts-case-studys-area.rts-section-gap.parallax-case{
+        background: #fff;
+    }
+    
+    .approch-area-left .title-area-left-wrapper .pre-title,
+    .approch-area-left .title-area-left-wrapper .title:last-child,
+    .bg-dark-1 a.learn-more-btn,
+    .single-approach-area-start .title{
+        color: #141414;
+    }
+    .single-approach-area-start{
+        &:hover{
+            .title{
+                color: #fff;
+            }
+        }
+    }
+    .our-approch-area-style-one .grid-lines-wrapper .grid-lines .grid-line {
+        background: #dcdcdc;
+    }
+    .single-approach-area-start{
+        background-color: #fff;
+        border-color: #d8d8d8;
+    }
+    .single-approach-area-start::after {
+        -webkit-text-stroke-color: #cccccc;
+    }
+    .inner-page.about{
+        .rts-testimonials-area.rts-section-gap.rts-slide-up-gsap,
+        .rtes-brand-area.rts-section-gapBottom{
+            background: #fff;
+        }
+        .testimonials-main-wrapper-about .right-side p,
+        .testimonials-main-wrapper-about .left-side .title,
+        .rtes-brand-area .title-faq-4 .pre,
+        .rtes-brand-area .title-faq-4 .title{
+            color: #141414 !important;
+        }
+        .mySwiper-testimonails-about-s .swiper-button-next::after,
+        .mySwiper-testimonails-about-s .swiper-button-prev::after{
+            border: 1px solid #141414;
+            color: #141414;
+        }
+        .testimonials-main-wrapper-about{
+            border-color: #cecece;
+        }
+        .brand-main-wrapper-about a{
+            border-color: #f1f1f1;
+        }
+        .brand-main-wrapper-about::before,
+        .brand-main-wrapper-about::after{
+            background: #f1f1f1;
+        }
+    }
+    .inner-page.service-1{
+        .rts-service-area.three.rts-section-gap.service__area-3.rts-service-revel-pro,
+        .rts-brand-area.rts-section-gapBottom.bg-dark-1,
+        .cta-main-wrapper-three.rts-section-gapBottom{
+            background: #fff;
+        }
+        .title-area-left-three-large .title,
+        .single-service-area-start .title-area .title,
+        .brand-style-one .title-brand,
+        .single-service-area-start .discription-area .sm-service-area-wrapper .sm-service p,
+        .single-service-area-start .discription-area .sm-service-area-wrapper .sm-service i{
+            color: #141414;
+        }
+    }
+    .inner-page.service-3{
+        .service-three-main{
+            background: #fff;
+        }
+        .bg-dark-1,
+        .cta-main-wrapper-three{
+            background: #fff;
+        }
+        .brand-style-one .title-brand{
+            color: #141414;
+        }
+    }
+    .inner-page.coming-soon{
+        background: #fff;
+        .rts-coming-soon .section-inner .title-elements-parent{
+            color: #141414;
+        }
+        .rts-coming-soon .section-inner .countdown-time span{
+            color: #141414;
+        }
+        .social-area .title{
+            color: #141414;
+        }
+        .rts-coming-soon .section-inner .social-area .social-wrapper li a i{
+            color: #141414;
+        }
+        .rts-coming-soon .section-inner .title-elements-parent{
+            border-bottom: 1px solid #eaeaea;
+        }
+    }
+    .inner-page .blog-list-area{
+        background: #fff;
+        .single-blog-list-one .blog-content-area .title,
+        .single-blog-list-one .blog-content-area .read-more-bb{
+            color: #141414;
+        }
+        .single-blog-list-one .blog-content-area .read-more-bb::after{
+            background: #141414;
+        }
+        .single-blog-list-one {
+            border-bottom: 1px solid #e8e8e8;
+        }
+    }
+    .inner-page.contact-page{
+        .appoinmnet-area-two.rts-section-gap{
+            background: #fff;
+        }
+        .appoinment-area-two .title-area-appoinment span.pre,
+        .appoinment-area-two .title-area-appoinment .title{
+            color: #141414;
+        }
+        .appoinment-h2 label{
+            color: #141414;
+        }
+        .appoinment-area-two input{
+            background: #f4f4f4 !important;
+            color: #141414;
+        }
+        .appoinment-area-two select{
+            background: #f4f4f4 !important;
+        }
+        .appoinment-area-two textarea{
+            background: #f4f4f4 !important;
+            color: #141414;
+        }
+        .appoinment-h2 .submit-pd{
+            background: #141414;
+            color: #fff;
+        }
+    }
+    .inner-page.blog-details{
+        .blog-details-main-wrapper.rts-section-gap{
+            background: #fff;
+        }
+        .blog-details-main-wrapper .quote-area h6,
+        h3.title,
+        .rts-comment-area .sigle-comments-bd .inner-info .titlea-rea .title,
+        .quote{
+            color: #141414;
+        }
+        .blog-details-main-wrapper .quote-area{
+            border-color: #14141421;
+        }
+        .post-author-blog {
+            background: rgb(246 246 246 / 91%);
+            .title{
+                color: #141414;
+            }
+        }
+        .product-details-form .single-input input,
+        .product-details-form .single-input textarea{
+            background: #a3a3a33a;
+            color: #141414;
+        }
+        .product-details-form .submit-pd{
+            background: #141414;
+            color: #fff;
+        }
+        .blog-single-main-wrapper .inner .head span.date,
+        .blog-single-main-wrapper .inner .body .title{
+            color: #141414;
+        }
+        .blog-single-main-wrapper.style-one .rts-btn{
+            background: #141414;
+            color: #fff;
+        }
+        .rts-single-wized .wized-header .title{
+            color: #141414;
+        }
+        .rts-single-wized,
+        .rts-single-wized .single-categories li a,
+        .rts-single-wized .tags-wrapper a{
+            border: 1px solid #e6e6e6;
+        }
+        .rts-single-wized .tags-wrapper a{
+            color: #141414;
+            &:hover{
+                color: #141414;
+            }
+        }
+    }
+    .inner-page.blog-details.bd-two{
+        .blog-sidebar-content-area.rts-section-gap{
+            background: #fff;
+        }
+        .single-blog-area-5.with-sidebar{
+            border: 1px solid #e6e6e6;
+        }
+        .rts-mighty-pagination ul li button{
+            color: #141414;
+        }
+    }
+    .mySwiper_portfolio-5 .swiper-slide.swiper-slide-active .single-portfolio-style-five .inner-content a .name{
+        color: #141414;
+    }
+    .index-six{
+        .blog-area-start{
+            .learn-more-btn{
+                color: #fff;
+            }
+        }
+    }
+    .index-one{
+        .our-approch-area-style-one.rts-section-gap.bg-dark-1{
+            background: #fafafa !important;
+        }
+    }
+    .index-two{
+        .rts-signle-case_varticle{
+            border-color: #dadada;
+        }
+    }
+    .inner-page.project-details{
+        .rts-header-area-two{
+            background: #141414;
+        }
+        .portfolio-large-img-and-top-title,
+        .rts-portfolio-details-img-bottom.rts-section-gapBottom{
+            background: #fff;
+        }
+        .title-areas-wrapper-pd .left-area .title,
+        .title-areas-wrapper-pd .right .speen-shape .uni-circle-text-path textPath,
+        .title-areas-wrapper-pd .left-area .bottom-area .single-categoiry .light,
+        .left-pd-image-bt-content .title,
+        .accordion-style-pd-1 .accordion .accordion-item .accordion-header .accordion-button{
+            color: #141414;
+        }
+        .title-areas-wrapper-pd .left-area .bottom-area{
+            border-color: #ecebeb;
+        }
+        .title-areas-wrapper-pd .left-area .bottom-area .single-categoiry::after{
+            background: #ecebeb;
+        }
+        .accordion-style-pd-1 .accordion .accordion-item{
+            border: none;
+        }
+        .rts-portfolio-details-img-bottom{
+            .rts-btn.btn-white{
+                background: #141414;
+                color: #fff;
+            }
+        }
+        .left-pd-image-bt-content .bottom-content .title::after{
+            background: #ecebeb;
+        }
+    }
+    .rts-coming-soon.error .section-inner .title-elements-parent span{
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 2px;
+        -webkit-text-stroke-color: #141414;
+    }
+    .rts-coming-soon.error .section-inner .buttons-main-wrapper-elements .rts-btn{
+        background: #141414;
+        color: #fff;
+    }
+    .inner-page.showcase-interactive-reveal{
+        .rts-signle-case_varticle {
+            border-color: #cecece !important;
+        }
+    }
+    
+    .portfolio-six-single-swiper .left-content .title{
+        color: #141414 !important;
+    }
+    .mySwiper_portfolio-5-scale-none .swiper-slide .single-portfolio-style-five .inner-content{
+        mix-blend-mode: normal;
+    }
+    .mySwiper_portfolio-5-scale-none .swiper-slide .single-portfolio-style-five .inner-content a .name{
+        color: #141414 !important;
+        mix-blend-mode: normal;
+    }
+    .inner-page.service-2{
+        .rts-case-service-area-h2.rts-section-gapBottom.pt--100.bg_images{
+            background: #f8f8f8;
+            .single-service-h2{
+                .icon{
+                    border-color: #141414;
+                }
+                background: #eeeeee;
+                border-color: #dadada;
+                .inner-content a .title{
+                    color: #141414;
+                }
+                .inner-content a.btn-arrow-right{
+                    color: #141414;
+                }
+            }
+            .single-service-h2 .icon svg path{
+
+                fill: #141414;
+            }
+        }
+    }
+    .index-one{
+        .our-approch-area-style-one.rts-section-gap.bg-dark-1 {
+            background: #0E0E0E !important;
+        }
+        .approch-area-left .title-area-left-wrapper .title{
+            color: #fff;
+        }
+        .our-approch-area-style-one{
+            .grid-lines-wrapper .grid-lines .grid-line{
+                background: #0E0E0E;
+            }
+            a.learn-more-btn{
+                color: #fff;
+            }
+            .approch-area-left .title-area-left-wrapper .pre-title{
+                color: #fff;
+            }
+            .single-approach-area-start{
+                background: #111111;
+                border: 1px solid #242323;
+            }
+            .single-approach-area-start:hover .title{
+                color: #fafafa !important;
+            }
+            .single-approach-area-start .title{
+                color: #fff !important;
+            }
+        }
+        .rts-use-case-area-one{
+            a.learn-more-btn{
+                color: #fff;
+            }
+        }
+        .blog-area-start{
+            a.learn-more-btn{
+                color: #fff;
+            }
+        }
+    }
+    .rts-single-wized .single-categories li a,
+    .rts-single-wized .recent-post-single .post-title .title{
+        color: #090909;
+    }
+    .rts-single-wized .wized-body .rts-search-wrapper input{
+        border: 1px solid #e6e6e6;
+    }
+    .servi-ce-details{
+        background: #fff;
+        .rts-header-area-two{
+            background: #1e1e1e;
+        }
+        .bg-dark-s{
+            background: #fff;   
+        }
+        .main-page-title-service-left-area .title-page,
+        .circle-speen .speen-shape text textPath,
+        .check-area-main-sd .single-check p,
+        .rts-single-wized .wized-header .title,
+        .service-short-quote .check-area-main-sd i,
+        .service-short-quote .right-info-service-short-quote .title,
+        .service-short-quote .right-info-service-short-quote p.disc span,
+        .single-para-title-service-details .title,
+        .single-para-title-service-details p.disc span,
+        .service-details-accordion-area .title,
+        .service-details-accordion-area .accordion .accordion-item .accordion-header .accordion-button,
+        .download-area-service-details .left-download .icon-area .info .title,
+        .single-para-title-service-details p.disc span{
+            color: #121212 !important;
+        }
+        .rts-single-wized .single-categories li a,
+        .rts-single-wized{
+            border-color:  #ededed;
+        }
+        .service-details-accordion-area .accordion .accordion-item{
+            border: none;
+        }
+        .service-details-accordion-area .accordion .accordion-item .accordion-header .accordion-button{
+            box-shadow: none;
+        }
+        .download-area-service-details .left-download .icon-area{
+            svg{
+                path{
+                    fill: #111111;
+                }
+            }
+        }
+        .download-area-service-details .left-download{
+            .right{
+                a{
+                    svg{
+                        path{
+                            fill: #111111;
+                        }
+                    }
+                }
+            }
+        }
+        .rts-single-wized .wized-body{
+            form{
+                input,
+                textarea{
+                    background: #f3f3f3;
+                }
+            }
+        }
+        .service-details-form button{
+            background: #000;
+            color: #fff;
+        }
+        .main-page-title-service-left-area .bottom-content::after{
+            background: #d3d3d3;
+        }
+    }
+    .mySwiper_portfolio-5 .swiper-slide{
+        opacity: 1;
+    }
+} 
+.portfolio-six-single-swiper .left-content .title{
+    margin-top: 10px;
+}
+
+.inner-page.project-details{
+    .rts-header-area-two .main-header-two {
+        padding: 6px 0 17px 0;
+    }
+}
+
+
+
+.rts-footer-area-one{
+    .footer-left-area{
+        .logo-footer{
+            .logo-1{
+                display: block;
+            }
+            .logo-2{
+                display: none;
+            }
+        }
+    }
+}
+
+
+
+.header-three{
+    .logo-area{
+        display: block;
+    }
+    .logo-area-white{
+        display: none;
+    }
+}

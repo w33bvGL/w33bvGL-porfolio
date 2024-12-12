@@ -1,0 +1,227 @@
+// faq area start
+
+.faq-thumbnail-two{
+    position: relative;
+    z-index: 5;
+    .main{
+        padding: 13px;
+        background: #fff;
+        border-radius: 8px;
+    }
+    .small-img{
+        position: absolute;
+        left: -190px;
+        top: -120px;
+        z-index: -1;
+        @media #{$large-mobile} {
+            max-width: 150px;
+        }
+        @media #{$smlg-device} {
+            position: absolute;
+            left: -29px;
+            top: -28px;
+            z-index: 0;
+        }
+    }
+}
+
+.brand-sm-title{
+    p{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 21px;
+        color: #141414;
+        letter-spacing: 0.05em;
+    }
+}
+
+.faq-right-wrapper-two{
+    .title-left-h2-wrapper{
+        text-align: left;
+        span.pre-title{
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 21px;
+            color: #141414;
+        }
+        .title{
+            span{
+                font-style: italic;
+                position: relative;
+                font-weight: 300;
+                &::after{
+                    position: absolute;
+                    content:'';
+                    left: 0;
+                    bottom: 4px;
+                    width: 100%;
+                    background: #141414;
+                    height: 2px;
+                }
+            }
+        }
+    }
+}
+
+.accordion-faq-2{
+    margin-top: 50px;
+    .accordion-item{
+        background: #FFFFFF;
+        border: 1px solid #E8E8E8;
+        box-shadow: none;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        .accordion-header{
+            border: none;
+            box-shadow: none;
+            button{
+                box-shadow: none;
+                border: none;
+                background: transparent;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 23px;
+                color: #141414;
+                padding: 25px 30px;
+                transform: none !important;
+                @media #{$small-mobile} {
+                    padding: 15px;
+                }
+                &::after{
+                    transform: none;
+                    background-image: none;
+                    content: "\2b";
+                    top: 0;
+                    pointer-events: all;
+                    position: absolute;
+                    right: 25px;
+                    top: 33%;
+                    font-family: 'fontawesome';
+                }
+                &[aria-expanded="true"]{
+                    &::after{
+                        content: "\f068";
+                    }
+                }
+            }
+        }
+        .accordion-body{
+            padding: 0 30px 25px 30px;
+        }
+    }
+}
+
+
+// faqsa honemn 4
+
+.title-faq-4{
+    .pre{
+        color: #141414;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.7px;
+    }
+    .title{
+        color: #141414;
+        font-family: Hanken Grotesk;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 58px;
+        text-transform: uppercase;
+        margin-top: 15px;
+        @media #{$sm-layout} {
+            font-size: 26px;
+            line-height: 38px;
+        }
+    }
+}
+.four-accordion-area-faq{
+    border-top: 1px solid #D9D9D9;
+    .accordion-item{
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        padding: 40px 0;
+        
+        border-bottom: 1px solid #D9D9D9;
+        position: relative;
+        @media #{$large-mobile} {
+            padding: 20px 0;
+        }
+        &::after{
+            position: absolute;
+            left: 150px;
+            width: 1px;
+            height: 100%;
+            background: #D9D9D9;
+            content: '';
+            top: 0;
+            @media #{$large-mobile} {
+                display: none;
+            }
+        }
+        .accordion-header{
+            border: none;
+            background: transparent;
+            padding-left: 180px;
+            @media #{$large-mobile} {
+                padding-left: 0;
+            }
+            button{
+                background-color: transparent;
+                border: none;
+                position: relative;
+                color: #141414;
+                font-size: 26px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                text-transform: uppercase;
+                @media #{$large-mobile} {
+                    font-size: 22px;
+                }
+                &::before{
+                    content: '\f063';
+                    font-family: 'fontawesome';
+                    position: absolute;
+                    font-size: 22px;
+                    color: #141414;
+                    left: -155px;
+                    width: 87px;
+                    height: 87px;
+                    border-radius: 50%;
+                    border: 1px solid #141414;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                &::after{
+                    display: none;
+                }
+                &:focus{
+                    box-shadow: none;
+                }
+                &[aria-expanded="true"]{
+                    border-bottom: none !important;
+                    box-shadow: none;
+                    &::before{
+                        content: '\f062';
+                    }
+                }
+            }
+        }
+        .accordion-collapse{
+            padding-left: 180px;
+            @media #{$large-mobile} {
+                padding-left: 0;
+            }
+        }
+    }
+}
