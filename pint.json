@@ -1,0 +1,18 @@
+{
+    "preset": "laravel",
+    "exclude": ["storage/**", "vendor/**", "node_modules/**", "_docker/**"],
+    "rules": {
+        "declare_strict_types": true,
+        "phpdoc_align": true,
+        "phpdoc_types": true,
+        "no_empty_phpdoc": true,
+        "binary_operator_spaces": {
+            "operators": {
+                "=": "align"
+            }
+        },
+        "trailing_comma_in_multiline": {
+            "elements": ["arrays", "parameters"]
+        }
+    }
+}
