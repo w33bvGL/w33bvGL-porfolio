@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'vahesargsyan') }} + Vahe Sargsyan - Full-Stack Engineer | Portfolio & Projects</title>
+        <title>Vahe Sargsyan ({{ config('app.name', 'vahesargsyan') }}) - Full-Stack Engineer | Portfolio & Projects</title>
 
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>

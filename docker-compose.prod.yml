@@ -1,79 +1,79 @@
 services:
-  app:
-    container_name: portfolio
-    restart: unless-stopped
-    build:
-      context: .
-    command: >
-      sh -c "./_docker/wait-for-it.sh redis 6379 -- echo 'Redis is available' &&
-             ./_docker/wait-for-it.sh mysql 3306 -- echo 'MySQL is available' &&
-             composer install &&
-             ./vendor/bin/pint &&
-             vendor/bin/phpunit --configuration phpunit.xml --stop-on-failure &&
-             php artisan serve --host=0.0.0.0 --port=8000"
-    ports:
-      - '8000:8000'
-    volumes:
-      - ./:/var/www
-      - ./node_modules:/var/www/node_modules
-      - ./vendor:/var/www/vendor
-    networks:
-      - portfolio
+    app:
+        container_name: portfolio
+        restart: unless-stopped
+        build:
+            context: .
+        command: >
+            sh -c "./_docker/wait-for-it.sh redis 6379 -- echo 'Redis is available' &&
+                   ./_docker/wait-for-it.sh mysql 3306 -- echo 'MySQL is available' &&
+                   composer install &&
+                   ./vendor/bin/pint &&
+                   vendor/bin/phpunit --configuration phpunit.xml --stop-on-failure &&
+                   php artisan serve --host=0.0.0.0 --port=8000"
+        ports:
+            - '8000:8000'
+        volumes:
+            - ./:/var/www
+            - ./node_modules:/var/www/node_modules
+            - ./vendor:/var/www/vendor
+        networks:
+            - portfolio
 
-  vite:
-    image: node:20
-    container_name: vite-server
-    working_dir: /var/www
-    volumes:
-      - .:/var/www
-    ports:
-      - '5173:5173'
-    command: sh -c "npm install && npm run dev && npx prettier --write ."
-    depends_on:
-      - app
+    vite:
+        image: node:20
+        container_name: vite-server
+        working_dir: /var/www
+        volumes:
+            - .:/var/www
+        ports:
+            - '5173:5173'
+        command: sh -c "npm install && npm run dev && npx prettier --write ."
+        depends_on:
+            - app
 
-  mysql:
-    container_name: mysql
-    image: mysql:8.0
-    environment:
-      MYSQL_DATABASE: ${DB_DATABASE}
-      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
-    ports:
-      - '3306:3306'
-    command:
-      [
-        '--default-authentication-plugin=mysql_native_password',
-        '--innodb-buffer-pool-size=256M',
-        '--max-connections=1000',
-      ]
-    volumes:
-      - ./tmp/mysql/:/var/lib/mysql
-      - ./_docker/my.cnf:/etc/mysql/my.cnf
-    restart: always
-    networks:
-      - portfolio
+    mysql:
+        container_name: mysql
+        image: mysql:8.0
+        environment:
+            MYSQL_DATABASE: ${DB_DATABASE}
+            MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+        ports:
+            - '3306:3306'
+        command:
+            [
+                '--default-authentication-plugin=mysql_native_password',
+                '--innodb-buffer-pool-size=256M',
+                '--max-connections=1000',
+            ]
+        volumes:
+            - ./tmp/mysql/:/var/lib/mysql
+            - ./_docker/my.cnf:/etc/mysql/my.cnf
+        restart: always
+        networks:
+            - portfolio
 
-  redis:
-    container_name: redis
-    image: redis:latest
-    restart: always
-    ports:
-      - '6379:6379'
-    environment:
-      REDIS_USER: ${REDIS_USERNAME}
-      REDIS_PASSWORD: ${REDIS_PASSWORD}
-    command: ['redis-server', '--requirepass', '${REDIS_PASSWORD}']
-    volumes:
-      - ./tmp/redis:/var/lib/redis
-    networks:
-      - portfolio
+    redis:
+        container_name: redis
+        image: redis:latest
+        restart: always
+        ports:
+            - '6379:6379'
+        environment:
+            REDIS_USER: ${REDIS_USERNAME}
+            REDIS_PASSWORD: ${REDIS_PASSWORD}
+        command: ['redis-server', '--requirepass', '${REDIS_PASSWORD}']
+        volumes:
+            - ./tmp/redis:/var/lib/redis
+        networks:
+            - portfolio
 
 volumes:
-  mysql-data:
-    driver: local
-  redis-data:
-    driver: local
+    mysql-data:
+        driver: local
+    redis-data:
+        driver: local
 
 networks:
-  portfolio:
-    external: false
+    portfolio:
+        external: false

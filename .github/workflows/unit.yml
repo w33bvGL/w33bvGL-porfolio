@@ -1,54 +1,54 @@
 name: PHPUnit Test
 
 on:
-  push:
-    branches:
-      - master
-      - '*.x'
-  pull_request:
+    push:
+        branches:
+            - master
+            - '*.x'
+    pull_request:
 
 permissions:
-  contents: read
+    contents: read
 
 jobs:
-  tests:
-    runs-on: ubuntu-latest
+    tests:
+        runs-on: ubuntu-latest
 
-    strategy:
-      fail-fast: true
-      matrix:
-        include:
-          - php: '8.2'
-            laravel: 11
-          - php: '8.3'
-            laravel: 11
-          - php: '8.4'
-            laravel: 11
+        strategy:
+            fail-fast: true
+            matrix:
+                include:
+                    - php: '8.2'
+                      laravel: 11
+                    - php: '8.3'
+                      laravel: 11
+                    - php: '8.4'
+                      laravel: 11
 
-    name: PHP ${{ matrix.php }} - Laravel ${{ matrix.laravel }}
+        name: PHP ${{ matrix.php }} - Laravel ${{ matrix.laravel }}
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
 
-      - name: Setup PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: ${{ matrix.php }}
-          extensions: dom, curl, libxml, mbstring, zip, fileinfo
-          ini-values: error_reporting=E_ALL
-          tools: composer:v2
-          coverage: none
+            - name: Setup PHP
+              uses: shivammathur/setup-php@v2
+              with:
+                  php-version: ${{ matrix.php }}
+                  extensions: dom, curl, libxml, mbstring, zip, fileinfo
+                  ini-values: error_reporting=E_ALL
+                  tools: composer:v2
+                  coverage: none
 
-      - name: Install dependencies
-        run: |
-          composer install --no-interaction --prefer-dist
+            - name: Install dependencies
+              run: |
+                  composer install --no-interaction --prefer-dist
 
-      - name: Set up Laravel environment
-        run: |
-          cp .env.example .env
-          php artisan key:generate
+            - name: Set up Laravel environment
+              run: |
+                  cp .env.example .env
+                  php artisan key:generate
 
-      - name: Run PHPUnit tests
-        run: |
-          ./vendor/bin/phpunit --configuration phpunit.xml --coverage-tex
+            - name: Run PHPUnit tests
+              run: |
+                  ./vendor/bin/phpunit --configuration phpunit.xml --coverage-tex
