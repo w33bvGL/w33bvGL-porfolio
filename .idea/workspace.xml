@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="651e934c-2293-4ffd-a3f3-32a332665829" name="Changes" comment="remove tmp">
-      <change afterPath="$PROJECT_DIR$/docker-compose.dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.prod.yml" afterDir="false" />
+    <list default="true" id="651e934c-2293-4ffd-a3f3-32a332665829" name="Changes" comment="add blades php">
+      <change afterPath="$PROJECT_DIR$/public/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,7 +229,23 @@
       <option name="project" value="LOCAL" />
       <updated>1737647582252</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="fix workspace.xml">
+      <option name="closed" value="true" />
+      <created>1737648183867</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1737648183867</updated>
+    </task>
+    <task id="LOCAL-00018">
+      <option name="closed" value="true" />
+      <created>1737648267009</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1737648267009</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,6 +268,8 @@
     <MESSAGE value="add datagrip" />
     <MESSAGE value="fix changes remove tmp" />
     <MESSAGE value="remove tmp" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove tmp" />
+    <MESSAGE value="fix workspace.xml" />
+    <MESSAGE value="add blades php" />
+    <option name="LAST_COMMIT_MESSAGE" value="add blades php" />
   </component>
 </project>
