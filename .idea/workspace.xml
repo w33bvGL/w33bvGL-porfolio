@@ -4,184 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="651e934c-2293-4ffd-a3f3-32a332665829" name="Changes" comment="add datagrip">
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/#ib_16384_0.dblwr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/#ib_16384_1.dblwr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/#innodb_redo/#ib_redo10_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/#innodb_redo/#ib_redo11_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/#innodb_redo/#ib_redo12_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/#innodb_redo/#ib_redo13_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/#innodb_redo/#ib_redo14_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/#innodb_redo/#ib_redo15_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/#innodb_redo/#ib_redo16_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/#innodb_redo/#ib_redo17_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/#innodb_redo/#ib_redo18_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/#innodb_redo/#ib_redo19_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/#innodb_redo/#ib_redo20_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/#innodb_redo/#ib_redo21_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/#innodb_redo/#ib_redo22_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/#innodb_redo/#ib_redo23_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/#innodb_redo/#ib_redo24_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/#innodb_redo/#ib_redo25_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/#innodb_redo/#ib_redo26_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/#innodb_redo/#ib_redo27_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/#innodb_redo/#ib_redo28_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/#innodb_redo/#ib_redo29_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/#innodb_redo/#ib_redo30_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/#innodb_redo/#ib_redo31_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/#innodb_redo/#ib_redo32_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/#innodb_redo/#ib_redo33_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/#innodb_redo/#ib_redo34_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/#innodb_redo/#ib_redo35_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/#innodb_redo/#ib_redo36_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/#innodb_redo/#ib_redo8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/#innodb_temp/temp_1.ibt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/#innodb_temp/temp_10.ibt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/#innodb_temp/temp_2.ibt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/#innodb_temp/temp_3.ibt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/#innodb_temp/temp_4.ibt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/#innodb_temp/temp_5.ibt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/#innodb_temp/temp_6.ibt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/#innodb_temp/temp_7.ibt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/#innodb_temp/temp_8.ibt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/#innodb_temp/temp_9.ibt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/auto.cnf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/binlog.000001" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/binlog.index" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/ca-key.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/ca.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/client-cert.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/client-key.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/ib_buffer_pool" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/ibdata1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/ibtmp1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/mysql.ibd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/mysql/general_log.CSM" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/mysql/general_log.CSV" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/mysql/general_log_213.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/mysql/slow_log.CSM" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/mysql/slow_log.CSV" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/mysql/slow_log_214.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/accounts_145.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/binary_log_trans_189.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/cond_instances_82.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/data_lock_waits_161.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/data_locks_160.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/error_log_83.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/events_errors_su_139.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/events_errors_su_140.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/events_errors_su_141.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/events_errors_su_142.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/events_errors_su_143.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/events_stages_cu_111.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/events_stages_hi_112.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/events_stages_hi_113.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/events_stages_su_114.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/events_stages_su_115.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/events_stages_su_116.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/events_stages_su_117.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/events_stages_su_118.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/events_statement_119.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/events_statement_120.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/events_statement_121.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/events_statement_122.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/events_statement_123.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/events_statement_124.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/events_statement_125.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/events_statement_127.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/events_statement_128.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/events_statement_129.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/events_statement_130.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/events_transacti_131.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/events_transacti_132.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/events_transacti_133.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/events_transacti_134.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/events_transacti_135.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/events_transacti_136.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/events_transacti_137.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/events_transacti_138.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/events_waits_cur_84.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/events_waits_his_85.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/events_waits_his_86.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/events_waits_sum_87.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/events_waits_sum_89.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/events_waits_sum_90.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/events_waits_sum_91.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/events_waits_sum_92.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/file_instances_93.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/file_summary_by__94.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/file_summary_by__95.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/global_status_181.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/global_variables_184.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/host_cache_96.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/hosts_146.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/keyring_componen_191.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/keyring_keys_152.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/log_status_174.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/memory_summary_b_154.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/memory_summary_b_155.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/memory_summary_b_156.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/memory_summary_b_157.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/memory_summary_g_153.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/metadata_locks_159.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/mutex_instances_97.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/performance_time_99.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/persisted_variab_187.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/prepared_stateme_175.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/processlist_100.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/replication_appl_165.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/replication_appl_166.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/replication_appl_167.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/replication_appl_168.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/replication_appl_170.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/replication_appl_171.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/replication_asyn_172.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/replication_asyn_173.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/replication_conn_162.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/replication_conn_164.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/replication_grou_163.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/replication_grou_169.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/rwlock_instances_101.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/session_account__151.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/session_connect__150.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/session_status_182.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/session_variable_185.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/setup_actors_102.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/setup_consumers_103.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/setup_instrument_104.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/setup_objects_105.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/setup_threads_106.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/socket_instances_147.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/socket_summary_b_148.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/socket_summary_b_149.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/status_by_accoun_177.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/status_by_host_178.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/status_by_thread_179.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/status_by_user_180.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/table_handles_158.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/table_io_waits_s_107.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/table_io_waits_s_108.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/table_lock_waits_109.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/threads_110.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/tls_channel_stat_190.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/user_defined_fun_188.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/user_variables_b_176.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/users_144.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/variables_by_thr_183.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/performance_schema/variables_info_186.sdi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/private_key.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/public_key.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/server-cert.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/server-key.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/sys/sys_config.ibd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/undo_001" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/mysql/undo_002" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="651e934c-2293-4ffd-a3f3-32a332665829" name="Changes" comment="remove tmp">
+      <change afterPath="$PROJECT_DIR$/docker-compose.dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.prod.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/mysql/#innodb_redo/#ib_redo9" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/mysql/#innodb_redo/#ib_redo9" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/mysql/binlog.000002" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/mysql/binlog.000002" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/mysql/portfolio/sessions.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/mysql/portfolio/sessions.ibd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/mysql/portfolio/users.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/mysql/portfolio/users.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -388,7 +218,23 @@
       <option name="project" value="LOCAL" />
       <updated>1737647016973</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="fix changes remove tmp">
+      <option name="closed" value="true" />
+      <created>1737647569689</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1737647569689</updated>
+    </task>
+    <task id="LOCAL-00016" summary="remove tmp">
+      <option name="closed" value="true" />
+      <created>1737647582252</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1737647582252</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -409,6 +255,8 @@
     <MESSAGE value="fixed other files" />
     <MESSAGE value="add composer fix" />
     <MESSAGE value="add datagrip" />
-    <option name="LAST_COMMIT_MESSAGE" value="add datagrip" />
+    <MESSAGE value="fix changes remove tmp" />
+    <MESSAGE value="remove tmp" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove tmp" />
   </component>
 </project>
