@@ -27,11 +27,11 @@ class Language extends Model
     protected $casts = [
         'is_default' => 'boolean',
         'is_active' => 'boolean',
-        'priority' => 'integer',
         'region' => 'string',
         'emoji' => 'string',
         'flag_url' => 'string',
         'direction' => 'string',
         'native_name' => 'string',
+        'priority' => 'integer',
     ];
 }
