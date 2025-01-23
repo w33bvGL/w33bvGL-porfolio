@@ -31,6 +31,6 @@ RUN chmod -R 777 /var/www/storage /var/www/bootstrap/cache
 RUN mkdir -p /var/www/storage/logs \
     && touch /var/www/storage/logs/laravel.log
 
-expose 8000
+expose 9000
 
 CMD ["php-fpm"]

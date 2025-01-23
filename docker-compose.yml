@@ -25,8 +25,7 @@ services:
             - cache
             - mailpit
         ports:
-            - "5173:5173"
-            - "8000:8000"
+            - "9000:8000"
         command: >
             sh -c "composer install &&
             npm install &&
@@ -63,16 +62,12 @@ services:
         image: redis:latest
         restart: always
         volumes:
-            - ./tmp/cache:/data
-            - ./_docker/prod/redis.conf:/usr/local/etc/redis/redis.conf
+            - ./tmp/redis:/data
         ports:
             - "49154:6379"
         container_name: cache
         networks:
             - prod-network
-        command: [ "redis-server", "/usr/local/etc/redis/redis.conf" ]
-        environment:
-            - REDIS_PASSWORD=20c632fe-e134-47c9-b8a6-2cf6e160c214
 
     mailpit:
         image: axllent/mailpit
