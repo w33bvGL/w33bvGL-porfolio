@@ -1,11 +1,6 @@
 {
     "preset": "laravel",
-    "exclude": [
-        "storage/**",
-        "vendor/**",
-        "node_modules/**",
-        "_docker/**"
-    ],
+    "exclude": ["storage/**", "vendor/**", "node_modules/**", "_docker/**"],
     "rules": {
         "declare_strict_types": true,
         "phpdoc_align": true,
