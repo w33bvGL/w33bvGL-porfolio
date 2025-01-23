@@ -4,23 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="651e934c-2293-4ffd-a3f3-32a332665829" name="Changes" comment="add pint">
-      <change afterPath="$PROJECT_DIR$/.github/CONTRIBUTING.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.github/ISSUNE_TEMPLATE/1_Bug_report.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.github/ISSUNE_TEMPLATE/config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.github/SECURITY.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.github/SUPPORT.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.github/dependabot.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.github/workflows/issues.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.github/workflows/pint.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.github/workflows/pull-requests.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.github/workflows/shellcheck.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.github/workflows/static-analysis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.github/workflows/tests.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.github/workflows/update-changelog.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.prettierignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+    <list default="true" id="651e934c-2293-4ffd-a3f3-32a332665829" name="Changes" comment="add prettier.yml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -276,7 +262,23 @@
       <option name="project" value="LOCAL" />
       <updated>1737648619187</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="remove datagrip">
+      <option name="closed" value="true" />
+      <created>1737649471681</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1737649471681</updated>
+    </task>
+    <task id="LOCAL-00022" summary="add prettier.yml">
+      <option name="closed" value="true" />
+      <created>1737649617991</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1737649617991</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,6 +305,8 @@
     <MESSAGE value="add blades php" />
     <MESSAGE value="remove build" />
     <MESSAGE value="add pint" />
-    <option name="LAST_COMMIT_MESSAGE" value="add pint" />
+    <MESSAGE value="remove datagrip" />
+    <MESSAGE value="add prettier.yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="add prettier.yml" />
   </component>
 </project>
