@@ -4,8 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="651e934c-2293-4ffd-a3f3-32a332665829" name="Changes" comment="add blades php">
-      <change afterPath="$PROJECT_DIR$/public/.gitignore" afterDir="false" />
+    <list default="true" id="651e934c-2293-4ffd-a3f3-32a332665829" name="Changes" comment="add pint">
+      <change afterPath="$PROJECT_DIR$/.github/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/ISSUNE_TEMPLATE/1_Bug_report.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/ISSUNE_TEMPLATE/config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/SECURITY.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/SUPPORT.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/dependabot.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/issues.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/pint.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/pull-requests.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/shellcheck.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/static-analysis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/tests.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/update-changelog.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,6 +87,7 @@
       <recent name="D:\_Projects\w33bvGL-porfolio" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\_Projects\w33bvGL-porfolio\.github" />
       <recent name="D:\_Projects\w33bvGL-porfolio\_docker" />
       <recent name="D:\_Projects\w33bvGL-porfolio\resources\views\components" />
     </key>
@@ -245,7 +260,23 @@
       <option name="project" value="LOCAL" />
       <updated>1737648267009</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="remove build">
+      <option name="closed" value="true" />
+      <created>1737648503356</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1737648503356</updated>
+    </task>
+    <task id="LOCAL-00020" summary="add pint">
+      <option name="closed" value="true" />
+      <created>1737648619187</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1737648619187</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,6 +301,8 @@
     <MESSAGE value="remove tmp" />
     <MESSAGE value="fix workspace.xml" />
     <MESSAGE value="add blades php" />
-    <option name="LAST_COMMIT_MESSAGE" value="add blades php" />
+    <MESSAGE value="remove build" />
+    <MESSAGE value="add pint" />
+    <option name="LAST_COMMIT_MESSAGE" value="add pint" />
   </component>
 </project>
