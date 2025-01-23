@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>Vahe Sargsyan ({{ config('app.name', 'vahesargsyan') }}) - Full-Stack Engineer | Portfolio & Projects</title>
+        <title>{{ __('title.title', ['APP_NAME' => config('app.name', 'vahesargsyan')] ) }}</title>
 
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body>
+    <body class="bg-black">
 
     </body>
 </html>

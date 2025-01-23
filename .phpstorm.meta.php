@@ -2301,7 +2301,8 @@ namespace PHPSTORM_META {
 'validation.required_unless','validation.required_with','validation.required_with_all','validation.required_without','validation.required_without_all',
 'validation.same','validation.size.array','validation.size.file','validation.size.numeric','validation.size.string',
 'validation.starts_with','validation.string','validation.timezone','validation.unique','validation.uploaded',
-'validation.uppercase','validation.url','validation.ulid','validation.uuid','validation.custom.attribute-name.rule-name',);
+'validation.uppercase','validation.url','validation.ulid','validation.uuid','validation.custom.attribute-name.rule-name',
+'title.title',);
         registerArgumentsSet('env', 
 'APP_NAME','APP_ENV','APP_KEY','APP_DEBUG','APP_TIMEZONE',
 'APP_URL','APP_LOCALE','APP_FALLBACK_LOCALE','APP_FAKER_LOCALE','LARAVELLOCALIZATION_UTF8SUFFIX',
