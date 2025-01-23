@@ -6,27 +6,18 @@
 /storage/*.key
 /storage/pail
 /vendor
-
+.env
+.env.backup
+.env.production
 .phpactor.json
 .phpunit.result.cache
 Homestead.json
 Homestead.yaml
-auth.json
 npm-debug.log
 yarn-error.log
-
+/auth.json
 /.fleet
 /.idea
 /.nova
 /.vscode
 /.zed
-
-# ENV FILES
-.env
-!.env.*
-
-# TMP FILES
-/tmp
-
-# STORAGE LOG FILE
-/storage/logs/laravel.log
