@@ -16,9 +16,10 @@ RUN docker-php-ext-install pdo_mysql bcmath gd zip
 RUN pecl install redis \
     && docker-php-ext-enable redis
 
-COPY ./_docker/dev/php.ini /usr/local/etc/php/conf.d/php.ini
+COPY _docker/php.ini /usr/local/etc/php/conf.d/php.ini
 
 ENV COMPOSER_ALLOW_SUPERUSER=1
+
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 WORKDIR /var/www
