@@ -1,36 +1,39 @@
 FROM php:8.2-fpm
 
 RUN apt-get update && apt-get install -y \
-    apt-utils \
-    libpq-dev \
+    openssl \
+    git \
+    libssl-dev \
+    pkg-config \
     libpng-dev \
-    libzip-dev \
+    libonig-dev \
+    libxml2-dev \
     zip \
     unzip \
     git \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+    libbrotli-dev \
+    curl \
+    && docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd xml \
+    && pecl install redis \
+    && pecl install mongodb \
+    && docker-php-ext-enable redis mongodb
 
-RUN docker-php-ext-install pdo_mysql bcmath gd zip
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
-RUN pecl install redis \
-    && docker-php-ext-enable redis
-
-COPY _docker/php.ini /usr/local/etc/php/conf.d/php.ini
-
-ENV COMPOSER_ALLOW_SUPERUSER=1
-
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+COPY _docker/php.ini /usr/local/etc/php/
 
 WORKDIR /var/www
 
-RUN mkdir -p /var/www/storage /var/www/bootstrap/cache
+COPY . .
 
-RUN chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache
-RUN chmod -R 777 /var/www/storage /var/www/bootstrap/cache
-RUN mkdir -p /var/www/storage/logs \
-    && touch /var/www/storage/logs/laravel.log
+RUN composer install --no-cache
 
-expose 9000
+RUN php artisan key:generate
 
-CMD ["php-fpm"]
+RUN vendor/bin/phpunit --configuration phpunit.xml --stop-on-failure
+
+RUN chown -R www-data:www-data /var/www
+
+EXPOSE 8000
+
+CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=8000"]

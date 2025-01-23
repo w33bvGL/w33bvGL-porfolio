@@ -1,90 +1,62 @@
-version: '3.2'
-
 services:
-    nginx:
-        image: nginx:latest
-        volumes:
-            - ./:/var/www
-            - ./_docker/nginx:/etc/nginx/conf.d
-        ports:
-            - "80:80"
-        depends_on:
-            - app
-        container_name: nginx
-        networks:
-            - prod-network
-
     app:
+        container_name: portfolio
+        restart: unless-stopped
         build:
-            context: ./
-            dockerfile: Dockerfile
+            context: .
+        command: >
+            sh -c "./_docker/wait-for-it.sh redis 6379 -- echo 'Redis is available' &&
+                   ./_docker/wait-for-it.sh mysql 3306 -- echo 'MySQL is available' &&
+                   composer install &&
+                   ./vendor/bin/pint &&
+                   vendor/bin/phpunit --configuration phpunit.xml --stop-on-failure &&
+                   php artisan serve --host=0.0.0.0 --port=8000"
+        ports:
+            - "8000:8000"
         volumes:
             - ./:/var/www
-            - /var/www/vendor
-            - /var/www/node_modules
-        depends_on:
-            - db
-            - cache
-            - mailpit
-        ports:
-            - "5173:5173"
-            - "8000:8000"
-        command: >
-            sh -c "composer install &&
-            npm install &&
-            npm run build &&
-            php artisan key:generate &&
-            php artisan lcc &&
-            chmod -R 775 storage &&
-            chown -R www-data:www-data storage &&
-            php artisan migrate &&
-            php artisan db:seed &&
-            php artisan storage:link &&
-            npm run dev"
-        working_dir: /var/www
-        container_name: app
+            - ./node_modules:/var/www/node_modules
+            - ./vendor:/var/www/vendor
         networks:
-            - prod-network
+            - portfolio
 
-    db:
+    mysql:
+        container_name: mysql
         image: mysql:8.0
-        restart: always
-        volumes:
-            - ./tmp/db:/var/lib/mysql
         environment:
-            MYSQL_DATABASE: SagaOnline
-            MYSQL_ROOT_PASSWORD: 438fb17f-d5c6-4078-ac95-018d06c2f91c
+            MYSQL_DATABASE: ${DB_DATABASE}
+            MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
         ports:
-            - "49153:3306"
-        command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
-        container_name: db
+            - "3306:3306"
+        command: [ "--default-authentication-plugin=mysql_native_password", "--innodb-buffer-pool-size=256M", "--max-connections=1000" ]
+        volumes:
+            - ./tmp/mysql/:/var/lib/mysql
+            - ./_docker/my.cnf:/etc/mysql/my.cnf
+        restart: always
         networks:
-            - prod-network
+            - portfolio
 
-    cache:
+    redis:
+        container_name: redis
         image: redis:latest
         restart: always
-        volumes:
-            - ./tmp/cache:/data
-            - ./_docker/prod/redis.conf:/usr/local/etc/redis/redis.conf
         ports:
-            - "49154:6379"
-        container_name: cache
-        networks:
-            - prod-network
-        command: [ "redis-server", "/usr/local/etc/redis/redis.conf" ]
+            - "6379:6379"
         environment:
-            - REDIS_PASSWORD=20c632fe-e134-47c9-b8a6-2cf6e160c214
-
-    mailpit:
-        image: axllent/mailpit
-        ports:
-            - "49155:1025"
-            - "49156:8025"
-        container_name: mailpit
+            REDIS_USER: ${REDIS_USERNAME}
+            REDIS_PASSWORD: ${REDIS_PASSWORD}
+        command: [ "redis-server", "--requirepass", "${REDIS_PASSWORD}" ]
+        volumes:
+            - ./tmp/redis:/var/lib/redis
         networks:
-            - prod-network
+            - portfolio
+
+volumes:
+    mysql-data:
+        driver: local
+    redis-data:
+        driver: local
 
 networks:
-    prod-network:
-        driver: bridge
+    portfolio:
+        external: false
