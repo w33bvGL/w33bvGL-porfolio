@@ -1,4 +1,4 @@
-name: Docker Compose Test
+name: PHPUnit Test
 
 on:
   push:
@@ -49,18 +49,6 @@ jobs:
           cp .env.example .env
           php artisan key:generate
 
-      - name: Set up Docker Compose
+      - name: Run PHPUnit tests
         run: |
-          docker-compose -f docker-compose.yml up -d
-
-      - name: Run Migrations
-        run: |
-          docker-compose exec -T app php artisan migrate --no-interaction
-
-      - name: Run Tests in Docker Container
-        run: |
-          docker-compose exec -T app ./vendor/bin/phpunit --configuration phpunit.xml --coverage-text
-
-      - name: Stop Docker Containers
-        run: |
-          docker-compose down
+          ./vendor/bin/phpunit --configuration phpunit.xml --coverage-tex
