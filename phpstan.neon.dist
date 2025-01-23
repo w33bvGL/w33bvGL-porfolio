@@ -1,7 +1,6 @@
 includes:
     - ./vendor/nunomaduro/larastan/extension.neon
 parameters:
-    memoryLimit: 512M
     level: 5
     paths:
         - app
