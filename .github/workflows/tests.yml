@@ -1,79 +1,66 @@
 name: Docker Compose Test
 
 on:
-    push:
-        branches:
-            - master
-            - '*.x'
-    pull_request:
+  push:
+    branches:
+      - master
+      - '*.x'
+  pull_request:
 
 permissions:
-    contents: read
+  contents: read
 
 jobs:
-    tests:
-        runs-on: ubuntu-latest
+  tests:
+    runs-on: ubuntu-latest
 
-        strategy:
-            fail-fast: true
-            matrix:
-                include:
-                    - php: '8.2'
-                      laravel: 11
-                    - php: '8.3'
-                      laravel: 11
-                    - php: '8.4'
-                      laravel: 11
+    strategy:
+      fail-fast: true
+      matrix:
+        include:
+          - php: '8.2'
+            laravel: 11
+          - php: '8.3'
+            laravel: 11
+          - php: '8.4'
+            laravel: 11
 
-        name: PHP ${{ matrix.php }} - Laravel ${{ matrix.laravel }}
+    name: PHP ${{ matrix.php }} - Laravel ${{ matrix.laravel }}
 
-        steps:
-            - name: Checkout code
-              uses: actions/checkout@v4
-              with:
-                  path: 'sail'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-            - name: Setup PHP
-              uses: shivammathur/setup-php@v2
-              with:
-                  php-version: ${{ matrix.php }}
-                  extensions: dom, curl, libxml, mbstring, zip, fileinfo
-                  ini-values: error_reporting=E_ALL
-                  tools: composer:v2
-                  coverage: none
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: dom, curl, libxml, mbstring, zip, fileinfo
+          ini-values: error_reporting=E_ALL
+          tools: composer:v2
+          coverage: none
 
-            - name: Create a new laravel application
-              run: composer create-project laravel/laravel app "${{ matrix.laravel }}.x" --remove-vcs --no-interaction --prefer-dist
+      - name: Install dependencies
+        run: |
+          composer install --no-interaction --prefer-dist
 
-            - name: Link Sail Repository
-              run: |
-                  composer config minimum-stability dev
-                  composer config repositories.sail path ../sail
-                  composer require laravel/sail:* --dev -W
-              working-directory: app
+      - name: Set up Laravel environment
+        run: |
+          cp .env.example .env
+          php artisan key:generate
 
-            - name: Install Sail into App
-              run: |
-                  php artisan sail:install --php=${{ matrix.php }} --no-interaction
-                  php artisan sail:publish --no-interaction
-              working-directory: app
+      - name: Set up Docker Compose
+        run: |
+          docker-compose -f docker-compose.yml up -d
 
-            - name: Remove Sail
-              run: composer remove laravel/sail --dev --no-interaction -W
-              working-directory: app
+      - name: Run Migrations
+        run: |
+          docker-compose exec -T app php artisan migrate --no-interaction
 
-            - name: Start Sail Container
-              run: ../sail/bin/sail up -d --wait
-              working-directory: app
+      - name: Run Tests in Docker Container
+        run: |
+          docker-compose exec -T app ./vendor/bin/phpunit --configuration phpunit.xml --coverage-text
 
-            - name: Run Migrations
-              run: ../sail/bin/sail artisan migrate --no-interaction
-              working-directory: app
-
-            - name: Run Tests in Sail Container
-              run: ../sail/bin/sail test
-              working-directory: app
-
-            - name: Stop Sail Container
-              run: ../sail/bin/sail down
-              working-directory: app
+      - name: Stop Docker Containers
+        run: |
+          docker-compose down
