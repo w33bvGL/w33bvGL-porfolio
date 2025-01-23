@@ -1,4 +1,5 @@
 FROM php:8.2-fpm
+FROM node:22
 
 RUN apt-get update && apt-get install -y \
     apt-utils \
