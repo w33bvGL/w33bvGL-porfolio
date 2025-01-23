@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install -y \
     libssl-dev \
     pkg-config \
     libpng-dev \
+    libzip-dev \
     libonig-dev \
     libxml2-dev \
     zip \
@@ -13,10 +14,10 @@ RUN apt-get update && apt-get install -y \
     git \
     libbrotli-dev \
     curl \
-    && docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd xml \
+    && docker-php-ext-configure zip \
+    && docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd xml zip \
     && pecl install redis \
-    && pecl install mongodb \
-    && docker-php-ext-enable redis mongodb
+    && docker-php-ext-enable redis
 
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
@@ -26,7 +27,7 @@ WORKDIR /var/www
 
 COPY . .
 
-RUN composer install --no-cache
+RUN composer install
 
 RUN php artisan key:generate
 
