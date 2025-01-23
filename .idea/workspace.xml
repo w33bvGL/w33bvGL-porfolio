@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="651e934c-2293-4ffd-a3f3-32a332665829" name="Changes" comment="add prettier.yml">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    <list default="true" id="651e934c-2293-4ffd-a3f3-32a332665829" name="Changes" comment="lint prettier.yml">
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -278,7 +277,23 @@
       <option name="project" value="LOCAL" />
       <updated>1737649617991</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="add prettier.yml">
+      <option name="closed" value="true" />
+      <created>1737649833434</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1737649833434</updated>
+    </task>
+    <task id="LOCAL-00024" summary="lint prettier.yml">
+      <option name="closed" value="true" />
+      <created>1737649886800</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1737649886800</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,6 +322,7 @@
     <MESSAGE value="add pint" />
     <MESSAGE value="remove datagrip" />
     <MESSAGE value="add prettier.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="add prettier.yml" />
+    <MESSAGE value="lint prettier.yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="lint prettier.yml" />
   </component>
 </project>
