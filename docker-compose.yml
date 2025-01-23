@@ -1,6 +1,7 @@
 services:
     app:
         container_name: portfolio
+        restart: unless-stopped
         build:
             context: .
         command: >
