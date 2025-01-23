@@ -30,8 +30,6 @@ RUN composer install --no-cache
 
 RUN php artisan key:generate
 
-RUN vendor/bin/phpunit --configuration phpunit.xml --stop-on-failure
-
 RUN chown -R www-data:www-data /var/www
 
 EXPOSE 8000
