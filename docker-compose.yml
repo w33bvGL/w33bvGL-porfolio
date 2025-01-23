@@ -5,9 +5,9 @@ services:
         image: nginx:latest
         volumes:
             - ./:/var/www
-            - ./_docker/prod/nginx:/etc/nginx/conf.d
+            - ./_docker/nginx:/etc/nginx/conf.d
         ports:
-            - "49152:80"
+            - "80:80"
         depends_on:
             - app
         container_name: nginx
@@ -17,7 +17,7 @@ services:
     app:
         build:
             context: ./
-            dockerfile: ./_docker/prod/Dockerfile
+            dockerfile: Dockerfile
         volumes:
             - ./:/var/www
             - /var/www/vendor
