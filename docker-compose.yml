@@ -76,35 +76,11 @@ services:
         environment:
             - REDIS_PASSWORD=20c632fe-e134-47c9-b8a6-2cf6e160c214
 
-    cache-admin:
-        image: erikdubbelboer/phpredisadmin
-        ports:
-            - "49155:80"
-        environment:
-            REDIS_1_HOST: cache
-            REDIS_1_PORT: 6379
-        depends_on:
-            - cache
-        container_name: cache-admin
-        networks:
-            - prod-network
-
-    db-admin:
-        image: phpmyadmin/phpmyadmin
-        ports:
-            - "49156:80"
-        environment:
-            PMA_HOST: db
-            PMA_PORT: 3306
-        container_name: db-admin
-        networks:
-            - prod-network
-
     mailpit:
         image: axllent/mailpit
         ports:
-            - "49157:1025"
-            - "49158:8025"
+            - "49155:1025"
+            - "49156:8025"
         container_name: mailpit
         networks:
             - prod-network
