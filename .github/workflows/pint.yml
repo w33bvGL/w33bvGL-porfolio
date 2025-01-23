@@ -1,4 +1,4 @@
-name: Fix Code Style
+name: pint.yml
 
 on: [push]
 
