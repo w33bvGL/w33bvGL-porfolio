@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Route;
 Route::group(
     [
         'prefix' => LaravelLocalization::setLocale(),
-        'middleware' => ['localeCookieRedirect', 'localizationRedirect', 'localeViewPath', 'localeSessionRedirect'],
+        'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath', 'localeCookieRedirect'],
     ], function () {
 
         Route::view('/', 'welcome');
