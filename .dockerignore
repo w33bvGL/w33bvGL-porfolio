@@ -1,0 +1,8 @@
+.git
+.github
+
+vendor
+node_modules
+
+docker
+tmp
