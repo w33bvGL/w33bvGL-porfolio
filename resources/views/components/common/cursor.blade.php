@@ -1,3 +1,8 @@
+<?php
+
+
+?>
+
 <script type="module">
     function magicCursor() {
         const myCursor = document.querySelectorAll('.rts-cursor');
@@ -55,7 +60,7 @@
     magicCursor();
 </script>
 
-<div>
+<div class="CURSOR-COMPONENT">
     <div class="rts-cursor cursor-outer" data-default="yes" data-link="yes" data-slider="no">
         <span class="fn-cursor"></span>
     </div>
@@ -68,7 +73,6 @@
 </div>
 
 <style>
-
     .rts-cursor[data-default=no] {
         opacity: 0;
     }
@@ -246,7 +250,7 @@
         position: absolute;
         width: 2px;
         height: 12px;
-        -webkit-transform: rotate(50deg);
+        --webkit-transform: rotate(50deg);
         -ms-transform: rotate(50deg);
         transform: rotate(50deg);
         right: -20px;

@@ -1,4 +1,4 @@
-import $ from "./vendor/jquery.min.js";
+import $ from './vendor/jquery.min.js';
 window.$ = $;
 
 import axios from 'axios';
