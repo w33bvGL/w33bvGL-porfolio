@@ -1,3 +1,5 @@
+<!-- ./pages/welcome.blade.php -->
+
 @extends('layouts.default')
 
 @section('page-header')

@@ -1,3 +1,5 @@
+<!-- ./layouts/default.blade.php -->
+
 @extends('app')
 
 @section('header')

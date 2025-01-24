@@ -1,3 +1,5 @@
+<!-- ./app.blade.php -->
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -6,6 +8,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     @yield('header')
+
+    <title></title>
 
     <script src="{{ asset('storage/gsap.js') }}"></script>
     <script src="{{ asset('storage/splitText.js') }}"></script>
