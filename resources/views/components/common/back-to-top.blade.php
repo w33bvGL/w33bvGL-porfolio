@@ -104,12 +104,12 @@
         .progress-wrap:hover::after {
             opacity: 1;
             content: "\f062";
-            border: 0px solid var(--color-primary);
+            border: 0 solid var(--color-primary);
         }
 
         .progress-wrap::before {
             position: absolute;
-            font-family: var(--font-3);
+            font-family: var(--font-3), sans-serif;
             content: "\f062";
             text-align: center;
             line-height: 46px;
