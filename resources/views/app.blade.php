@@ -9,9 +9,10 @@
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="">
+<body class="body">
 
 @include('components.common.cursor')
+@include('components.common.back-to-top')
 
 <div id="app">
     @yield('content')
@@ -22,7 +23,7 @@
 
 <style>
     body {
-        background-color: #0a5665;
+        background-color: cornflowerblue;
     }
 
     #app {
