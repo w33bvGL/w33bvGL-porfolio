@@ -1,6 +1,5 @@
 <!-- ./components/common/cursor.blade.php -->
 
-
 <script type="module">
     function magicCursor() {
         const myCursor = document.querySelectorAll('.rts-cursor');

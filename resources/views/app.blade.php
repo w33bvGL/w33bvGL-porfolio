@@ -24,6 +24,3 @@
 
 </body>
 </html>
-
-<style>
-</style>
