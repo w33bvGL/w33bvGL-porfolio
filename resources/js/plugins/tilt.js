@@ -2,7 +2,6 @@
 
 (function ($) {
     $.fn.tilt = function (options) {
-
         /**
          * RequestAnimationFrame
          */
@@ -20,7 +19,8 @@
             $(this).on('mousemove', mouseMove);
             $(this).on('mouseenter', mouseEnter);
             if (this.settings.reset) $(this).on('mouseleave', mouseLeave);
-            if (this.settings.glare) $(window).on('resize', updateGlareSize.bind(_this));
+            if (this.settings.glare)
+                $(window).on('resize', updateGlareSize.bind(_this));
         };
 
         /**
@@ -30,11 +30,21 @@
             var _this2 = this;
 
             if (this.timeout !== undefined) clearTimeout(this.timeout);
-            $(this).css({ 'transition': this.settings.speed + 'ms ' + this.settings.easing });
-            if (this.settings.glare) this.glareElement.css({ 'transition': 'opacity ' + this.settings.speed + 'ms ' + this.settings.easing });
+            $(this).css({
+                transition: this.settings.speed + 'ms ' + this.settings.easing,
+            });
+            if (this.settings.glare)
+                this.glareElement.css({
+                    transition:
+                        'opacity ' +
+                        this.settings.speed +
+                        'ms ' +
+                        this.settings.easing,
+                });
             this.timeout = setTimeout(function () {
-                $(_this2).css({ 'transition': '' });
-                if (_this2.settings.glare) _this2.glareElement.css({ 'transition': '' });
+                $(_this2).css({ transition: '' });
+                if (_this2.settings.glare)
+                    _this2.glareElement.css({ transition: '' });
             }, this.settings.speed);
         };
 
@@ -47,7 +57,7 @@
             setTransition.call(this);
 
             // Trigger change event
-            $(this).trigger("tilt.mouseEnter");
+            $(this).trigger('tilt.mouseEnter');
         };
 
         /**
@@ -55,10 +65,10 @@
          * @returns {{x: *, y: *}}
          */
         var getMousePositions = function getMousePositions(event) {
-            if (typeof event === "undefined") {
+            if (typeof event === 'undefined') {
                 event = {
                     pageX: $(this).offset().left + $(this).outerWidth() / 2,
-                    pageY: $(this).offset().top + $(this).outerHeight() / 2
+                    pageY: $(this).offset().top + $(this).outerHeight() / 2,
                 };
             }
             return { x: event.pageX, y: event.pageY };
@@ -81,7 +91,7 @@
             requestTick.call(this);
 
             // Trigger change event
-            $(this).trigger("tilt.mouseLeave");
+            $(this).trigger('tilt.mouseLeave');
         };
 
         /**
@@ -97,12 +107,29 @@
             var percentageX = (this.mousePositions.x - left) / width;
             var percentageY = (this.mousePositions.y - top) / height;
             // x or y position inside instance / width of instance = percentage of position inside instance * the max tilt value
-            var tiltX = (this.settings.maxTilt / 2 - percentageX * this.settings.maxTilt).toFixed(2);
-            var tiltY = (percentageY * this.settings.maxTilt - this.settings.maxTilt / 2).toFixed(2);
+            var tiltX = (
+                this.settings.maxTilt / 2 -
+                percentageX * this.settings.maxTilt
+            ).toFixed(2);
+            var tiltY = (
+                percentageY * this.settings.maxTilt -
+                this.settings.maxTilt / 2
+            ).toFixed(2);
             // angle
-            var angle = Math.atan2(this.mousePositions.x - (left + width / 2), -(this.mousePositions.y - (top + height / 2))) * (180 / Math.PI);
+            var angle =
+                Math.atan2(
+                    this.mousePositions.x - (left + width / 2),
+                    -(this.mousePositions.y - (top + height / 2)),
+                ) *
+                (180 / Math.PI);
             // Return x & y tilt values
-            return { tiltX: tiltX, tiltY: tiltY, 'percentageX': percentageX * 100, 'percentageY': percentageY * 100, angle: angle };
+            return {
+                tiltX: tiltX,
+                tiltY: tiltY,
+                percentageX: percentageX * 100,
+                percentageY: percentageY * 100,
+                angle: angle,
+            };
         };
 
         /**
@@ -113,27 +140,65 @@
 
             if (this.reset) {
                 this.reset = false;
-                $(this).css('transform', 'perspective(' + this.settings.perspective + 'px) rotateX(0deg) rotateY(0deg)');
+                $(this).css(
+                    'transform',
+                    'perspective(' +
+                        this.settings.perspective +
+                        'px) rotateX(0deg) rotateY(0deg)',
+                );
 
                 // Rotate glare if enabled
                 if (this.settings.glare) {
-                    this.glareElement.css('transform', 'rotate(180deg) translate(-50%, -50%)');
+                    this.glareElement.css(
+                        'transform',
+                        'rotate(180deg) translate(-50%, -50%)',
+                    );
                     this.glareElement.css('opacity', '0');
                 }
 
                 return;
             } else {
-                $(this).css('transform', 'perspective(' + this.settings.perspective + 'px) rotateX(' + (this.settings.axis === 'x' ? 0 : this.transforms.tiltY) + 'deg) rotateY(' + (this.settings.axis === 'y' ? 0 : this.transforms.tiltX) + 'deg) scale3d(' + this.settings.scale + ',' + this.settings.scale + ',' + this.settings.scale + ')');
+                $(this).css(
+                    'transform',
+                    'perspective(' +
+                        this.settings.perspective +
+                        'px) rotateX(' +
+                        (this.settings.axis === 'x'
+                            ? 0
+                            : this.transforms.tiltY) +
+                        'deg) rotateY(' +
+                        (this.settings.axis === 'y'
+                            ? 0
+                            : this.transforms.tiltX) +
+                        'deg) scale3d(' +
+                        this.settings.scale +
+                        ',' +
+                        this.settings.scale +
+                        ',' +
+                        this.settings.scale +
+                        ')',
+                );
 
                 // Rotate glare if enabled
                 if (this.settings.glare) {
-                    this.glareElement.css('transform', 'rotate(' + this.transforms.angle + 'deg) translate(-50%, -50%)');
-                    this.glareElement.css('opacity', '' + this.transforms.percentageY * this.settings.maxGlare / 100);
+                    this.glareElement.css(
+                        'transform',
+                        'rotate(' +
+                            this.transforms.angle +
+                            'deg) translate(-50%, -50%)',
+                    );
+                    this.glareElement.css(
+                        'opacity',
+                        '' +
+                            (this.transforms.percentageY *
+                                this.settings.maxGlare) /
+                                100,
+                    );
                 }
             }
 
             // Trigger change event
-            $(this).trigger("change", [this.transforms]);
+            $(this).trigger('change', [this.transforms]);
 
             this.ticking = false;
         };
@@ -147,41 +212,44 @@
             // If option pre-render is enabled we assume all html/css is present for an optimal glare effect.
             if (!glarePrerender)
                 // Create glare element
-                $(this).append('<div class="js-tilt-glare"><div class="js-tilt-glare-inner"></div></div>');
+                $(this).append(
+                    '<div class="js-tilt-glare"><div class="js-tilt-glare-inner"></div></div>',
+                );
 
             // Store glare selector if glare is enabled
-            this.glareElementWrapper = $(this).find(".js-tilt-glare");
-            this.glareElement = $(this).find(".js-tilt-glare-inner");
+            this.glareElementWrapper = $(this).find('.js-tilt-glare');
+            this.glareElement = $(this).find('.js-tilt-glare-inner');
 
             // Remember? We assume all css is already set, so just return
             if (glarePrerender) return;
 
             // Abstracted re-usable glare styles
             var stretch = {
-                'position': 'absolute',
-                'top': '0',
-                'left': '0',
-                'width': '100%',
-                'height': '100%'
+                position: 'absolute',
+                top: '0',
+                left: '0',
+                width: '100%',
+                height: '100%',
             };
 
             // Style glare wrapper
             this.glareElementWrapper.css(stretch).css({
-                'overflow': 'hidden'
+                overflow: 'hidden',
             });
 
             // Style glare element
             this.glareElement.css({
-                'position': 'absolute',
-                'top': '50%',
-                'left': '50%',
+                position: 'absolute',
+                top: '50%',
+                left: '50%',
                 'pointer-events': 'none',
-                'background-image': 'linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)',
-                'width': '' + $(this).outerWidth() * 2,
-                'height': '' + $(this).outerWidth() * 2,
-                'transform': 'rotate(180deg) translate(-50%, -50%)',
+                'background-image':
+                    'linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)',
+                width: '' + $(this).outerWidth() * 2,
+                height: '' + $(this).outerWidth() * 2,
+                transform: 'rotate(180deg) translate(-50%, -50%)',
                 'transform-origin': '0% 0%',
-                'opacity': '0'
+                opacity: '0',
             });
         };
 
@@ -190,8 +258,8 @@
          */
         var updateGlareSize = function updateGlareSize() {
             this.glareElement.css({
-                'width': '' + $(this).outerWidth() * 2,
-                'height': '' + $(this).outerWidth() * 2
+                width: '' + $(this).outerWidth() * 2,
+                height: '' + $(this).outerWidth() * 2,
             });
         };
 
@@ -201,7 +269,7 @@
         $.fn.tilt.destroy = function () {
             $(this).each(function () {
                 $(this).find('.js-tilt-glare').remove();
-                $(this).css({ 'will-change': '', 'transform': '' });
+                $(this).css({ 'will-change': '', transform: '' });
                 $(this).off('mousemove mouseenter mouseleave');
             });
         };
@@ -239,18 +307,41 @@
              * Can be set trough data attributes or as parameter.
              * @type {*}
              */
-            this.settings = $.extend({
-                maxTilt: $(this).is('[data-tilt-max]') ? $(this).data('tilt-max') : 20,
-                perspective: $(this).is('[data-tilt-perspective]') ? $(this).data('tilt-perspective') : 300,
-                easing: $(this).is('[data-tilt-easing]') ? $(this).data('tilt-easing') : 'cubic-bezier(.03,.98,.52,.99)',
-                scale: $(this).is('[data-tilt-scale]') ? $(this).data('tilt-scale') : '1',
-                speed: $(this).is('[data-tilt-speed]') ? $(this).data('tilt-speed') : '400',
-                transition: $(this).is('[data-tilt-transition]') ? $(this).data('tilt-transition') : true,
-                axis: $(this).is('[data-tilt-axis]') ? $(this).data('tilt-axis') : null,
-                reset: $(this).is('[data-tilt-reset]') ? $(this).data('tilt-reset') : true,
-                glare: $(this).is('[data-tilt-glare]') ? $(this).data('tilt-glare') : false,
-                maxGlare: $(this).is('[data-tilt-maxglare]') ? $(this).data('tilt-maxglare') : 1
-            }, options);
+            this.settings = $.extend(
+                {
+                    maxTilt: $(this).is('[data-tilt-max]')
+                        ? $(this).data('tilt-max')
+                        : 20,
+                    perspective: $(this).is('[data-tilt-perspective]')
+                        ? $(this).data('tilt-perspective')
+                        : 300,
+                    easing: $(this).is('[data-tilt-easing]')
+                        ? $(this).data('tilt-easing')
+                        : 'cubic-bezier(.03,.98,.52,.99)',
+                    scale: $(this).is('[data-tilt-scale]')
+                        ? $(this).data('tilt-scale')
+                        : '1',
+                    speed: $(this).is('[data-tilt-speed]')
+                        ? $(this).data('tilt-speed')
+                        : '400',
+                    transition: $(this).is('[data-tilt-transition]')
+                        ? $(this).data('tilt-transition')
+                        : true,
+                    axis: $(this).is('[data-tilt-axis]')
+                        ? $(this).data('tilt-axis')
+                        : null,
+                    reset: $(this).is('[data-tilt-reset]')
+                        ? $(this).data('tilt-reset')
+                        : true,
+                    glare: $(this).is('[data-tilt-glare]')
+                        ? $(this).data('tilt-glare')
+                        : false,
+                    maxGlare: $(this).is('[data-tilt-maxglare]')
+                        ? $(this).data('tilt-maxglare')
+                        : 1,
+                },
+                options,
+            );
 
             this.init = function () {
                 // Store settings

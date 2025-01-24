@@ -4,7 +4,7 @@
  *
  * Template : Bizup - Creative Agency & Portfolio HTML Template
  * Author : reacthemes
- * Author URI : https://reactheme.com/ 
+ * Author URI : https://reactheme.com/
  *
  * -----------------------------------------------------------------------------
  *
@@ -28,10 +28,10 @@
 
         // Submit the form using AJAX.
         $.ajax({
-                type: 'POST',
-                url: $(form).attr('action'),
-                data: formData
-            })
+            type: 'POST',
+            url: $(form).attr('action'),
+            data: formData,
+        })
             .done(function (response) {
                 // Make sure that the formMessages div has the 'success' class.
                 $(formMessages).removeClass('error');
@@ -52,9 +52,10 @@
                 if (data.responseText !== '') {
                     $(formMessages).text(data.responseText);
                 } else {
-                    $(formMessages).text('Oops! An error occured and your message could not be sent.');
+                    $(formMessages).text(
+                        'Oops! An error occured and your message could not be sent.',
+                    );
                 }
             });
     });
-
 })(jQuery);
