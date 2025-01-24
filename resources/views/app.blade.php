@@ -5,15 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ __('title.title', ['APP_NAME' => config('app.name')] ) }}</title>
+    @yield('header')
+
+    <script src="{{ asset('storage/gsap.js') }}"></script>
+    <script src="{{ asset('storage/splitText.js') }}"></script>
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="font-sans antialiased">
+<body class="body">
 
+@include('components.common.loading')
 @include('components.common.cursor')
+@include('components.common.back-to-top')
 
-<div id="app" class="min-h-screen bg-black">
+<div id="app">
     @yield('content')
 </div>
 

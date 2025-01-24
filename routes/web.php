@@ -19,5 +19,3 @@ Route::group([
         ->middleware(['auth'])
         ->name('profile');
 });
-
-require __DIR__.'/auth.php';
