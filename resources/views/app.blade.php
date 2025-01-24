@@ -10,7 +10,7 @@
 </head>
 <body class="font-sans antialiased">
 
-<div id="app" class="min-h-screen dark:bg-gray-900 bg-gray-100 ">
+<div id="app" class="min-h-screen dark:bg-red-200">
     @yield('content')
 </div>
 
