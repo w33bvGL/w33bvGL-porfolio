@@ -4,13 +4,12 @@ declare(strict_types=1);
 
 use Illuminate\Support\Facades\Route;
 
-Route::group(
-    [
+Route::group([
         'prefix' => LaravelLocalization::setLocale(),
         'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath', 'localeCookieRedirect'],
     ], function () {
 
-        Route::view('/', 'welcome');
+        Route::view('/', 'pages.welcome');
 
         Route::view('dashboard', 'dashboard')
             ->middleware(['auth', 'verified'])
