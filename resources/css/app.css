@@ -101,6 +101,7 @@ body {
         overflow: hidden;
     }
 }
+
 body::before {
     content: '';
     width: 100%;
@@ -111,7 +112,6 @@ body::before {
     z-index: -1;
     opacity: 0.05;
 }
-
 
 .buttons-main-wrapper-elements {
     display: flex;
