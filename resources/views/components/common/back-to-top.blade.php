@@ -1,3 +1,5 @@
+<!-- ./components/common/back-to-top.blade.php -->
+
 <script type="module">
     function backToTopInit() {
         $(document).ready(function () {
