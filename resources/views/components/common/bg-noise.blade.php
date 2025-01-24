@@ -21,6 +21,7 @@
             pointer-events: none;
             overflow: hidden;
         }
+
         .bg-noise::before {
             position: absolute;
             content: "";
@@ -30,7 +31,7 @@
             height: calc(100% + 20rem);
             z-index: -1;
             pointer-events: none;
-            background-image: url('{{ Vite::asset("resources/assets/images/banner/shape-noise.png") }}');
+            background-image: url('{{ Vite::asset("resources/images/banner/shape-noise.png") }}');
             background-position: 50%;
             animation: BgNoise 1s steps(2) infinite;
         }
