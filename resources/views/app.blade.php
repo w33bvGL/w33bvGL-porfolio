@@ -7,8 +7,8 @@
 
     <title>{{ __('title.title', ['APP_NAME' => config('app.name')] ) }}</title>
 
-    <script src="/storage/gsap.js"></script>
-    <script src="/storage/splitText.js"></script>
+    <script src="{{ asset('storage/gsap.js') }}"></script>
+    <script src="{{ asset('storage/splitText.js') }}"></script>
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
@@ -26,7 +26,4 @@
 </html>
 
 <style>
-    #app {
-        min-height: 200vh;
-    }
 </style>

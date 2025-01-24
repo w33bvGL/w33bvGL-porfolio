@@ -84,6 +84,7 @@ body {
     position: relative;
     overflow-x: hidden;
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     body {
         overflow: hidden;
@@ -109,3 +110,75 @@ body::before {
     z-index: -1;
     opacity: 0.05;
 }
+
+
+.buttons-main-wrapper-elements {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.buttons-main-wrapper-elements .plus-btn {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 12px;
+}
+.buttons-main-wrapper-elements .plus-btn.btn-md {
+    font-size: 18px;
+}
+.buttons-main-wrapper-elements .plus-btn.btn-lg {
+    font-size: 20px;
+}
+.buttons-main-wrapper-elements .plus-btn.btn-xl {
+    font-size: 22px;
+}
+
+.title-elements-parent {
+    font-size: 70px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .title-elements-parent {
+        font-size: 54px;
+        line-height: 1.2;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .title-elements-parent {
+        font-size: 46px;
+        line-height: 1.2;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .title-elements-parent {
+        font-size: 36px;
+        line-height: 1.2;
+    }
+}
+
+.bg-white .title-elements-parent {
+    color: #141414;
+    font-size: 70px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .bg-white .title-elements-parent {
+        font-size: 54px;
+        line-height: 1.2;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .bg-white .title-elements-parent {
+        font-size: 46px;
+        line-height: 1.2;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .bg-white .title-elements-parent {
+        font-size: 36px;
+        line-height: 1.2;
+    }
+}
+
