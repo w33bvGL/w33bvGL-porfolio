@@ -9,13 +9,23 @@
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="font-sans antialiased">
+<body class="">
 
 @include('components.common.cursor')
 
-<div id="app" class="min-h-screen bg-black">
+<div id="app">
     @yield('content')
 </div>
 
 </body>
 </html>
+
+<style>
+    body {
+        background-color: #0a5665;
+    }
+
+    #app {
+        min-height: 200vh;
+    }
+</style>
