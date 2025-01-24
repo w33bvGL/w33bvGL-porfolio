@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ __('title.title', ['APP_NAME' => config('app.name')] ) }}</title>
+    @yield('header')
 
     <script src="{{ asset('storage/gsap.js') }}"></script>
     <script src="{{ asset('storage/splitText.js') }}"></script>

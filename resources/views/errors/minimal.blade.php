@@ -1,4 +1,10 @@
+<!-- ./errors/minimal.blade.php -->
+
 @extends('layouts.default')
+
+@section('page-header')
+    <meta name="robots" content="noindex, nofollow">
+@endsection
 
 @section('page-content')
     <div class="rts-light-mood">

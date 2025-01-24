@@ -1,8 +1,11 @@
 @extends('app')
 
-@section('content')
-    <div class="container mx-auto">
+@section('header')
+    @yield('page-header')
+@endsection
 
+@section('content')
+    <div>
         <main>
             @yield('page-content')
         </main>
