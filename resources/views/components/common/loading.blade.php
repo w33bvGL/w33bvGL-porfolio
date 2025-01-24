@@ -54,9 +54,8 @@
                         },
                         "-=1"
                     );
-                    // Your GSAP animation code ends here
+
                     $("#loading-screen").fadeOut(500, function () {
-                        // After the animation completes, remove the loading screen
                         $(this).remove();
                     });
                     clearInterval(LoadingCounter);
