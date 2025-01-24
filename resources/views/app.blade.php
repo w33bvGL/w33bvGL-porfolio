@@ -22,10 +22,6 @@
 </html>
 
 <style>
-    body {
-        background-color: cornflowerblue;
-    }
-
     #app {
         min-height: 200vh;
     }
