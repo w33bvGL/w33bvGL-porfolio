@@ -7,10 +7,13 @@
 
     <title>{{ __('title.title', ['APP_NAME' => config('app.name')] ) }}</title>
 
+    <script src="/storage/gsap.min.js"></script>
+
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="body">
 
+@include('components.common.loading')
 @include('components.common.cursor')
 @include('components.common.back-to-top')
 
