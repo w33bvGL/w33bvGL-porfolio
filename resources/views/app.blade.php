@@ -19,6 +19,7 @@
 <body class="body">
 
 @include('components.common.loading')
+@include('components.common.bg-noise')
 @include('components.common.cursor')
 @include('components.common.back-to-top')
 

@@ -74,6 +74,7 @@ html {
 }
 
 body {
+    min-height: 100vh;
     font-size: var(--font-size-b1);
     line-height: var(--line-height-b1);
     -webkit-font-smoothing: antialiased;
