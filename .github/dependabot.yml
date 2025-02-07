@@ -10,7 +10,7 @@ updates:
     schedule:
       interval: 'daily'
 
-  - package-ecosystem: 'pnpm'
+  - package-ecosystem: 'npm'
     directory: '/front-end/'
     schedule:
       interval: 'daily'
