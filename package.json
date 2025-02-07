@@ -13,7 +13,7 @@
         "postcss": "^8.4.31",
         "prettier": "^3.4.2",
         "prettier-plugin-blade": "^2.1.19",
-        "vite": "^6.0"
+        "vite": "^6.1"
     },
     "dependencies": {
         "jquery": "^3.7.1"
