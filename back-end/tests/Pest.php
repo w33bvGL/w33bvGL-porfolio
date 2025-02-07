@@ -13,9 +13,9 @@ declare(strict_types=1);
 |
 */
 
-pest()->extend(Tests\TestCase::class)
- // ->use(Illuminate\Foundation\Testing\RefreshDatabase::class)
-    ->in('Feature');
+// pest()->extend(Tests\TestCase::class)
+// // ->use(Illuminate\Foundation\Testing\RefreshDatabase::class)
+//    ->in('Feature');
 
 /*
 |--------------------------------------------------------------------------
@@ -29,7 +29,7 @@ pest()->extend(Tests\TestCase::class)
 */
 
 expect()->extend('toBeOne', function () {
-    return expect(1)->toBe(1);
+    return $this->toBe(1);
 });
 
 /*
