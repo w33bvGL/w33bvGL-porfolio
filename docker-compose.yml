@@ -1,6 +1,7 @@
 services:
   front-end:
     container_name: w33bv.gl-front-end
+    restart: unless-stopped
     build:
       context: ./front-end
       dockerfile: ./.docker/Dockerfile
@@ -12,6 +13,29 @@ services:
       npm run preview"
     volumes:
       - .:/app
+    networks:
+      - w33bv.gl
+
+
+  app:
+    container_name: w33bv.gl-back-end
+    restart: unless-stopped
+    build:
+      context: ./back-end
+      dockerfile: ./docker/Dockerfile
+    command: >
+      sh -c "./_docker/wait-for-it.sh redis 6379 -- echo 'Redis is available' &&
+             ./_docker/wait-for-it.sh mysql 3306 -- echo 'MySQL is available' &&
+             composer install &&
+             ./vendor/bin/pint &&
+             vendor/bin/phpunit --configuration phpunit.xml --stop-on-failure &&
+             vendor/bin/phpstan analyse --memory-limit=512M &&
+             php artisan storage:link &&
+             php artisan serve --host=0.0.0.0 --port=8000"
+    ports:
+      - '49153:8000'
+    volumes:
+      - ./:/var/www
     networks:
       - w33bv.gl
 
