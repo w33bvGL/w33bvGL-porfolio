@@ -1,0 +1,20 @@
+services:
+  front-end:
+    container_name: w33bv.gl-front-end
+    build:
+      context: ./front-end
+      dockerfile: ./.docker/Dockerfile
+    ports:
+      - "49152:3000"
+    command: >
+      sh -c "npm install --production=false &&
+      npm run build &&
+      npm run preview"
+    volumes:
+      - .:/app
+    networks:
+      - w33bv.gl
+
+networks:
+  w33bv.gl:
+    driver: bridge
