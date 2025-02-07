@@ -5,209 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="651e934c-2293-4ffd-a3f3-32a332665829" name="Changes" comment="fix app.css">
-      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/CONTRIBUTING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/ISSUNE_TEMPLATE/1_Bug_report.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/ISSUNE_TEMPLATE/config.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/SECURITY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/SUPPORT.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/dependabot.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/issues.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/pint.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/prettier.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/pull-requests.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/shellcheck.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/static-analysis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/tests.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/unit.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/update-changelog.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.phpstorm.meta.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.prettierignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_docker/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_docker/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_docker/my.cnf/my.cnf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_docker/nginx/nginx.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_docker/php.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_docker/wait-for-it.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ide_helper.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ide_helper_models.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Language.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/VoltServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/artisan" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/app.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/cache/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/providers.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/cache.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/ide-helper.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/laravellocalization.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/livewire.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/logging.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/mail.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/queue.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/session.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/tinker.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/0001_01_01_000000_create_users_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/0001_01_01_000002_create_jobs_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2025_01_23_184616_add_locales_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/LanguageSeeder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.dev.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.prod.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/8.0/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/8.0/php.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/8.0/start-container" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/8.0/supervisord.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/8.1/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/8.1/php.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/8.1/start-container" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/8.1/supervisord.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/8.2/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/8.2/php.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/8.2/start-container" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/8.2/supervisord.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/8.3/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/8.3/php.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/8.3/start-container" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/8.3/supervisord.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/8.4/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/8.4/php.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/8.4/start-container" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/8.4/supervisord.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/mariadb/create-testing-database.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/mysql/create-testing-database.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/pgsql/create-testing-database.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lang/en/auth.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lang/en/pagination.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lang/en/passwords.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lang/en/title.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lang/en/validation.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lang/hy/auth.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lang/hy/pagination.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lang/hy/passwords.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lang/hy/title.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lang/hy/validation.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lang/ru/auth.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lang/ru/pagination.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lang/ru/passwords.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lang/ru/title.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lang/ru/validation.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpstan.neon" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpstan.neon.dist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/postcss.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/SECURITY.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/livewire/livewire.esm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/livewire/livewire.esm.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/livewire/livewire.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/livewire/livewire.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/livewire/livewire.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/livewire/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/plugins/animate.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/plugins/fontawesome-6.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/plugins/swiper.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/plugins/unicons.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/vendor/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/vendor/metismenu.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fonts/fa-brands-400.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fonts/fa-brands-400.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fonts/fa-duotone-900.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fonts/fa-duotone-900.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fonts/fa-light-300.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fonts/fa-light-300.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fonts/fa-regular-400.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fonts/fa-regular-400.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fonts/fa-solid-900.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fonts/fa-solid-900.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fonts/fa-thin-100.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fonts/fa-thin-100.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fonts/fa-v4compatibility.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fonts/fa-v4compatibility.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/banner/01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/banner/shape-noise.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/plugins/animate-scrollmagic.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/plugins/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/plugins/contact.form.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/plugins/counterup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/plugins/imagesloaded.pkgd.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/plugins/isotop.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/plugins/resizer-sensor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/plugins/rule-plugins.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/plugins/scrollmagic.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/plugins/scrolltiger.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/plugins/scrolltoplugin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/plugins/smoothscroll-varticle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/plugins/smoothscroll.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/plugins/splittext.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/plugins/sticky-sidebar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/plugins/swiper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/plugins/tilt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/vendor/gsap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/vendor/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/vendor/js.cookie.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/vendor/metismenu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/vendor/waw.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/vendor/waypoint.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/app.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/common/back-to-top.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/common/bg-noise.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/common/cursor.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/common/loading.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/errors/401.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/errors/402.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/errors/403.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/errors/404.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/errors/419.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/errors/429.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/errors/500.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/errors/503.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/errors/minimal.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/default.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/welcome.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/console.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sail" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/private/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/public/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/cache/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/testing/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/logs/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/TestCase.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vite.config.js" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -263,7 +69,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "dev",
-    "last_opened_file_path": "D:/_Projects/w33bvGL-porfolio/resources/assets",
+    "last_opened_file_path": "D:/_Projects/w33bvGL-porfolio",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -277,11 +83,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\_Projects\w33bvGL-porfolio" />
       <recent name="D:\_Projects\w33bvGL-porfolio\resources\assets" />
       <recent name="D:\_Projects\w33bvGL-porfolio\resources\images" />
       <recent name="D:\_Projects\w33bvGL-porfolio\resources\views\components\common" />
       <recent name="D:\_Projects\w33bvGL-porfolio\storage\app\public" />
-      <recent name="D:\_Projects\w33bvGL-porfolio\public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\_Projects\w33bvGL-porfolio\resources" />
@@ -320,6 +126,7 @@
       <workItem from="1737792795612" duration="44000" />
       <workItem from="1738943640003" duration="8000" />
       <workItem from="1738943654106" duration="2854000" />
+      <workItem from="1738946860735" duration="275000" />
     </task>
     <task id="LOCAL-00033" summary="fix static analysis">
       <option name="closed" value="true" />
