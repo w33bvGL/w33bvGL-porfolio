@@ -19,7 +19,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN pnpm store prune
+RUN rm -rf node_modules && pnpm store prune
 
 RUN pnpm install --prod=false
 

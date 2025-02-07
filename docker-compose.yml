@@ -1,31 +1,28 @@
 services:
   front-end:
     container_name: w33bv.gl-front-end
-    restart: unless-stopped
     build:
       context: ./front-end
       dockerfile: ./.docker/Dockerfile
     ports:
-      - "49152:3000"
+      - "${APP_FRONT_END_PORT}:3000"
     command: >
       sh -c "npm install --production=false &&
-      npm run build &&
-      npm run preview"
+      pnpm run build &&
+      pnpm run preview"
     volumes:
-      - .:/app
+      - ./:/app
     networks:
       - w33bv.gl
 
-
-  app:
+  back-end:
     container_name: w33bv.gl-back-end
-    restart: unless-stopped
     build:
       context: ./back-end
-      dockerfile: ./docker/Dockerfile
+      dockerfile: ./.docker/Dockerfile
     command: >
-      sh -c "./_docker/wait-for-it.sh redis 6379 -- echo 'Redis is available' &&
-             ./_docker/wait-for-it.sh mysql 3306 -- echo 'MySQL is available' &&
+      sh -c "./.docker/wait-for-it.sh redis 6379 -- echo 'Redis is available' &&
+             ./.docker/wait-for-it.sh mysql 3306 -- echo 'MySQL is available' &&
              composer install &&
              ./vendor/bin/pint &&
              vendor/bin/phpunit --configuration phpunit.xml --stop-on-failure &&
