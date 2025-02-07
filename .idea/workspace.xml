@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="651e934c-2293-4ffd-a3f3-32a332665829" name="Changes" comment="add editorconfig file">
-      <change afterPath="$PROJECT_DIR$/.docker/back-end/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.docker/front-end/Dockerfile" afterDir="false" />
+    <list default="true" id="651e934c-2293-4ffd-a3f3-32a332665829" name="Changes" comment="add config files">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,15 +129,7 @@
       <workItem from="1738943640003" duration="8000" />
       <workItem from="1738943654106" duration="2854000" />
       <workItem from="1738946860735" duration="1483000" />
-      <workItem from="1738948640525" duration="364000" />
-    </task>
-    <task id="LOCAL-00035" summary="add dockerignore">
-      <option name="closed" value="true" />
-      <created>1737653447516</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1737653447516</updated>
+      <workItem from="1738948640525" duration="429000" />
     </task>
     <task id="LOCAL-00036" summary="remove phpunit">
       <option name="closed" value="true" />
@@ -526,14 +515,21 @@
       <option name="project" value="LOCAL" />
       <updated>1738947252060</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="add config files">
+      <option name="closed" value="true" />
+      <created>1738949069666</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1738949069667</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix web php" />
     <MESSAGE value="add js scripts" />
     <MESSAGE value="add new package lock" />
     <MESSAGE value="remove test files" />
@@ -558,7 +554,8 @@
     <MESSAGE value="fix app.css" />
     <MESSAGE value="add compose files" />
     <MESSAGE value="add editorconfig file" />
-    <option name="LAST_COMMIT_MESSAGE" value="add editorconfig file" />
+    <MESSAGE value="add config files" />
+    <option name="LAST_COMMIT_MESSAGE" value="add config files" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

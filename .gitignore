@@ -1,6 +1,8 @@
 tmp/mysql
 tmp/redis
 
+.idea
+
 .env
 docker-compose.yml
 
