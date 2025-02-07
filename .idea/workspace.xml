@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="651e934c-2293-4ffd-a3f3-32a332665829" name="Changes" comment="fix app.css">
-      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LICENSE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+    <list default="true" id="651e934c-2293-4ffd-a3f3-32a332665829" name="Changes" comment="add editorconfig file">
+      <change afterPath="$PROJECT_DIR$/.docker/back-end/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.docker/front-end/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,13 +16,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
-    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <pharConfigPath>$PROJECT_DIR$/back-end/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -64,44 +60,53 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "dev",
-    "last_opened_file_path": "D:/_Projects/w33bvGL-porfolio",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\Администратор\\AppData\\Roaming\\npm\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "configurable.tailwindcss",
-    "ts.external.directory.path": "D:\\PhpStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/_Projects/w33bvGL-porfolio/back-end&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\Администратор\\AppData\\Roaming\\npm\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.tailwindcss&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\PhpStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\_Projects\w33bvGL-porfolio\back-end" />
       <recent name="D:\_Projects\w33bvGL-porfolio" />
       <recent name="D:\_Projects\w33bvGL-porfolio\resources\assets" />
       <recent name="D:\_Projects\w33bvGL-porfolio\resources\images" />
       <recent name="D:\_Projects\w33bvGL-porfolio\resources\views\components\common" />
-      <recent name="D:\_Projects\w33bvGL-porfolio\storage\app\public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\_Projects\w33bvGL-porfolio\front-end" />
+      <recent name="D:\_Projects\w33bvGL-porfolio\back-end" />
       <recent name="D:\_Projects\w33bvGL-porfolio\resources" />
       <recent name="D:\_Projects\w33bvGL-porfolio\resources\assets" />
       <recent name="D:\_Projects\w33bvGL-porfolio\storage\app\public" />
-      <recent name="D:\_Projects\w33bvGL-porfolio\resources\views\components\common" />
-      <recent name="D:\_Projects\w33bvGL-porfolio\.github" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/w33bvGL-porfolio/front-end/dist/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="Main" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner configuration_file="$PROJECT_DIR$/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -126,23 +131,8 @@
       <workItem from="1737792795612" duration="44000" />
       <workItem from="1738943640003" duration="8000" />
       <workItem from="1738943654106" duration="2854000" />
-      <workItem from="1738946860735" duration="275000" />
-    </task>
-    <task id="LOCAL-00033" summary="fix static analysis">
-      <option name="closed" value="true" />
-      <created>1737651397486</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1737651397486</updated>
-    </task>
-    <task id="LOCAL-00034" summary="tests">
-      <option name="closed" value="true" />
-      <created>1737651480089</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1737651480089</updated>
+      <workItem from="1738946860735" duration="1483000" />
+      <workItem from="1738948640525" duration="364000" />
     </task>
     <task id="LOCAL-00035" summary="add dockerignore">
       <option name="closed" value="true" />
@@ -520,15 +510,29 @@
       <option name="project" value="LOCAL" />
       <updated>1737748484453</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="add compose files">
+      <option name="closed" value="true" />
+      <created>1738947163248</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1738947163248</updated>
+    </task>
+    <task id="LOCAL-00083" summary="add editorconfig file">
+      <option name="closed" value="true" />
+      <created>1738947252060</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1738947252060</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add bootsrap files" />
-    <MESSAGE value="prettierc" />
     <MESSAGE value="fix web php" />
     <MESSAGE value="add js scripts" />
     <MESSAGE value="add new package lock" />
@@ -552,7 +556,9 @@
     <MESSAGE value="add noise" />
     <MESSAGE value="add noisse fix and add images" />
     <MESSAGE value="fix app.css" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix app.css" />
+    <MESSAGE value="add compose files" />
+    <MESSAGE value="add editorconfig file" />
+    <option name="LAST_COMMIT_MESSAGE" value="add editorconfig file" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
