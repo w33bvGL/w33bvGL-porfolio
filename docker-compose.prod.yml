@@ -36,6 +36,57 @@ services:
     networks:
       - w33bv.gl
 
+  mysql:
+    container_name: mysql
+    image: mysql:8.0
+    environment:
+      MYSQL_DATABASE: ${MYSQL_ROOT_DATABASE}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+    ports:
+      - "3306:3306"
+    command: [ "--default-authentication-plugin=mysql_native_password", "--innodb-buffer-pool-size=256M", "--max-connections=1000"]
+    volumes:
+      - ./tmp/mysql/:/var/lib/mysql
+    restart: always
+    networks:
+      - w33bv.gl
+
+  mongodb:
+    container_name: mongodb
+    image: mongo
+    restart: always
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
+    volumes:
+      - ./tmp/mongodb:/data/db
+    networks:
+      - w33bv.gl
+  redis:
+    container_name: redis
+    image: redis:latest
+    restart: always
+    ports:
+      - "6379:6379"
+    environment:
+      REDIS_USER: ${REDIS_USER}
+      REDIS_PASSWORD: ${REDIS_PASSWORD}
+    command: [ "redis-server", "--requirepass", "${REDIS_PASSWORD}" ]
+    volumes:
+      - ./tmp/redis:/var/lib/redis
+    networks:
+      - w33bv.gl
+
+volumes:
+  mysql-data:
+    driver: local
+  redis-data:
+    driver: local
+  mongodb-data:
+    driver: local
+
 networks:
   w33bv.gl:
     driver: bridge

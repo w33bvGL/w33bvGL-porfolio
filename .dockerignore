@@ -3,6 +3,15 @@
 
 .env.example
 
+./front-end/.nuxt
+./front-end/.output
+./front-end/.pnpm-store
+./front-end/node_modules
+
+
+./back-end/node_modules
+./back-end/vendor
+
 docker-compose.dev.yml
 docker-compose.prod.yml
 

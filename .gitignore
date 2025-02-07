@@ -1,5 +1,6 @@
 tmp/mysql
 tmp/redis
+tmp/mongodb
 
 .idea
 
