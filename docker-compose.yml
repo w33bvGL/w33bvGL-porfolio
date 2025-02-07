@@ -1,22 +1,22 @@
 services:
   front-end:
-    container_name: w33bv.gl-front-end
+    container_name: front-end
     build:
       context: ./front-end
       dockerfile: ./.docker/Dockerfile
     ports:
       - "${APP_FRONT_END_PORT}:3000"
     command: >
-      sh -c "npm install --production=false &&
+      sh -c "pnpm install --prod=false &&
       pnpm run build &&
       pnpm run preview"
     volumes:
-      - ./:/app
+      - ./front-end/:/app
     networks:
       - w33bv.gl
 
   back-end:
-    container_name: w33bv.gl-back-end
+    container_name: back-end
     build:
       context: ./back-end
       dockerfile: ./.docker/Dockerfile
@@ -32,7 +32,7 @@ services:
     ports:
       - '49153:8000'
     volumes:
-      - ./:/var/www
+      - ./back-end/:/var/www
     networks:
       - w33bv.gl
 

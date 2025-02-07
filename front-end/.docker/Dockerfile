@@ -27,5 +27,4 @@ RUN pnpm run build
 
 EXPOSE 3000
 
-# Запуск приложения
 CMD ["pnpm", "preview"]
