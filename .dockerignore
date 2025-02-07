@@ -1,0 +1,11 @@
+.git
+.github
+
+.env.example
+
+docker-compose.dev.yml
+docker-compose.prod.yml
+
+LICENSE.md
+README.md
+SECURITY.md
