@@ -54,6 +54,15 @@
         "dev": [
             "Composer\\Config::disableProcessTimeout",
             "npx concurrently -c \"#93c5fd,#c4b5fd,#fdba74\" \"php artisan serve\" \"php artisan queue:listen --tries=1\" \"npm run dev\" --names='server,queue,vite'"
+        ],
+        "pest": [
+            "./vendor/bin/pest"
+        ],
+        "pint": [
+            "./vendor/bin/pint ."
+        ],
+        "analyse": [
+            "./vendor/bin/phpstan analyse --configuration=.phpstan.neon --memory-limit=512M"
         ]
     },
     "extra": {
