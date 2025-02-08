@@ -2,5 +2,5 @@
 </script>
 
 <template>
-  <div>indexpage</div>
+  <div class="mt-5">indexpage</div>
 </template>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const isOpen = ref(false);
+const isSettingsOpen = ref(false);
 
 import { ref, watch } from 'vue'
 
@@ -37,13 +37,13 @@ watch([selectedPrimary, selectedGray], () => {
     <UButton
         size="md"
         class="rounded-lg p-2"
-        @click="isOpen = true"
+        @click="isSettingsOpen = true"
     >
       <UIcon name="i-heroicons-cog-6-tooth" class="w-6 h-6" />
     </UButton>
   </div>
 
-  <UModal v-model="isOpen" prevent-close>
+  <UModal v-model="isSettingsOpen" prevent-close>
     <UCard :ui="{ ring: '', divide: 'divide-y divide-gray-100 dark:divide-gray-800' }">
       <template #header>
         <div class="flex items-center justify-between">
