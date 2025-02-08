@@ -15,8 +15,7 @@ const handleSubmit = () => {
 </script>
 
 <template>
-  <div class="container mx-auto mt-5">
-    <UCard class="shadow-lg">
+    <UCard class="mt-5">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
         <div class="flex flex-col items-start">
@@ -72,7 +71,6 @@ const handleSubmit = () => {
         </div>
       </div>
     </UCard>
-  </div>
 </template>
 
 <style scoped>
