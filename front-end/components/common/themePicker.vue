@@ -1,56 +1,79 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+const isOpen = ref(false);
 
-// Состояние для открытия/закрытия модального окна
-const isModalOpen = ref(false)
+import { ref, watch } from 'vue'
 
-// Функция для открытия модального окна
-const openModal = () => {
-  isModalOpen.value = true
-}
+const selectedPrimary = ref('lime')
+const selectedGray = ref('neutral')
 
-// Функция для закрытия модального окна
-const closeModal = () => {
-  isModalOpen.value = false
-}
+const themeOptions = [
+  { name: 'Система', value: 'system' },
+  { name: 'Светлая', value: 'light' },
+  { name: 'Тёмная', value: 'dark' }
+]
+
+const primaryColors = [
+  { name: 'Лайм', value: 'lime' },
+  { name: 'Синий', value: 'blue' },
+  { name: 'Красный', value: 'red' },
+  { name: 'Пурпурный', value: 'purple' }
+]
+
+const grayColors = [
+  { name: 'Нейтральный', value: 'neutral' },
+  { name: 'Каменный', value: 'stone' },
+  { name: 'Холодный серый', value: 'coolGray' }
+]
+
+watch([selectedPrimary, selectedGray], () => {
+  useAppConfig().ui.primary = selectedPrimary.value
+  useAppConfig().ui.gray = selectedGray.value
+})
+
 </script>
 
 <template>
-  <!-- Абсолютно позиционированный блок в левом верхнем углу -->
-  <div class="fixed top-1/2 left-0 transform -translate-y-1/2 z-50">
-    <!-- Кнопка, которая открывает модальное окно -->
+  <div class="fixed top-1/2 right-0 px-5 transform -translate-y-1/2 z-50">
     <UButton
-        class="bg-primary text-white hover:bg-primary-dark p-3 rounded-full shadow-lg"
-        @click="openModal"
+        size="md"
+        class="rounded-lg p-2"
+        @click="isOpen = true"
     >
-      🌙
+      <UIcon name="i-heroicons-sun-solid" class="w-6 h-6" />
     </UButton>
   </div>
 
-  <UModal v-model:show="isModalOpen" @close="closeModal">
-    <template #header>
-      <h2 class="text-lg font-semibold">Выберите тему сайта</h2>
-    </template>
-    <template #default>
-      <ColorScheme>
-        <USelect v-model="$colorMode.preference" :options="['system', 'light', 'dark']" />
-      </ColorScheme>
-    </template>
-    <template #footer>
-      <UButton @click="closeModal" class="bg-secondary text-white hover:bg-secondary-dark">
-        Закрыть
-      </UButton>
-    </template>
+  <UModal v-model="isOpen" prevent-close>
+    <UCard :ui="{ ring: '', divide: 'divide-y divide-gray-100 dark:divide-gray-800' }">
+      <template #header>
+        <div class="flex items-center justify-between">
+          <h3 class="text-base font-semibold leading-6">
+            Настройки
+          </h3>
+          <UButton color="gray" variant="ghost" icon="i-heroicons-x-mark-20-solid" class="-my-1" @click="isOpen = false" />
+        </div>
+      </template>
+      <template #default>
+        <div class="mb-4">
+          <div class="mb-2 text-sm font-medium">Выберите тему</div>
+          <ColorScheme>
+            <USelect v-model="$colorMode.preference" :options="themeOptions" option-attribute="name" />
+          </ColorScheme>
+        </div>
+
+        <div class="mb-4">
+          <div class="mb-2 text-sm font-medium">Выберите основной цвет</div>
+          <USelect v-model="selectedPrimary" :options="primaryColors" option-attribute="name" />
+        </div>
+
+        <div class="mb-4">
+          <div class="mb-2 text-sm font-medium">Выберите цветовую палитру</div>
+          <USelect v-model="selectedGray" :options="grayColors" option-attribute="name" />
+        </div>
+      </template>
+    </UCard>
   </UModal>
 </template>
 
 <style scoped>
-/* Стиль для кнопки и модального окна */
-.fixed {
-  position: fixed;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 50;
-}
 </style>
