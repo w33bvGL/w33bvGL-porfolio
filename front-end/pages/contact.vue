@@ -1,6 +1,7 @@
 <script setup lang="ts">
+const route = useRoute()
 </script>
 
 <template>
-  <UCard class="mt-5">index</UCard>
+  <contactForm/>
 </template>

@@ -1,15 +1,37 @@
+<script setup lang="ts">
+</script>
+
 <template>
-  <NuxtLoadingIndicator/>
-  <UContainer>
-    <UCard class="mt-10">
-      <template #header>
-        <div class="flex justify-between">
-          <h1>Welcome to Nuxt UI Starter</h1>
-          <ColorScheme><USelect v-model="$colorMode.preference" :options="['system', 'light', 'dark']" /></ColorScheme>
-        </div>
-        <NuxtPage />
+    <CommonSettings/>
+
+      <UContainer>
+        <NuxtLayout>
+          <nuxtPage/>
+        </NuxtLayout>
+
+        <commonFooter/>
+      </UContainer>
+
+    <UModals/>
 </template>
-      <UButton icon="i-heroicons-book-open" to="https://ui.nuxt.com" target="_blank">Open Nuxt UI Documentation</UButton>
-    </UCard>
-  </UContainer>
-</template>
+
+
+<style>
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(var(--color-primary-400));
+  cursor: pointer;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(var(--color-primary-500));
+}
+</style>
