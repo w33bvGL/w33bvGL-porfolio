@@ -7,7 +7,7 @@ const selectedPrimary = ref('lime')
 const selectedGray = ref('neutral')
 
 const themeOptions = [
-  { name: 'Система', value: 'system' },
+  { name: 'Системная', value: 'system' },
   { name: 'Светлая', value: 'light' },
   { name: 'Тёмная', value: 'dark' }
 ]
@@ -21,8 +21,8 @@ const primaryColors = [
 
 const grayColors = [
   { name: 'Нейтральный', value: 'neutral' },
-  { name: 'Каменный', value: 'stone' },
-  { name: 'Холодный серый', value: 'coolGray' }
+  { name: 'Каменный', value: 'stone', disabled: true },
+  { name: 'Холодный серый', value: 'coolGray', disabled: true }
 ]
 
 watch([selectedPrimary, selectedGray], () => {
@@ -39,7 +39,7 @@ watch([selectedPrimary, selectedGray], () => {
         class="rounded-lg p-2"
         @click="isOpen = true"
     >
-      <UIcon name="i-heroicons-sun-solid" class="w-6 h-6" />
+      <UIcon name="i-heroicons-cog-6-tooth" class="w-6 h-6" />
     </UButton>
   </div>
 

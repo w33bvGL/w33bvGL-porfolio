@@ -1,12 +1,13 @@
 <template>
-  <div>
+  <div class="bg-gray">
     <NuxtLoadingIndicator/>
-    <commonThemePicker/>
-    <UContainer>
-      <NuxtLayout>
-        <nuxtPage/>
-      </NuxtLayout>
-    </UContainer>
+    <CommonSettings/>
+
+      <UContainer>
+        <NuxtLayout>
+          <nuxtPage/>
+        </NuxtLayout>
+      </UContainer>
 
     <UModals/>
   </div>

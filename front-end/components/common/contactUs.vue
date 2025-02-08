@@ -14,7 +14,7 @@
         Готовы обсудить, как я могу помочь вашему бизнесу достичь новых высот? Свяжитесь со мной, и давайте работать над вашим проектом!
       </p>
 
-      <UButton class="px-8 py-3 text-white bg-primary hover:bg-primary-dark rounded-xl" to="/contact">
+      <UButton size="xl" class="px-8 text-white bg-primary hover:bg-primary-dark rounded-xl" to="/contact">
         Написать мне
       </UButton>
     </section>
