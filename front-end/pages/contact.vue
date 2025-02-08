@@ -3,4 +3,5 @@ const route = useRoute()
 </script>
 
 <template>
+  <contactForm/>
 </template>
