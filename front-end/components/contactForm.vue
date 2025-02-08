@@ -23,7 +23,7 @@ const handleSubmit = () => {
           <h2 class="text-4xl font-bold mb-4">Связаться со мной</h2>
           <p class="text-gray-600 dark:text-gray-400">Я всегда открыт для новых проектов, идей и возможностей для сотрудничества. Если у вас есть интересный проект или задача, которую нужно решить, не стесняйтесь обращаться! Я с радостью помогу вам воплотить ваши идеи в реальность</p>
           <ul class="mt-4 space-y-2">
-            <li><strong class="font-medium">Telegram:</strong> <a href="https://t.me/Vahesargsyan2005" class="text-blue-500 hover:underline">@Vahesargsyan2005</a></li>
+            <li><strong class="font-medium">Telegram:</strong> <ULink to="https://t.me/Vahesargsyan2005">@Vahesargsyan2005</ULink></li>
             <li><strong  class="font-medium">Номер телефона:</strong> <a href="tel:+1234567890" class="text-blue-500 hover:underline">+374(94) 161-331</a></li>
             <li><strong  class="font-medium">Электронная почта:</strong> <a href="mailto:w33bv.gl@gmail.com" class="text-blue-500 hover:underline">w33bv.gl@gmail.com</a></li>
           </ul>

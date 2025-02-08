@@ -1,6 +1,4 @@
 <template>
-  <div class="bg-gray">
-    <NuxtLoadingIndicator/>
     <CommonSettings/>
 
       <UContainer>
@@ -10,7 +8,6 @@
       </UContainer>
 
     <UModals/>
-  </div>
 </template>
 <script setup lang="ts">
 </script>
