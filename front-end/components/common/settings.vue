@@ -50,7 +50,7 @@ watch([selectedPrimary, selectedGray], () => {
           <h3 class="text-base font-semibold leading-6">
             Настройки
           </h3>
-          <UButton color="gray" variant="ghost" icon="i-heroicons-x-mark-20-solid" class="-my-1" @click="isOpen = false" />
+          <UButton color="gray" variant="ghost" icon="i-heroicons-x-mark-20-solid" class="-my-1" @click="isSettingsOpen = false" />
         </div>
       </template>
       <template #default>

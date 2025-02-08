@@ -2,5 +2,5 @@
 </script>
 
 <template>
-  <div class="mt-5">indexpage</div>
+  <UCard class="mt-5">index</UCard>
 </template>

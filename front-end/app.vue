@@ -1,3 +1,6 @@
+<script setup lang="ts">
+</script>
+
 <template>
     <CommonSettings/>
 
@@ -5,9 +8,30 @@
         <NuxtLayout>
           <nuxtPage/>
         </NuxtLayout>
+
+        <commonFooter/>
       </UContainer>
 
     <UModals/>
 </template>
-<script setup lang="ts">
-</script>
+
+
+<style>
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(var(--color-primary-400));
+  cursor: pointer;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(var(--color-primary-500));
+}
+</style>
