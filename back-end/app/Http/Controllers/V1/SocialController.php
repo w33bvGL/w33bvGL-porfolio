@@ -12,6 +12,6 @@ class SocialController extends Controller
 {
     public function index(Request $request): JsonResponse
     {
-        return response()->json($request->locale, 200);
+        return response()->json($request, 200);
     }
 }
