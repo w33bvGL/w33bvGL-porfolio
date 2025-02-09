@@ -4,7 +4,7 @@
 <template>
   <UCard class="mt-5">
     <section class="text-center">
-      <h2 class="text-4xl font-bold mb-4">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">
         Готовы превратить свою идею в реальный проект? Давайте разрабатывать и оптимизировать вместе!
       </h2>
 

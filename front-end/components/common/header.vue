@@ -12,10 +12,12 @@ const menuItems = [
     <div class="flex justify-between items-center">
 
       <div>
-        <h1 class="text-2xl font-bold uppercase">
-          w33bv.<span class="text-primary">gl</span>
-        </h1>
-        <p class="text-sm text-gray-500 dark:text-gray-400">Vahe Sargsyan</p>
+        <ULink :to="localeRoute('/')">
+          <h1 class="text-2xl font-bold uppercase">
+            w33bv.<span class="text-primary">gl</span>
+          </h1>
+          <p class="text-sm text-gray-500 dark:text-gray-400">Vahe Sargsyan</p>
+        </ULink>
       </div>
 
       <nav class="flex gap-4">

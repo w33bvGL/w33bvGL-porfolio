@@ -9,7 +9,7 @@ socialNetworks.value = data.value;
 </script>
 
 <template>
-  <div class="fixed top-1/2 left-0 px-5 transform -translate-y-1/2 z-50 space-y-2">
+  <div class="hidden xl:block fixed top-1/2 left-0 px-5 transform -translate-y-1/2 z-50 space-y-2">
     <div class="flex flex-col gap-4">
       <UTooltip
           v-for="social in socialNetworks"
