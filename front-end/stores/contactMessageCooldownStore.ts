@@ -15,40 +15,52 @@ export const contactMessageCooldownStore = defineStore('timer', {
                 this.remainingTime = parseInt(remainingTimeCookie.value);
                 this.isCooldown = true;
             } else {
-                this.isCooldown = false;
-                this.remainingTime = 300;
+                this.resetTimer();
             }
         },
 
-        startCooldown() {
+        initializeCooldown() {
             if (!this.isCooldown) return;
+            this.startInterval();
+        },
 
+        startCooldown() {
+            this.setRemainingTime(300);
+            this.startInterval();
+        },
+
+        resetTimer() {
+            this.setRemainingTime(300);
+            this.isCooldown = false;
+            this.clearCookies();
+        },
+
+        setRemainingTime(time: number) {
             this.isCooldown = true;
-            useCookie('isCooldown').value = 'true';
+            this.remainingTime = time;
+            this.updateCookies();
+        },
 
+        startInterval() {
             let interval = setInterval(() => {
                 if (this.remainingTime > 0) {
                     this.remainingTime -= 1;
-                    useCookie('remainingTime').value = this.remainingTime.toString();
+                    this.updateCookies();
                 } else {
                     clearInterval(interval);
-                    this.isCooldown = false;
-                    useCookie('isCooldown').value = 'false';
-                    useCookie('remainingTime').value = '0';
+                    this.clearCookies();
                 }
             }, 1000);
         },
 
-        resetTimer() {
-            this.remainingTime = 300;
-            this.isCooldown = false;
-            useCookie('remainingTime').value = '300';
-            useCookie('isCooldown').value = 'false';
+        updateCookies() {
+            useCookie('remainingTime').value = this.remainingTime.toString();
+            useCookie('isCooldown').value = this.isCooldown.toString();
         },
 
-        setRemainingTime(time: number) {
-            this.remainingTime = time;
-            useCookie('remainingTime').value = time.toString();
+        clearCookies() {
+            useCookie('remainingTime').value = undefined;
+            useCookie('isCooldown').value = undefined;
         }
     }
 });

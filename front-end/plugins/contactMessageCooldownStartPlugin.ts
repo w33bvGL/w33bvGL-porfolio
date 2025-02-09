@@ -5,6 +5,6 @@ export default defineNuxtPlugin(nuxtApp => {
   timerStore.initializeTimer();
 
   if (process.client) {
-    timerStore.startCooldown();
+    timerStore.initializeCooldown();
   }
 });
