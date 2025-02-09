@@ -28,7 +28,8 @@ const grayColors = [
 
 watch([selectedPrimary, selectedGray], () => {
   useCookie('selectedPrimary').value = selectedPrimary.value;
-  useCookie('selectedGray').value = selectedGray.value;npm
+  useCookie('selectedGray').value = selectedGray.value;
+
   useAppConfig().ui.primary = selectedPrimary.value;
   useAppConfig().ui.gray = selectedGray.value;
 });
