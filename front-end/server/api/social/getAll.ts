@@ -1,17 +1,10 @@
 import {defineEventHandler, readBody} from 'h3'
 
 export default defineEventHandler(async (event) => {
-    const body = await readBody(event)
-
-    if (!body.name || !body.email || !body.message) {
-        return { success: false, message: 'Все поля обязательны для заполнения.' }
-    }
-
     try {
-        const response = await fetch('http://localhost:49153/api/v1/contact/send', {
-            method: 'POST',
+        const response = await fetch('http://localhost:49153/api/v1/social', {
+            method: 'GET',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(body),
         })
 
         if (!response.ok) {

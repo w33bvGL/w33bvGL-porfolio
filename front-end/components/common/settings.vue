@@ -1,34 +1,38 @@
 <script setup lang="ts">
+import { ref, watch } from 'vue';
+import { useCookie } from 'nuxt/app';
+
 const isSettingsOpen = ref(false);
 
-import { ref, watch } from 'vue'
-
-const selectedPrimary = ref('lime')
-const selectedGray = ref('neutral')
+const selectedPrimary = ref(useCookie('selectedPrimary').value || 'lime');
+const selectedGray = ref(useCookie('selectedGray').value || 'neutral');
 
 const themeOptions = [
   { name: 'Системная', value: 'system' },
   { name: 'Светлая', value: 'light' },
   { name: 'Тёмная', value: 'dark' }
-]
+];
 
 const primaryColors = [
   { name: 'Лайм', value: 'lime' },
   { name: 'Синий', value: 'blue' },
   { name: 'Красный', value: 'red' },
   { name: 'Пурпурный', value: 'purple' }
-]
+];
 
 const grayColors = [
   { name: 'Нейтральный', value: 'neutral' },
   { name: 'Каменный', value: 'stone', disabled: true },
   { name: 'Холодный серый', value: 'coolGray', disabled: true }
-]
+];
 
 watch([selectedPrimary, selectedGray], () => {
-  useAppConfig().ui.primary = selectedPrimary.value
-  useAppConfig().ui.gray = selectedGray.value
-})
+  useCookie('selectedPrimary').value = selectedPrimary.value;
+  useCookie('selectedGray').value = selectedGray.value;
+
+  useAppConfig().ui.primary = selectedPrimary.value;
+  useAppConfig().ui.gray = selectedGray.value;
+});
 
 </script>
 

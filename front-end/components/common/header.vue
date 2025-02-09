@@ -9,7 +9,6 @@ const menuItems = [
   <UCard class="mt-10">
     <div class="flex justify-between items-center">
 
-      <!-- Логотип и имя -->
       <div>
         <h1 class="text-2xl font-bold uppercase">
           w33bv.<span class="text-primary">gl</span>
@@ -17,7 +16,6 @@ const menuItems = [
         <p class="text-sm text-gray-500 dark:text-gray-400">Vahe Sargsyan</p>
       </div>
 
-      <!-- Навигация -->
       <nav class="flex gap-4">
         <ULink
             v-for="item in menuItems"
