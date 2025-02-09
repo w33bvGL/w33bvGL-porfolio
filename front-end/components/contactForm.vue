@@ -27,6 +27,18 @@ const state = reactive({
   message: ''
 });
 
+const formatTime = (seconds: number) => {
+  const minutes = Math.floor(seconds / 60);
+  const remainingSeconds = seconds % 60;
+  let timeString = '';
+  if (minutes > 0) {
+    timeString += `${minutes}м `;
+  }
+  timeString += `${remainingSeconds}с`;
+
+  return timeString;
+};
+
 const remainingTime = computed(() => timerStore.remainingTime);
 
 const handleSubmit = async () => {
@@ -88,7 +100,9 @@ const handleSubmit = async () => {
               size="xl"
               class="mt-4 px-8 bg-primary text-white rounded-xl hover:bg-primary-dark"
           >
-            {{ timerStore.isCooldown ? `Пожалуйста, подождите ${remainingTime} секунд` : 'Отправить сообщение' }}
+            {{ timerStore.isCooldown
+              ? `Пожалуйста, подождите ${formatTime(timerStore.remainingTime)}`
+              : 'Отправить сообщение' }}
           </UButton>
         </UForm>
       </div>
