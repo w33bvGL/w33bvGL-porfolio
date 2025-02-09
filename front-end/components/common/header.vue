@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const localeRoute = useLocaleRoute();
+
 const menuItems = [
   { label: 'Главная', to: '/' },
   { label: 'Контакты', to: '/contact' }
@@ -20,7 +22,7 @@ const menuItems = [
         <ULink
             v-for="item in menuItems"
             :key="item.label"
-            :to="item.to"
+            :to="localeRoute(item.to)"
             class="transition-colors"
             inactive-class="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
             active-class="text-primary"
