@@ -7,7 +7,7 @@ export default defineEventHandler(async (event) => {
     }
 
     try {
-        const response = await fetch('https://твой-бэкенд.com/api/send-email', {
+        const response = await fetch('https://твой-бэкенд.com/api/v1/send-email', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(body),
