@@ -10,6 +10,7 @@ const color = computed(() =>
 
 <template>
     <CommonSettings/>
+    <CommonSocial/>
 
       <UContainer>
         <NuxtLayout>

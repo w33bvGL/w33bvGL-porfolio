@@ -75,7 +75,7 @@ const handleSubmit = async () => {
         <p class="text-gray-600 dark:text-gray-400">
           Я всегда открыт для новых проектов, идей и возможностей для сотрудничества. Если у вас есть интересный проект или задача, которую нужно решить, не стесняйтесь обращаться! Я с радостью помогу вам воплотить ваши идеи в реальность
         </p>
-        <ul class="mt-4 space-y-2">
+        <ul class="mt-4 space-y-4">
           <li><strong class="font-medium">Telegram:</strong> <UButton variant="link" :padded="false" to="https://t.me/Vahesargsyan2005">@Vahesargsyan2005</UButton></li>
           <li><strong class="font-medium">Номер телефона:</strong> <UButton variant="link" :padded="false" to="tel:+37494161331">+374(94) 161-331</UButton></li>
           <li><strong class="font-medium">Электронная почта:</strong> <UButton variant="link" :padded="false" to="mailto:w33bv.gl@gmail.com">w33bv.gl@gmail.com</UButton></li>

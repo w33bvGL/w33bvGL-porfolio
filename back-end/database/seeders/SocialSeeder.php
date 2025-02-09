@@ -56,27 +56,7 @@ class SocialSeeder extends Seeder
                     'hy' => 'Գիտհաբ',
                     'en' => 'Github',
                 ],
-            ],
-            [
-                'native_name' => 'Gmail',
-                'icon' => URL::to('/storage/social/gmail.svg'),
-                'link' => 'mailto:w33bv.gl@gmail.com',
-                'translations' => [
-                    'ru' => 'Эл. почта',
-                    'hy' => 'Էլ․ հասցե',
-                    'en' => 'email',
-                ],
-            ],
-            [
-                'native_name' => 'Telephone',
-                'icon' => URL::to('/storage/social/tel.svg'),
-                'link' => 'tel:+374(94)161-331',
-                'translations' => [
-                    'ru' => 'Телефон',
-                    'hy' => 'Հեռախոսահամար',
-                    'en' => 'Telephone',
-                ],
-            ],
+            ]
         ];
 
         foreach ($socials as $socialData) {
