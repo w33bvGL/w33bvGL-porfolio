@@ -12,6 +12,6 @@ Route::prefix('v1')->group(function () {
     });
 
     Route::prefix('social')->group(function () {
-        Route::get('get', [SocialController::class, 'index']);
+        Route::get('', [SocialController::class, 'index']);
     });
 });
