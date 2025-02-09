@@ -44,13 +44,11 @@ export const contactMessageCooldownStore = defineStore('timer', {
             this.isCooldown = false;
             useCookie('remainingTime').value = '300';
             useCookie('isCooldown').value = 'false';
-            console.log('Таймер сброшен');
         },
 
         setRemainingTime(time: number) {
             this.remainingTime = time;
             useCookie('remainingTime').value = time.toString();
-            console.log(`Время установлено: ${time}`);
         }
     }
 });
