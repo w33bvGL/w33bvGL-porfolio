@@ -12,14 +12,8 @@ class SocialService
 {
     public function getAllSocials(int $languageId): Collection|array
     {
-        $language = Language::find($languageId);
-
-        if (! $language) {
-            return [];
-        }
-
-        return Social::with(['translations' => function ($query) use ($language) {
-            $query->where('language_id', $language->id);
+        return Social::with(['translations' => function ($query) use ($languageId) {
+            $query->where('language_id', $languageId);
         }])->get();
     }
 }

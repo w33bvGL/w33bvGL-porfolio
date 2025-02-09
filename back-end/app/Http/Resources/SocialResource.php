@@ -8,6 +8,8 @@ use Illuminate\Http\Resources\Json\JsonResource;
 /**
  * @property int    $id
  * @property string $native_name
+ * @property string $icon
+ * @property string $link
  */
 class SocialResource extends JsonResource
 {
@@ -18,12 +20,16 @@ class SocialResource extends JsonResource
      */
     public function toArray(Request $request): array
     {
+        $languageCode = $request->input('locale');
+
+        $translation = $this->translations->where('language.code', $languageCode)->first();
+
         return [
             'id' => $this->id,
             'native_name' => $this->native_name,
+            'name' => $translation ? $translation->name : $this->native_name,
             'icon' => $this->icon,
             'link' => $this->link,
-            'translations' => $this->translations->pluck('name', 'language.code')->toArray(),
         ];
     }
 }

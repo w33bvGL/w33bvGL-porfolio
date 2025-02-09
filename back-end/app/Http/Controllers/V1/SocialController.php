@@ -17,12 +17,11 @@ class SocialController extends Controller
         $this->socialService = $socialService;
     }
 
-    public function index(Request $request): SocialCollection
+    public function index(Request $request): JsonResponse
     {
         $languageId = $request->input('languageId');
 
         $socials = $this->socialService->getAllSocials($languageId);
-
-        return new SocialCollection($socials);
+        return response()->json(new SocialCollection($socials), 201);
     }
 }
