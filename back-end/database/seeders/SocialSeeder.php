@@ -1,9 +1,11 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Database\Seeders;
 
-use App\Models\Social;
 use App\Models\Language;
+use App\Models\Social;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\URL;
 

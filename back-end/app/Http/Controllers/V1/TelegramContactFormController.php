@@ -7,8 +7,8 @@ namespace App\Http\Controllers\V1;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
-use Illuminate\Validation\ValidationException;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Validation\ValidationException;
 
 class TelegramContactFormController extends Controller
 {
@@ -42,7 +42,7 @@ class TelegramContactFormController extends Controller
             return response()->json(['success' => true, 'message' => 'Сообщение успешно отправлено!']);
 
         } catch (ValidationException $e) {
-        return response()->json($e->errors(), 422);
+            return response()->json($e->errors(), 422);
         }
     }
 }
