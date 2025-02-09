@@ -1,4 +1,11 @@
 <script setup lang="ts">
+import {useColorMode} from "#imports";
+
+const colorMode =  useColorMode();
+
+const color = computed(() =>
+    colorMode.value === 'dark' ? '#18181b' : 'white',
+);
 </script>
 
 <template>
