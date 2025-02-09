@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use App\Http\Controllers\V1\TelegramContactFormController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\V1\SocialController;
 
 Route::prefix('v1')->group(function () {
     Route::prefix('contact')->group(function () {
@@ -11,6 +12,6 @@ Route::prefix('v1')->group(function () {
     });
 
     Route::prefix('social')->group(function () {
-        Route::get('', [SocialController::class, 'send']);
+        Route::get('get', [SocialController::class, 'index']);
     });
 });
