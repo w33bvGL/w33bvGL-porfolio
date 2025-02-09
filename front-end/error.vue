@@ -24,7 +24,7 @@ useHead({
 <template>
   <UCard class="h-dvh flex flex-col justify-center items-center text-center">
     <h1 class="font-bold text-9xl lg:text-[200px]">404</h1>
-    <h2 class="text-4xl font-bold mb-4 text-center">{{ t('error.pageNotFound') }}</h2>
+    <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center">{{ t('error.pageNotFound') }}</h2>
     <p class="text-gray-600 dark:text-gray-400 max-w-2xl">
       {{ t('error.pageNotFoundDescription') }}
     </p>

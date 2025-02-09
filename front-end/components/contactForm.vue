@@ -72,7 +72,7 @@ const handleSubmit = async () => {
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div class="flex flex-col">
         <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center md:text-left">Связаться со мной</h2>
-        <p class="text-gray-600 dark:text-gray-400">
+        <p class="text-center md:text-left text-gray-600 dark:text-gray-400">
           Я всегда открыт для новых проектов, идей и возможностей для сотрудничества. Если у вас есть интересный проект или задача, которую нужно решить, не стесняйтесь обращаться! Я с радостью помогу вам воплотить ваши идеи в реальность
         </p>
         <ul class="mt-4 space-y-4">
