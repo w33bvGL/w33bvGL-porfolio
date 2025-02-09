@@ -19,4 +19,9 @@ class SocialTranslation extends Model
     {
         return $this->belongsTo(Social::class);
     }
+
+    public function language(): BelongsTo
+    {
+        return $this->belongsTo(Language::class);
+    }
 }
