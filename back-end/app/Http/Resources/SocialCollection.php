@@ -16,5 +16,3 @@ class SocialCollection extends ResourceCollection
         })->toArray();
     }
 }
-
-

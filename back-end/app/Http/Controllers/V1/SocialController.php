@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Http\Controllers\V1;
 
 use App\Http\Controllers\Controller;
@@ -22,6 +24,7 @@ class SocialController extends Controller
         $languageId = $request->input('languageId');
 
         $socials = $this->socialService->getAllSocials($languageId);
+
         return response()->json(new SocialCollection($socials), 200);
     }
 }
