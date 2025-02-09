@@ -20,13 +20,14 @@ class AcceptLanguageMiddleware
     public function handle(Request $request, Closure $next): mixed
     {
         $acceptLanguage = $request->header('Accept-Language');
-        App::setLocale($acceptLanguage);
 
         if (empty($acceptLanguage)) {
             return response()->json([
                 'message' => __('acceptLanguageMiddleware.header_required'),
             ], 400);
         }
+
+       App::setLocale($acceptLanguage);
 
         $supportedLanguages = Language::pluck('code')->toArray();
 
@@ -37,7 +38,7 @@ class AcceptLanguageMiddleware
         }
 
         $languageCode = Cache::remember('language_'.$acceptLanguage, 10000, function () use ($acceptLanguage) {
-            return Language::where('code', $acceptLanguage)->pluck('id')->first();
+            return Language::where('code', $acceptLanguage)->value('id');
         });
 
         $languageCode = (int) $languageCode;

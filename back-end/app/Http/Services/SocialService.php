@@ -9,7 +9,11 @@ use Illuminate\Database\Eloquent\Collection;
 
 class SocialService
 {
-    public function getAllSocials(int $languageId): Collection|array
+    /**
+     * @param int $languageId
+     * @return Collection<int, Social>
+ */
+    public function getAllSocials(int $languageId): Collection
     {
         return Social::with(['translations' => function ($query) use ($languageId) {
             $query->where('language_id', $languageId);

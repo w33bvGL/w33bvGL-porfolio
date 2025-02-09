@@ -4,9 +4,10 @@ declare(strict_types=1);
 
 namespace App\Http\Resources;
 
+use App\Models\Social;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
-
+use Illuminate\Database\Eloquent\Collection;
 /**
  * @property int    $id
  * @property string $native_name
@@ -16,6 +17,18 @@ use Illuminate\Http\Resources\Json\JsonResource;
 class SocialResource extends JsonResource
 {
     /**
+     * @var \Illuminate\Database\Eloquent\Collection<int, \App\Models\Social>
+     */
+    private Collection $translations;
+
+
+    public function __construct($resource)
+    {
+        parent::__construct($resource);
+        $this->translations = $this->resource->translations;
+    }
+
+    /**
      * Transform the resource into an array.
      *
      * @return array<string, mixed>
@@ -23,8 +36,8 @@ class SocialResource extends JsonResource
     public function toArray(Request $request): array
     {
         $languageCode = $request->input('locale');
-
-        $translation = $this->translations->where('language.code', $languageCode)->first();
+        $translations = collect($this->translations);
+        $translation = $translations->where('language.code', $languageCode)->first();
 
         return [
             'id' => $this->id,

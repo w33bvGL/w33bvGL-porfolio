@@ -4,17 +4,12 @@ declare(strict_types=1);
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Language extends Model
 {
-    use HasFactory;
-
     /**
-     * Attributes available for mass filling.
-     *
-     * @var array
+     *  @var list<string>
      */
     protected $fillable = [
         'code',
@@ -30,9 +25,7 @@ class Language extends Model
     ];
 
     /**
-     * Casting attribute types.
-     *
-     * @var array
+     * @var array<string, string>
      */
     protected $casts = [
         'code' => 'string',
