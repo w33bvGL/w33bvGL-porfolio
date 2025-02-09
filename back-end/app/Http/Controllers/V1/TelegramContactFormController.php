@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Validation\ValidationException;
 
 class TelegramContactFormController extends Controller
@@ -21,8 +22,8 @@ class TelegramContactFormController extends Controller
                 'message' => 'required|string|min:100|max:5000',
             ]);
 
-            $telegramToken = config('TELEGRAM_BOT_TOKEN');
-            $chatId        = config('TELEGRAM_CHAT_ID');
+            $telegramToken = env('TELEGRAM_BOT_TOKEN');
+            $chatId        = env('TELEGRAM_CHAT_ID');
 
             $text = "📩 Новая заявка с сайта\n\n".
                 "👤 Имя: {$data['name']}\n".

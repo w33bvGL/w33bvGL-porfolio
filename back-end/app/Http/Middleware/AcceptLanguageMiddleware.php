@@ -21,13 +21,14 @@ class AcceptLanguageMiddleware
     {
         $acceptLanguage = $request->header('Accept-Language');
 
+
         if (empty($acceptLanguage)) {
             return response()->json([
                 'message' => __('acceptLanguageMiddleware.header_required'),
             ], 400);
         }
 
-       App::setLocale($acceptLanguage);
+        App::setLocale($acceptLanguage);
 
         $supportedLanguages = Language::pluck('code')->toArray();
 

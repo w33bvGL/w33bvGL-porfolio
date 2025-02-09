@@ -10,7 +10,7 @@ export default defineEventHandler(async (event) => {
     try {
         const response = await fetch('http://localhost:49153/api/v1/contact/send', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'Accept-Language': 'en'  },
             body: JSON.stringify(body),
         })
 

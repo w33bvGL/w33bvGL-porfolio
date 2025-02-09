@@ -27,7 +27,7 @@ const color = computed(() =>
 
 <style>
 ::-webkit-scrollbar {
-  @apply w-1;
+  @apply w-2;
 }
 
 ::-webkit-scrollbar-track {
