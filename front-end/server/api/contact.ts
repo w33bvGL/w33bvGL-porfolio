@@ -1,4 +1,5 @@
-import { defineEventHandler, readBody } from 'h3'
+import {defineEventHandler, readBody} from 'h3'
+
 export default defineEventHandler(async (event) => {
     const body = await readBody(event)
 
@@ -7,7 +8,7 @@ export default defineEventHandler(async (event) => {
     }
 
     try {
-        const response = await fetch('https://твой-бэкенд.com/api/v1/send-email', {
+        const response = await fetch('http://localhost:49153/api/v1/contact/send', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(body),
@@ -17,7 +18,7 @@ export default defineEventHandler(async (event) => {
             throw new Error('Ошибка при отправке сообщения')
         }
 
-        return { success: true, message: 'Сообщение успешно отправлено!' }
+        return await response.json()
     } catch (error) {
         return { success: false, message: 'Не удалось отправить сообщение. Попробуйте позже.' }
     }

@@ -1,5 +1,10 @@
 <script setup lang="ts">
 import { z } from 'zod';
+import { contactMessageCooldownStore } from '~/stores/contactMessageCooldownStore';
+import { computed } from 'vue';
+
+const toast = useToast();
+const timerStore = contactMessageCooldownStore();
 
 const schema = z.object({
   name: z.string()
@@ -12,32 +17,44 @@ const schema = z.object({
   message: z.string()
       .min(100, 'Сообщение должно содержать минимум 100 символов')
       .max(1000, 'Сообщение не должно превышать 1000 символов')
-})
+});
+
+let isLoading = ref(false);
 
 const state = reactive({
   name: '',
   email: '',
   message: ''
-})
+});
+
+const remainingTime = computed(() => timerStore.remainingTime);
 
 const handleSubmit = async () => {
   try {
+    if (timerStore.isCooldown) {
+      alert(`Пожалуйста, подождите ${remainingTime.value} секунд.`);
+      return;
+    }
+
+    isLoading.value = true;
     const res = await $fetch('/api/contact', {
       method: 'POST',
       body: state,
-    })
+    });
 
     if (res.success) {
-      alert('Сообщение успешно отправлено!')
+      toast.add({ title: res.message });
+      timerStore.startCooldown();
     } else {
-      alert('Ошибка: ' + res.message)
+      alert('Ошибка: ' + res.message);
     }
   } catch (error) {
-    alert('Произошла ошибка при отправке сообщения.')
+    alert('Произошла ошибка при отправке сообщения.');
+  } finally {
+    isLoading.value = false;
   }
-}
+};
 </script>
-
 <template>
   <UCard class="mt-5">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -64,8 +81,14 @@ const handleSubmit = async () => {
           <UFormGroup label="Ваше сообщение" name="message" class="mt-4" size="xl">
             <UTextarea v-model="state.message" size="xl" placeholder="Напишите ваше сообщение" required />
           </UFormGroup>
-          <UButton type="submit" size="xl" class="mt-4 px-8 bg-primary text-white rounded-xl hover:bg-primary-dark">
-            Отправить сообщение
+          <UButton
+              :disabled="timerStore.isCooldown"
+              :loading="isLoading"
+              type="submit"
+              size="xl"
+              class="mt-4 px-8 bg-primary text-white rounded-xl hover:bg-primary-dark"
+          >
+            {{ timerStore.isCooldown ? `Пожалуйста, подождите ${remainingTime} секунд` : 'Отправить сообщение' }}
           </UButton>
         </UForm>
       </div>

@@ -13,6 +13,7 @@
       </UContainer>
 
     <UModals/>
+    <UNotifications/>
 </template>
 
 
