@@ -14,8 +14,6 @@ export const contactMessageCooldownStore = defineStore('timer', {
             if (isCooldownCookie.value && remainingTimeCookie.value) {
                 this.remainingTime = parseInt(remainingTimeCookie.value);
                 this.isCooldown = true;
-            } else {
-                this.resetTimer();
             }
         },
 
@@ -48,7 +46,7 @@ export const contactMessageCooldownStore = defineStore('timer', {
                     this.updateCookies();
                 } else {
                     clearInterval(interval);
-                    this.clearCookies();
+                    this.resetTimer();
                 }
             }, 1000);
         },
