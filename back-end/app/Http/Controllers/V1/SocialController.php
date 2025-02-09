@@ -22,6 +22,6 @@ class SocialController extends Controller
         $languageId = $request->input('languageId');
 
         $socials = $this->socialService->getAllSocials($languageId);
-        return response()->json(new SocialCollection($socials), 201);
+        return response()->json(new SocialCollection($socials), 200);
     }
 }
