@@ -18,7 +18,7 @@
 
 <style>
 ::-webkit-scrollbar {
-  @apply w-2;
+  @apply w-1;
 }
 
 ::-webkit-scrollbar-track {
