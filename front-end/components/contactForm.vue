@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import { z } from 'zod';
-const { t } = useI18n();
+import { useI18n } from '#i18n';
 import { contactMessageCooldownStore } from '~/stores/contactMessageCooldownStore';
-import { computed } from 'vue';
+import { computed, ref, reactive } from 'vue';
 
 const toast = useToast();
 const timerStore = contactMessageCooldownStore();
+
+const { t, locale } = useI18n();
 
 const schema = z.object({
   name: z.string()
@@ -53,36 +55,36 @@ const handleSubmit = async () => {
 
     const res = await $fetch('/api/contact', {
       method: 'POST',
+      headers: {
+        'Accept-Language': locale.value,
+      },
       body: state,
     });
 
-    if (res.status === 200) {
+    if (!res.ok) {
       toast.add({
         title: t('contact.form.successMessage'),
-        type: 'success'
       });
       timerStore.startCooldown();
     } else if (res.status >= 400 && res.status < 500) {
       toast.add({
-        title: t('contact.form..errorMessage'),
-        type: 'error'
+        title: t('contact.form.errorMessage'),
       });
     } else if (res.status >= 500) {
       toast.add({
         title: t('contact.form.sendingError'),
-        type: 'error'
       });
     }
   } catch (error) {
     toast.add({
-      title: t('contact.form..sendingError'),
-      type: 'error'
+      title: t('contact.form.sendingError') + error,
     });
   } finally {
     isLoading.value = false;
   }
 };
 </script>
+
 <template>
   <UCard class="mt-5">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">

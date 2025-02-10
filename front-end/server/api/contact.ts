@@ -2,6 +2,7 @@ import {defineEventHandler, readBody} from 'h3'
 
 export default defineEventHandler(async (event) => {
     const body = await readBody(event)
+    const acceptLanguage = event.node.req.headers['accept-language'] || 'en';
 
     if (!body.name || !body.email || !body.message) {
         return { success: false, message: 'Все поля обязательны для заполнения.' }
@@ -10,7 +11,7 @@ export default defineEventHandler(async (event) => {
     try {
         const response = await fetch('http://localhost:49153/api/v1/contact/send', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'Accept-Language': 'en'  },
+            headers: { 'Content-Type': 'application/json', 'Accept-Language': acceptLanguage },
             body: JSON.stringify(body),
         })
 
@@ -20,6 +21,6 @@ export default defineEventHandler(async (event) => {
 
         return await response.json()
     } catch (error) {
-        return { success: false, message: 'Не удалось отправить сообщение. Попробуйте позже.' }
+        return { success: false, message: error }
     }
 })
