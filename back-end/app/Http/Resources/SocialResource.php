@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace App\Http\Resources;
 
-use App\Models\Social;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
-use Illuminate\Database\Eloquent\Collection;
+
 /**
  * @property int    $id
  * @property string $native_name
@@ -20,7 +20,6 @@ class SocialResource extends JsonResource
      * @var \Illuminate\Database\Eloquent\Collection<int, \App\Models\Social>
      */
     private Collection $translations;
-
 
     public function __construct($resource)
     {
@@ -37,7 +36,7 @@ class SocialResource extends JsonResource
     {
         $languageCode = $request->input('locale');
         $translations = collect($this->translations);
-        $translation = $translations->where('language.code', $languageCode)->first();
+        $translation  = $translations->where('language.code', $languageCode)->first();
 
         return [
             'id' => $this->id,

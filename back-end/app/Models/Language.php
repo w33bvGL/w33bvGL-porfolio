@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Model;
 class Language extends Model
 {
     /**
-     *  @var list<string>
+     * @var list<string>
      */
     protected $fillable = [
         'code',

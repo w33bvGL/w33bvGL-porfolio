@@ -18,5 +18,4 @@ class SocialCollection extends ResourceCollection
             return new SocialResource($social);
         })->toArray();
     }
-
 }

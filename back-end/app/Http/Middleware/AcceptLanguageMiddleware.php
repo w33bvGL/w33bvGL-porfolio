@@ -21,7 +21,6 @@ class AcceptLanguageMiddleware
     {
         $acceptLanguage = $request->header('Accept-Language');
 
-
         if (empty($acceptLanguage)) {
             return response()->json([
                 'message' => __('acceptLanguageMiddleware.header_required'),

@@ -56,7 +56,7 @@ class SocialSeeder extends Seeder
                     'hy' => 'Գիտհաբ',
                     'en' => 'Github',
                 ],
-            ]
+            ],
         ];
 
         foreach ($socials as $socialData) {

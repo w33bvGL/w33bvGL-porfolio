@@ -20,7 +20,7 @@ class Social extends Model
     protected $fillable = [
         'icon',
         'native_name',
-        'link'
+        'link',
     ];
 
     /**
