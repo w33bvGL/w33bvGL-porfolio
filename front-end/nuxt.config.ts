@@ -16,7 +16,7 @@ export default defineNuxtConfig({
       { code: 'hy', iso: 'hy-AM', file: 'hy-AM.json', name: 'Հայերեն' },
       { code: 'ru', iso: 'ru-RU', file: 'ru-RU.json', name: 'Русский' }
     ],
-    lazy: true,
+    lazy: false,
     defaultLocale: 'en',
     strategy: 'prefix_except_default',
     vueI18n: './i18n.config.ts'
