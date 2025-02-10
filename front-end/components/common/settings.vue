@@ -34,6 +34,11 @@ const grayColors = [
   { name: 'Холодный серый', value: 'coolGray', disabled: true }
 ];
 
+watch([selectedPrimary, selectedGray], () => {
+  useAppConfig().ui.primary = selectedPrimary.value
+  useAppConfig().ui.gray = selectedGray.value
+})
+
 const changeLanguage = (newLocale: string) => {
   setLocale(newLocale as 'en' | 'hy' | 'ru');
 };
