@@ -27,7 +27,7 @@ class AcceptLanguageMiddleware
             ], 400);
         }
 
-       App::setLocale($acceptLanguage);
+        App::setLocale($acceptLanguage);
 
         $supportedLanguages = Language::pluck('code')->toArray();
 

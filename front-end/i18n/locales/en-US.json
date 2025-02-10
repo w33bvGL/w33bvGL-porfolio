@@ -1,0 +1,45 @@
+{
+  "siteName": "w33bv.gl",
+  "name": "Vahe",
+  "surname": "Sargsyan",
+  "error": {
+    "pageNotFound": "Page Not Found",
+    "pageNotFoundDescription": "Oops! It looks like this page no longer exists or never did. The link might be outdated, or you may have taken a wrong turn. But don’t worry, there’s plenty to explore on my website! Head back to the homepage and find what you need.",
+    "goBackHome": "Go to Homepage"
+  },
+  "contactUs": {
+    "title": "Professional Development and Optimization – Full Stack Solutions for Your Business",
+    "description": "Do you want to turn your idea into a powerful and efficient IT product? I am a Full Stack developer who will create **fast, secure, and scalable web applications** for you. I develop **REST API, GraphQL, microservices, web applications** and integrate them into flexible ecosystems. **Load speed optimization, user-friendly interfaces, and modern tech stack** – these are what will make your project stand out. **Trust an expert** – contact me, and I will help take your product to the next level.",
+    "contact": "Contact me"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "description": "I am always open to new projects, ideas, and collaboration opportunities. If you have an interesting project or a task that needs solving, feel free to reach out! I will be happy to help bring your ideas to life.",
+    "telegram": "Telegram",
+    "phone": "Phone Number",
+    "email": "Email",
+    "formTitle": "Write to Me",
+    "form": {
+      "nameLabel": "Your Name",
+      "namePlaceholder": "Enter your name",
+      "emailLabel": "Your email",
+      "emailPlaceholder": "Enter your email",
+      "messageLabel": "Your message",
+      "messagePlaceholder": "Write your message",
+      "waitMessage": "Please wait {time}",
+      "submit": "Send Message",
+      "successMessage": "Message sent successfully",
+      "errorMessage": "Error sending message. Please try again later",
+      "sendingError": "An error occurred while sending the message"
+    },
+    "validation": {
+      "nameMinLength": "Name must be at least 2 characters long",
+      "nameMaxLength": "Name must not exceed 50 characters",
+      "nameRegex": "Name can only contain letters and spaces",
+      "invalidEmail": "Please enter a valid email address",
+      "emailMaxLength": "Email must not exceed 100 characters",
+      "messageMinLength": "Message must be at least 100 characters long",
+      "messageMaxLength": "Message must not exceed 5000 characters"
+    }
+  }
+}

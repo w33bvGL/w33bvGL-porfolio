@@ -9,9 +9,8 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class SocialTranslation extends Model
 {
-
     /**
-     *  @var list<string>
+     * @var list<string>
      */
     protected $fillable = ['name'];
 
@@ -27,7 +26,6 @@ class SocialTranslation extends Model
     {
         return $this->belongsTo(Social::class);
     }
-
 
     /** @return BelongsTo<Language, $this> */
     public function language(): BelongsTo

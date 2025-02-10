@@ -1,4 +1,7 @@
 <script setup lang="ts">
+const localeRoute = useLocaleRoute();
+const { t } = useI18n();
+
 const menuItems = [
   { label: 'Главная', to: '/' },
   { label: 'Контакты', to: '/contact' }
@@ -10,17 +13,19 @@ const menuItems = [
     <div class="flex justify-between items-center">
 
       <div>
-        <h1 class="text-2xl font-bold uppercase">
-          w33bv.<span class="text-primary">gl</span>
-        </h1>
-        <p class="text-sm text-gray-500 dark:text-gray-400">Vahe Sargsyan</p>
+        <ULink :to="localeRoute('/')">
+          <h1 class="text-2xl font-bold uppercase">
+            w33bv.<span class="text-primary">gl</span>
+          </h1>
+          <p class="text-sm text-gray-500 dark:text-gray-400">{{ t('name') + ' ' + t('surname')}}</p>
+        </ULink>
       </div>
 
       <nav class="flex gap-4">
         <ULink
             v-for="item in menuItems"
             :key="item.label"
-            :to="item.to"
+            :to="localeRoute(item.to)"
             class="transition-colors"
             inactive-class="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
             active-class="text-primary"
