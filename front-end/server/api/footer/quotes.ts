@@ -2,9 +2,9 @@ import { defineEventHandler } from 'h3'
 
 export default defineEventHandler(async (event) => {
     try {
-        const response = await fetch('http://localhost:49153/api/v1/social', {
+        const response = await fetch('http://localhost:49153/api/v1/footer/qoutes', {
             method: 'GET',
-            headers: { 'Content-Type': 'application/json', 'Accept-Language': 'ru' },
+            headers: { 'Content-Type': 'application/json'},
         })
 
         if (!response.ok) {
