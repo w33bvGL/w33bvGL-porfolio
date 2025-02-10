@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const localeRoute = useLocaleRoute();
+const { t } = useI18n();
 
 const menuItems = [
   { label: 'Главная', to: '/' },
@@ -16,7 +17,7 @@ const menuItems = [
           <h1 class="text-2xl font-bold uppercase">
             w33bv.<span class="text-primary">gl</span>
           </h1>
-          <p class="text-sm text-gray-500 dark:text-gray-400">Vahe Sargsyan</p>
+          <p class="text-sm text-gray-500 dark:text-gray-400">{{ t('name') + ' ' + t('surname')}}</p>
         </ULink>
       </div>
 

@@ -1,21 +1,22 @@
 <script setup lang="ts">
+const { t } = useI18n();
+const localeRoute = useLocaleRoute();
+
 </script>
 
 <template>
   <UCard class="mt-5">
     <section class="text-center">
       <h2 class="text-3xl md:text-4xl font-bold mb-4">
-        Готовы превратить свою идею в реальный проект? Давайте разрабатывать и оптимизировать вместе!
+        {{ t("contactUs.title") }}
       </h2>
 
       <p class="text-gray-600 dark:text-gray-400 mb-6">
-        Я специализируюсь на разработке комплексных решений, которые помогают бизнесам расти и адаптироваться к современным требованиям. С помощью моих навыков в Full Stack разработке, я создаю высокоэффективные системы — от оптимизированных API и микросервисов до гибких и масштабируемых интерфейсов.
-        Мой подход основан на детальной проработке каждого этапа, чтобы гарантировать долгосрочный успех вашего проекта.
-        Готовы обсудить, как я могу помочь вашему бизнесу достичь новых высот? Свяжитесь со мной, и давайте работать над вашим проектом!
+        <span v-html="t('contactUs.description')"></span>
       </p>
 
-      <UButton size="xl" class="px-8 text-white bg-primary hover:bg-primary-dark rounded-xl" to="/contact">
-        Написать мне
+      <UButton size="xl" class="px-8 text-white bg-primary hover:bg-primary-dark rounded-xl" :to="localeRoute('/contact')">
+        {{ t("contactUs.contact") }}
       </UButton>
     </section>
   </UCard>

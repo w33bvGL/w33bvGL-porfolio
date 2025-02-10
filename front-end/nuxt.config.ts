@@ -19,7 +19,7 @@ export default defineNuxtConfig({
     lazy: false,
     defaultLocale: 'en',
     strategy: 'prefix_except_default',
-    vueI18n: './i18n.config.ts'
+    vueI18n: './i18n.config.ts',
   },
 
   compatibilityDate: "2025-02-07"
