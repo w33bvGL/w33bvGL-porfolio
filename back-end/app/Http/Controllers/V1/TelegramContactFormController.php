@@ -26,7 +26,7 @@ class TelegramContactFormController extends Controller
 
             $ipAddress = $request->ip();
             $userAgent = $request->userAgent();
-            $locale = $request->getPreferredLanguage();
+            $locale    = $request->getPreferredLanguage();
 
             $text = "📩 Новая заявка с сайта\n\n".
                 "👤 Имя: {$data['name']}\n".
