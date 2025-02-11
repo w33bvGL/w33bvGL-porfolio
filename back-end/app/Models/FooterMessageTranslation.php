@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
@@ -18,10 +20,10 @@ class FooterMessageTranslation extends Model
      * @var array<string, string>
      */
     protected $casts = [
-        'message'=> 'string',
+        'message' => 'string',
     ];
 
-   /** @return BelongsTo<FooterMessage, $this> */
+    /** @return BelongsTo<FooterMessage, $this> */
     public function footerMessage(): BelongsTo
     {
         return $this->belongsTo(FooterMessage::class, 'footer_messages_id');

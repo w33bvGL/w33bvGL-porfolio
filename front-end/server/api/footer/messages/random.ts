@@ -1,12 +1,13 @@
 import { defineEventHandler } from 'h3'
 
 export default defineEventHandler(async (event) => {
-    try {
-        const response = await fetch('http://localhost:49153/api/v1/footer/messages', {
-            method: 'GET',
-            headers: { 'Content-Type': 'application/json', 'Accept-Language': 'ru' },
-        })
+    const acceptLanguage = event.node.req.headers['accept-language'] || 'en';
 
+    try {
+        const response = await fetch('http://localhost:49153/api/v1/footer/message/random', {
+            method: 'GET',
+            headers: { 'Content-Type': 'application/json', 'Accept-Language': acceptLanguage },
+        })
         if (!response.ok) {
             throw new Error('Ошибка при получении данных')
         }

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -13,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('footer_messages', function (Blueprint $table) {
             $table->id()->comment('Footer message entry ID');
+            $table->string('native_message', 100)->unique()->comment('No translate column for the message');
             $table->timestamps();
         });
 

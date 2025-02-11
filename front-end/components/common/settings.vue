@@ -35,9 +35,11 @@ const grayColors = [
 ];
 
 watch([selectedPrimary, selectedGray], () => {
-  useAppConfig().ui.primary = selectedPrimary.value
+  useAppConfig().ui.primary = selectedPrimary.value;
   useAppConfig().ui.gray = selectedGray.value
-})
+  useCookie('selectedPrimary').value = selectedPrimary.value;
+  useCookie('selectedGray').value = selectedGray.value;
+});
 
 const changeLanguage = (newLocale: string) => {
   setLocale(newLocale as 'en' | 'hy' | 'ru');
