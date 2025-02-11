@@ -17,11 +17,9 @@ class FooterMessageController extends Controller
         $this->footerMessageService = $footerMessageService;
     }
 
-    public function random(Request $request): JsonResponse
+    public function random(): JsonResponse
     {
-        $languageId = $request->input('languageId');
-
-        $message = $this->footerMessageService->getRandomMessage($languageId)->first();
+        $message = $this->footerMessageService->getRandomMessage()->first();
 
         return response()->json(new FooterMessageResource($message));
     }

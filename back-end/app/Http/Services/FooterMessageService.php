@@ -10,13 +10,12 @@ use App\Models\FooterMessage;
 class FooterMessageService
 {
     /**
+     * Получить все переводы для сообщений
+     *
      * @return Collection<int, FooterMessage>
      */
-    public function getRandomMessage(string $languageId): Collection
+    public function getRandomMessage(): Collection
     {
-        return FooterMessage::with(['translations' => function ($query) use ($languageId) {
-            $query->where('language_id', $languageId);
-        }])->inRandomOrder()->limit(1)->get();
+        return FooterMessage::inRandomOrder()->limit(1)->get();
     }
 }
-

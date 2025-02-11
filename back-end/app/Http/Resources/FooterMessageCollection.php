@@ -15,8 +15,8 @@ class FooterMessageCollection extends ResourceCollection
      */
     public function toArray(Request $request): array
     {
-        return $this->collection->map(function ($social) {
-            return new FooterMessageResource($social);
+        return $this->collection->map(function ($message) {
+            return new FooterMessageResource($message);
         })->toArray();
     }
 }
