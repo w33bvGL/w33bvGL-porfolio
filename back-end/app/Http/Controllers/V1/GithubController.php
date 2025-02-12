@@ -33,13 +33,13 @@ class GithubController extends Controller
 
         $reposResponse = Http::get($baseUrl.'/users/'.$username.'/repos');
 
-        if (!$reposResponse->successful()) {
+        if (! $reposResponse->successful()) {
             return response()->json([
                 'error' => __('githubController.failed_to_fetch_repos'),
             ], 500);
         }
 
-        $repos = $reposResponse->json();
+        $repos        = $reposResponse->json();
         $languageData = [];
 
         foreach ($repos as $repo) {
@@ -70,5 +70,4 @@ class GithubController extends Controller
 
         return response()->json($languagePercentage);
     }
-
 }
