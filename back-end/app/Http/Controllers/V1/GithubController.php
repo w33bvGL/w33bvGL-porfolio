@@ -13,9 +13,9 @@ class GithubController extends Controller
     public function profile(): JsonResponse
     {
         $baseUrl      = config('github.base_url');
-        $username = config('github.github_username');
+        $username     = config('github.github_username');
 
-        $response = Http::get($baseUrl . "/users/" . $username);
+        $response = Http::get($baseUrl.'/users/'.$username);
 
         if ($response->successful()) {
             return response()->json($response->json());

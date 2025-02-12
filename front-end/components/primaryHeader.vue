@@ -45,7 +45,7 @@ const { data: profile } = await useAsyncData<Profile>("github-profile", () =>
     })
 );
 
-const text = ref("Kristen Johnson - Creative UX/UI Designer - ");
+const text = ref("Vahe Sargsyan - Full-stack Engineer - OSS -");
 const textArray = ref<string[]>([]);
 
 onMounted(() => {
@@ -54,14 +54,14 @@ onMounted(() => {
 </script>
 
 <template>
-  <div>
+  <div class="flex gap-5">
     <UCard class="relative p-6">
       <div class="circle">
-        <div class="logo">
+        <div class="logo relative rounded-full overflow-hidden w-full h-full">
           <NuxtImg
               :src="profile?.avatar_url"
               alt="User Avatar"
-              class="avatar"
+              class="w-full h-full"
           />
         </div>
         <div class="text rotating">
@@ -69,23 +69,23 @@ onMounted(() => {
               v-for="(char, index) in textArray"
               :key="index"
               :style="{
-              transform: `rotate(${index * 8.2}deg) translate(0, -100px)`,
+              transform: `rotate(${index * 8.2}deg) translate(0, -80px)`,
             }"
           >
             {{ char }}
           </span>
         </div>
       </div>
-
-      <div class="profile-text">
-        <h2 class="text-2xl font-bold">{{ profile?.name }}</h2>
-        <p class="text-gray-500">@{{ profile?.login }}</p>
-        <p class="text-gray-700">{{ profile?.bio }}</p>
-        <p class="text-gray-600">{{ profile?.company }}</p>
-        <p class="text-gray-500">{{ profile?.location }}</p>
-        <p class="text-blue-500">
-          <a :href="profile?.html_url" target="_blank">{{ profile?.html_url }}</a>
-        </p>
+    </UCard>
+    <UCard>
+      <div>
+        <h1 class="text-3xl md:text-4xl font-bold">{{ profile?.name }} <span class="text-xl md:text-2xl text-gray-600 dark:text-gray-400"> {{ '/ ' + t('name') + ' ' + t('surname')}}</span></h1>
+        <UButton :to="profile?.html_url" target="_blank" variant="link" :padded="false" class="text-gray-500">@{{ profile?.login }}</UButton>
+        <div class="mt-5">
+          <p class="text-gray-600 dark:text-gray-400">{{ profile?.bio }}</p>
+          <p class="text-gray-600">{{ profile?.company }}</p>
+          <p class="text-gray-500">{{ profile?.location }}</p>
+        </div>
       </div>
     </UCard>
   </div>
@@ -94,39 +94,22 @@ onMounted(() => {
 <style scoped>
 .circle {
   position: relative;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #ccc;
 }
 
-.logo {
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-.avatar {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .text {
   position: absolute;
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  animation: animate 10s linear infinite;
 }
 
-/* Анимация вращения */
 .rotating {
   animation: rotateText 10s linear infinite;
 }
@@ -143,7 +126,8 @@ onMounted(() => {
 .text span {
   position: absolute;
   left: 50%;
-  font-size: 1.2em;
+  top: 16%;
+  font-size: 1em;
   text-transform: uppercase;
   transform-origin: 0 100px;
 }
