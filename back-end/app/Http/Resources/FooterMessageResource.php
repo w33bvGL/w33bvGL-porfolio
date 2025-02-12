@@ -9,8 +9,8 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 /**
- * @property int    $id
- * @property string $native_message
+ * @property int        $id
+ * @property string     $native_message
  * @property Collection $translations
  */
 class FooterMessageResource extends JsonResource

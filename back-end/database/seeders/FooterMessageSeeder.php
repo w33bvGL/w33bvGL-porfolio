@@ -163,7 +163,6 @@ class FooterMessageSeeder extends Seeder
             ],
         ];
 
-
         foreach ($messages as $msg) {
             $footerMessage = FooterMessage::updateOrCreate(
                 ['native_message' => $msg['native_message']],

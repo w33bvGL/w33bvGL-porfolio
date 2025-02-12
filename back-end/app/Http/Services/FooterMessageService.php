@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace App\Http\Services;
 
-use Illuminate\Database\Eloquent\Collection;
 use App\Models\FooterMessage;
+use Illuminate\Database\Eloquent\Collection;
 
 class FooterMessageService
 {
