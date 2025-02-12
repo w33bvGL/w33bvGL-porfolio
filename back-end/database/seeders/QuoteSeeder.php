@@ -9,7 +9,7 @@ use App\Models\Quote;
 use App\Models\QuoteTranslation;
 use Illuminate\Database\Seeder;
 
-class FooterQuoteSeeder extends Seeder
+class QuoteSeeder extends Seeder
 {
     /**
      * Run the database seeds.
