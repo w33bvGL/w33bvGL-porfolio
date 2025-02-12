@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Http\Controllers\V1;
 
 use App\Http\Controllers\Controller;
@@ -9,7 +11,7 @@ use Illuminate\Http\JsonResponse;
 
 class QuoteController extends Controller
 {
-     protected QuoteService $quoteService;
+    protected QuoteService $quoteService;
 
     public function __construct(QuoteService $quoteService)
     {

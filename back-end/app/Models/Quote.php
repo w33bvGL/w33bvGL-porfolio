@@ -6,6 +6,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+
 /**
  * @property string $quote
  * @property string $slug
@@ -17,7 +18,7 @@ class Quote extends Model
      * @var list<string>
      */
     protected $fillable = [
-        'slug'
+        'slug',
     ];
 
     /**

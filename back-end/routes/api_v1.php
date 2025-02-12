@@ -3,10 +3,10 @@
 declare(strict_types=1);
 
 use App\Http\Controllers\V1\FooterMessageController;
+use App\Http\Controllers\V1\QuoteController;
 use App\Http\Controllers\V1\SocialController;
 use App\Http\Controllers\V1\TelegramContactFormController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\V1\QuoteController;
 
 Route::prefix('v1')->group(function () {
     Route::prefix('contact')->group(function () {
@@ -24,6 +24,6 @@ Route::prefix('v1')->group(function () {
     });
 
     Route::prefix('quote')->group(callback: function () {
-            Route::get('random', [QuoteController::class, 'random']);
+        Route::get('random', [QuoteController::class, 'random']);
     });
 });

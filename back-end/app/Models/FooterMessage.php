@@ -17,7 +17,7 @@ class FooterMessage extends Model
      * @var list<string>
      */
     protected $fillable = [
-        'slug'
+        'slug',
     ];
 
     /**
