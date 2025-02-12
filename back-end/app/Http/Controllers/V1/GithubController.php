@@ -25,4 +25,50 @@ class GithubController extends Controller
             'error' => __('githubController.failed_to_fetch_data'),
         ], 500);
     }
+
+    public function languages(): JsonResponse
+    {
+        $baseUrl  = config('github.base_url');
+        $username = config('github.github_username');
+
+        $reposResponse = Http::get($baseUrl.'/users/'.$username.'/repos');
+
+        if (!$reposResponse->successful()) {
+            return response()->json([
+                'error' => __('githubController.failed_to_fetch_repos'),
+            ], 500);
+        }
+
+        $repos = $reposResponse->json();
+        $languageData = [];
+
+        foreach ($repos as $repo) {
+            $languagesResponse = Http::get($baseUrl.'/repos/'.$username.'/'.$repo['name'].'/languages');
+
+            if ($languagesResponse->successful()) {
+                $languages = $languagesResponse->json();
+
+                foreach ($languages as $language => $bytes) {
+                    $languageData[$language] = ($languageData[$language] ?? 0) + $bytes;
+                }
+            }
+        }
+
+        if (empty($languageData)) {
+            return response()->json([
+                'error' => __('githubController.no_language_data'),
+            ], 500);
+        }
+
+        $totalBytes = array_sum($languageData);
+
+        $languagePercentage = array_map(function ($bytes) use ($totalBytes) {
+            return round(($bytes / $totalBytes) * 100, 2);
+        }, $languageData);
+
+        arsort($languagePercentage);
+
+        return response()->json($languagePercentage);
+    }
+
 }

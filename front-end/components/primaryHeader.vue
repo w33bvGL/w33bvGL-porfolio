@@ -51,6 +51,12 @@ const textArray = ref<string[]>([]);
 onMounted(() => {
   textArray.value = text.value.split("");
 });
+
+const companies = computed(() => {
+  return profile.value?.company
+      ? profile.value.company.match(/@(\S+)/g)?.map(name => name.replace('@', '')) || []
+      : [];
+});
 </script>
 
 <template>
@@ -79,12 +85,27 @@ onMounted(() => {
     </UCard>
     <UCard>
       <div>
-        <h1 class="text-3xl md:text-4xl font-bold">{{ profile?.name }} <span class="text-xl md:text-2xl text-gray-600 dark:text-gray-400"> {{ '/ ' + t('name') + ' ' + t('surname')}}</span></h1>
-        <UButton :to="profile?.html_url" target="_blank" variant="link" :padded="false" class="text-gray-500">@{{ profile?.login }}</UButton>
-        <div class="mt-5">
-          <p class="text-gray-600 dark:text-gray-400">{{ profile?.bio }}</p>
-          <p class="text-gray-600">{{ profile?.company }}</p>
+        <div class="flex justify-between items-center">
+          <h1 class="text-3xl md:text-4xl font-bold">{{ profile?.name }} <span class="text-xl md:text-2xl text-gray-600 dark:text-gray-400"> {{ '/ ' + t('name') + ' ' + t('surname')}}</span></h1>
           <p class="text-gray-500">{{ profile?.location }}</p>
+        </div>
+        <UButton :to="profile?.html_url" target="_blank" variant="link" :padded="false" class="text-gray-500">@{{ profile?.login }}</UButton>
+
+        <div class="mt-5">
+          <p class="text-gray-600 dark:text-gray-400">{{ t('bio') }}</p>
+          <div class="mt-5 flex gap-5" v-if="profile?.company">
+            <UButton
+                v-for="company in companies"
+                :key="company"
+                variant="link"
+                :padded="false"
+                :to="`https://github.com/${company}`"
+                target="_blank"
+                size="xl"
+            >
+              {{ company }}
+            </UButton>
+          </div>
         </div>
       </div>
     </UCard>

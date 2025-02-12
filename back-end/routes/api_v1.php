@@ -14,6 +14,7 @@ Route::prefix('v1')->group(function () {
     Route::prefix('user')->group(callback: function () {
         Route::prefix('github')->group(function () {
             Route::get('profile', [GithubController::class, 'profile']);
+            Route::get('languages', [GithubController::class, 'languages']);
         });
     });
 

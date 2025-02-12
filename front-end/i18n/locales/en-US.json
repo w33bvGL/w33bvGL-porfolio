@@ -2,6 +2,7 @@
   "siteName": "w33bv.gl",
   "name": "Vahe",
   "surname": "Sargsyan",
+  "bio": "Full-Stack Engineer and founder of Anidzen-Ecosystems and KU-OTA-KU. Specializing in creating scalable solutions using Laravel, Nuxt.js, and other cutting-edge technologies. Building innovative ecosystems and platforms that help businesses reach new heights. Actively involved in open-source projects, I believe in sharing knowledge with the community by creating stable and efficient solutions accessible to other developers.",
   "error": {
     "pageNotFound": "Page Not Found",
     "pageNotFoundDescription": "Oops! It looks like this page no longer exists or never did. The link might be outdated, or you may have taken a wrong turn. But don’t worry, there’s plenty to explore on my website! Head back to the homepage and find what you need.",
