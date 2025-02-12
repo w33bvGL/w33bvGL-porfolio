@@ -18,7 +18,7 @@ class FooterMessageSeeder extends Seeder
     {
         $messages = [
             [
-                'native_message' => 'all_rights_reserved',
+                'slug' => 'all_rights_reserved',
                 'translations' => [
                     'ru' => 'Все права защищены. 🚀',
                     'hy' => 'Բոլոր իրավունքները պաշտպանված են։ 🚀',
@@ -26,7 +26,7 @@ class FooterMessageSeeder extends Seeder
                 ],
             ],
             [
-                'native_message' => 'your_success_my_goal',
+                'slug' => 'your_success_my_goal',
                 'translations' => [
                     'ru' => 'Ваш успех — моя цель! 🌟',
                     'hy' => 'Ձեր հաջողությունը իմ նպատակն է! 🌟',
@@ -34,7 +34,7 @@ class FooterMessageSeeder extends Seeder
                 ],
             ],
             [
-                'native_message' => 'made_with_love',
+                'slug' => 'made_with_love',
                 'translations' => [
                     'ru' => 'Сделано с любовью! ❤️',
                     'hy' => 'Պատրաստված սիրով! ❤️',
@@ -42,7 +42,7 @@ class FooterMessageSeeder extends Seeder
                 ],
             ],
             [
-                'native_message' => 'coding_for_future',
+                'slug' => 'coding_for_future',
                 'translations' => [
                     'ru' => 'Кодим на будущее! 💻',
                     'hy' => 'Ծրագրավորում ենք ապագայի համար! 💻',
@@ -50,7 +50,7 @@ class FooterMessageSeeder extends Seeder
                 ],
             ],
             [
-                'native_message' => 'keep_growing',
+                'slug' => 'keep_growing',
                 'translations' => [
                     'ru' => 'Продолжаем развиваться! 🌱',
                     'hy' => 'Շարունակում ենք զարգանալ! 🌱',
@@ -58,7 +58,7 @@ class FooterMessageSeeder extends Seeder
                 ],
             ],
             [
-                'native_message' => 'creating_together',
+                'slug' => 'creating_together',
                 'translations' => [
                     'ru' => 'Творим новое вместе! ✨',
                     'hy' => 'Ստեղծում ենք նորը միասին! ✨',
@@ -66,7 +66,7 @@ class FooterMessageSeeder extends Seeder
                 ],
             ],
             [
-                'native_message' => 'reaching_new_heights',
+                'slug' => 'reaching_new_heights',
                 'translations' => [
                     'ru' => 'Достигаем высот! 🏔️',
                     'hy' => 'Հասնում ենք բարձունքների! 🏔️',
@@ -74,7 +74,7 @@ class FooterMessageSeeder extends Seeder
                 ],
             ],
             [
-                'native_message' => 'join_the_journey',
+                'slug' => 'join_the_journey',
                 'translations' => [
                     'ru' => 'Присоединяйтесь к путешествию! 🌍',
                     'hy' => 'Միացեք ճանապարհորդությանը! 🌍',
@@ -82,7 +82,7 @@ class FooterMessageSeeder extends Seeder
                 ],
             ],
             [
-                'native_message' => 'stay_connected',
+                'slug' => 'stay_connected',
                 'translations' => [
                     'ru' => 'Оставайтесь на связи! 📱',
                     'hy' => 'Մնացեք կապի մեջ! 📱',
@@ -90,7 +90,7 @@ class FooterMessageSeeder extends Seeder
                 ],
             ],
             [
-                'native_message' => 'no_bugs_just_features',
+                'slug' => 'no_bugs_just_features',
                 'translations' => [
                     'ru' => 'Не баг, а фича! 🐞',
                     'hy' => 'Ոչ թե սխալ, այլ առանձնահատկություն! 🐞',
@@ -98,7 +98,7 @@ class FooterMessageSeeder extends Seeder
                 ],
             ],
             [
-                'native_message' => 'code_or_die',
+                'slug' => 'code_or_die',
                 'translations' => [
                     'ru' => 'Кодь или умри! 💀',
                     'hy' => 'Ծրագրիր կամ մեռիր! 💀',
@@ -106,7 +106,7 @@ class FooterMessageSeeder extends Seeder
                 ],
             ],
             [
-                'native_message' => 'debugging_is_life',
+                'slug' => 'debugging_is_life',
                 'translations' => [
                     'ru' => 'Отлаживаю, значит живу! 🛠️',
                     'hy' => 'Թեստավորում եմ, այսինքն ապրում եմ! 🛠️',
@@ -114,7 +114,7 @@ class FooterMessageSeeder extends Seeder
                 ],
             ],
             [
-                'native_message' => 'commit_push_pray',
+                'slug' => 'commit_push_pray',
                 'translations' => [
                     'ru' => 'Commit, push, молись! 🙏',
                     'hy' => 'Commit, push, աղոթիր! 🙏',
@@ -122,7 +122,7 @@ class FooterMessageSeeder extends Seeder
                 ],
             ],
             [
-                'native_message' => 'eat_sleep_code_repeat',
+                'slug' => 'eat_sleep_code_repeat',
                 'translations' => [
                     'ru' => 'Ем, сплю, кодю, повторяю! 🔁',
                     'hy' => 'Ուտում եմ, քնում եմ, ծրագրավորում եմ, կրկնում եմ! 🔁',
@@ -130,7 +130,7 @@ class FooterMessageSeeder extends Seeder
                 ],
             ],
             [
-                'native_message' => 'hack_the_universe',
+                'slug' => 'hack_the_universe',
                 'translations' => [
                     'ru' => 'Хакни вселенную! 🌌',
                     'hy' => 'Կոտրիր տիեզերքը! 🌌',
@@ -138,7 +138,7 @@ class FooterMessageSeeder extends Seeder
                 ],
             ],
             [
-                'native_message' => '404_no_sleep_found',
+                'slug' => '404_no_sleep_found',
                 'translations' => [
                     'ru' => '404: Сон не найден! 😵',
                     'hy' => '404: Քունը չի գտնվել! 😵',
@@ -146,7 +146,7 @@ class FooterMessageSeeder extends Seeder
                 ],
             ],
             [
-                'native_message' => 'dont_touch_production',
+                'slug' => 'dont_touch_production',
                 'translations' => [
                     'ru' => 'Не трогай продакшен! 🚨',
                     'hy' => 'Մի դիպչիր արտադրանքին! 🚨',
@@ -154,7 +154,7 @@ class FooterMessageSeeder extends Seeder
                 ],
             ],
             [
-                'native_message' => 'deploy_and_pray',
+                'slug' => 'deploy_and_pray',
                 'translations' => [
                     'ru' => 'Деплой и молись! 🤲',
                     'hy' => 'Deploy արա ու աղոթիր! 🤲',
@@ -165,7 +165,7 @@ class FooterMessageSeeder extends Seeder
 
         foreach ($messages as $msg) {
             $footerMessage = FooterMessage::updateOrCreate(
-                ['native_message' => $msg['native_message']],
+                ['slug' => $msg['slug']],
                 []
             );
 
