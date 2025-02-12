@@ -1,12 +1,13 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Http\Controllers\V1;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Request;
-use App\Http\Services\FooterMessageService;
 use App\Http\Resources\FooterMessageResource;
+use App\Http\Services\FooterMessageService;
+use Illuminate\Http\JsonResponse;
 
 class FooterMessageController extends Controller
 {

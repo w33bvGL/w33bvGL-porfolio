@@ -4,22 +4,23 @@ declare(strict_types=1);
 
 namespace App\Http\Resources;
 
-use App\Models\FooterMessage;
-use App\Models\FooterMessageTranslation;
+use App\Models\Quote;
+use App\Models\QuoteTranslation;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 /**
- * @property int                            $id
- * @property string                         $message
- * @property string                         $slug
- * @property Collection<int, FooterMessage> $translations
+ * @property int                    $id
+ * @property string                 $slug
+ * @property string                 $author
+ * @property string                 $quote
+ * @property Collection<int, Quote> $translations
  */
-class FooterMessageResource extends JsonResource
+class QuoteResource extends JsonResource
 {
     /**
-     * @var Collection<int, FooterMessage>
+     * @var Collection<int, Quote>
      **/
     private Collection $translations;
 
@@ -34,12 +35,15 @@ class FooterMessageResource extends JsonResource
      **/
     public function toArray(Request $request): array
     {
-        /** @var Collection<int, FooterMessage> $translations */
+        /** @var Collection<int, QuoteTranslation> $translations */
         $translations = $this->translations;
 
         $translations = $translations->keyBy('language.code')->map(
-            static function (FooterMessageTranslation $translation): string {
-                return $translation->message;
+            static function (QuoteTranslation $translation): array {
+                return [
+                    'author' => $translation->author,
+                    'quote' => $translation->quote,
+                ];
             }
         );
 

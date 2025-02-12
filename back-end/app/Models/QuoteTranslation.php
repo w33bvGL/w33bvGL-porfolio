@@ -7,6 +7,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
+/**
+ * @property string $author
+ * @property string $quote
+ */
 class QuoteTranslation extends Model
 {
     /**

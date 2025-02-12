@@ -7,15 +7,15 @@ namespace App\Http\Resources;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\ResourceCollection;
 
-class FooterMessageCollection extends ResourceCollection
+class QuoteCollection extends ResourceCollection
 {
     /**
-     * @return SocialResource[]
+     * @return QuoteResource[]
      */
     public function toArray(Request $request): array
     {
         return $this->collection->map(function ($message) {
-            return new FooterMessageResource($message);
+            return new QuoteResource($message);
         })->toArray();
     }
 }

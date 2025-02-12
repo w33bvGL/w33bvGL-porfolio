@@ -5,15 +5,16 @@ declare(strict_types=1);
 namespace App\Http\Services;
 
 use App\Models\FooterMessage;
+use App\Models\Quote;
 use Illuminate\Database\Eloquent\Collection;
 
-class FooterMessageService
+class QuoteService
 {
     /**
      * @return Collection<int, FooterMessage>
      */
-    public function getRandomMessage(): Collection
+    public function getRandomQuote(): Collection
     {
-        return FooterMessage::inRandomOrder()->limit(1)->get();
+        return Quote::inRandomOrder()->limit(1)->get();
     }
 }

@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('footer_messages', function (Blueprint $table) {
             $table->id()->comment('Footer message entry ID');
-            $table->string('native_message', 100)->unique()->comment('No translate column for the message');
+            $table->string('slug', 100)->unique()->comment('Message slug');
             $table->timestamps();
         });
 
@@ -32,6 +32,7 @@ return new class extends Migration
 
         Schema::create('quotes', function (Blueprint $table) {
             $table->id()->comment('Quote record ID');
+            $table->string('slug', 255)->unique()->comment('Quote slug');
             $table->timestamps();
         });
 
