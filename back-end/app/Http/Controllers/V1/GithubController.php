@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Http;
 
 class GithubController extends Controller
 {
-    public function getGitHubProfile(): JsonResponse
+    public function profile(): JsonResponse
     {
         $baseUrl      = config('github.base_url');
         $username = config('github.github_username');
