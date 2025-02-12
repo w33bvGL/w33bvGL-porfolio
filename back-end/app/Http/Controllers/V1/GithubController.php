@@ -7,6 +7,7 @@ namespace App\Http\Controllers\V1;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Cache;
 
 class GithubController extends Controller
 {
@@ -28,46 +29,51 @@ class GithubController extends Controller
 
     public function languages(): JsonResponse
     {
-        $baseUrl  = config('github.base_url');
-        $username = config('github.github_username');
+        $cacheKey = 'github_languages';
+        $cacheTime = 93600;
 
-        $reposResponse = Http::get($baseUrl.'/users/'.$username.'/repos');
+        return Cache::remember($cacheKey, $cacheTime, function () {
+            $baseUrl  = config('github.base_url');
+            $username = config('github.github_username');
 
-        if (! $reposResponse->successful()) {
-            return response()->json([
-                'error' => __('githubController.failed_to_fetch_repos'),
-            ], 500);
-        }
+            $reposResponse = Http::get($baseUrl.'/users/'.$username.'/repos');
 
-        $repos        = $reposResponse->json();
-        $languageData = [];
+            if (! $reposResponse->successful()) {
+                return response()->json([
+                    'error' => __('githubController.failed_to_fetch_repos'),
+                ], 500);
+            }
 
-        foreach ($repos as $repo) {
-            $languagesResponse = Http::get($baseUrl.'/repos/'.$username.'/'.$repo['name'].'/languages');
+            $repos        = $reposResponse->json();
+            $languageData = [];
 
-            if ($languagesResponse->successful()) {
-                $languages = $languagesResponse->json();
+            foreach ($repos as $repo) {
+                $languagesResponse = Http::get($baseUrl.'/repos/'.$username.'/'.$repo['name'].'/languages');
 
-                foreach ($languages as $language => $bytes) {
-                    $languageData[$language] = ($languageData[$language] ?? 0) + $bytes;
+                if ($languagesResponse->successful()) {
+                    $languages = $languagesResponse->json();
+
+                    foreach ($languages as $language => $bytes) {
+                        $languageData[$language] = ($languageData[$language] ?? 0) + $bytes;
+                    }
                 }
             }
-        }
 
-        if (empty($languageData)) {
-            return response()->json([
-                'error' => __('githubController.no_language_data'),
-            ], 500);
-        }
+            if (empty($languageData)) {
+                return response()->json([
+                    'error' => __('githubController.no_language_data'),
+                ], 500);
+            }
 
-        $totalBytes = array_sum($languageData);
+            $totalBytes = array_sum($languageData);
 
-        $languagePercentage = array_map(function ($bytes) use ($totalBytes) {
-            return round(($bytes / $totalBytes) * 100, 2);
-        }, $languageData);
+            $languagePercentage = array_map(function ($bytes) use ($totalBytes) {
+                return round(($bytes / $totalBytes) * 100, 2);
+            }, $languageData);
 
-        arsort($languagePercentage);
+            arsort($languagePercentage);
 
-        return response()->json($languagePercentage);
+            return response()->json($languagePercentage);
+        });
     }
 }

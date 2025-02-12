@@ -65,10 +65,14 @@ const companies = computed(() => {
       <div class="circle">
         <div class="logo relative rounded-full overflow-hidden w-full h-full">
           <NuxtImg
+              v-if="profile?.avatar_url"
               :src="profile?.avatar_url"
               alt="User Avatar"
               class="w-full h-full"
           />
+          <USkeleton class="w-full h-full">
+
+          </USkeleton>
         </div>
         <div class="text rotating">
           <span
@@ -121,7 +125,6 @@ const companies = computed(() => {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #ccc;
 }
 
 .text {

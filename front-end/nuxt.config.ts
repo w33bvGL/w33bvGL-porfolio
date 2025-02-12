@@ -7,7 +7,8 @@ export default defineNuxtConfig({
     "@pinia/nuxt",
     "nuxt-time",
     "@nuxt/image",
-    "@nuxtjs/i18n"
+    "@nuxtjs/i18n",
+    "nuxt-highcharts"
   ],
 
   i18n: {
