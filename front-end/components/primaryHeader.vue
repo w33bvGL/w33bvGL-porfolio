@@ -61,7 +61,7 @@ const companies = computed(() => {
 
 <template>
   <div class="flex gap-5">
-    <UCard class="relative p-6">
+    <UCard class="w-1/3 relative p-6">
       <div class="circle">
         <div class="logo relative rounded-full overflow-hidden w-full h-full">
           <NuxtImg
@@ -87,7 +87,7 @@ const companies = computed(() => {
         </div>
       </div>
     </UCard>
-    <UCard>
+    <UCard class="w-2/3">
       <div>
         <div class="flex justify-between items-center">
           <h1 class="text-3xl md:text-4xl font-bold">{{ profile?.name }} <span class="text-xl md:text-2xl text-gray-600 dark:text-gray-400"> {{ '/ ' + t('name') + ' ' + t('surname')}}</span></h1>

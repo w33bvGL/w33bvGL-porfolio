@@ -6,31 +6,36 @@ namespace App\Http\Controllers\V1;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\JsonResponse;
-use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Http;
 
 class GithubController extends Controller
 {
     public function profile(): JsonResponse
     {
-        $baseUrl      = config('github.base_url');
-        $username     = config('github.github_username');
+        $cacheKey  = 'github_profile';
+        $cacheTime = 86400;
 
-        $response = Http::get($baseUrl.'/users/'.$username);
+        return Cache::remember($cacheKey, $cacheTime, function () {
+            $baseUrl  = config('github.base_url');
+            $username = config('github.github_username');
 
-        if ($response->successful()) {
-            return response()->json($response->json());
-        }
+            $response = Http::get($baseUrl.'/users/'.$username);
 
-        return response()->json([
-            'error' => __('githubController.failed_to_fetch_data'),
-        ], 500);
+            if ($response->successful()) {
+                return response()->json($response->json());
+            }
+
+            return response()->json([
+                'error' => __('githubController.failed_to_fetch_data'),
+            ], 500);
+        });
     }
 
     public function languages(): JsonResponse
     {
-        $cacheKey = 'github_languages';
-        $cacheTime = 93600;
+        $cacheKey  = 'github_languages';
+        $cacheTime = 86400;
 
         return Cache::remember($cacheKey, $cacheTime, function () {
             $baseUrl  = config('github.base_url');
