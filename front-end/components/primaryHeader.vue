@@ -76,6 +76,7 @@ const companies = computed(() => {
         </div>
         <div class="text rotating">
           <span
+              class="text-primary font-bold"
               v-for="(char, index) in textArray"
               :key="index"
               :style="{

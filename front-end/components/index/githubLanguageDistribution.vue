@@ -60,7 +60,12 @@ onMounted(() => {
 <template>
   <UCard class="w-2/3">
     <div>
-      <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center md:text-left">Статистика языков</h2>
+      <div class="mb-4">
+        <h2 class="text-3xl md:text-4xl font-bold mb-1 text-center md:text-left">Статистика языков</h2>
+        <span class="text-lg text-gray-600 dark:text-gray-400 ьи">
+        Узнай, какие языки программирования чаще всего использую в своих проектах на GitHub.
+        </span>
+      </div>
 <!--      <canvas id="githubChart" width="300" height="300"></canvas>-->
       <div>
         <div class="grid grid-cols-4 gap-5">
