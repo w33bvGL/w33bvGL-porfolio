@@ -61,10 +61,8 @@ onMounted(() => {
   <UCard class="w-2/3">
     <div>
       <div class="mb-4">
-        <h2 class="text-3xl md:text-4xl font-bold mb-1 text-center md:text-left">Статистика языков</h2>
-        <span class="text-lg text-gray-600 dark:text-gray-400 ьи">
-        Узнай, какие языки программирования чаще всего использую в своих проектах на GitHub.
-        </span>
+        <h2 class="text-3xl md:text-4xl font-bold mb-1 text-center md:text-left">{{ t('githubLanguageDistribution.title') }}</h2>
+        <span class="text-gray-600 dark:text-gray-400">{{ t('githubLanguageDistribution.description') }}</span>
       </div>
 <!--      <canvas id="githubChart" width="300" height="300"></canvas>-->
       <div>

@@ -1,23 +1,31 @@
 <script setup lang="ts">
 const localeRoute = useLocaleRoute();
-const { t } = useI18n();
+const { t, locale } = useI18n();
 
-const menuItems = [
-  { label: 'Главная', to: '/' },
-  { label: 'Контакты', to: '/contact' }
-]
+let menuItems = [
+  { label: t("menu.home"), to: "/" },
+  { label: t("menu.contact"), to: "/contact" }
+];
+
+watch(() => locale.value, () => {
+  menuItems = [
+    { label: t("menu.home"), to: "/" },
+    { label: t("menu.contact"), to: "/contact" }
+  ];
+});
 </script>
 
 <template>
   <UCard class="mt-10">
     <div class="flex justify-between items-center">
-
       <div>
         <ULink :to="localeRoute('/')">
           <h1 class="text-2xl font-bold uppercase">
-            w33bv.<span class="text-primary">gl</span>
+            {{ t("site.brand") }}.<span class="text-primary">{{ t("site.domain") }}</span>
           </h1>
-          <p class="text-sm text-gray-500 dark:text-gray-400">{{ t('name') + ' ' + t('surname')}}</p>
+          <p class="text-sm text-gray-500 dark:text-gray-400">
+            {{ t("name") + " " + t("surname") }}
+          </p>
         </ULink>
       </div>
 
@@ -33,10 +41,6 @@ const menuItems = [
           {{ item.label }}
         </ULink>
       </nav>
-
     </div>
   </UCard>
 </template>
-
-<style scoped>
-</style>

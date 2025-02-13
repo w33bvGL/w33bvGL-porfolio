@@ -70,9 +70,7 @@ const companies = computed(() => {
               alt="User Avatar"
               class="w-full h-full"
           />
-          <USkeleton class="w-full h-full">
-
-          </USkeleton>
+          <USkeleton class="w-full h-full" />
         </div>
         <div class="text rotating">
           <span
@@ -94,7 +92,7 @@ const companies = computed(() => {
           <h1 class="text-3xl md:text-4xl font-bold">{{ profile?.name }} <span class="text-xl md:text-2xl text-gray-600 dark:text-gray-400"> {{ '/ ' + t('name') + ' ' + t('surname')}}</span></h1>
           <p class="text-gray-500">{{ profile?.location }}</p>
         </div>
-        <UButton :to="profile?.html_url" target="_blank" variant="link" :padded="false" class="text-gray-500">@{{ profile?.login }}</UButton>
+        <UButton :to="profile?.html_url" target="_blank" variant="link" :padded="false">@{{ profile?.login }}</UButton>
 
         <div class="mt-5">
           <p class="text-gray-600 dark:text-gray-400">{{ t('bio') }}</p>
