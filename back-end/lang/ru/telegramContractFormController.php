@@ -2,5 +2,5 @@
 
 return [
     'message_sent_success' => 'Сообщение успешно отправлено!',
-    'message_sent_failed' => 'Не удалось отправить сообщение в Telegram.',
+    'message_sent_failed' => 'Не удалось отправить сообщение.',
 ];
