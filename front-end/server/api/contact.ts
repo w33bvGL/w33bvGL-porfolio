@@ -21,6 +21,8 @@ export default defineEventHandler(async (event) => {
 
         return await response.json()
     } catch (error) {
-        return { success: false, message: error }
+        throw createError({
+            statusCode: 400,
+        });
     }
 })

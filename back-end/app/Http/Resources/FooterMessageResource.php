@@ -34,7 +34,7 @@ class FooterMessageResource extends JsonResource
      **/
     public function toArray(Request $request): array
     {
-        /** @var Collection<int, FooterMessage> $translations */
+        /** @var Collection<int, FooterMessageTranslation> $translations */
         $translations = $this->translations;
 
         $translations = $translations->keyBy('language.code')->map(

@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
             LanguageSeeder::class,
             SocialSeeder::class,
             FooterMessageSeeder::class,
-            FooterQuoteSeeder::class,
+            QuoteSeeder::class,
         ]);
     }
 }

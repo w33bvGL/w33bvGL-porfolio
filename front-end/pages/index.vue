@@ -2,5 +2,6 @@
 </script>
 
 <template>
-  <UCard class="mt-5 hidden">wdwdwd</UCard>
+  <PrimaryHeader class="mt-5"/>
+  <GithubStats class="mt-5"/>
 </template>

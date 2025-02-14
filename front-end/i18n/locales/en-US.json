@@ -2,6 +2,17 @@
   "siteName": "w33bv.gl",
   "name": "Vahe",
   "surname": "Sargsyan",
+  "greeting": "Vahe Sargsyan - Full-stack Engineer - OSS -",
+  "site": {
+    "brand": "w33bv",
+    "domain": "gl"
+  },
+  "menu": {
+    "home": "Home",
+    "contact": "Contact",
+    "tooltipText": "This is open-source! Give it a"
+  },
+  "bio": "Full-Stack Engineer and founder of Anidzen-Ecosystems and KU-OTA-KU. Specializing in creating scalable solutions using Laravel, Nuxt.js, and other cutting-edge technologies. Building innovative ecosystems and platforms that help businesses reach new heights. Actively involved in open-source projects, I believe in sharing knowledge with the community by creating stable and efficient solutions accessible to other developers.",
   "error": {
     "pageNotFound": "Page Not Found",
     "pageNotFoundDescription": "Oops! It looks like this page no longer exists or never did. The link might be outdated, or you may have taken a wrong turn. But don’t worry, there’s plenty to explore on my website! Head back to the homepage and find what you need.",
@@ -11,6 +22,17 @@
     "title": "Professional Development and Optimization – Full Stack Solutions for Your Business",
     "description": "Do you want to turn your idea into a powerful and efficient IT product? I am a Full Stack developer who will create **fast, secure, and scalable web applications** for you. I develop **REST API, GraphQL, microservices, web applications** and integrate them into flexible ecosystems. **Load speed optimization, user-friendly interfaces, and modern tech stack** – these are what will make your project stand out. **Trust an expert** – contact me, and I will help take your product to the next level.",
     "contact": "Contact me"
+  },
+  "githubLanguageDistribution": {
+    "title": "Language Statistics",
+    "description": "Check out which programming languages I use most often in my GitHub projects."
+  },
+  "profileInfo": {
+    "location": "Location",
+    "repositories": "Repositories",
+    "gists": "Gists",
+    "followers": "Followers",
+    "following": "Following"
   },
   "contact": {
     "title": "Contact Me",
