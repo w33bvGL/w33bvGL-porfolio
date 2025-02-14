@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Services\Api\V1\TelegramService;
 use App\Http\Requests\Api\V1\TelegramContactFormRequest;
 use Illuminate\Http\JsonResponse;
+use Symfony\Component\HttpFoundation\Response as ResponseAlias;
 
 class TelegramContactFormController extends Controller
 {
@@ -35,9 +36,9 @@ class TelegramContactFormController extends Controller
             "💬 Сообщение: {$data['message']}\n";
 
         if (!$this->telegramService->sendMessage($text)) {
-            return response()->json(['ok' => false, 'message' => 'Не удалось отправить сообщение в Telegram.'], 500);
+            return response()->json(['ok' => false, 'message' => __('telegramContractFormController.message_sent_failed')], ResponseAlias::HTTP_INTERNAL_SERVER_ERROR);
         }
 
-        return response()->json(['ok' => true, 'message' => 'Сообщение успешно отправлено!']);
+        return response()->json(['ok' => true, 'message' => __('telegramContractFormController.message_sent_success')]);
     }
 }
