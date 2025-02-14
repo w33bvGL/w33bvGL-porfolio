@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Cache;
 use Symfony\Component\HttpFoundation\Response;
-
+use Symfony\Component\HttpFoundation\Response as ResponseAlias;
 class AcceptLanguageMiddleware
 {
     /**
@@ -34,8 +34,9 @@ class AcceptLanguageMiddleware
 
         if (! in_array($acceptLanguage, $supportedLanguages)) {
             return response()->json([
+                'ok' => false,
                 'message' => __('acceptLanguageMiddleware.invalid_language', ['languages' => implode(', ', $supportedLanguages)]),
-            ], 400);
+            ], ResponseAlias::HTTP_BAD_REQUEST);
         }
 
         $languageCode = Cache::remember('language_'.$acceptLanguage, 10000, function () use ($acceptLanguage) {
