@@ -20,11 +20,7 @@ class TelegramContactFormController extends Controller
 
     public function send(TelegramContactFormRequest $request): JsonResponse
     {
-        \Log::info('Request received: ', $request->all());
-
         $data = $request->validated();
-
-        \Log::info('Validated data: ', $data);
 
         $ipAddress = $request->ip();
         $userAgent = $request->userAgent();
