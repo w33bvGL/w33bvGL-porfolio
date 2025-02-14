@@ -61,7 +61,8 @@ const handleSubmit = async () => {
       body: state,
     });
 
-    if (!res.ok) {
+    console.log(res)
+    if (res.ok) {
       toast.add({
         title: t('contact.form.successMessage'),
       });

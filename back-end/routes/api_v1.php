@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-use App\Http\Controllers\V1\FooterMessageController;
-use App\Http\Controllers\V1\GithubController;
-use App\Http\Controllers\V1\QuoteController;
-use App\Http\Controllers\V1\SocialController;
-use App\Http\Controllers\V1\TelegramContactFormController;
+use App\Http\Controllers\Api\V1\FooterMessageController;
+use App\Http\Controllers\Api\V1\GithubController;
+use App\Http\Controllers\Api\V1\QuoteController;
+use App\Http\Controllers\Api\V1\SocialController;
+use App\Http\Controllers\Api\V1\TelegramContactFormController;
 use Illuminate\Support\Facades\Route;
 
 Route::prefix('v1')->group(function () {
