@@ -3,7 +3,7 @@ import { useCookie } from 'nuxt/app';
 
 export const contactMessageCooldownStore = defineStore('timer', {
     state: () => ({
-        remainingTime: 5,
+        remainingTime: 300,
         isCooldown: false,
     }),
     actions: {
@@ -23,12 +23,12 @@ export const contactMessageCooldownStore = defineStore('timer', {
         },
 
         startCooldown() {
-            this.setRemainingTime(this.remainingTime);
+            this.setRemainingTime(300);
             this.startInterval();
         },
 
         resetTimer() {
-            this.setRemainingTime(this.remainingTime);
+            this.setRemainingTime(300);
             this.isCooldown = false;
             this.clearCookies();
         },

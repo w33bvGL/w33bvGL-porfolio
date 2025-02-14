@@ -61,21 +61,17 @@ const handleSubmit = async () => {
       body: state,
     });
 
-    console.log(res)
     if (res.ok) {
       toast.add({
-        title: t('contact.form.successMessage'),
+        title: res.message,
       });
       timerStore.startCooldown();
-    } else if (res.status >= 400 && res.status < 500) {
+    } else {
       toast.add({
-        title: t('contact.form.errorMessage'),
-      });
-    } else if (res.status >= 500) {
-      toast.add({
-        title: t('contact.form.sendingError'),
+        title: res.message,
       });
     }
+
   } catch (error) {
     toast.add({
       title: t('contact.form.sendingError') + error,

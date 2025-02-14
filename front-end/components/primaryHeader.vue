@@ -45,7 +45,7 @@ const { data: profile } = await useAsyncData<Profile>("github-profile", () =>
     })
 );
 
-const text = ref("Vahe Sargsyan - Full-stack Engineer - OSS -");
+const text = ref(t('greeting'));
 const textArray = ref<string[]>([]);
 
 onMounted(() => {

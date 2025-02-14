@@ -2,13 +2,15 @@
   "siteName": "w33bv.gl",
   "name": "Vahe",
   "surname": "Sargsyan",
+  "greeting": "Vahe Sargsyan - Full-stack Engineer - OSS -",
   "site": {
     "brand": "w33bv",
     "domain": "gl"
   },
   "menu": {
     "home": "Home",
-    "contact": "Contact"
+    "contact": "Contact",
+    "tooltipText": "This is open-source! Give it a"
   },
   "bio": "Full-Stack Engineer and founder of Anidzen-Ecosystems and KU-OTA-KU. Specializing in creating scalable solutions using Laravel, Nuxt.js, and other cutting-edge technologies. Building innovative ecosystems and platforms that help businesses reach new heights. Actively involved in open-source projects, I believe in sharing knowledge with the community by creating stable and efficient solutions accessible to other developers.",
   "error": {

@@ -29,7 +29,7 @@ watch(() => locale.value, () => {
         </ULink>
       </div>
 
-      <nav class="flex gap-4">
+      <nav class="flex gap-4 items-center">
         <ULink
             v-for="item in menuItems"
             :key="item.label"
@@ -40,6 +40,12 @@ watch(() => locale.value, () => {
         >
           {{ item.label }}
         </ULink>
+        <UTooltip :text="t('menu.tooltipText') + '⭐'":popper="{ arrow: true }">
+          <ULink to="https://github.com/w33bvGL/w33bvGL-porfolio" target="_blank" class="flex">
+            <UIcon class="w-6 h-6" name="octicon:mark-github"></UIcon>
+          </ULink>
+        </UTooltip>
+
       </nav>
     </div>
   </UCard>
