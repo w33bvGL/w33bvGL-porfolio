@@ -35,9 +35,9 @@ class TelegramContactFormController extends Controller
             "💬 Сообщение: {$data['message']}\n";
 
         if (!$this->telegramService->sendMessage($text)) {
-            return response()->json(['success' => false, 'message' => 'Не удалось отправить сообщение в Telegram.'], 500);
+            return response()->json(['ok' => false, 'message' => 'Не удалось отправить сообщение в Telegram.'], 500);
         }
 
-        return response()->json(['success' => true, 'message' => 'Сообщение успешно отправлено!']);
+        return response()->json(['ok' => true, 'message' => 'Сообщение успешно отправлено!']);
     }
 }
