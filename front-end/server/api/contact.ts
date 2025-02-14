@@ -15,8 +15,6 @@ export default defineEventHandler(async (event) => {
             body: JSON.stringify(body),
         })
 
-        console.log(response);
-
         if (!response.ok) {
             throw new Error('Ошибка при отправке сообщения')
         }
