@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Http\Services\Api\V1;
 
 use Illuminate\Support\Facades\Http;
-use Illuminate\Support\Facades\Log;
+
 class TelegramService
 {
     private string $token;
