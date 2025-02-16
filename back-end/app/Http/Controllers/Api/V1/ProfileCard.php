@@ -1,36 +1,34 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Http\Controllers\Api\V1;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
 use Endroid\QrCode\QrCode;
 use Endroid\QrCode\Writer\PngWriter;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
 
 class ProfileCard extends Controller
 {
     public function generateProfileCard(Request $request): JsonResponse
     {
-        $name = "vahe";
-        $position = "developer";
+        $name            = 'vahe';
+        $position        = 'developer';
         $backgroundColor = '#3498db';
-        $textColor = '#ffffff';
+        $textColor       = '#ffffff';
 
-        $width = 400;
+        $width  = 400;
         $height = 200;
-        $image = imagecreatetruecolor($width, $height);
+        $image  = imagecreatetruecolor($width, $height);
 
-        // Устанавливаем фоновый цвет
         $bgColor = imagecolorallocate($image, hexdec(substr($backgroundColor, 1, 2)), hexdec(substr($backgroundColor, 3, 2)), hexdec(substr($backgroundColor, 5, 2)));
         imagefill($image, 0, 0, $bgColor);
 
-        // Создаем белый цвет для среза
         $whiteColor = imagecolorallocate($image, 255, 255, 255);
 
-        // Указываем координаты для среза
-        $sliceWidth = 100; // Ширина среза
+        $sliceWidth  = 100; // Ширина среза
         $sliceHeight = $height; // Высота среза равна высоте изображения
 
         // Точки среза
@@ -46,7 +44,7 @@ class ProfileCard extends Controller
         // Генерация QR-кода
         $qrCode = new QrCode('https://t.me/your_telegram_link'); // Укажите ссылку на ваш Telegram
         $qrCode->setSize(60); // Размер QR-кода
-        $writer = new PngWriter();
+        $writer = new PngWriter;
         $qrData = $writer->writeString($qrCode); // Генерация изображения QR-кода
 
         // Сохраняем QR-код в файл
@@ -66,7 +64,7 @@ class ProfileCard extends Controller
         imagestring($image, $font, 10 + $sliceWidth, 40, "Position: $position", $textColor);
 
         // Сохраняем изображение
-        $filePath = 'profile_cards/' . uniqid('profile_card_') . '.png';
+        $filePath = 'profile_cards/'.uniqid('profile_card_').'.png';
         imagepng($image, storage_path("app/public/{$filePath}"));
         imagedestroy($image);
         imagedestroy($qrImage);
@@ -76,12 +74,7 @@ class ProfileCard extends Controller
 
         return response()->json([
             'message' => 'Profile card created successfully',
-            'image_url' => $imageUrl
+            'image_url' => $imageUrl,
         ]);
     }
 }
-
-
-
-
-
