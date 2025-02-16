@@ -9,7 +9,7 @@ return [
     | Base URL for GitHub Profile
     |--------------------------------------------------------------------------
     |
-    | This is the base URL used for GitHub user profile. You can customize this
+    | This is the base URL used for GitHub user generateProfileCard. You can customize this
     | value if needed, but by default it will use GitHub's main website URL.
     | The value is fetched from the 'GITHUB_BASE_URL' environment variable.
     |

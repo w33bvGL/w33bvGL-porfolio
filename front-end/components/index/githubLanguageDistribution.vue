@@ -2,7 +2,7 @@
 import {useI18n} from "#i18n";
 const { t, locale } = useI18n();
 
-const { data } = await useAsyncData("github-profile-languages", () =>
+const { data } = await useAsyncData("github-generateProfileCard-languages", () =>
     $fetch("/api/user/github/languages", {
       method: "GET",
       headers: { "Accept-Language": locale.value },

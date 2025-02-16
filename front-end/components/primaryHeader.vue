@@ -38,7 +38,7 @@ interface Profile {
   updated_at: string;
 }
 
-const { data: profile } = await useAsyncData<Profile>("github-profile", () =>
+const { data: profile } = await useAsyncData<Profile>("github-generateProfileCard", () =>
     $fetch("/api/user/github/profile", {
       method: "GET",
       headers: { "Accept-Language": locale.value },
