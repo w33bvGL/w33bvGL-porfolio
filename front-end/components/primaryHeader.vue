@@ -45,8 +45,6 @@ const { data: profile } = await useAsyncData<Profile>("github-profile", () =>
     })
 );
 
-console.log(profile);
-
 const text = ref(t('greeting'));
 const textArray = ref<string[]>([]);
 
