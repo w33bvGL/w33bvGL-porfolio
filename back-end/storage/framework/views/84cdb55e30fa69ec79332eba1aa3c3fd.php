@@ -174,4 +174,4 @@
         </div>
     </body>
 </html>
-<?php /**PATH /var/www/resources/views/welcome.blade.php ENDPATH**/ ?>
+<?php /**PATH /var/www/resources/views/profile_card.blade.php ENDPATH**/ ?>
