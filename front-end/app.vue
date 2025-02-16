@@ -50,6 +50,7 @@ useHead({
 
     <UModals/>
     <UNotifications/>
+    <UiGenerateOgImage/>
 </template>
 
 
