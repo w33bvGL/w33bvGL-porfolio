@@ -38,12 +38,14 @@ interface Profile {
   updated_at: string;
 }
 
-const { data: profile } = await useAsyncData<Profile>("github-generateProfileCard", () =>
+const { data: profile } = await useAsyncData<Profile>("github-profile", () =>
     $fetch("/api/user/github/profile", {
       method: "GET",
       headers: { "Accept-Language": locale.value },
     })
 );
+
+console.log(profile);
 
 const text = ref(t('greeting'));
 const textArray = ref<string[]>([]);
