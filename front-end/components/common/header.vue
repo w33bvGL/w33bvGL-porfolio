@@ -20,12 +20,17 @@ watch(() => locale.value, () => {
     <div class="flex justify-between items-center">
       <div>
         <ULink :to="localeRoute('/')">
-          <h1 class="text-2xl font-bold uppercase">
-            {{ t("site.brand") }}.<span class="text-primary">{{ t("site.domain") }}</span>
-          </h1>
-          <p class="text-sm text-gray-500 dark:text-gray-400">
-            {{ t("name") + " " + t("surname") }}
-          </p>
+          <div class="flex gap-2 items-center">
+            <UiLogo/>
+            <div>
+              <h1 class="text-2xl font-bold uppercase">
+                {{ t("site.brand") }}.<span class="text-primary">{{ t("site.domain") }}</span>
+              </h1>
+              <p class="text-sm text-gray-500 dark:text-gray-400">
+                {{ t("name") + " " + t("surname") }}
+              </p>
+            </div>
+          </div>
         </ULink>
       </div>
 

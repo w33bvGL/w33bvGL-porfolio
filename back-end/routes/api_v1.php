@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use App\Http\Controllers\Api\V1\FooterMessageController;
 use App\Http\Controllers\Api\V1\GithubController;
+use App\Http\Controllers\Api\V1\ProfileCard;
 use App\Http\Controllers\Api\V1\QuoteController;
 use App\Http\Controllers\Api\V1\SocialController;
 use App\Http\Controllers\Api\V1\TelegramContactFormController;
@@ -15,6 +16,16 @@ Route::prefix('v1')->group(function () {
         Route::prefix('github')->group(function () {
             Route::get('profile', [GithubController::class, 'profile']);
             Route::get('languages', [GithubController::class, 'languages']);
+        });
+
+        Route::prefix('profile')->group(function () {
+            Route::prefix('card')->group(function () {
+                Route::get('', [ProfileCard::class, '']);
+                Route::get('view', function () {
+                    return view('profile_cards.profile_card');
+                });
+                Route::post('', [ProfileCard::class, 'generateProfileCard']);
+            });
         });
     });
 

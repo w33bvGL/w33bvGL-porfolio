@@ -19,12 +19,32 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libxml2-dev \
     libjpeg-dev \
     libgd-dev \
+    wkhtmltopdf \
+    libmagickwand-dev \
+    libxslt-dev \
+    libonig-dev \
+    libmcrypt-dev \
+    libreadline-dev \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-RUN docker-php-ext-install pdo_mysql bcmath gd zip curl bz2 soap sockets \
-    && pecl install redis \
-    && docker-php-ext-enable soap redis
+RUN docker-php-ext-install \
+    pdo_mysql \
+    bcmath \
+    gd \
+    zip \
+    curl \
+    bz2 \
+    soap \
+    sockets \
+    intl \
+    xsl \
+    exif \
+    pcntl \
+    mysqli \
+    opcache \
+    && pecl install redis imagick mcrypt xdebug \
+    && docker-php-ext-enable soap redis imagick mcrypt xdebug
 
 COPY --from=composer:2.4 /usr/bin/composer /usr/bin/composer
 
@@ -34,7 +54,7 @@ WORKDIR /var/www
 
 COPY . .
 
-RUN composer install
+RUN composer install --no-dev --optimize-autoloader
 
 RUN php artisan key:generate
 
