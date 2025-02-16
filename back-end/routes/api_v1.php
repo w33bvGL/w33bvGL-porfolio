@@ -21,6 +21,9 @@ Route::prefix('v1')->group(function () {
         Route::prefix('profile')->group(function () {
             Route::prefix('card')->group(function () {
                 Route::get('', [ProfileCard::class, '']);
+                Route::get('view', function () {
+                    return view('profile_cards.profile_card');
+                });
                 Route::post('', [ProfileCard::class, 'generateProfileCard']);
             });
         });
