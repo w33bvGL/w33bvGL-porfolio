@@ -1,10 +1,14 @@
 <?php
+
 declare(strict_types=1);
+
 namespace Database\Seeders;
+
 use App\Models\Language;
 use App\Models\Quote;
 use App\Models\QuoteTranslation;
 use Illuminate\Database\Seeder;
+
 class QuoteSeeder extends Seeder
 {
     /**
