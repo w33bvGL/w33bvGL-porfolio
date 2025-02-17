@@ -59,6 +59,6 @@ export const contactMessageCooldownStore = defineStore('timer', {
         clearCookies() {
             useCookie('remainingTime').value = undefined;
             useCookie('isCooldown').value = undefined;
-        }
-    }
+        },
+    },
 });

@@ -8,7 +8,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "format": "prettier --write 'front-end/**/*.{js,md,ts,vue}'"
+    "format": "prettier --write '**/*.{js,md,ts,vue}'"
   },
   "devDependencies": {
     "prettier": "^3.4.2",

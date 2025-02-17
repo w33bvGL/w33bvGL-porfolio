@@ -1,13 +1,9 @@
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
 
 <template>
-    <commonHeader/>
-    <slot/>
-    <commonContactUs/>
+    <commonHeader />
+    <slot />
+    <commonContactUs />
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

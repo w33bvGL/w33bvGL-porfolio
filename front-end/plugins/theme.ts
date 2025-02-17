@@ -1,4 +1,4 @@
-export default defineNuxtPlugin(nuxtApp => {
+export default defineNuxtPlugin((nuxtApp) => {
     const selectedPrimary = useCookie('selectedPrimary').value || 'lime';
     const selectedGray = useCookie('selectedGray').value || 'neutral';
 
