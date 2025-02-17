@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 /**
- * @property int    $id
+ * @property int $id
  * @property string $native_name
  * @property string $icon
  * @property string $link
@@ -35,7 +35,7 @@ class SocialResource extends JsonResource
     {
         $languageCode = $request->input('locale');
         $translations = collect($this->translations);
-        $translation  = $translations->where('language.code', $languageCode)->first();
+        $translation = $translations->where('language.code', $languageCode)->first();
 
         return [
             'id' => $this->id,
