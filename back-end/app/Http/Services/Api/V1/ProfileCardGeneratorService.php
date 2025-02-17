@@ -28,7 +28,7 @@ class ProfileCardGeneratorService
 
         $command = "wkhtmltoimage --width 1920 --height 1080 --quality 100 {$tempHtmlPath} {$outputPath}";
 
-        $output    = null;
+        $output = null;
         $returnVar = null;
 
         exec($command, $output, $returnVar);
