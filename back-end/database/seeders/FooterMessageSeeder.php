@@ -1,10 +1,14 @@
 <?php
+
 declare(strict_types=1);
+
 namespace Database\Seeders;
+
 use App\Models\FooterMessage;
 use App\Models\FooterMessageTranslation;
 use App\Models\Language;
 use Illuminate\Database\Seeder;
+
 class FooterMessageSeeder extends Seeder
 {
     /**

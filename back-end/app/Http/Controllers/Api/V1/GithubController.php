@@ -13,11 +13,11 @@ class GithubController extends Controller
 {
     public function profile(): JsonResponse
     {
-        $cacheKey  = 'github_profile';
+        $cacheKey = 'github_profile';
         $cacheTime = 86400;
 
         return Cache::remember($cacheKey, $cacheTime, function () {
-            $baseUrl  = config('github.base_url');
+            $baseUrl = config('github.base_url');
             $username = config('github.github_username');
 
             $response = Http::get($baseUrl.'/users/'.$username);
@@ -34,11 +34,11 @@ class GithubController extends Controller
 
     public function languages(): JsonResponse
     {
-        $cacheKey  = 'github_languages';
+        $cacheKey = 'github_languages';
         $cacheTime = 86400;
 
         return Cache::remember($cacheKey, $cacheTime, function () {
-            $baseUrl  = config('github.base_url');
+            $baseUrl = config('github.base_url');
             $username = config('github.github_username');
 
             $reposResponse = Http::get($baseUrl.'/users/'.$username.'/repos');
@@ -49,7 +49,7 @@ class GithubController extends Controller
                 ], 500);
             }
 
-            $repos        = $reposResponse->json();
+            $repos = $reposResponse->json();
             $languageData = [];
 
             foreach ($repos as $repo) {

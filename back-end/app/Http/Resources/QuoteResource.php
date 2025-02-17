@@ -11,10 +11,10 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 /**
- * @property int                    $id
- * @property string                 $slug
- * @property string                 $author
- * @property string                 $quote
+ * @property int $id
+ * @property string $slug
+ * @property string $author
+ * @property string $quote
  * @property Collection<int, Quote> $translations
  */
 class QuoteResource extends JsonResource
