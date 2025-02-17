@@ -12,7 +12,7 @@
         "intervention/image": "^3.11",
         "laravel/framework": "^11.31",
         "laravel/tinker": "^2.9",
-        "endroid/qr-code": "^2.1",
+        "endroid/qr-code": "^6.0",
         "ext-gd": "*"
     },
     "require-dev": {
