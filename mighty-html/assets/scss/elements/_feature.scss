@@ -1,0 +1,105 @@
+// feature area stayle
+.rts-feature-area{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    width: 312px !important;
+    @media #{$laptop-device} {
+        width: 215px !important;
+    }
+    .thumbnail{
+        img{
+            max-width: max-content;
+            min-width: max-content;
+        }
+    }
+    &:hover{
+        &::after{
+            height: 100%;
+        }
+        .content-inner{
+            bottom: 30px;
+            .number{
+                right: 0;
+            }
+        }
+    }
+    &::after{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        content: '';
+        background: rgba(0, 0, 0, 0.233);
+        height: 0%;
+        z-index: 0;
+        pointer-events: none;
+        transition: .5s;
+        backdrop-filter: blur(5px);
+    }
+    .content-inner{
+        position: absolute;
+        left: 30px;
+        bottom: -150px;
+        width: 80%;
+        z-index: 5;
+        transition: .8s;
+        .number{
+            margin-left: auto;
+            margin-right: 0;
+            color: #141414;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: auto;
+            right: 0px;
+            bottom: 60px;
+            transition: .5s;
+        }
+        .body{
+            .tag{
+                color: #FFF;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px; /* 166.667% */
+                display: block;
+            }
+            a{
+                color: #FFF;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 30px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+.feature-main-wrapper-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media #{$laptop-device} {
+        justify-content: center;
+        gap: 20px;
+    }
+    @media #{$smlg-device} {
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+
+
+

@@ -1,0 +1,78 @@
+// gsap-style
+.rts-reveal-one {
+    visibility: hidden;
+    position: relative;
+    width: 80%;
+    height: 80%;
+    max-width: max-content;
+    margin-left: auto;
+    right: 0;
+    overflow: hidden;
+  }
+  
+.rts-reveal-two {
+  visibility: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: max-content;
+  right: 0;
+  overflow: hidden;
+}
+  
+.rts-reveal-three {
+  visibility: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: max-content;
+  right: 0;
+  overflow: hidden;
+}
+  
+.rts-reveal-to-bottom-wrapper{
+  visibility: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: max-content;
+  right: 0;
+  overflow: hidden;
+}
+  
+
+
+
+
+
+
+  .credit {
+    font-family: Termina, sans-serif;
+    position: absolute;
+    bottom: 10px;
+    a {
+      color: white;
+    }
+  }
+  
+
+
+
+
+
+.scrolltext-wrapper{
+  width:100vw;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  overflow:hidden;
+  text-transform: uppercase;
+  text-align:center;
+  h2.title{
+    width: 500vw;
+    min-width: max-content;
+    @media #{$laptop-device} {
+      margin-bottom: 100px !important;
+    }
+  }
+}

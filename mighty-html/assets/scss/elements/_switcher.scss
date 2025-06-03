@@ -1,0 +1,86 @@
+.modal-sidebar-scroll {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-65%);
+    transform: translateY(-65%);
+    text-align: center;
+    z-index: 10;
+    right: 0;
+    left: auto;;
+    ul{
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+        position: relative;
+        li{
+            margin: 0;
+            position: relative;
+            font-size: 20px;
+            &.go-dark-w{
+                z-index: 10;
+                bottom: -0px;
+            }
+            &.go-light-w{
+                z-index: 1;
+            }
+            span{
+                font-size: 14px;
+                color: #fff;
+                mix-blend-mode: exclusion;
+                &::after{
+                    content: "";
+                    border-style: solid;
+                    border-color: transparent transparent transparent var(--color-primary);
+                    border-width: 6px;
+                    position: absolute;
+                    top: 50%;
+                    right: -12px;
+                    -webkit-transform: translate(0, -50%);
+                    -khtml-transform: translate(0, -50%);
+                    transform: translate(0, -50%);
+                }
+            }
+            i{
+                cursor: pointer;
+                color: #ffffff;
+                padding: 10px 10px;
+                display: block;
+                -webkit-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+                border-radius: 1px 0 0 1px;
+                background: #000000;
+                transition: 0.3s;
+            }
+        }
+    }
+}
+
+
+.rts-light-mood{
+    .modal-sidebar-scroll{
+        .go-light-w{
+            display: none;
+        }
+    }
+}
+.rts-light-mood.rts-dark{
+    .modal-sidebar-scroll{
+        .go-light-w{
+            display: block;
+        }
+        .go-dark-w{
+            display: none;
+        }
+    }
+}
+
+.rts-dark{
+    .modal-sidebar-scroll{
+        .go-light-w{
+            display: block;
+        }
+        .go-dark-w{
+            display: none;
+        }
+    }
+}
