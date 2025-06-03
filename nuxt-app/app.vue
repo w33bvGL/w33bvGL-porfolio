@@ -11,7 +11,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="box w-20 h-20 bg-red-500">
-    цвцв
-  </div>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
