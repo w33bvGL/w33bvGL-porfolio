@@ -46,7 +46,6 @@ useHead({
             <nuxtPage />
         </NuxtLayout>
 
-        <commonFooter />
     </UContainer>
 
     <UModals />

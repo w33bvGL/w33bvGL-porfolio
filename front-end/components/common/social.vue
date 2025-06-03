@@ -10,12 +10,6 @@ const socialNetworks = ref<
         link: string;
     }>
 >([]);
-
-const { data } = await useAsyncData('social', () =>
-    $fetch('/api/social/get-all', { method: 'GET' }),
-);
-
-socialNetworks.value = data.value;
 </script>
 
 <template>
