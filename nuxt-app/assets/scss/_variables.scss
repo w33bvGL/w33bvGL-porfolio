@@ -1,0 +1,5 @@
+@use "palette" as palette;
+
+:root {
+  --color-primary: #{palette.$color-primary};
+}

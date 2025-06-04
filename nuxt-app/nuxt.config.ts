@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   ],
   devtools: { enabled: true },
 
-  css: ['@/assets/sass/main.sass'],
+  css: ['@/assets/scss/main.scss'],
 
   compatibilityDate: '2025-05-15',
 
