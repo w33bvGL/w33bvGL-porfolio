@@ -11,7 +11,7 @@ onMounted(() => {
   const interactiveElements = [
     'a',
     'button',
-    'progress-wrap',
+    '.progress-wrap',
     '.active-progress',
     '.search-click',
     '.action-menu',
