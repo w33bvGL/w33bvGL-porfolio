@@ -26,8 +26,10 @@ onMounted(() => {
       Возможно, она была. Возможно, её и не существовало.<br />
       Но ты уже зашёл далеко — возвращайся на главную, там красиво ✨
     </p>
-    <UiButton class="error__link" variant="primary"><NuxtLinkLocale to="/">На главную</NuxtLinkLocale></UiButton>
+    <NuxtLinkLocale to="/"><UiButton class="error__link" variant="primary">На главную</UiButton></NuxtLinkLocale>
   </div>
+
+  <CommonCursor/>
 </template>
 
 <style scoped lang="scss">
