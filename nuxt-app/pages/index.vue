@@ -2,7 +2,6 @@
 </script>
 
 <template>
-  <CommonBackToTop/>
   <div>
     <h1>vahe sins</h1>
 
@@ -19,8 +18,10 @@
     <h6>vahe sins</h6>
     <p>vahe sins</p>
 
-    <div style="height: 2000px;">
+    <div style="height: 2000px; display: flex; align-items: center; justify-content: center;">
+          <div style="background-color: white; width: 100%; height: 200px;">
 
+          </div>
     </div>
   </div>
 </template>

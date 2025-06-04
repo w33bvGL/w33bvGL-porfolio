@@ -64,6 +64,9 @@ onUnmounted(() => {
   visibility: hidden;
   transform: translateY(15px);
   transition: all 200ms linear;
+  mix-blend-mode: exclusion;
+  background-color: white;
+  border-radius: 100%;
 
   &.active-progress {
     opacity: 1;
@@ -72,14 +75,13 @@ onUnmounted(() => {
   }
 
   .progress-circle {
-    background: #ededed;
     border-radius: 50%;
     width: 100%;
     height: 100%;
 
     path {
-      stroke: var(--color-primary);
-      stroke-width: 4;
+      stroke: black;
+      stroke-width: 10;
       fill: none;
       transition: all 200ms linear;
     }
@@ -92,7 +94,7 @@ onUnmounted(() => {
     width: 24px;
     height: 24px;
     pointer-events: none;
-    fill: var(--color-primary);
+    fill: black;
     transition: transform 0.3s ease;
   }
 

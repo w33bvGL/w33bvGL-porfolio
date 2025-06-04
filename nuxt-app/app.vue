@@ -14,4 +14,6 @@ onMounted(() => {
   <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>
+
+  <CommonBackToTop/>
 </template>
