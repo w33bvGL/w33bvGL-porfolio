@@ -57,7 +57,7 @@ onMounted(() => {
       <NuxtImg src="/images/banner/11.png" class="img" alt="banner" />
     </div>
 
-    <div class="container container-2xl">
+    <div class="container container-auto">
       <div class="left">
         <div class="col-lg-6 order-xl-1 order-lg-1 order-md-2 order-sm-2 order-2">
           <div class="banner-content-wrapper-three">
@@ -73,16 +73,8 @@ onMounted(() => {
               I specialize in building scalable web platforms, high-load APIs, and complex business logic from scratch.
             </p>
             <a href="#about" class="click-down-bottom">
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="41" viewBox="0 0 14 41" fill="none">
-                <g clip-path="url(#clip0_353_1191)">
-                  <path d="M7.13756 39.8898V39.871C7.99995 35.5997 10.4954 31.9306 13.9082 29.5974V29.3528C10.6055 31.5731 8.14674 34.9976 7.13756 39.0242L7.13756 0.0939941L6.95407 0.0939941L6.95407 38.9866C6.91738 38.8737 6.89903 38.742 6.86233 38.6291C5.85316 34.6025 3.39444 31.178 0.0916901 28.9577V29.1835C3.52288 31.5355 5.99995 35.1858 6.86233 39.457V39.4758C6.89903 39.6264 6.91738 39.7769 6.93573 39.9274C6.97242 40.0779 6.99077 40.2473 7.00912 40.3978C7.06417 40.2285 7.10086 40.0591 7.13756 39.8898Z" fill="white" stroke="white" stroke-miterlimit="10" />
-                </g>
-                <defs>
-                  <clipPath id="clip0_353_1191">
-                    <rect width="41" height="14" fill="white" transform="matrix(0 1 -1 0 14 0)" />
-                  </clipPath>
-                </defs>
-              </svg>
+              <Icon name="lucide:arrow-down" class="icon" ></Icon>
+              <p>About</p>
             </a>
           </div>
         </div>
@@ -156,25 +148,25 @@ onMounted(() => {
 }
 
 .rts_hero__title {
-  font-size: clamp(2.5rem, 8vw, 10rem);
+  font-size: 7.5dvw;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 0.9;
 
   .title {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1dvw;
 
     span {
       background-color: var(--color-cog-900);
       overflow: hidden;
-      border-radius: 50px;
-      padding: 0.5rem 1.5rem;
-      font-size: clamp(0.9rem, 1.5vw, 1.5rem);
-      border: 2px solid var(--color-cog-800);
+      border-radius: 2dvw;
+      padding: 0.5dvw 1.5dvw;
+      font-size: 1.5dvw;
+      border: 0.3dvw solid var(--color-cog-800);
       color: var(--color-primary);
       opacity: 0.8;
     }
@@ -182,39 +174,27 @@ onMounted(() => {
 }
 
 .hero__sub-title {
-  font-size: clamp(0.9rem, 1.2vw, 2rem);
+  font-size: 1.3dvw;
+  margin-top: 2dvw;
   line-height: 1.6;
   color: var(--color-neutral-500);
-  margin-top: 1rem;
 }
 
 .click-down-bottom {
-  display: inline-block;
-  margin-top: 2rem;
+  color: var(--color-neutral-500);
+  display: flex;
+  align-items: center;
+  gap: 0.5dvw;
+  margin-top: 1dvw;
   animation: bounce 2s infinite;
 
-  svg {
-    width: 1rem;
-    height: auto;
+  .icon {
+    width: 3dvw;
+    height: 3dvw;
   }
-}
 
-.social-share-horizental {
-  position: absolute;
-  bottom: 2rem;
-  left: 2rem;
-
-  ul {
-    display: flex;
-    gap: 1rem;
-
-    li {
-      transition: transform 0.3s ease;
-
-      &:hover {
-        transform: scale(1.2);
-      }
-    }
+  p {
+    font-size: 1.2dvw;
   }
 }
 
@@ -222,9 +202,9 @@ onMounted(() => {
   width: 120vw;
   max-width: none;
   position: absolute;
-  padding: 0.5rem 2rem;
+  padding: 0.5dvw 2dvw;
   z-index: 10;
-  font-size: clamp(0.8rem, 1vw, 1.2rem);
+  font-size: 1dvw;
 }
 
 .kospand {

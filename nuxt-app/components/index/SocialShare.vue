@@ -21,7 +21,7 @@ const socialLinks = [
 
 <style scoped>
 .social-share-horizontal {
-  padding: 2dvw 1dvw;
+  padding: 3dvw 1dvw;
   position: absolute; bottom: 0;
   display: flex;
   flex-direction: column;

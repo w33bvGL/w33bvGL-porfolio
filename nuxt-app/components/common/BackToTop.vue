@@ -54,15 +54,15 @@ onUnmounted(() => {
 <style scoped lang="scss">
 .progress-wrap {
   position: fixed;
-  right: 30px;
-  bottom: 30px;
-  width: 46px;
-  height: 46px;
+  right: 1dvw;
+  bottom: 1dvw;
+  width: 2.5dvw;
+  height: 2.5dvw;
   cursor: pointer;
   z-index: 10000;
   opacity: 0;
   visibility: hidden;
-  transform: translateY(15px);
+  transform: translateY(1dvw);
   transition: all 200ms linear;
   mix-blend-mode: exclusion;
   background-color: white;
@@ -80,8 +80,8 @@ onUnmounted(() => {
     height: 100%;
 
     path {
-      stroke: black;
-      stroke-width: 10;
+      stroke: var(--color-primary);
+      stroke-width: 0.4dvw;
       fill: none;
       transition: all 200ms linear;
     }
@@ -89,17 +89,17 @@ onUnmounted(() => {
 
   .arrow-up {
     position: absolute;
-    top: 11px;
-    left: 11px;
-    width: 24px;
-    height: 24px;
+    top: 0.6dvw;
+    left: 0.6dvw;
+    width: 1.3dvw;
+    height: 1.3dvw;
     pointer-events: none;
-    fill: black;
+    fill: var(--color-primary);
     transition: transform 0.3s ease;
   }
 
   &:hover .arrow-up {
-    transform: translateY(-2px);
+    transform: translateY(-2dvw);
   }
 }
 
@@ -110,7 +110,6 @@ onUnmounted(() => {
 
   .progress-wrap .arrow-up {
     color: var(--color-primary-2);
-    filter: drop-shadow(0px 3px 20px #0742e952);
   }
 }
 </style>

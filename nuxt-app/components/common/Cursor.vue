@@ -127,8 +127,8 @@ onMounted(() => {
   }
 }
 .cursor-link {
-  width: 30px;
-  height: 30px;
+  width: 30dvw;
+  height: 30dvw;
   margin-left: -5px;
   margin-top: -15px;
   border: 2px solid rgba(0, 0, 0, 0.5);
@@ -152,11 +152,11 @@ onMounted(() => {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -25px 0 0 -25px;
-  width: 50px;
-  height: 50px;
+  margin: -1.5dvw 0 0 -1.5dvw;
+  width: 3dvw;
+  height: 3dvw;
   border-radius: 50%;
-  border: 3px dashed white;
+  border: 0.2dvw dashed white;
   animation: scroll-pulse 2.5s linear infinite;
 }
 
@@ -173,9 +173,9 @@ onMounted(() => {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -3px 0 0 -3px;
-  width: 6px;
-  height: 6px;
+  margin: -0.1dvw 0 0 -0.1dvw;
+  width: 0.3dvw;
+  height: 0.3dvw;
   border-radius: 50%;
   background-color: white;
   -webkit-transition: all 0.3s ease-in-out;

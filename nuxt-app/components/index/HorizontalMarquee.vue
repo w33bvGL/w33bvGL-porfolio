@@ -19,9 +19,9 @@ defineProps<{
   overflow: hidden;
   white-space: nowrap;
   background-color: rgba(255, 255, 255, 0.05);
-  padding: 10px 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.5dvw 0;
+  border-top: 0.1dvw solid rgba(255, 255, 255, 0.1);
+  border-bottom: 0.1dvw solid rgba(255, 255, 255, 0.1);
 }
 
 .marquee__inner {
@@ -40,10 +40,10 @@ defineProps<{
 }
 
 .marquee__inner span {
-  margin-right: 5rem;
-  font-size: 16px;
+  margin-right: 0.5dvw;
+  font-size: 1.3dvw;
   color: white;
   font-weight: 600;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.05dvw;
 }
 </style>
