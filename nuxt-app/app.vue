@@ -12,7 +12,6 @@ onMounted(() => {
 </script>
 
 <template>
-
   <div id="smooth-wrapper">
     <div id="smooth-content">
       <NuxtLayout>
@@ -21,6 +20,6 @@ onMounted(() => {
     </div>
   </div>
 
-  <CommonCursor/>
-  <CommonBackToTop/>
+  <CommonCursor />
+  <CommonBackToTop />
 </template>

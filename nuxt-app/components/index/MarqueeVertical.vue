@@ -1,36 +1,43 @@
 <script setup lang="ts">
 interface Project {
-  title: string;
-  image: string;
+  title: string
+  image: string
 }
 
 const props = defineProps({
   direction: {
     type: String as () => 'normal' | 'reverse',
-    default: 'normal',
-  },
-});
+    default: 'normal'
+  }
+})
 
 const { data: projectsData } = await useAsyncData<Project[]>(
-    'projects',
-    () => $fetch('/api/projects')
-);
+  'projects',
+  () => $fetch('/api/projects')
+)
 
 const repeatedProjects = computed(() => {
-  return [...(projectsData.value || []), ...(projectsData.value || [])];
-});
+  return [...(projectsData.value || []), ...(projectsData.value || [])]
+})
 
 const directionClass = computed(() => {
-  return props.direction === 'reverse' ? 'reverse' : '';
-});
+  return props.direction === 'reverse' ? 'reverse' : ''
+})
 </script>
 
 <template>
   <div class="marquee-vertical-wrapper">
     <div :class="['marquee-vertical', directionClass]">
       <ul>
-        <li v-for="(project, index) in repeatedProjects" :key="index" class="project-item">
-          <img :src="project.image" :alt="project.title" />
+        <li
+          v-for="(project, index) in repeatedProjects"
+          :key="index"
+          class="project-item"
+        >
+          <img
+            :src="project.image"
+            :alt="project.title"
+          >
           <span>{{ project.title }}</span>
         </li>
       </ul>

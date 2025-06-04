@@ -7,8 +7,14 @@ defineProps<{
 
 <template>
   <div class="marquee">
-    <div class="marquee__inner" :style="{ animationDuration: speed + 's' }">
-      <span v-for="i in 10" :key="i">{{ text }}</span>
+    <div
+      class="marquee__inner"
+      :style="{ animationDuration: speed + 's' }"
+    >
+      <span
+        v-for="i in 10"
+        :key="i"
+      >{{ text }}</span>
     </div>
   </div>
 </template>

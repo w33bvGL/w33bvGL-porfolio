@@ -40,21 +40,23 @@ onMounted(() => {
     scrollTrigger: {
       trigger: '.rts-banner-area-three-start',
       start: 'top 80%',
-      toggleActions: 'play none none none',
+      toggleActions: 'play none none none'
     },
     opacity: 0,
     duration: 1.2,
     ease: 'power3.out'
   })
-
 })
 </script>
 
 <template>
   <div class="rts-banner-area-three-start rts-scroll-down-circle-wrapper-2 rts-scroll-down-circle-wrapper">
-
     <div class="banner-shape-area">
-      <NuxtImg src="/images/banner/11.png" class="img" alt="banner" />
+      <NuxtImg
+        src="/images/banner/11.png"
+        class="img"
+        alt="banner"
+      />
     </div>
 
     <div class="container container-auto">
@@ -63,34 +65,46 @@ onMounted(() => {
           <div class="banner-content-wrapper-three">
             <h2 class="title rts_hero__title">
               <span class="title">
-              Vahe
-              <span>Full-Stack Developer</span>
-            </span>
+                Vahe
+                <span>Full-Stack Developer</span>
+              </span>
               Sargsyan
             </h2>
             <p class="about-me hero__sub-title">
               <strong>Full-Stack Developer</strong> from Armenia.
               I specialize in building scalable web platforms, high-load APIs, and complex business logic from scratch.
             </p>
-            <a href="#about" class="click-down-bottom">
-              <Icon name="lucide:arrow-down" class="icon" ></Icon>
+            <a
+              href="#about"
+              class="click-down-bottom"
+            >
+              <Icon
+                name="lucide:arrow-down"
+                class="icon"
+              />
               <p>About</p>
             </a>
           </div>
         </div>
       </div>
       <div class="right">
-        <IndexMarqueeVertical/>
-        <IndexMarqueeVertical direction="reverse"/>
+        <IndexMarqueeVertical />
+        <IndexMarqueeVertical direction="reverse" />
       </div>
     </div>
 
-    <IndexSocialShare/>
+    <IndexSocialShare />
     <div class="kospand">
-      <IndexHorizontalMarquee text="• PHP • Nuxt.js • Laravel • JavaScript • TypeScript • Full-Stack • PHP • Nuxt.js • Laravel • JavaScript • TypeScript • Full-Stack •" :speed="50" />
+      <IndexHorizontalMarquee
+        text="• PHP • Nuxt.js • Laravel • JavaScript • TypeScript • Full-Stack • PHP • Nuxt.js • Laravel • JavaScript • TypeScript • Full-Stack •"
+        :speed="50"
+      />
     </div>
     <div class="kospand_2">
-      <IndexHorizontalMarquee text="• PHP • Nuxt.js • Laravel • JavaScript • TypeScript • Full-Stack • PHP • Nuxt.js • Laravel • JavaScript • TypeScript • Full-Stack •" :speed="50" />
+      <IndexHorizontalMarquee
+        text="• PHP • Nuxt.js • Laravel • JavaScript • TypeScript • Full-Stack • PHP • Nuxt.js • Laravel • JavaScript • TypeScript • Full-Stack •"
+        :speed="50"
+      />
     </div>
   </div>
 </template>
@@ -265,5 +279,4 @@ onMounted(() => {
     display: none;
   }
 }
-
 </style>

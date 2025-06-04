@@ -2,7 +2,7 @@
 const props = defineProps({
   variant: { type: String as () => 'primary' | 'secondary' | 'danger' | 'success', default: 'primary' },
   size: { type: String as () => 'sm' | 'md' | 'lg', default: 'md' },
-  disabled: { type: Boolean, default: false },
+  disabled: { type: Boolean, default: false }
 })
 
 const variantClass = `ui-button--${props.variant}`
@@ -11,10 +11,10 @@ const sizeClass = `ui-button--${props.size}`
 
 <template>
   <button
-      :class="['ui-button', variantClass, sizeClass]"
-      :disabled="disabled"
-      :aria-disabled="disabled"
-      @click="$emit('click')"
+    :class="['ui-button', variantClass, sizeClass]"
+    :disabled="disabled"
+    :aria-disabled="disabled"
+    @click="$emit('click')"
   >
     <slot />
   </button>

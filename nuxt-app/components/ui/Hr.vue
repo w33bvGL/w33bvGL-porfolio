@@ -2,42 +2,42 @@
 const props = defineProps({
   color: {
     type: String as () => 'primary' | 'secondary' | 'danger' | 'success' | 'divider',
-    default: 'divider',
+    default: 'divider'
   },
   thickness: {
     type: String,
-    default: '1px',
+    default: '1px'
   },
   margin: {
     type: String,
-    default: '1rem 0',
+    default: '1rem 0'
   },
   vertical: {
     type: Boolean,
-    default: false,
+    default: false
   },
   length: {
     type: String,
-    default: '100%',
+    default: '100%'
   },
   radius: {
     type: String,
-    default: '0px',
-  },
+    default: '0px'
+  }
 })
 </script>
 
 <template>
   <div
-      class="ui-hr"
-      :class="[`ui-hr--${props.color}`, { 'ui-hr--vertical': props.vertical }]"
-      :style="{
+    class="ui-hr"
+    :class="[`ui-hr--${props.color}`, { 'ui-hr--vertical': props.vertical }]"
+    :style="{
       width: props.vertical ? props.thickness : props.length,
       height: props.vertical ? props.length : props.thickness,
       margin: props.margin,
       borderRadius: props.radius
     }"
-      role="separator"
+    role="separator"
   />
 </template>
 
@@ -73,4 +73,3 @@ const props = defineProps({
   }
 }
 </style>
-

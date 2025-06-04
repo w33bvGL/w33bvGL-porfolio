@@ -7,7 +7,7 @@ onMounted(() => {
     duration: 1,
     ease: 'power2.inOut',
     yoyo: true,
-    repeat: -1,
+    repeat: -1
   })
 
   if (window.console) {
@@ -19,17 +19,28 @@ onMounted(() => {
 
 <template>
   <div class="error container-md">
-    <h1 class="error__code text-primary">404</h1>
-    <h2 class="error__title">Опа... Такой страницы нет</h2>
+    <h1 class="error__code text-primary">
+      404
+    </h1>
+    <h2 class="error__title">
+      Опа... Такой страницы нет
+    </h2>
     <UiHr />
     <p class="error__desc text-neutral-500">
-      Возможно, она была. Возможно, её и не существовало.<br />
+      Возможно, она была. Возможно, её и не существовало.<br>
       Но ты уже зашёл далеко — возвращайся на главную, там красиво ✨
     </p>
-    <NuxtLinkLocale to="/"><UiButton class="error__link" variant="primary">На главную</UiButton></NuxtLinkLocale>
+    <NuxtLinkLocale to="/">
+      <UiButton
+        class="error__link"
+        variant="primary"
+      >
+        На главную
+      </UiButton>
+    </NuxtLinkLocale>
   </div>
 
-  <CommonCursor/>
+  <CommonCursor />
 </template>
 
 <style scoped lang="scss">

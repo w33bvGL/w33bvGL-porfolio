@@ -16,19 +16,19 @@ onMounted(() => {
     '.search-click',
     '.action-menu',
     '.swiper-button-next',
-    '.swiper-button-prev',
+    '.swiper-button-prev'
   ].join(',')
 
   const elementsToRemoveCursor = [
     '.learn-more-btn',
     '.swiper-slider-main-main-wrapper-portfolio .thumbnail',
     '.single-portfolio-style-five a',
-    '.mySwiper_portfolio-5-scale-none a',
+    '.mySwiper_portfolio-5-scale-none a'
   ].join(',')
 
   let mouseX = 0
   let mouseY = 0
-  let isStatic = false
+  const isStatic = false
 
   window.addEventListener('mousemove', (e) => {
     if (!isStatic) {
@@ -63,24 +63,32 @@ onMounted(() => {
 
   cursorInner.style.visibility = 'visible'
   cursorOuter.style.visibility = 'visible'
-
 })
 </script>
 
 <template>
-  <div class="rts-cursor cursor-outer" data-default="yes" data-link="yes" data-slider="no">
-    <span class="fn-cursor"></span>
+  <div
+    class="rts-cursor cursor-outer"
+    data-default="yes"
+    data-link="yes"
+    data-slider="no"
+  >
+    <span class="fn-cursor" />
   </div>
-  <div class="rts-cursor cursor-inner" data-default="yes" data-link="yes" data-slider="no">
+  <div
+    class="rts-cursor cursor-inner"
+    data-default="yes"
+    data-link="yes"
+    data-slider="no"
+  >
     <span class="fn-cursor">
-      <span class="fn-left"></span>
-      <span class="fn-right"></span>
+      <span class="fn-left" />
+      <span class="fn-right" />
     </span>
   </div>
 </template>
 
 <style scoped lang="scss">
-
 .rts-cursor[data-default=no] {
   opacity: 0;
 }

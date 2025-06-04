@@ -2,16 +2,27 @@
 const socialLinks = [
   { name: 'Telegram', href: 'https://t.me/Vahesargsyan2005', icon: 'fa-brands:telegram' },
   { name: 'GitHub', href: 'https://github.com/w33bvGL', icon: 'fa-brands:github' },
-  { name: 'Email', href: 'mailto:w33bv.gl@gmail.com', icon: 'fa-solid:envelope' },
+  { name: 'Email', href: 'mailto:w33bv.gl@gmail.com', icon: 'fa-solid:envelope' }
 ]
 </script>
 
 <template>
   <div class="social-share-horizontal scroll-down-circle">
     <ul>
-      <li v-for="(social, index) in socialLinks" :key="index">
-        <a :href="social.href" :aria-label="social.name" target="_blank" rel="noopener noreferrer">
-          <Icon :name="social.icon" class="social-icon" />
+      <li
+        v-for="(social, index) in socialLinks"
+        :key="index"
+      >
+        <a
+          :href="social.href"
+          :aria-label="social.name"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon
+            :name="social.icon"
+            class="social-icon"
+          />
         </a>
       </li>
     </ul>
