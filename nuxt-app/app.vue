@@ -1,19 +1,25 @@
 <script setup lang="ts">
-const { $gsap } = useNuxtApp()
+const { $ScrollSmoother } = useNuxtApp()
 
 onMounted(() => {
-  $gsap.to('.box', {
-    x: 100,
-    duration: 1,
-    ease: 'power2.out'
+  $ScrollSmoother.create({
+    wrapper: '#smooth-wrapper',
+    content: '#smooth-content',
+    smooth: 3.5,
+    effects: true
   })
 })
 </script>
 
 <template>
-  <NuxtLayout>
-    <NuxtPage />
-  </NuxtLayout>
+
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+      <NuxtLayout>
+        <NuxtPage />
+      </NuxtLayout>
+    </div>
+  </div>
 
   <CommonCursor/>
   <CommonBackToTop/>

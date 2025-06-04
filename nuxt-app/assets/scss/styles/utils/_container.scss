@@ -55,9 +55,13 @@ $breakpoints: (
 }
 
 .container-2xl {
-  max-width: 1536px;
+  max-width: 1596px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.container-auto {
+  max-width: 100dvw;
 }
