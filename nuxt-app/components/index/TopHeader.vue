@@ -9,7 +9,6 @@ onMounted(() => {
     ease: 'power3.out'
   })
 
-  // Подзаголовок
   $gsap.from('.hero__sub-title', {
     opacity: 0,
     y: 40,
@@ -18,7 +17,6 @@ onMounted(() => {
     delay: 0.4
   })
 
-  // Кнопка "click down"
   $gsap.from('.click-down-bottom', {
     opacity: 0,
     y: 30,
