@@ -1,0 +1,11 @@
+@use "palette" as palette;
+
+:root {
+  --color-primary: #{palette.$color-primary};
+
+
+  --color-neutral-500: #{palette.$neutral-500};
+
+  --color-cog-800: #{palette.$cod-gray-800};
+  --color-cog-900: #{palette.$cod-gray-900};
+}

@@ -1,0 +1,28 @@
+
+
+.trusted-clients-area-start{
+    .scrollingText-three{
+        .title{
+            color: #141414;
+            @media #{$smlg-device} {
+                font-size: 60px;
+                line-height: 80px;
+            }
+            @media #{$sm-layout} {
+                font-size: 50px;
+                line-height: 60px;
+            }
+            @media #{$large-mobile} {
+                font-size: 36px;
+                line-height: 40px;
+            }
+            @media #{$small-mobile} {
+                font-size: 32px;
+                line-height: 35px;
+            }
+            span{
+                color: #fff;
+            }
+        }
+    }
+}

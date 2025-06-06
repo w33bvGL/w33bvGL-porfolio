@@ -1,9 +1,0 @@
-tmp/mysql
-tmp/redis
-tmp/mongodb
-
-.idea
-
-.env
-docker-compose.yml
-

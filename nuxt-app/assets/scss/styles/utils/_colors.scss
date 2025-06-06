@@ -1,0 +1,66 @@
+@use '../../palette' as *;
+
+$cod-grays: (
+        50: $cod-gray-50,
+        100: $cod-gray-100,
+        200: $cod-gray-200,
+        300: $cod-gray-300,
+        400: $cod-gray-400,
+        500: $cod-gray-500,
+        600: $cod-gray-600,
+        700: $cod-gray-700,
+        800: $cod-gray-800,
+        900: $cod-gray-900,
+        950: $cod-gray-950
+);
+
+$neutral-colors: (
+        100: $neutral-100,
+        200: $neutral-200,
+        300: $neutral-300,
+        400: $neutral-400,
+        500: $neutral-500,
+        600: $neutral-600,
+        700: $neutral-700,
+        800: $neutral-800,
+        900: $neutral-900
+);
+
+$main-colors: (
+        "background": $color-background,
+        "primary": $color-primary,
+        "secondary": $color-secondary,
+        "text": $color-text,
+        "black": $black,
+        "white": $white
+);
+
+@each $key, $color in $cod-grays {
+  .bg-cod-#{$key} {
+    background-color: $color;
+  }
+
+  .text-cod-#{$key} {
+    color: $color;
+  }
+}
+
+@each $key, $color in $neutral-colors {
+  .bg-neutral-#{$key} {
+    background-color: $color;
+  }
+
+  .text-neutral-#{$key} {
+    color: $color;
+  }
+}
+
+@each $name, $color in $main-colors {
+  .bg-#{$name} {
+    background-color: $color;
+  }
+
+  .text-#{$name} {
+    color: $color;
+  }
+}
