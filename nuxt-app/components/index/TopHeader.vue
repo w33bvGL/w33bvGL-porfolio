@@ -92,24 +92,26 @@ onMounted(() => {
     </div>
 
     <IndexSocialShare />
+    <div class="kospand_2">
+      <IndexHorizontalMarquee
+          text="• PHP • Nuxt.js • Laravel • JavaScript • TypeScript • Full-Stack • PHP • Nuxt.js • Laravel • JavaScript • TypeScript • Full-Stack •"
+          :speed="50"
+      />
+    </div>
     <div class="kospand">
       <IndexHorizontalMarquee
         text="• PHP • Nuxt.js • Laravel • JavaScript • TypeScript • Full-Stack • PHP • Nuxt.js • Laravel • JavaScript • TypeScript • Full-Stack •"
         :speed="50"
       />
     </div>
-    <div class="kospand_2">
-      <IndexHorizontalMarquee
-        text="• PHP • Nuxt.js • Laravel • JavaScript • TypeScript • Full-Stack • PHP • Nuxt.js • Laravel • JavaScript • TypeScript • Full-Stack •"
-        :speed="50"
-      />
-    </div>
+
   </div>
 </template>
 
 <style scoped lang="scss">
 .rts-banner-area-three-start {
   position: relative;
+  overflow: hidden;
 
   &::before, &::after {
     content: "";
@@ -217,11 +219,13 @@ onMounted(() => {
   padding: 0.5dvw 2dvw;
   z-index: 10;
   font-size: 1dvw;
+  pointer-events: none;
+  user-select: none;
 }
 
 .kospand {
   background-color: var(--color-primary);
-  rotate: -10deg;
+  rotate: -20deg;
   bottom: 15vh;
   left: -5vw;
 }
