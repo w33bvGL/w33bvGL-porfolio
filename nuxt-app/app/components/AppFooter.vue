@@ -4,16 +4,17 @@ const { footer } = useAppConfig()
 
 <template>
   <UFooter
-    class="z-10 bg-default"
-    :ui="{ left: 'text-xs', container: 'lg:px-0' }"
+    :ui="{ left: 'text-xs mt-0', container: 'px-0 md:px-0 lg:px-0 flex flex-row-reverse lg:flex-row w-full justify-between' }"
   >
     <template #left>
-      {{ footer.credits }}
+
+        {{ footer.credits }}
+
     </template>
 
     <template #right>
-      <template v-if="footer?.links">
-        <UButton
+      <template v-if="footer?.links" >
+        <UButton class="hidden md:block"
           v-for="(link, index) of footer?.links"
           :key="index"
           v-bind="{ size: 'xs', color: 'neutral', variant: 'ghost', ...link }"
