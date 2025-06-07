@@ -1,0 +1,65 @@
+<script setup lang="ts">
+const { global } = useAppConfig()
+const { t, } = useI18n()
+const { footer } = useAppConfig()
+
+const resumeOptions = ref([
+  { label: t('cta.resumeRu'), value: 'ru' },
+  { label: t('cta.resumeEn'), value: 'en' }
+])
+
+function downloadResume(lang: string) {
+  const fileName = lang === 'ru' ? 'resume-ru.pdf' : 'resume-en.pdf'
+  const filePath = `/resumes/${fileName}`
+
+  const link = document.createElement('a')
+  link.href = filePath
+  link.download = fileName
+  document.body.appendChild(link)
+  link.click()
+  document.body.removeChild(link)
+}
+</script>
+
+<template>
+  <UPageCTA
+    :description="t('cta.description')"
+    variant="naked"
+    :ui="{ links:'mt-5 flex flex-col space-y-3'}"
+  >
+    <template #title>
+      <div class="mb-5">
+        <div class="flex items-center justify-center">
+          <NuxtImg
+            :src="global.picture.src"
+            :alt="global.picture.alt"
+            class="w-24 h-24 sm:w-28 sm:h-28 rounded-full border-1 border-muted shadow-xl"
+          />
+        </div>
+      </div>
+      <h2 class="text-3xl sm:text-4xl text-pretty tracking-tight font-bold text-highlighted text-center">
+        {{ t('cta.title') }}
+      </h2>
+    </template>
+
+    <template #links>
+      <div class="flex flex-col sm:flex-row sm:items-center sm:justify-center gap-5">
+        <USelect
+          variant="subtle"
+          :items="resumeOptions"
+          :placeholder="t('cta.downloadPlaceholder')"
+          @update:modelValue="downloadResume"
+        />
+        <CommonAvailableStatus/>
+      </div>
+      <div class="flex items-center justify-center gap-3">
+        <UButton
+          v-for="(link, index) of footer?.links"
+          :key="index"
+          v-bind="{ size: 'lg', color: 'neutral', variant: 'soft', ...link }"
+        />
+      </div>
+    </template>
+  </UPageCTA>
+</template>
+

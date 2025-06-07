@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="293fa944-9700-4749-9eee-881ff23c65e3" name="Changes" comment="fix adaptive">
+      <change afterPath="$PROJECT_DIR$/nuxt-app/app/components/common/LanguageSwitcher.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nuxt-app/app/components/index/Cta.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nuxt-app/app/pages/about.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nuxt-app/app/pages/blog/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nuxt-app/app/pages/projects.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nuxt-app/i18n/locales/ru-RU.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nuxt-app/public/avatar.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/w33bvGL-porfolio.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/about-style.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/accordion.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/css/plugins/animate.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/css/plugins/fontawesome-6.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/css/plugins/swiper.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/css/plugins/unicons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/css/vendor/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/css/vendor/metismenu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/fonts/fa-brands-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/fonts/fa-brands-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/fonts/fa-duotone-900.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/fonts/fa-duotone-900.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/fonts/fa-light-300.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/fonts/fa-light-300.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/fonts/fa-regular-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/fonts/fa-regular-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/fonts/fa-solid-900.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/fonts/fa-solid-900.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/fonts/fa-thin-100.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/fonts/fa-thin-100.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/fonts/fa-v4compatibility.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/fonts/fa-v4compatibility.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/about/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/about/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/about/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/about/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/about/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/about/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/about/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/about/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/about/09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/about/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/about/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/banner/01.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/banner/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/banner/02.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/banner/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/banner/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/banner/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/banner/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/banner/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/banner/08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/banner/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/banner/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/banner/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/banner/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/banner/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/banner/14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/banner/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/banner/16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/banner/17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/banner/18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/banner/19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/banner/20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/banner/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/banner/22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/banner/23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/banner/24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/banner/25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/banner/26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/banner/27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/banner/bg-shape.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/banner/shape-nois.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/blog/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/blog/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/blog/03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/blog/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/blog/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/blog/06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/blog/07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/blog/08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/blog/09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/blog/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/blog/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/blog/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/blog/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/blog/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/blog/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/blog/16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/blog/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/blog/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/blog/19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/blog/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/blog/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/blog/22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/blog/23.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/blog/24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/blog/25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/blog/26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/blog/27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/blog/sm/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/blog/sm/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/blog/sm/03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/blog/sm/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/blog/sm/05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/blog/sm/06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/blog/sm/07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/blog/sm/08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/blog/sm/09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/brand/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/brand/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/brand/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/brand/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/brand/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/brand/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/brand/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/brand/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/brand/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/brand/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/brand/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/brand/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/brand/13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/brand/14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/brand/15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/brand/16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/brand/17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/brand/18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/cta/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/cta/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/cta/03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/cta/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/faq/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/faq/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/fav.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/feature/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/feature/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/feature/03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/feature/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/feature/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/footer/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/history/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/history/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/history/03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/history/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/history/05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/history/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/history/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/history/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/history/09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/history/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/icons/sun-01.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/icons/vector.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/logo/01.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/logo/02.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/logo/03.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/logo/04.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/03.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/33.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/34.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/35.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/36.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/37.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/39.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/41.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/42.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/43.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/44.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/45.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/46.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/47.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/48.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/49.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/50.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/52.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/53.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/54.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/55.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/56.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/57.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/58.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/59.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/60.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/61.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/62.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/63.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/64.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/65.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/66.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/67.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/68.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/69.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/70.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/71.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/72.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/73.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/74.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/75.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/76.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/77.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/78.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/79.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/80.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/81.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/82.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/83.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/84.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/icons/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/product/icons/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/service/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/service/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/service/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/service/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/service/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/service/05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/service/06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/service/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/service/08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/service/09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/service/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/service/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/service/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/service/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/service/shape-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/team/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/team/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/team/03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/testimonials/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/testimonials/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/testimonials/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/testimonials/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/testimonials/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/testimonials/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/testimonials/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/video/02.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/video/03.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/video/play-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/working-process/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/working-process/icon/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/working-process/icon/01.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/working-process/icon/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/working-process/icon/02.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/working-process/icon/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/working-process/icon/03.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/working-process/icon/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/images/working-process/icon/04.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/js/plugins/animate-scrollmagic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/js/plugins/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/js/plugins/contact.form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/js/plugins/counterup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/js/plugins/imagesloaded.pkgd.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/js/plugins/isotop.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/js/plugins/resizer-sensor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/js/plugins/rule-plugins.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/js/plugins/scrollmagic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/js/plugins/scrolltiger.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/js/plugins/scrolltoplugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/js/plugins/smoothscroll-varticle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/js/plugins/smoothscroll.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/js/plugins/splittext.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/js/plugins/sticky-sidebar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/js/plugins/swiper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/js/plugins/tilt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/js/vendor/gsap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/js/vendor/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/js/vendor/js.cookie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/js/vendor/metismenu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/js/vendor/waw.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/js/vendor/waypoint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/maps/style.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/default/_animations.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/default/_forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/default/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/default/_reset.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/default/_sal.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/default/_shortcode.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/default/_spacing.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/default/_text-animation.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/default/_typography.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/default/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/elements/_about.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/elements/_appoinment.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/elements/_approch-area.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/elements/_back-to-top.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/elements/_banner-video.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/elements/_banner.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/elements/_blog.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/elements/_brand.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/elements/_button.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/elements/_clients.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/elements/_common.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/elements/_contact.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/elements/_courser.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/elements/_cta.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/elements/_dark-light-mood.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/elements/_elements.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/elements/_faq.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/elements/_feature.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/elements/_footer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/elements/_gsap-style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/elements/_masonry.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/elements/_pre-loading.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/elements/_pricing.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/elements/_product.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/elements/_progress-bar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/elements/_service.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/elements/_social-area.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/elements/_switcher.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/elements/_team copy.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/elements/_team.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/elements/_testimonials.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/elements/_text-animation.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/elements/_text-animation.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/elements/_video.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/elements/_working-process.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/header/_drop-down.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/header/_header.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/header/_offcanvas-menu.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/assets/scss/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/banner.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/blog-details-two.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/blog-details.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/blog-detailsleft-sidebar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/blog-detailsright-sidebar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/blog-elements.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/blog-sidebar-left.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/blog-sidebar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/blog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/buttons.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/carousel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/circle-progress.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/clients-logo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/coming-soon copy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/coming-soon.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/contact-form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/counter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/cta.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/error.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/filter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/footer-style.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/heading.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/index-five.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/index-four.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/index-six.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/index-three.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/index-two.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/mighty-html.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/portfolio-details-five.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/portfolio-details-four.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/portfolio-details-slider.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/portfolio-details-three.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/portfolio-details-two.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/portfolio-details.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/portfolio-filter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/portfolio-full-width.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/portfolio-grid-3column.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/portfolio-grid-masonry.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/portfolio-grid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/portfolio-masonry.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/portfolio-one.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/portfolio-seven.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/portfolio-six.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/portfolio-ten.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/portfolio-tex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/portfolio-two.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/portfolio.details.html" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/i18n/locales/en-US.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/pricing-table.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/service-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/service-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/service-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/service-card.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/service-details.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/service-list-revel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/service-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/showcase-carousel-center-active.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/showcase-carousel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/showcase-grid-slider.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/showcase-horizontal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/showcase-interactive-links.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/showcase-interactive-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/showcase-interactive-reveal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/showcase-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/showcase-parallax-slider copy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/showcase-parallax-slider.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/showcase-parallax.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/showcase-vertical-scroll.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/showcase-vertical-slider.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/showcase-vertical-split.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/showcase.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/tab.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/team-style.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mighty-html/testimonials.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/app.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/assets/scss/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/i18n/locales/hy-AM.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/assets/scss/_palette.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/assets/scss/_reset.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/assets/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/assets/scss/main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/assets/scss/styles/main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/assets/scss/styles/reset/_scroolbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/assets/scss/styles/reset/_typography.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/assets/scss/styles/utils/_colors.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/assets/scss/styles/utils/_container.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/components/AppFooter.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/components/common/BackToTop.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/components/common/Cursor.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/components/index/HorizontalMarquee.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/components/index/MarqueeVertical.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/components/index/SocialShare.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/components/index/TopHeader.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/components/ui/Button.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/components/ui/Hr.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/error.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/eslint.config.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/i18n/i18n.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/i18n/i18n.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/i18n/locales/en.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/i18n/locales/hy.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/i18n/locales/ru.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/app/components/common/AvailableStatus.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/nuxt.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/pages/index.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/plugins/gsap.client.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/about/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/about/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/about/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/about/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/about/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/about/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/about/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/about/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/about/09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/about/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/about/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/banner/01.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/banner/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/banner/02.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/banner/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/banner/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/banner/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/banner/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/banner/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/banner/08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/banner/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/banner/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/banner/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/banner/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/banner/14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/banner/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/banner/16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/banner/17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/banner/18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/banner/19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/banner/20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/banner/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/banner/22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/banner/23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/banner/24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/banner/25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/banner/26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/banner/27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/banner/bg-shape.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/banner/shape-nois.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/blog/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/blog/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/blog/03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/blog/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/blog/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/blog/06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/blog/07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/blog/08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/blog/09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/blog/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/blog/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/blog/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/blog/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/blog/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/blog/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/blog/16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/blog/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/blog/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/blog/19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/blog/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/blog/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/blog/22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/blog/23.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/blog/24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/blog/25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/blog/26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/blog/27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/blog/sm/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/blog/sm/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/blog/sm/03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/blog/sm/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/blog/sm/05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/blog/sm/06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/blog/sm/07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/blog/sm/08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/blog/sm/09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/brand/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/brand/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/brand/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/brand/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/brand/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/brand/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/brand/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/brand/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/brand/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/brand/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/brand/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/brand/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/brand/13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/brand/14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/brand/15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/brand/16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/brand/17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/brand/18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/cta/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/cta/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/cta/03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/cta/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/faq/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/faq/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/fav.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/feature/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/feature/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/feature/03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/feature/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/feature/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/footer/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/history/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/history/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/history/03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/history/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/history/05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/history/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/history/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/history/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/history/09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/history/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/icons/sun-01.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/icons/vector.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/logo/01.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/logo/02.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/logo/03.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/logo/04.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/03.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/33.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/34.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/35.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/36.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/37.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/39.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/41.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/42.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/43.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/44.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/45.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/46.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/47.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/48.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/49.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/50.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/52.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/53.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/54.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/55.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/56.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/57.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/58.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/59.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/60.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/61.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/62.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/63.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/64.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/65.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/66.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/67.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/68.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/69.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/70.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/71.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/72.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/73.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/74.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/75.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/76.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/77.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/78.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/79.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/80.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/81.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/82.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/83.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/84.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/icons/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/product/icons/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/projects/anidzen-aira.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/projects/anidzen-ecosystems.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/projects/anidzen-sora.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/projects/drive-fit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/projects/hentai-voice.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/projects/mari-karkas.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/projects/ota-ku.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/projects/tg-quick-click.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/projects/udp-logistics.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/service/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/service/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/service/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/service/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/service/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/service/05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/service/06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/service/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/service/08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/service/09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/service/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/service/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/service/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/service/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/service/shape-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/team/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/team/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/team/03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/testimonials/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/testimonials/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/testimonials/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/testimonials/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/testimonials/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/testimonials/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/testimonials/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/vahe.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/video/02.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/video/03.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/video/play-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/working-process/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/working-process/icon/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/working-process/icon/01.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/working-process/icon/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/working-process/icon/02.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/working-process/icon/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/working-process/icon/03.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/working-process/icon/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/images/working-process/icon/04.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/server/api/projects.get.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/server/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/types/gsap.d.ts" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="tsconfig.json" />
+        <option value="Vue Composition API Component" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2y0Aawt5jxsQREmSwV829Q6qR94" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/.projects/SHOP/w33bvGL-porfolio/nuxt-app/i18n/locales&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\.projects\\SHOP\\w33bvGL-porfolio\\nuxt-app\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;vue.recent.templates&quot;: [
+      &quot;Vue Composition API Component&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\.projects\SHOP\w33bvGL-porfolio\nuxt-app\i18n\locales" />
+      <recent name="D:\.projects\SHOP\w33bvGL-porfolio\nuxt-app\assets\scss\styles\reset" />
+      <recent name="D:\.projects\SHOP\w33bvGL-porfolio\nuxt-app\public\images\projects" />
+      <recent name="D:\.projects\SHOP\w33bvGL-porfolio\nuxt-app\public\images" />
+      <recent name="D:\.projects\SHOP\w33bvGL-porfolio\nuxt-app\public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\.projects\SHOP\w33bvGL-porfolio\nuxt-app\app\components\common" />
+      <recent name="D:\.projects\SHOP\w33bvGL-porfolio\nuxt-app\public" />
+      <recent name="D:\.projects\SHOP\w33bvGL-porfolio\nuxt-app\assets\scss\styles" />
+      <recent name="D:\.projects\SHOP\w33bvGL-porfolio\nuxt-app\assets\scss\styles\reset" />
+      <recent name="D:\.projects\SHOP\w33bvGL-porfolio\nuxt-app\assets\scss\styles\utils" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/w33bvGL-porfolio/mighty-html/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.120" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="293fa944-9700-4749-9eee-881ff23c65e3" name="Changes" comment="" />
+      <created>1748961184698</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1748961184698</updated>
+      <workItem from="1748961186274" duration="12039000" />
+      <workItem from="1749020703519" duration="28463000" />
+      <workItem from="1749108024547" duration="1051000" />
+      <workItem from="1749113006978" duration="591000" />
+      <workItem from="1749139655162" duration="4097000" />
+      <workItem from="1749188270669" duration="1336000" />
+      <workItem from="1749227317900" duration="21867000" />
+    </task>
+    <task id="LOCAL-00001" summary="add new files">
+      <option name="closed" value="true" />
+      <created>1748963376962</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1748963376962</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add newfiles fix">
+      <option name="closed" value="true" />
+      <created>1748963622478</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1748963622478</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add reset sass">
+      <option name="closed" value="true" />
+      <created>1748966697573</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1748966697573</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add arrow up and tapography">
+      <option name="closed" value="true" />
+      <created>1749030921403</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1749030921403</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix arrow to up">
+      <option name="closed" value="true" />
+      <created>1749031308750</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1749031308750</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add Cursor.vue">
+      <option name="closed" value="true" />
+      <created>1749034196443</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1749034196443</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add images">
+      <option name="closed" value="true" />
+      <created>1749035039102</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1749035039102</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix adaptive">
+      <option name="closed" value="true" />
+      <created>1749051923022</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1749051923022</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix adaptive">
+      <option name="closed" value="true" />
+      <created>1749054695848</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1749054695848</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fix adaptive">
+      <option name="closed" value="true" />
+      <created>1749054712466</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1749054712466</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fix adaptive">
+      <option name="closed" value="true" />
+      <created>1749189838866</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1749189838866</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add new files" />
+    <MESSAGE value="add newfiles fix" />
+    <MESSAGE value="add reset sass" />
+    <MESSAGE value="add arrow up and tapography" />
+    <MESSAGE value="fix arrow to up" />
+    <MESSAGE value="add Cursor.vue" />
+    <MESSAGE value="add images" />
+    <MESSAGE value="fix adaptive" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix adaptive" />
+  </component>
+</project>

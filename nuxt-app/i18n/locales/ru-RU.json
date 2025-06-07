@@ -1,0 +1,21 @@
+{
+  "routes": {
+    "home": "Главная",
+    "projects": "Проекты",
+    "blog": "Блог",
+    "anidzen": "Anidzen",
+    "about": "Обо мне"
+  },
+  "cta": {
+    "title": "Привет, я Վահե — Full Stack разработчик",
+    "description": "Разрабатываю масштабируемые продукты с фокусом на производительность и пользовательский опыт. Full Stack — мой образ мышления.",
+    "resumeRu": "Резюме (RU)",
+    "resumeEn": "Резюме (EN)",
+    "projects": "Смотреть проекты",
+    "downloadPlaceholder": "Скачать резюме"
+  },
+  "availability": {
+    "available": "Свободен для работы",
+    "unavailable": "Не доступен сейчас"
+  }
+}

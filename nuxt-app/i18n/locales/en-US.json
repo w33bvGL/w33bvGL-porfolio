@@ -1,0 +1,21 @@
+{
+  "routes": {
+    "home": "Home",
+    "projects": "Projects",
+    "blog": "Blog",
+    "anidzen": "Anidzen",
+    "about": "About"
+  },
+  "cta": {
+    "title": "Hi, I'm Vahe — Full Stack Developer",
+    "description": "I build scalable products focused on performance and user experience. Full Stack is my mindset.",
+    "resumeRu": "Resume (RU)",
+    "resumeEn": "Resume (EN)",
+    "projects": "View Projects",
+    "downloadPlaceholder": "Download Resume"
+  },
+  "availability": {
+    "available": "Available for work",
+    "unavailable": "Not available now"
+  }
+}
