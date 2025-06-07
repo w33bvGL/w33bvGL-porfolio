@@ -3,7 +3,7 @@ export interface Education {
   description: string
 }
 
-export interface TranslatedEducation  {
+export interface TranslatedEducation {
   ru: Education[]
   en: Education[]
   hy: Education[]

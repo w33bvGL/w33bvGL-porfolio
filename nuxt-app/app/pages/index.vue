@@ -3,15 +3,15 @@
 
 <template>
   <UPage>
-    <IndexCta/>
-    <IndexExperience/>
+    <IndexCta />
+    <IndexExperience />
 
     <section class="mb-10 grid grid-cols-2 gap-5">
       <div class="">
-        <IndexEducationAndCertificates/>
+        <IndexEducationAndCertificates />
       </div>
       <div class="">
-        <IndexActivities/>
+        <IndexActivities />
       </div>
     </section>
   </UPage>

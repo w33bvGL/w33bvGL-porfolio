@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { global } = useAppConfig()
-const { t, } = useI18n()
+const { t } = useI18n()
 const { footer } = useAppConfig()
 
 const resumeOptions = ref([
@@ -25,7 +25,7 @@ function downloadResume(lang: string) {
   <UPageCTA
     :description="t('cta.description')"
     variant="naked"
-    :ui="{ links:'mt-5 flex flex-col space-y-3', container: 'lg:py-10'}"
+    :ui="{ links: 'mt-5 flex flex-col space-y-3', container: 'lg:py-10' }"
   >
     <template #title>
       <div class="mb-5">
@@ -48,9 +48,9 @@ function downloadResume(lang: string) {
           variant="subtle"
           :items="resumeOptions"
           :placeholder="t('cta.downloadPlaceholder')"
-          @update:modelValue="downloadResume"
+          @update:model-value="downloadResume"
         />
-        <CommonAvailableStatus/>
+        <CommonAvailableStatus />
       </div>
       <div class="flex items-center justify-center gap-3">
         <UButton
@@ -62,4 +62,3 @@ function downloadResume(lang: string) {
     </template>
   </UPageCTA>
 </template>
-

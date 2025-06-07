@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { en, ru, hy } from '@nuxt/ui/locale'
+
 const { locale } = useI18n()
 const route = useRoute()
 
@@ -16,8 +17,8 @@ const onLocaleChange = (newLocale: string) => {
 
 <template>
   <ULocaleSelect
-    variant="soft"
     v-model="locale"
+    variant="soft"
     size="xs"
     :locales="[en, ru, hy]"
     @update:model-value="onLocaleChange"

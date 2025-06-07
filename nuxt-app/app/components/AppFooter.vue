@@ -21,7 +21,7 @@ const { footer } = useAppConfig()
       </template>
 
       <div>
-        <CommonLanguageSwitcher/>
+        <CommonLanguageSwitcher />
       </div>
     </template>
   </UFooter>

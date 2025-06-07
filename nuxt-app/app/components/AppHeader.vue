@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { useI18n, useLocalePath } from '#imports'
 import type { NavigationMenuItem } from '@nuxt/ui'
+import { useI18n, useLocalePath } from '#imports'
 
 const { t } = useI18n()
 const localePath = useLocalePath()
@@ -34,8 +34,6 @@ const links = computed<NavigationMenuItem[]>(() => {
   ]
 })
 </script>
-
-
 
 <template>
   <div class="sticky z-50 top-2 sm:top-4 mx-auto justify-center flex">

@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 import { computed } from 'vue'
-import type {Education, TranslatedEducation} from "~/types/education";
+import type { Education, TranslatedEducation } from '~/types/education'
+
 const { t, locale } = useI18n()
 
 const { data: educationByLang } = await useAsyncData<TranslatedEducation>('education', () =>
@@ -40,4 +41,3 @@ const educations = computed<Education[]>(() => {
     </div>
   </div>
 </template>
-
