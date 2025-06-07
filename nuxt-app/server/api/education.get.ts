@@ -2,56 +2,53 @@ export default defineEventHandler(() => {
   return {
     en: [
       {
-        title: 'Software engineering',
-        description: 'Studied from 2020 to 2024'
+        title: 'Friend LLC - Software Engineer',
+        description: 'Internship certificate at Friend LLC as a Software Engineer',
+        image: '/images/education/friend-llc.jpg'
       },
       {
-        title: 'Friend LLC - Software engineer',
-        description: 'Worked from 2022 to 2023'
+        title: 'Ararat State College',
+        description: 'Software engineer, studied from 2020 to 2024',
+        image: '/images/education/ararat-college.jpg'
       },
       {
-        title: 'DevOps Internship at InoRain LLC',
-        description: 'Interned from 2021 to 2022'
-      },
-      {
-        title: 'Software engineer, Ararat State College',
-        description: 'Graduated with a focus on software development'
+        title: 'Art School',
+        description: 'Graduated from art school and have been an artist from 2016 to 2024',
+        image: '/images/education/art-school.jpg'
       }
     ],
     ru: [
       {
-        title: 'Инженер программного обеспечения',
-        description: 'Учился с 2020 по 2024 год'
-      },
-      {
         title: 'Friend LLC - инженер-программист',
-        description: 'Работал с 2022 по 2023 год'
+        description: 'Сертификат о прохождении стажировки в Friend LLC по профессии',
+        image: '/images/education/friend-llc.jpg'
       },
       {
-        title: 'Стажировка по DevOps в InoRain LLC',
-        description: 'Проходил стажировку с 2021 по 2022 год'
+        title: 'Араратский государственный колледж',
+        description: 'Программист, Араратский Государственный Колледж, учился с 2020 по 2024 год',
+        image: '/images/education/ararat-college.jpg'
       },
       {
-        title: 'Программист, Араратский государственный колледж',
-        description: 'Окончил с уклоном в разработку ПО'
+        title: 'Художественная школа',
+        description: 'Окончил художественную школу и являюсь художником, учился с 2016 по 2024 год',
+        image: '/images/education/art-school.jpg'
       }
     ],
     hy: [
       {
-        title: 'Ծրագրավորման ինժեներ',
-        description: 'Սովորել եմ 2020-ից մինչև 2024 թվականը'
-      },
-      {
         title: 'Friend LLC - Ծրագրավորման ինժեներ',
-        description: 'Աշխատել եմ 2022-ից մինչև 2023 թվականը'
+        description: 'Ստաժավորման վկայական Friend LLC-ում՝ որպես ծրագրավորող',
+        image: '/images/education/friend-llc.jpg'
       },
       {
-        title: 'DevOps պրակտիկա InoRain LLC-ում',
-        description: 'Անցել եմ պրակտիկա 2021-ից մինչև 2022 թվականը'
+        title: 'Արարատ պետական քոլեջ',
+        description: 'Ծրագրավորման ինժեներ, սովորել եմ 2020-2024 թթ․',
+        image: '/images/education/ararat-college.jpg'
       },
       {
-        title: 'Ծրագրավորող, Արարատ պետական քոլեջ',
-        description: 'Շրջանավարտ՝ ծրագրավորման ուղղվածությամբ'
+        title: 'Արվեստի դպրոց',
+        description: 'Ավարտել եմ արվեստի դպրոց և նկարիչ եմ եղել 2016-ից մինչև 2024 թվականը',
+        image: '/images/education/art-school.jpg'
       }
     ]
   }

@@ -1,6 +1,7 @@
 export interface Education {
   title: string
   description: string
+  image: string
 }
 
 export interface TranslatedEducation {

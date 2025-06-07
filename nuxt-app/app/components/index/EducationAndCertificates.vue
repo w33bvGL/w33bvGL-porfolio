@@ -29,12 +29,12 @@ const educations = computed<Education[]>(() => {
       <div
         v-for="(item, index) in educations"
         :key="'edu-' + index"
-        class="rounded-xl bg-muted/40 p-4 shadow-sm"
+        class="border-l-2 pl-3 border-muted"
       >
-        <h4 class="font-semibold text-base text-foreground">
+        <h5 class="font-semibold text-base">
           {{ item.title }}
-        </h4>
-        <p class="text-sm text-muted-foreground">
+        </h5>
+        <p class="text-sm text-muted">
           {{ item.description }}
         </p>
       </div>

@@ -4,7 +4,7 @@ export default defineEventHandler(() => {
       {
         year: '2024 — сейчас',
         company: 'Anidzen',
-        title: 'CEO и Full-Stack engineer',
+        title: 'CEO и Full-Stack Developer',
         period: 'Ноябрь 2024 — по настоящее время',
         description:
           'В свободное время в рамках проекта Anidzen я разрабатываю быстрые и высокоэффективные приложения: sora.ql, ota-ku, aira, и микросервисы на Laravel. Проектирую REST и GraphQL API.'
