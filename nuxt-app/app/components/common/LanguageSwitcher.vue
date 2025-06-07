@@ -16,6 +16,7 @@ const onLocaleChange = (newLocale: string) => {
 
 <template>
   <ULocaleSelect
+    variant="soft"
     v-model="locale"
     size="xs"
     :locales="[en, ru, hy]"

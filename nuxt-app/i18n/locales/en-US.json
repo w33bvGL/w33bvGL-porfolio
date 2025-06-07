@@ -17,5 +17,12 @@
   "availability": {
     "available": "Available for work",
     "unavailable": "Not available now"
+  },
+  "experience": {
+    "title": "Experience",
+    "description": "Experience description",
+    "from": "from {date}",
+    "years": ["year", "years", "years"],
+    "months": ["month", "months", "months"]
   }
 }

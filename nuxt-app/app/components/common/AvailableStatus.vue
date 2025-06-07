@@ -6,7 +6,7 @@ const isAvailable = global.available
 
 <template>
   <div
-    class="inline-flex items-center gap-2 text-sm font-medium transition-all text-muted">
+    class="inline-flex items-center gap-2 text-sm font-medium transition-all"   :class="isAvailable ? 'text-green-500' : 'text-red-500'">
     <span
       class="relative flex h-3 w-3"
       :class="isAvailable ? 'text-green-500' : 'text-red-500'"
