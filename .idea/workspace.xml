@@ -6,11 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="293fa944-9700-4749-9eee-881ff23c65e3" name="Changes" comment="add expirience">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt-app/app/components/index/EducationAndCertificates.vue" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/app/components/index/EducationAndCertificates.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt-app/app/types/education.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/app/types/education.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/app/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/app/app.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/app/components/AppHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/app/components/AppHeader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/app/components/index/Activities.vue" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/app/components/index/Activities.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/app/components/index/Cta.vue" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/app/components/index/Cta.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/app/error.vue" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/app/error.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/i18n/locales/en-US.json" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/i18n/locales/en-US.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/i18n/locales/hy-AM.json" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/i18n/locales/hy-AM.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nuxt-app/i18n/locales/ru-RU.json" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/i18n/locales/ru-RU.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt-app/server/api/education.get.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/server/api/education.get.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt-app/server/api/experiences.get.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/server/api/experiences.get.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +109,7 @@
       <workItem from="1749113006978" duration="591000" />
       <workItem from="1749139655162" duration="4097000" />
       <workItem from="1749188270669" duration="1336000" />
-      <workItem from="1749227317900" duration="35982000" />
+      <workItem from="1749227317900" duration="41352000" />
     </task>
     <task id="LOCAL-00001" summary="add new files">
       <option name="closed" value="true" />
@@ -244,7 +247,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749307185435</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="add expirience">
+      <option name="closed" value="true" />
+      <created>1749310497275</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1749310497275</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

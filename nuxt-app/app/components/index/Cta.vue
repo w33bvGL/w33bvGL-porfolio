@@ -3,7 +3,7 @@ const { global } = useAppConfig()
 const { t } = useI18n()
 const { footer } = useAppConfig()
 
-const resumeOptions = ref([
+const resumeOptions = computed(() => [
   { label: t('cta.resumeRu'), value: 'ru' },
   { label: t('cta.resumeEn'), value: 'en' }
 ])
@@ -28,18 +28,20 @@ function downloadResume(lang: string) {
     :ui="{ links: 'mt-5 flex flex-col space-y-3', container: 'lg:py-10' }"
   >
     <template #title>
-      <div class="mb-5">
-        <div class="flex items-center justify-center">
-          <NuxtImg
-            :src="global.picture.src"
-            :alt="global.picture.alt"
-            class="w-24 h-24 sm:w-28 sm:h-28 rounded-full border-1 border-muted shadow-xl"
-          />
+      <div>
+        <div class="mb-5">
+          <div class="flex items-center justify-center">
+            <NuxtImg
+              :src="global.picture.src"
+              :alt="global.picture.alt"
+              class="w-24 h-24 sm:w-28 sm:h-28 rounded-full border-1 border-muted shadow-xl"
+            />
+          </div>
         </div>
+        <h2 class="text-3xl sm:text-4xl text-pretty tracking-tight font-bold text-highlighted text-center">
+          {{ t('cta.title') }}
+        </h2>
       </div>
-      <h2 class="text-3xl sm:text-4xl text-pretty tracking-tight font-bold text-highlighted text-center">
-        {{ t('cta.title') }}
-      </h2>
     </template>
 
     <template #links>

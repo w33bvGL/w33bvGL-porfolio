@@ -1,9 +1,7 @@
 <script setup lang="ts">
 import type { NavigationMenuItem } from '@nuxt/ui'
-import { useI18n, useLocalePath } from '#imports'
 
 const { t } = useI18n()
-const localePath = useLocalePath()
 const { locale } = useI18n()
 
 const links = computed<NavigationMenuItem[]>(() => {

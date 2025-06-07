@@ -6,12 +6,8 @@ const { t } = useI18n()
 
 <template>
   <div class="space-y-4">
-    <h2 class="text-xl font-bold">
-      {{ t('activities.title') }}
-    </h2>
-    <ul class="list-disc pl-5 text-muted text-sm space-y-1">
-      <li>{{ t('activities.line1') }}</li>
-      <li>{{ t('activities.line2') }}</li>
-    </ul>
+    <UiPageHeader :title="t('activity.title')" :description="t('activity.description')"/>
+    <p class="text-muted text-sm">{{ t('activity.description1') }}</p>
+    <p class="text-muted text-sm mt-2">{{ t('activity.description2') }}</p>
   </div>
 </template>

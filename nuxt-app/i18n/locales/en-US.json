@@ -23,5 +23,16 @@
     "description": "Experience description",
     "years": ["year", "years", "years"],
     "months": ["month", "months", "months"]
+  },
+  "education": {
+    "title": "Education",
+    "description": "My education and internships"
+  },
+  "activity": {
+    "title": "Side Activities",
+    "description": "My projects and initiatives outside of work.",
+    "description1": "Contributor to open-source projects like Nuxt UI, LibreTranslate, and others.",
+    "description2": "As part of the Anidzen project, I develop fast and high-performance apps: sora.ql, ota-ku, aira, and Laravel-based microservices."
   }
+
 }

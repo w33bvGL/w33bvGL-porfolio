@@ -22,7 +22,7 @@ useSeoMeta({
 
 <template>
   <div>
-    <AppHeader :links="navLinks" />
+    <AppHeader />
 
     <UMain>
       <UContainer>
