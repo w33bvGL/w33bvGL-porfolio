@@ -80,7 +80,7 @@ const experienceString = computed(() => {
             <span class="font-medium text-black dark:text-white text-nowrap">
               {{ exp.company }}
             </span>
-            <hr class="w-full opacity-50">
+            <hr class="w-full opacity-50 hidden lg:block">
             <span class="text-muted text-nowrap">
               {{ exp.period }}
             </span>
@@ -88,7 +88,7 @@ const experienceString = computed(() => {
           <h3 class="text-xl font-semibold">
             {{ exp.title }}
           </h3>
-          <p class="text-base text-muted text-sm">
+          <p class="text-base text-muted text-sm line-clamp-2">
             {{ exp.description }}
           </p>
         </li>

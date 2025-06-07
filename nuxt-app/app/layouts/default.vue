@@ -3,7 +3,7 @@
 
 <template>
   <div>
-    <UContainer class="sm:border-x border-default max-w-4xl pt-10">
+    <UContainer class="sm:border-x border-default max-w-4xl sm:pt-10">
       <AppHeader />
       <slot />
       <AppFooter />

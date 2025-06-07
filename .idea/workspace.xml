@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="293fa944-9700-4749-9eee-881ff23c65e3" name="Changes" comment="add expirience">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt-app/app/components/AppFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/app/components/AppFooter.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/app/components/AppHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/app/components/AppHeader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/app/components/index/Cta.vue" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/app/components/index/Cta.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/app/components/index/Experience.vue" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/app/components/index/Experience.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/app/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/app/layouts/default.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/app/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/app/pages/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +106,7 @@
       <workItem from="1749113006978" duration="591000" />
       <workItem from="1749139655162" duration="4097000" />
       <workItem from="1749188270669" duration="1336000" />
-      <workItem from="1749227317900" duration="42094000" />
+      <workItem from="1749227317900" duration="43228000" />
     </task>
     <task id="LOCAL-00001" summary="add new files">
       <option name="closed" value="true" />
@@ -256,7 +260,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749317222099</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="add expirience">
+      <option name="closed" value="true" />
+      <created>1749317944698</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1749317944698</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

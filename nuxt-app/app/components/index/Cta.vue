@@ -25,7 +25,7 @@ function downloadResume(lang: string) {
   <UPageCTA
     :description="t('cta.description')"
     variant="naked"
-    :ui="{ links: 'mt-5 flex flex-col space-y-3', container: 'lg:py-10' }"
+    :ui="{ links: 'mt-5 flex flex-col space-y-3', container: 'p-5 sm:p-5 md:py-7 lg:py-10 px-0 sm:px-5' }"
   >
     <template #title>
       <div>
@@ -45,7 +45,7 @@ function downloadResume(lang: string) {
     </template>
 
     <template #links>
-      <div class="flex flex-col sm:flex-row sm:items-center sm:justify-center gap-5">
+      <div class="flex items-center justify-center gap-5">
         <USelect
           variant="subtle"
           :items="resumeOptions"
