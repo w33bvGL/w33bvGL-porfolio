@@ -18,7 +18,10 @@ const achievements = computed<Achievement[]>(() => {
 
 <template>
   <section class="py-10 space-y-5">
-    <UiPageHeader :title="t('achievements.title')" :description="t('achievements.description')"/>
+    <UiPageHeader
+      :title="t('achievements.title')"
+      :description="t('achievements.description')"
+    />
     <div class="space-y-3 border-l-3 border-muted pl-5 relative">
       <div
         v-for="(item, index) in achievements"
