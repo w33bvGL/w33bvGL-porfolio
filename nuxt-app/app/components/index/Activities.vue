@@ -6,8 +6,15 @@ const { t } = useI18n()
 
 <template>
   <div class="space-y-4">
-    <UiPageHeader :title="t('activity.title')" :description="t('activity.description')"/>
-    <p class="text-muted text-sm">{{ t('activity.description1') }}</p>
-    <p class="text-muted text-sm mt-2">{{ t('activity.description2') }}</p>
+    <UiPageHeader
+      :title="t('activity.title')"
+      :description="t('activity.description')"
+    />
+    <p class="text-muted text-sm">
+      {{ t('activity.description1') }}
+    </p>
+    <p class="text-muted text-sm mt-2">
+      {{ t('activity.description2') }}
+    </p>
   </div>
 </template>
