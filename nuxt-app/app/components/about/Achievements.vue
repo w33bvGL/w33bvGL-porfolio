@@ -17,12 +17,12 @@ const achievements = computed<Achievement[]>(() => {
 </script>
 
 <template>
-  <section class="py-10 space-y-5">
+  <section class="mb-10 space-y-5">
     <UiPageHeader
       :title="t('achievements.title')"
       :description="t('achievements.description')"
     />
-    <div class="space-y-3 border-l-3 border-muted pl-5 relative">
+    <div class="space-y-3 border-l-3 border-muted pl-4 relative">
       <div
         v-for="(item, index) in achievements"
         :key="index"
@@ -31,9 +31,9 @@ const achievements = computed<Achievement[]>(() => {
         <div class="text-sm text-muted font-mono">
           {{ item.year }}
         </div>
-        <div class="text-base sm:text-lg text-balance text-foreground">
+        <p class="font-semibold text-base">
           {{ item.description }}
-        </div>
+        </p>
       </div>
     </div>
   </section>

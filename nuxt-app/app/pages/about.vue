@@ -19,7 +19,7 @@ const age = today.getFullYear() - birthday.getFullYear() - (
           Обо мне
         </h1>
         <p class="text-base sm:text-lg text-balance text-muted mt-3">
-          Привет! Меня зовут <strong>Vahe</strong> (в сети можно найти как <strong>w33bvGL</strong>) — я Full-Stack разработчик из Армении. Мне {{ age }} лет, и я уже успел поработать над десятками реальных проектов — от лендингов до сложных микросервисных систем.
+          {{ $t('about.intro', { age }) }}
         </p>
       </div>
       <div class="flex justify-center items-start">
@@ -30,6 +30,27 @@ const age = today.getFullYear() - birthday.getFullYear() - (
         />
       </div>
     </section>
-    <AboutAchievements />
+
+    <AboutStack/>
+
+    <section class="mb-10 grid md:grid-cols-2 md:gap-5">
+      <div class="mb-10 md:mb-0">
+        <p class="text-base text-muted leading-relaxed">
+          {{ $t('about.stack') }}
+          <br><br>
+          {{ $t('about.business') }}
+          <br><br>
+          {{ $t('about.projects') }}
+          <br><br>
+          {{ $t('about.approach') }}
+          <br><br>
+          {{ $t('about.opensource') }}
+        </p>
+      </div>
+      <div>
+        <AboutAchievements />
+      </div>
+    </section>
+
   </UPage>
 </template>

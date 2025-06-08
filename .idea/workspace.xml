@@ -5,13 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="293fa944-9700-4749-9eee-881ff23c65e3" name="Changes" comment="add expirience">
+      <change afterPath="$PROJECT_DIR$/nuxt-app/app/components/about/Stack.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nuxt-app/public/tech/github-actions.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nuxt-app/public/tech/graphql.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nuxt-app/public/tech/kafka.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nuxt-app/public/tech/nova.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nuxt-app/public/tech/postgresql.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nuxt-app/public/tech/postman.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nuxt-app/public/tech/prettier.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nuxt-app/server/api/technologies.get.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/app/app.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nuxt-app/app/components/about/Achievements.vue" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/app/components/about/Achievements.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nuxt-app/app/pages/about.vue" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/app/pages/about.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nuxt-app/i18n/locales/en-US.json" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/i18n/locales/en-US.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nuxt-app/i18n/locales/hy-AM.json" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/i18n/locales/hy-AM.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nuxt-app/i18n/locales/ru-RU.json" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/i18n/locales/ru-RU.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt-app/server/api/achievements.get.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/server/api/achievements.get.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,41 +48,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/.projects/SHOP/w33bvGL-porfolio/nuxt-app/app/types&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\.projects\\SHOP\\w33bvGL-porfolio\\nuxt-app\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.index.html.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "develop",
+    "last_opened_file_path": "D:/.projects/SHOP/w33bvGL-porfolio/nuxt-app/public/tech",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "D:\\.projects\\SHOP\\w33bvGL-porfolio\\nuxt-app\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;vue.recent.templates&quot;: [
-      &quot;Vue Composition API Component&quot;
+  "keyToStringList": {
+    "vue.recent.templates": [
+      "Vue Composition API Component"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\.projects\SHOP\w33bvGL-porfolio\nuxt-app\public\tech" />
       <recent name="D:\.projects\SHOP\w33bvGL-porfolio\nuxt-app\app\types" />
       <recent name="D:\.projects\SHOP\w33bvGL-porfolio\nuxt-app\i18n\locales" />
       <recent name="D:\.projects\SHOP\w33bvGL-porfolio\nuxt-app\assets\scss\styles\reset" />
       <recent name="D:\.projects\SHOP\w33bvGL-porfolio\nuxt-app\public\images\projects" />
-      <recent name="D:\.projects\SHOP\w33bvGL-porfolio\nuxt-app\public\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\.projects\SHOP\w33bvGL-porfolio\nuxt-app\public\tech" />
       <recent name="D:\.projects\SHOP\w33bvGL-porfolio\nuxt-app\app\components\common" />
       <recent name="D:\.projects\SHOP\w33bvGL-porfolio\nuxt-app\public" />
       <recent name="D:\.projects\SHOP\w33bvGL-porfolio\nuxt-app\assets\scss\styles" />
       <recent name="D:\.projects\SHOP\w33bvGL-porfolio\nuxt-app\assets\scss\styles\reset" />
-      <recent name="D:\.projects\SHOP\w33bvGL-porfolio\nuxt-app\assets\scss\styles\utils" />
     </key>
   </component>
   <component name="RunManager">
@@ -108,7 +117,7 @@
       <workItem from="1749139655162" duration="4097000" />
       <workItem from="1749188270669" duration="1336000" />
       <workItem from="1749227317900" duration="43228000" />
-      <workItem from="1749356458784" duration="5623000" />
+      <workItem from="1749356458784" duration="21271000" />
     </task>
     <task id="LOCAL-00001" summary="add new files">
       <option name="closed" value="true" />
@@ -278,7 +287,23 @@
       <option name="project" value="LOCAL" />
       <updated>1749370093956</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="add expirience">
+      <option name="closed" value="true" />
+      <created>1749371282983</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1749371282983</updated>
+    </task>
+    <task id="LOCAL-00023" summary="add expirience">
+      <option name="closed" value="true" />
+      <created>1749371297705</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1749371297705</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
