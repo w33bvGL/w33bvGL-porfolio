@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { Achievement, TranslatedAchievements } from '~/types/achievements'
 
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 
 const { data: achievementsByLang } = await useAsyncData<TranslatedAchievements>('achievement', () =>
   $fetch('/api/achievements')
@@ -17,18 +17,14 @@ const achievements = computed<Achievement[]>(() => {
 </script>
 
 <template>
-  <section class="py-10">
-    <h2 class="text-2xl sm:text-3xl font-bold text-highlighted mb-6">
-      📈 Мои достижения
-    </h2>
-
-    <div class="space-y-4 border-l-2 border-muted pl-6 relative">
+  <section class="py-10 space-y-5">
+    <UiPageHeader :title="t('achievements.title')" :description="t('achievements.description')"/>
+    <div class="space-y-3 border-l-3 border-muted pl-5 relative">
       <div
         v-for="(item, index) in achievements"
         :key="index"
         class="relative"
       >
-        <div class="absolute -left-[9px] top-[6px] w-3 h-3 rounded-full bg-primary border-2 border-background" />
         <div class="text-sm text-muted font-mono">
           {{ item.year }}
         </div>

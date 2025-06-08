@@ -33,6 +33,9 @@
     "description": "My projects and initiatives outside of work.",
     "description1": "Contributor to open-source projects like Nuxt UI, LibreTranslate, and others.",
     "description2": "As part of the Anidzen project, I develop fast and high-performance apps: sora.ql, ota-ku, aira, and Laravel-based microservices."
+  },
+  "achievements": {
+    "title": "📈 My Achievements",
+    "description": "Below are key milestones in my professional journey."
   }
-
 }

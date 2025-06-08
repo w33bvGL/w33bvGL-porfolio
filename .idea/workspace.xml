@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="293fa944-9700-4749-9eee-881ff23c65e3" name="Changes" comment="add expirience">
-      <change afterPath="$PROJECT_DIR$/nuxt-app/app/components/about/Achievements.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nuxt-app/app/types/achievements.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nuxt-app/server/api/achievements.get.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt-app/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/app/app.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt-app/app/components/AppFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/app/components/AppFooter.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt-app/app/components/index/Activities.vue" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/app/components/index/Activities.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/app/components/about/Achievements.vue" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/app/components/about/Achievements.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nuxt-app/app/pages/about.vue" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/app/pages/about.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/i18n/locales/en-US.json" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/i18n/locales/en-US.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/i18n/locales/hy-AM.json" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/i18n/locales/hy-AM.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/i18n/locales/ru-RU.json" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/i18n/locales/ru-RU.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/server/api/achievements.get.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/server/api/achievements.get.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +108,7 @@
       <workItem from="1749139655162" duration="4097000" />
       <workItem from="1749188270669" duration="1336000" />
       <workItem from="1749227317900" duration="43228000" />
-      <workItem from="1749356458784" duration="4447000" />
+      <workItem from="1749356458784" duration="5623000" />
     </task>
     <task id="LOCAL-00001" summary="add new files">
       <option name="closed" value="true" />
@@ -271,7 +270,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749317944698</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="add expirience">
+      <option name="closed" value="true" />
+      <created>1749370093956</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1749370093956</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
