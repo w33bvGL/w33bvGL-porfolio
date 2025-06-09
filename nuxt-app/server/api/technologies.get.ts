@@ -21,6 +21,7 @@ export default defineEventHandler(() => {
     backend: [
       { name: 'PHP', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg' },
       { name: 'Laravel', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg' },
+      { name: 'Inertia.js', icon: '/tech/inertia.svg' },
       { name: 'Livewire', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/livewire/livewire-original.svg' },
       { name: 'Moonshine', icon: 'https://demo.moonshine-laravel.com/vendor/moonshine/logo-small.svg' },
       { name: 'Nova', icon: '/tech/nova.svg' },
@@ -34,6 +35,7 @@ export default defineEventHandler(() => {
       { name: 'Memcached', icon: 'https://www.vectorlogo.zone/logos/memcached/memcached-icon.svg' }
     ],
     tools: [
+      { name: 'Linux', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg' },
       { name: 'GitHub Actions', icon: '/tech/github-actions.svg' },
       { name: 'Docker', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' },
       { name: 'ESLint', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eslint/eslint-original.svg' },
