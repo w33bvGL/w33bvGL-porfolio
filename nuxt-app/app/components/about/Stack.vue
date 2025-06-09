@@ -11,12 +11,16 @@ const tabs = [
   { label: 'Инструменты', slot: 'tools', icon: 'i-lucide-wrench' },
   { label: 'Пакетные менеджеры', slot: 'pm', icon: 'i-lucide-package' }
 ] satisfies TabsItem[]
-
 </script>
 
 <template>
   <section class="mb-10">
-    <UTabs :items="tabs" class="w-full" color="neutral" size="sm">
+    <UTabs
+      :items="tabs"
+      class="w-full"
+      color="neutral"
+      size="sm"
+    >
       <template #frontend>
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-8 gap-3 bg-neutral-800/5 dark:bg-neutral-800/70 py-4 rounded-xl grid-rows-2">
           <div
@@ -24,7 +28,11 @@ const tabs = [
             :key="tech.name"
             class="flex flex-col items-center gap-2 text-center"
           >
-            <NuxtImg :src="tech.icon" :alt="tech.name" class="w-[50px] h-[50px]" />
+            <NuxtImg
+              :src="tech.icon"
+              :alt="tech.name"
+              class="w-[50px] h-[50px]"
+            />
             <span class="text-xs text-muted">{{ tech.name }}</span>
           </div>
         </div>
@@ -37,7 +45,11 @@ const tabs = [
             :key="tech.name"
             class="flex flex-col items-center gap-2 text-center"
           >
-            <NuxtImg :src="tech.icon" :alt="tech.name" class="w-[50px] h-[50px]" />
+            <NuxtImg
+              :src="tech.icon"
+              :alt="tech.name"
+              class="w-[50px] h-[50px]"
+            />
             <span class="text-xs text-muted">{{ tech.name }}</span>
           </div>
         </div>
@@ -50,7 +62,11 @@ const tabs = [
             :key="tool.name"
             class="flex flex-col items-center gap-2 text-center"
           >
-            <NuxtImg :src="tool.icon" :alt="tool.name" class="w-[50px] h-[50px]" />
+            <NuxtImg
+              :src="tool.icon"
+              :alt="tool.name"
+              class="w-[50px] h-[50px]"
+            />
             <span class="text-xs text-muted">{{ tool.name }}</span>
           </div>
         </div>
@@ -63,7 +79,11 @@ const tabs = [
             :key="pm.name"
             class="flex flex-col items-center gap-2 text-center"
           >
-            <NuxtImg :src="pm.icon" :alt="pm.name" class="w-[50px] h-[50px]" />
+            <NuxtImg
+              :src="pm.icon"
+              :alt="pm.name"
+              class="w-[50px] h-[50px]"
+            />
             <span class="text-xs text-muted">{{ pm.name }}</span>
           </div>
         </div>

@@ -31,7 +31,7 @@ const age = today.getFullYear() - birthday.getFullYear() - (
       </div>
     </section>
 
-    <AboutStack/>
+    <AboutStack />
 
     <section class="mb-10 grid md:grid-cols-2 md:gap-5">
       <div class="mb-10 md:mb-0">
@@ -51,6 +51,5 @@ const age = today.getFullYear() - birthday.getFullYear() - (
         <AboutAchievements />
       </div>
     </section>
-
   </UPage>
 </template>
