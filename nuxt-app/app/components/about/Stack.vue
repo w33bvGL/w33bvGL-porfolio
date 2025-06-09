@@ -13,11 +13,12 @@ const tabs = [
 ] satisfies TabsItem[]
 
 </script>
+
 <template>
   <section class="mb-10">
     <UTabs :items="tabs" class="w-full" color="neutral" size="sm">
       <template #frontend>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-8 gap-3 bg-neutral-800/70 py-4 rounded-xl grid-rows-2">
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-8 gap-3 bg-neutral-800/5 dark:bg-neutral-800/70 py-4 rounded-xl grid-rows-2">
           <div
             v-for="tech in techs?.frontend || []"
             :key="tech.name"
@@ -30,7 +31,7 @@ const tabs = [
       </template>
 
       <template #backend>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-8 gap-3 bg-neutral-800/70 py-4 rounded-xl grid-rows-2">
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-8 gap-3 bg-neutral-800/5 dark:bg-neutral-800/70 py-4 rounded-xl grid-rows-2">
           <div
             v-for="tech in techs?.backend || []"
             :key="tech.name"
@@ -43,7 +44,7 @@ const tabs = [
       </template>
 
       <template #tools>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-8 gap-3 bg-neutral-800/70 py-4 rounded-xl grid-rows-2">
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-8 gap-3 bg-neutral-800/5 dark:bg-neutral-800/70 py-4 rounded-xl grid-rows-2">
           <div
             v-for="tool in techs?.tools || []"
             :key="tool.name"
@@ -56,7 +57,7 @@ const tabs = [
       </template>
 
       <template #pm>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-8 gap-3 bg-neutral-800/70 py-4 rounded-xl grid-rows-2">
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-8 gap-3 bg-neutral-800/5 dark:bg-neutral-800/70 py-4 rounded-xl grid-rows-2">
           <div
             v-for="pm in techs?.packageManagers || []"
             :key="pm.name"
