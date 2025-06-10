@@ -3,6 +3,9 @@
 </script>
 
 <template>
+  <div>
+    ddwdw
+  </div>
 </template>
 
 <style scoped>

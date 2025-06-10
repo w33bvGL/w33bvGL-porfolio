@@ -2,7 +2,7 @@
 import * as locales from '@nuxt/ui-pro/locale'
 
 const colorMode = useColorMode()
-const { locale, t } = useI18n()
+const { locale } = useI18n()
 const color = computed(() => colorMode.value === 'dark' ? '#020618' : 'white')
 
 useHead({
