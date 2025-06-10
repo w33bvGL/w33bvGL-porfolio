@@ -5,7 +5,7 @@ export default defineAppConfig({
       alt: 'Vahe — Full Stack Developer'
     },
     email: 'w33bv.gl@gmail.com',
-    available: true,
+    available: false,
     birthday: '2005-03-30'
   },
   ui: {

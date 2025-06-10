@@ -5,8 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="293fa944-9700-4749-9eee-881ff23c65e3" name="Changes" comment="add expirience">
+      <change afterPath="$PROJECT_DIR$/nuxt-app/app/pages/projects/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nuxt-app/public/projects/anidzen-aira.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nuxt-app/public/projects/anidzen-ecosystems.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nuxt-app/public/projects/anidzen-sora.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nuxt-app/public/projects/drive-fit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nuxt-app/public/projects/hentai-voice.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nuxt-app/public/projects/mari-karkas.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nuxt-app/public/projects/ota-ku.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nuxt-app/public/projects/tg-quick-click.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nuxt-app/public/projects/udp-logistics.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt-app/app/components/about/Stack.vue" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/app/components/about/Stack.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/app/app.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/app/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/app/layouts/default.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/app/pages/projects.vue" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/app/pages/projects/[slug].vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,11 +76,11 @@
       <recent name="D:\.projects\SHOP\w33bvGL-porfolio\nuxt-app\public\images\projects" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\.projects\SHOP\w33bvGL-porfolio\nuxt-app\public\projects" />
+      <recent name="D:\.projects\SHOP\w33bvGL-porfolio\nuxt-app\app\pages\projects" />
       <recent name="D:\.projects\SHOP\w33bvGL-porfolio\nuxt-app\public\tech" />
       <recent name="D:\.projects\SHOP\w33bvGL-porfolio\nuxt-app\app\components\common" />
       <recent name="D:\.projects\SHOP\w33bvGL-porfolio\nuxt-app\public" />
-      <recent name="D:\.projects\SHOP\w33bvGL-porfolio\nuxt-app\assets\scss\styles" />
-      <recent name="D:\.projects\SHOP\w33bvGL-porfolio\nuxt-app\assets\scss\styles\reset" />
     </key>
   </component>
   <component name="RunManager">
@@ -105,7 +117,9 @@
       <workItem from="1749227317900" duration="43228000" />
       <workItem from="1749356458784" duration="21271000" />
       <workItem from="1749403604416" duration="2016000" />
-      <workItem from="1749445116615" duration="2275000" />
+      <workItem from="1749445116615" duration="2408000" />
+      <workItem from="1749474566824" duration="623000" />
+      <workItem from="1749525774015" duration="5908000" />
     </task>
     <task id="LOCAL-00001" summary="add new files">
       <option name="closed" value="true" />
@@ -307,7 +321,23 @@
       <option name="project" value="LOCAL" />
       <updated>1749445221967</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="add expirience">
+      <option name="closed" value="true" />
+      <created>1749448052870</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1749448052870</updated>
+    </task>
+    <task id="LOCAL-00027" summary="add expirience">
+      <option name="closed" value="true" />
+      <created>1749448066816</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1749448066816</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

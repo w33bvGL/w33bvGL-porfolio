@@ -5,7 +5,9 @@
   <div>
     <UContainer class="sm:border-x border-default max-w-4xl sm:pt-10">
       <AppHeader />
-      <slot />
+      <div class="py-10">
+        <slot />
+      </div>
       <AppFooter />
     </UContainer>
   </div>
