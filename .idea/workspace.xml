@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="293fa944-9700-4749-9eee-881ff23c65e3" name="Changes" comment="add expirience">
+      <change afterPath="$PROJECT_DIR$/nuxt-app/app/pages/projects/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nuxt-app/public/projects/anidzen-aira.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nuxt-app/public/projects/anidzen-ecosystems.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nuxt-app/public/projects/anidzen-sora.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nuxt-app/public/projects/drive-fit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nuxt-app/public/projects/hentai-voice.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nuxt-app/public/projects/mari-karkas.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nuxt-app/public/projects/ota-ku.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nuxt-app/public/projects/tg-quick-click.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nuxt-app/public/projects/udp-logistics.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/app/app.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/app/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/app/layouts/default.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/app/pages/projects.vue" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt-app/app/pages/projects/[slug].vue" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="tsconfig.json" />
+        <option value="TypeScript File" />
+        <option value="Vue Composition API Component" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2y0Aawt5jxsQREmSwV829Q6qR94" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/.projects/SHOP/w33bvGL-porfolio/nuxt-app/public/tech&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\.projects\\SHOP\\w33bvGL-porfolio\\nuxt-app\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;vue.recent.templates&quot;: [
+      &quot;Vue Composition API Component&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\.projects\SHOP\w33bvGL-porfolio\nuxt-app\public\tech" />
+      <recent name="D:\.projects\SHOP\w33bvGL-porfolio\nuxt-app\app\types" />
+      <recent name="D:\.projects\SHOP\w33bvGL-porfolio\nuxt-app\i18n\locales" />
+      <recent name="D:\.projects\SHOP\w33bvGL-porfolio\nuxt-app\assets\scss\styles\reset" />
+      <recent name="D:\.projects\SHOP\w33bvGL-porfolio\nuxt-app\public\images\projects" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\.projects\SHOP\w33bvGL-porfolio\nuxt-app\public\projects" />
+      <recent name="D:\.projects\SHOP\w33bvGL-porfolio\nuxt-app\app\pages\projects" />
+      <recent name="D:\.projects\SHOP\w33bvGL-porfolio\nuxt-app\public\tech" />
+      <recent name="D:\.projects\SHOP\w33bvGL-porfolio\nuxt-app\app\components\common" />
+      <recent name="D:\.projects\SHOP\w33bvGL-porfolio\nuxt-app\public" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/w33bvGL-porfolio/mighty-html/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.120" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="293fa944-9700-4749-9eee-881ff23c65e3" name="Changes" comment="" />
+      <created>1748961184698</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1748961184698</updated>
+      <workItem from="1748961186274" duration="12039000" />
+      <workItem from="1749020703519" duration="28463000" />
+      <workItem from="1749108024547" duration="1051000" />
+      <workItem from="1749113006978" duration="591000" />
+      <workItem from="1749139655162" duration="4097000" />
+      <workItem from="1749188270669" duration="1336000" />
+      <workItem from="1749227317900" duration="43228000" />
+      <workItem from="1749356458784" duration="21271000" />
+      <workItem from="1749403604416" duration="2016000" />
+      <workItem from="1749445116615" duration="2408000" />
+      <workItem from="1749474566824" duration="623000" />
+      <workItem from="1749525774015" duration="5908000" />
+    </task>
+    <task id="LOCAL-00001" summary="add new files">
+      <option name="closed" value="true" />
+      <created>1748963376962</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1748963376962</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add newfiles fix">
+      <option name="closed" value="true" />
+      <created>1748963622478</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1748963622478</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add reset sass">
+      <option name="closed" value="true" />
+      <created>1748966697573</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1748966697573</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add arrow up and tapography">
+      <option name="closed" value="true" />
+      <created>1749030921403</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1749030921403</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix arrow to up">
+      <option name="closed" value="true" />
+      <created>1749031308750</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1749031308750</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add Cursor.vue">
+      <option name="closed" value="true" />
+      <created>1749034196443</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1749034196443</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add images">
+      <option name="closed" value="true" />
+      <created>1749035039102</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1749035039102</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix adaptive">
+      <option name="closed" value="true" />
+      <created>1749051923022</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1749051923022</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix adaptive">
+      <option name="closed" value="true" />
+      <created>1749054695848</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1749054695848</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fix adaptive">
+      <option name="closed" value="true" />
+      <created>1749054712466</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1749054712466</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fix adaptive">
+      <option name="closed" value="true" />
+      <created>1749189838866</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1749189838866</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fix adaptive">
+      <option name="closed" value="true" />
+      <created>1749294162777</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1749294162777</updated>
+    </task>
+    <task id="LOCAL-00013">
+      <option name="closed" value="true" />
+      <created>1749303824924</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1749303824924</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add expirience">
+      <option name="closed" value="true" />
+      <created>1749307025389</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1749307025389</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add expirience">
+      <option name="closed" value="true" />
+      <created>1749307062862</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1749307062862</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add expirience">
+      <option name="closed" value="true" />
+      <created>1749307106362</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1749307106362</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add expirience">
+      <option name="closed" value="true" />
+      <created>1749307185435</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1749307185435</updated>
+    </task>
+    <task id="LOCAL-00018" summary="add expirience">
+      <option name="closed" value="true" />
+      <created>1749310497275</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1749310497275</updated>
+    </task>
+    <task id="LOCAL-00019">
+      <option name="closed" value="true" />
+      <created>1749317222099</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1749317222099</updated>
+    </task>
+    <task id="LOCAL-00020" summary="add expirience">
+      <option name="closed" value="true" />
+      <created>1749317944698</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1749317944698</updated>
+    </task>
+    <task id="LOCAL-00021" summary="add expirience">
+      <option name="closed" value="true" />
+      <created>1749370093956</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1749370093956</updated>
+    </task>
+    <task id="LOCAL-00022" summary="add expirience">
+      <option name="closed" value="true" />
+      <created>1749371282983</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1749371282983</updated>
+    </task>
+    <task id="LOCAL-00023" summary="add expirience">
+      <option name="closed" value="true" />
+      <created>1749371297705</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1749371297705</updated>
+    </task>
+    <task id="LOCAL-00024" summary="add expirience">
+      <option name="closed" value="true" />
+      <created>1749403833850</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1749403833850</updated>
+    </task>
+    <task id="LOCAL-00025" summary="add expirience">
+      <option name="closed" value="true" />
+      <created>1749445221967</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1749445221967</updated>
+    </task>
+    <task id="LOCAL-00026" summary="add expirience">
+      <option name="closed" value="true" />
+      <created>1749448052870</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1749448052870</updated>
+    </task>
+    <task id="LOCAL-00027" summary="add expirience">
+      <option name="closed" value="true" />
+      <created>1749448066816</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1749448066816</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add new files" />
+    <MESSAGE value="add newfiles fix" />
+    <MESSAGE value="add reset sass" />
+    <MESSAGE value="add arrow up and tapography" />
+    <MESSAGE value="fix arrow to up" />
+    <MESSAGE value="add Cursor.vue" />
+    <MESSAGE value="add images" />
+    <MESSAGE value="fix adaptive" />
+    <MESSAGE value="add expirience" />
+    <option name="LAST_COMMIT_MESSAGE" value="add expirience" />
+  </component>
+</project>

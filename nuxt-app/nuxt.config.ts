@@ -2,15 +2,38 @@
 export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
-    '@nuxt/icon',
     '@nuxt/image',
+    '@nuxt/ui-pro',
+    '@vueuse/nuxt',
+    'nuxt-og-image',
+    'motion-v/nuxt',
     '@nuxtjs/i18n'
   ],
-  devtools: { enabled: true },
 
-  css: ['@/assets/scss/main.scss'],
+  devtools: {
+    enabled: true
+  },
 
-  compatibilityDate: '2025-05-15',
+  app: {
+    pageTransition: { name: 'page', mode: 'out-in' }
+  },
+
+  css: ['~/assets/css/main.css'],
+
+  future: {
+    compatibilityVersion: 4
+  },
+
+  compatibilityDate: '2024-11-01',
+
+  nitro: {
+    prerender: {
+      routes: [
+        '/'
+      ],
+      crawlLinks: true
+    }
+  },
 
   eslint: {
     config: {
@@ -35,5 +58,4 @@ export default defineNuxtConfig({
     strategy: 'prefix_and_default',
     vueI18n: './i18n.config.ts'
   }
-
 })
