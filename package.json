@@ -10,7 +10,8 @@
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
     "lint-fix": "eslint . --fix",
-    "typecheck": "nuxt typecheck"
+    "typecheck": "nuxt typecheck",
+    "rewrite": "node ui-pro-plugin/index.js"
   },
   "dependencies": {
     "@iconify-json/lucide": "^1.2.44",
@@ -21,7 +22,8 @@
     "@vueuse/nuxt": "^13.2.0",
     "motion-v": "^1.1.1",
     "nuxt": "^3.17.5",
-    "nuxt-og-image": "^5.1.4"
+    "nuxt-og-image": "^5.1.4",
+    "nuxt-ui-pro-plugin": "file:ui-pro-plugin"
   },
   "devDependencies": {
     "@nuxt/eslint": "^1.4.1",
