@@ -13,7 +13,7 @@ const age = today.getFullYear() - birthday.getFullYear() - (
 
 <template>
   <UPage>
-    <section class="py-10 flex gap-5 flex-col md:flex-row">
+    <section class="mb-10 flex gap-5 flex-col md:flex-row">
       <div class="flex-1">
         <h1 class="text-3xl sm:text-4xl text-pretty tracking-tight font-bold text-highlighted">
           Обо мне
