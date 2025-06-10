@@ -3,11 +3,11 @@
 </script>
 
 <template>
-<UPage>
-  <div>
-    wdwd
-  </div>
-</UPage>
+  <UPage>
+    <div>
+      wdwd
+    </div>
+  </UPage>
 </template>
 
 <style scoped>

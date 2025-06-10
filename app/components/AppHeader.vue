@@ -54,7 +54,10 @@ const isActive = (path: string) => {
           color="neutral"
           class="flex items-center gap-2 text-sm px-3 py-1.5 rounded-full"
         >
-          <UIcon :name="link.icon" class="w-4 h-4" />
+          <UIcon
+            :name="link.icon"
+            class="w-4 h-4"
+          />
           <span class="hidden sm:inline">{{ t(`routes.${link.key}`) }}</span>
         </UButton>
       </NuxtLink>
