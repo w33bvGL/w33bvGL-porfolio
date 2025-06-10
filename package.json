@@ -9,6 +9,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
+    "gh-pages": "npx nuxt build --preset github_pages",
     "lint-fix": "eslint . --fix",
     "typecheck": "nuxt typecheck",
     "rewrite": "node ui-pro-plugin/index.js"
