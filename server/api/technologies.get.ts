@@ -21,14 +21,14 @@ export default defineEventHandler(() => {
     backend: [
       { name: 'PHP', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg' },
       { name: 'Laravel', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg' },
-      { name: 'Inertia.js', icon: '/tech/inertia.svg' },
+      { name: 'Inertia.js', icon: 'tech/inertia.svg' },
       { name: 'Livewire', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/livewire/livewire-original.svg' },
       { name: 'Moonshine', icon: 'https://demo.moonshine-laravel.com/vendor/moonshine/logo-small.svg' },
-      { name: 'Nova', icon: '/tech/nova.svg' },
+      { name: 'Nova', icon: 'tech/nova.svg' },
       { name: 'MySQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
-      { name: 'PostgresSQL', icon: '/tech/postgresql.svg' },
-      { name: 'Kafka', icon: '/tech/kafka.svg' },
-      { name: 'GraphQL', icon: '/tech/graphql.svg' },
+      { name: 'PostgresSQL', icon: 'tech/postgresql.svg' },
+      { name: 'Kafka', icon: 'tech/kafka.svg' },
+      { name: 'GraphQL', icon: 'tech/graphql.svg' },
       { name: 'MongoDB', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg' },
       { name: 'Cassandra', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cassandra/cassandra-original.svg' },
       { name: 'Redis', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg' },
@@ -39,8 +39,8 @@ export default defineEventHandler(() => {
       { name: 'GitHub Actions', icon: '/tech/github-actions.svg' },
       { name: 'Docker', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' },
       { name: 'ESLint', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eslint/eslint-original.svg' },
-      { name: 'Prettier', icon: '/tech/prettier.svg' },
-      { name: 'Postman', icon: '/tech/postman.svg' }
+      { name: 'Prettier', icon: 'tech/prettier.svg' },
+      { name: 'Postman', icon: 'tech/postman.svg' }
     ],
     packageManagers: [
       { name: 'Composer', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-original.svg' },

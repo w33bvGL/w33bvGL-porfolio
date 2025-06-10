@@ -36,12 +36,18 @@ const links = computed<NavigationMenuItem[]>(() => {
 <template>
   <div class="sticky z-50 top-2 sm:top-5 justify-center flex">
     <UNavigationMenu
-      collapsed
       :items="links"
       variant="link"
       color="neutral"
       class="bg-muted/80 backdrop-blur-sm rounded-full px-2 sm:px-4 border border-muted/50 shadow-lg shadow-neutral-950/5"
     >
+      <template #item="{ item }">
+        <NuxtLink :to="item.to" class="flex items-center gap-2">
+          <UIcon :name="item.icon" class="w-6 h-6"/>
+          <span class="hidden sm:inline">{{ item.label }}</span>
+        </NuxtLink>
+      </template>
+
       <template #list-trailing>
         <CommonColorModeButton />
       </template>

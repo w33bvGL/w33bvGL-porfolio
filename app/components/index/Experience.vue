@@ -81,8 +81,11 @@ const experienceString = computed(() => {
               {{ exp.company }}
             </span>
             <hr class="w-full opacity-50 hidden lg:block">
-            <span class="text-muted text-nowrap">
+            <span class="text-muted text-nowrap hidden md:block">
               {{ exp.period }}
+            </span>
+            <span class="text-muted text-nowrap md:hidden">
+              {{ exp.year }}
             </span>
           </div>
           <h3 class="text-xl font-semibold">

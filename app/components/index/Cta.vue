@@ -25,7 +25,7 @@ function downloadResume(lang: string) {
   <UPageCTA
     :description="t('cta.description')"
     variant="naked"
-    :ui="{ links: 'mt-5 flex flex-col space-y-3', container: 'p-5 sm:p-5 md:py-7 lg:py-10 px-0 sm:px-5' }"
+    :ui="{ links: 'mt-5 flex flex-col space-y-3', container: 'p-5 sm:p-5 md:py-0 lg:py-0 px-0 sm:px-5 mb-10' }"
   >
     <template #title>
       <div>
