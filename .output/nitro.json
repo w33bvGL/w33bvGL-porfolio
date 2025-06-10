@@ -1,0 +1,16 @@
+{
+  "date": "2025-06-10T08:06:14.379Z",
+  "preset": "github-pages",
+  "framework": {
+    "name": "nuxt",
+    "version": "3.17.5"
+  },
+  "versions": {
+    "nitro": "2.11.12"
+  },
+  "commands": {
+    "preview": "npx serve ./public",
+    "deploy": "npx gh-pages --dotfiles -d ./public"
+  },
+  "config": {}
+}
