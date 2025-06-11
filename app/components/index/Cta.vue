@@ -2,6 +2,7 @@
 const { global } = useAppConfig()
 const { t } = useI18n()
 const { footer } = useAppConfig()
+const img = useImage()
 
 const resumeOptions = computed(() => [
   { label: t('cta.resumeRu'), value: 'ru' },
@@ -25,7 +26,7 @@ function downloadResume(lang: string) {
   <UPageCTA
     :description="t('cta.description')"
     variant="naked"
-    :ui="{ links: 'mt-5 flex flex-col space-y-3', container: 'p-5 sm:p-5 md:py-0 lg:py-0 px-0 sm:px-5 mb-10' }"
+    :ui="{ links: 'mt-5 flex flex-col space-y-3', container: 'p-0 sm:p-5 md:py-0 lg:py-0 px-0 sm:px-5 mb-10' }"
   >
     <template #title>
       <div>
@@ -34,7 +35,11 @@ function downloadResume(lang: string) {
             <NuxtImg
               :src="global.picture.src"
               :alt="global.picture.alt"
+              width="110"
+              height="110"
+              format="webp"
               class="w-24 h-24 sm:w-28 sm:h-28 rounded-full border-1 border-muted shadow-xl"
+              :placeholder="img(global.picture.src, { h: 10, f: 'png', blur: 0.3, q: 50 })"
             />
           </div>
         </div>

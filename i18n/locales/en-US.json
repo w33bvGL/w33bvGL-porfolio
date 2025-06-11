@@ -37,5 +37,14 @@
   "achievements": {
     "title": "My Achievements",
     "description": "Below are key milestones in my professional journey."
+  },
+  "about": {
+    "title": "About",
+    "intro": "Hi! My name is Vahe (online known as w33bvGL) — I’m a Full-Stack developer from Armenia. I’m {age} years old and have already worked on dozens of real-world projects — from landing pages to complex microservice systems.",
+    "stack": "I’ve been into web development from a young age and over time built a powerful tech stack: from frontend with Vue, Nuxt, and TypeScript to advanced backend logic with PHP (Laravel).",
+    "business": "I love not just writing code, but solving real business problems. That’s why I go beyond coding: I help design architecture, optimize processes, and launch full-cycle products.",
+    "projects": "I’m the founder of Anidzen, Hentaivoice, Sora-ql, and more — an anime-centered ecosystem where I handle the entire development cycle.",
+    "approach": "My approach is speed, transparency, and quality. I always stay in touch, dive into task details, and strive to find the best solution. I work with integrity and love projects where I can truly make an impact.",
+    "opensource": "In my free time, I actively contribute to the open-source movement: I share my own projects, help fellow developers, and publish libraries and tools."
   }
 }
