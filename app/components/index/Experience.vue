@@ -31,7 +31,7 @@ function getExperience(startDate: string): { years: number, months: number } {
   return { years, months }
 }
 
-const experience = getExperience('2021-03-01')
+const experience = getExperience('2022-01-01')
 
 const experienceString = computed(() => {
   const y = experience.years
