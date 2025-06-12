@@ -34,7 +34,7 @@ useHead({
     :toaster="{ expand: false }"
   >
     <NuxtLoadingIndicator
-      color="var(--ui-primary)"
+      color="var(--loading-indicator)"
       :height="2"
     />
     <NuxtLayout>

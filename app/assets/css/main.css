@@ -13,6 +13,8 @@
     color: #282a30;
     background-color: #c8c8c8;
   }
+
+  --loading-indicator: var(--ui-color-neutral-950);
 }
 
 .dark {
@@ -20,4 +22,6 @@
     color: #ffffff;
     background-color: #474747;
   }
+
+  --loading-indicator: var(--ui-color-neutral-50);
 }
