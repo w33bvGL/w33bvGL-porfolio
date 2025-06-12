@@ -1,62 +1,15 @@
 <script setup lang="ts">
-const projects = [
-  {
-    name: 'Hentai Voice',
-    image: '/projects/hentai-voice.png',
-    description: 'В свободное время я разрабатываю быстрые и производительные приложения в рамках Anidzen: sora.ql, ota-ku, aira и микросервисы на Laravel. Проектирую REST и GraphQL API.'
-  },
-  {
-    name: 'ota-ku',
-    image: '/projects/ota-ku.png',
-    description: 'Разработка внутренних систем: API, админки, интеграции со сторонними сервисами. Работа с платёжными шлюзами: Stripe, BTC, LTC. Отвечаю за фронт-бэк интеграцию.',
-    url: 'https://ota-ku.am'
-  },
-  {
-    name: 'aira',
-    image: '/projects/anidzen-aira.png',
-    description: 'AI-сервис Anidzen для генерации изображений и моделей. Комбинация нейросетей, кастомных пресетов и UI для художников и разработчиков.',
-    url: 'https://aira.anidzen.com'
-  },
-  {
-    name: 'Anidzen ecosystems',
-    image: '/projects/anidzen-ecosystems.png',
-    description: 'Единая экосистема проектов под брендом Anidzen — от микросервисов до визуальных редакторов и p2e-инфраструктур.',
-    url: 'https://anidzen.com'
-  },
-  {
-    name: 'sora',
-    image: '/projects/anidzen-sora.png',
-    description: 'Sora — fast API-бекенд, написанный на Laravel для стриминга и AI. Система мультиязычности, поддержка GraphQL, масштабируемость.',
-    url: 'https://sora.anidzen.com'
-  },
-  {
-    name: 'Drive Fit',
-    image: '/projects/drive-fit.png',
-    description: 'Фитнес-приложение с элементами геймификации. Отвечал за фронтенд, API, систему уровней и статистику прогресса.'
-  },
-  {
-    name: 'Mari Karkas',
-    image: '/projects/mari-karkas.png',
-    description: 'Проект по дизайну и архитектуре в интерьерах. Разработан сайт-портфолио и внутренняя CRM.'
-  },
-  {
-    name: 'TG Quick Click',
-    image: '/projects/tg-quick-click.png',
-    description: 'Telegram-бот и админка для создания кастомных кнопок, аналитики и настройки рассылок.'
-  },
-  {
-    name: 'UDP Logistics',
-    image: '/projects/udp-logistics.png',
-    description: 'Логистическая система с трекингом, документами и API-интеграцией с B2B-платформами.'
-  }
-]
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import type { TranslatedProjects, Project } from '~/types/project'
+
+const { data: projects } = await useFetch('/api/projects')
 </script>
 
 <template>
   <UPage>
     <UiPageHeader
-      title="Что я создаю и развиваю"
-      description="Авторские проекты и коммерческие кейсы в AI, логистике, Telegram-ботах и других сферах."
+      :title="$t('projects.title')"
+      :description="$t('projects.description')"
       class="mb-5"
     />
 
@@ -82,8 +35,27 @@ const projects = [
           :href="project.url"
           target="_blank"
           class="text-primary hover:underline"
-        >{{ project.url }}</ULink>
+        >
+          {{ project.url }}
+        </ULink>
       </div>
+    </section>
+
+    <!-- 🔥 CTA: Есть проект на уме? -->
+    <section class="mt-10 p-6 border border-muted/40 bg-muted/20 rounded-xl text-center shadow-sm">
+      <h2 class="text-2xl font-bold mb-3">
+        {{ $t('projects.haveIdea') }}
+      </h2>
+      <p class="text-muted text-base mb-5 max-w-xl mx-auto">
+        {{ $t('projects.whatIOffer') }}
+      </p>
+      <ULink
+        href="https://t.me/w33bvGL"
+        target="_blank"
+        class="inline-block bg-primary text-white px-6 py-2 rounded-lg shadow hover:bg-primary/90 transition"
+      >
+        {{ $t('projects.contactTelegram') }}
+      </ULink>
     </section>
   </UPage>
 </template>
