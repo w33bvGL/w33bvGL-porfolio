@@ -1,8 +1,17 @@
 <script setup lang="ts">
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import type { TranslatedProjects, Project } from '~/types/project'
 
-const { data: projects } = await useFetch('/api/projects')
+const locale = useI18n().locale.value
+
+const { data: projectsByLang } = await useFetch<TranslatedProjects>('/api/projects')
+
+const projects = computed<Project[]>(() => {
+  if (!projectsByLang.value) return []
+  if (locale in projectsByLang.value) {
+    return projectsByLang.value[locale as keyof TranslatedProjects]
+  }
+  return []
+})
 </script>
 
 <template>
