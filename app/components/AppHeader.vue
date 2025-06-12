@@ -22,9 +22,9 @@ const links = computed(() => [
     to: localizedPath('/projects')
   },
   {
-    key: 'blog',
-    icon: 'i-lucide-file-text',
-    to: localizedPath('/blog')
+    key: 'shop',
+    icon: 'i-lucide-shopping-cart',
+    to: localizedPath('/shop')
   },
   {
     key: 'about',

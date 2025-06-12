@@ -9,8 +9,9 @@
   "cta": {
     "title": "Hi, I'm Vahe — Full Stack Developer",
     "description": "I build scalable products focused on performance and user experience. Full Stack is my mindset.",
-    "resumeRu": "Resume (RU)",
     "resumeEn": "Resume (EN)",
+    "resumeHy": "Resume (HY)",
+    "resumeRu": "Resume (RU)",
     "projects": "View Projects",
     "downloadPlaceholder": "Download Resume"
   },
@@ -46,5 +47,12 @@
     "projects": "I’m the founder of Anidzen, Hentaivoice, Sora-ql, and more — an anime-centered ecosystem where I handle the entire development cycle.",
     "approach": "My approach is speed, transparency, and quality. I always stay in touch, dive into task details, and strive to find the best solution. I work with integrity and love projects where I can truly make an impact.",
     "opensource": "In my free time, I actively contribute to the open-source movement: I share my own projects, help fellow developers, and publish libraries and tools."
+  },
+  "projects": {
+    "title": "What I Create and Develop",
+    "description": "Author's projects and commercial cases brought to life from scratch — from idea to scaling. I implement solutions in IT, design, and related creative and business areas.",
+    "haveIdea": "Have a project in mind?",
+    "whatIOffer": "I’ll gladly help bring your idea to life — from concept to a ready-made solution. Describe what you want, and we’ll discuss everything in detail.",
+    "contactTelegram": "Message on Telegram"
   }
 }
