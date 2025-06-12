@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { TranslatedProjects, Project } from '~/types/project'
+const { t } = useI18n()
 
 const img = useImage()
 const locale = useI18n().locale.value
@@ -12,6 +13,19 @@ const projects = computed<Project[]>(() => {
     return projectsByLang.value[locale as keyof TranslatedProjects]
   }
   return []
+})
+
+const title = t('projects.title')
+const description = t('projects.description')
+
+useSeoMeta({
+  title,
+  description,
+  ogTitle: title,
+  ogDescription: description,
+
+  twitterTitle: title,
+  twitterDescription: description
 })
 </script>
 

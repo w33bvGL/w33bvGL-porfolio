@@ -21,10 +21,9 @@ useHead({
 })
 
 useSeoMeta({
-  titleTemplate: 'Nuxt Portfolio Template',
-  ogImage: '',
-  twitterImage: '',
-  twitterCard: 'summary_large_image'
+  ogImage: '/avatar-og.jpg',
+  twitterImage: '/avatar-og.jpg',
+  twitterCard: 'summary'
 })
 </script>
 

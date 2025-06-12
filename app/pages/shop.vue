@@ -4,7 +4,7 @@
 
 <template>
 <div>
-  wdwd
+  soon
 </div>
 </template>
 

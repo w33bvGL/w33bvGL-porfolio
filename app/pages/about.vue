@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const { global } = useAppConfig()
 const img = useImage()
+const { t } = useI18n()
 
 const birthday = new Date(global.birthday)
 const today = new Date()
@@ -10,6 +11,19 @@ const age = today.getFullYear() - birthday.getFullYear() - (
     ? 1
     : 0
 )
+
+const title = t('about.title')
+const description = t('about.description')
+
+useSeoMeta({
+  title,
+  description,
+  ogTitle: title,
+  ogDescription: description,
+
+  twitterTitle: title,
+  twitterDescription: description
+})
 </script>
 
 <template>
