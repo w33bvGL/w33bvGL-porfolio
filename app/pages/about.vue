@@ -13,7 +13,7 @@ const age = today.getFullYear() - birthday.getFullYear() - (
 )
 
 const title = t('about.title')
-const description = t('about.description')
+const description = t('about.intro', { age })
 
 useSeoMeta({
   title,
