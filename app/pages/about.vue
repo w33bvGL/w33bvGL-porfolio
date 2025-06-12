@@ -16,10 +16,10 @@ const age = today.getFullYear() - birthday.getFullYear() - (
   <UPage>
     <section class="mb-10 flex gap-5 flex-col md:flex-row">
       <div class="flex-1">
-        <h1 class="text-3xl sm:text-4xl text-pretty tracking-tight font-bold text-highlighted">
+        <h1 class="text-2xl font-bold tracking-tight">
           {{ $t('about.title') }}
         </h1>
-        <p class="text-base sm:text-lg text-balance text-muted mt-3">
+        <p class="text-muted text-base">
           {{ $t('about.intro', { age }) }}
         </p>
       </div>

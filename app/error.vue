@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { NuxtError } from '#app'
+import AppIcons from '~/components/AppIcons.vue'
 
 defineProps({
   error: {
@@ -36,4 +37,6 @@ useSeoMeta({
 
     <UToaster />
   </div>
+
+  <AppIcons />
 </template>

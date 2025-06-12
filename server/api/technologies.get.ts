@@ -12,16 +12,16 @@ export default defineEventHandler(() => {
       { name: 'Vue 3', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg' },
       { name: 'Nuxt 3', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg' },
       { name: 'Pinia', icon: 'https://logolist.net/wp-content/uploads/2024/04/pinia.svg' },
-      { name: 'Vitejs', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg' },
       { name: 'Vitest', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitest/vitest-original.svg' },
       { name: 'Vuetify', icon: 'https://bestofjs.org/logos/vuetify.svg' },
       { name: 'Nuxt UI', icon: 'https://nuxt.com/assets/design-kit/icon-green.svg' },
+      { name: 'Prime Vue', icon: 'https://techstackapps.com/wp-content/uploads/2024/10/primevue-original.png'},
       { name: 'ShadCN', icon: 'https://avatars.githubusercontent.com/u/139895814?s=200&v=4' }
     ],
     backend: [
       { name: 'PHP', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg' },
       { name: 'Laravel', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg' },
-      { name: 'Inertia.js', icon: '/tech/inertia.svg' },
+      { name: 'Inertia.js', icon: '/tech/inertia-js.svg' },
       { name: 'Livewire', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/livewire/livewire-original.svg' },
       { name: 'Moonshine', icon: 'https://demo.moonshine-laravel.com/vendor/moonshine/logo-small.svg' },
       { name: 'Nova', icon: '/tech/nova.svg' },
@@ -44,7 +44,8 @@ export default defineEventHandler(() => {
       { name: 'Composer', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-original.svg' },
       { name: 'npm', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg' },
       { name: 'yarn', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/yarn/yarn-original.svg' },
-      { name: 'pnpm', icon: 'https://avatars.githubusercontent.com/u/167082526?s=200&v=4' }
+      { name: 'pnpm', icon: 'https://avatars.githubusercontent.com/u/167082526?s=200&v=4' },
+      { name: 'Vitejs', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg' },
     ]
   }
 })

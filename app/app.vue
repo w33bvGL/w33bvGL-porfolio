@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import * as locales from '@nuxt/ui-pro/locale'
+import AppIcons from '~/components/AppIcons.vue'
 
 const colorMode = useColorMode()
 const { locale } = useI18n()
@@ -42,6 +43,8 @@ useHead({
       </UMain>
     </NuxtLayout>
   </UApp>
+
+  <AppIcons />
 </template>
 
 <style scoped>
