@@ -63,5 +63,9 @@
     "free": "Бесплатно",
     "watch": "Смотреть",
     "download": "Скачать"
+  },
+  "resume": {
+    "name": "Vahe",
+    "surname": "Sargsyan"
   }
 }

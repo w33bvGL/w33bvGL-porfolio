@@ -41,7 +41,7 @@ useSeoMeta({
       <div
         v-for="project in shopItems"
         :key="project.name"
-        class="group border border-muted/40 bg-muted/30 hover:bg-muted/70 p-4 rounded-xl transition-all relative overflow-hidden shadow-sm hover:shadow-md backdrop-blur-sm flex gap-5"
+        class="group border border-muted/40 bg-muted/30 hover:bg-muted/70 p-4 rounded-xl transition-all relative overflow-hidden shadow-sm hover:shadow-md backdrop-blur-sm flex gap-5 flex-col md:flex-row"
       >
         <div
           v-if="project.discount"
@@ -49,7 +49,7 @@ useSeoMeta({
         >
           {{ $t('shop.discount') }} / {{ project.discount }}%
         </div>
-        <div class="w-1/3 aspect-video border border-muted mb-3 rounded-lg bg-muted/80 overflow-hidden">
+        <div class="w-full md:w-1/3 aspect-video border border-muted mb-3 rounded-lg bg-muted/80 overflow-hidden">
           <NuxtImg
             :src="project.image"
             width="270"
@@ -59,7 +59,7 @@ useSeoMeta({
             :placeholder="img(project.image, { h: 10, f: 'png', blur: 0.3, q: 50 })"
           />
         </div>
-        <div class="w-1/2">
+        <div class="w-full md:w-1/2">
           <h3 class="text-xl font-semibold mb-1">
             {{ project.name }}
           </h3>

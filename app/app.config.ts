@@ -5,8 +5,12 @@ export default defineAppConfig({
       alt: 'Vahe — Full Stack Developer'
     },
     email: 'w33bv.gl@gmail.com',
+    phone: '+374(94) 161-331',
+    address: 'Armenia, Ararat Vedi.vosketap i.hakobyan 28',
+    telegram: '@Vahesargsyan2005',
     available: true,
-    birthday: '2005-03-30'
+    birthday: '2005-03-30',
+    experienceStartDate: '2022-01-01'
   },
   ui: {
     colors: {

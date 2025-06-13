@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import type { TranslatedExperiences, Experience } from '~/types/experience'
 
-const { t, tm } = useI18n()
 const locale = useI18n().locale.value
 
 const { data: experienceByLang } = await useAsyncData<TranslatedExperiences>('experiences', () =>
@@ -16,49 +15,7 @@ const experiences = computed<Experience[]>(() => {
   return []
 })
 
-function getExperience(startDate: string): { years: number, months: number } {
-  const start = new Date(startDate)
-  const now = new Date()
-
-  let years = now.getFullYear() - start.getFullYear()
-  let months = now.getMonth() - start.getMonth()
-
-  if (months < 0) {
-    years--
-    months += 12
-  }
-
-  return { years, months }
-}
-
-const experience = getExperience('2022-01-01')
-
-const experienceString = computed(() => {
-  const y = experience.years
-  const m = experience.months
-
-  function declOfNum(number: number, words: [string, string, string]): string {
-    const cases: [number, number, number, number, number, number] = [2, 0, 1, 1, 1, 2]
-    const mod100 = number % 100
-    const mod10 = number % 10
-    const index: 0 | 1 | 2
-      = mod100 > 4 && mod100 < 20 ? 2 : cases[(mod10 < 5 ? mod10 : 5)] as 0 | 1 | 2
-    return words[index]
-  }
-
-  const yearsWords = tm('experience.years') as [string, string, string]
-  const monthsWords = tm('experience.months') as [string, string, string]
-
-  const yearsWord = declOfNum(y, yearsWords)
-  const monthsWord = declOfNum(m, monthsWords)
-
-  let result = ''
-  if (y > 0) result += `${y} ${yearsWord}`
-  if (m > 0) result += (result ? ' ' : '') + `${m} ${monthsWord}`
-  if (!result) result = t('experience.lessThanMonth')
-
-  return result
-})
+const { experienceString } = useExperienceString()
 </script>
 
 <template>

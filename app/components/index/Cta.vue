@@ -9,13 +9,11 @@ const resumeOptions = computed(() => [
   { label: t('cta.resumeEn'), value: 'en' }
 ])
 
-function downloadResume(lang: string) {
-  const fileName = lang === 'ru' ? 'resume-ru.pdf' : 'resume-en.pdf'
-  const filePath = `/resumes/${fileName}`
-
+function downloadResume(lang: 'ru' | 'en') {
+  const url = `/api/resume-pdf?lang=${lang}`
   const link = document.createElement('a')
-  link.href = filePath
-  link.download = fileName
+  link.href = url
+  link.download = `resume-${lang}.pdf`
   document.body.appendChild(link)
   link.click()
   document.body.removeChild(link)
