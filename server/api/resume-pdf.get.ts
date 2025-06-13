@@ -5,7 +5,8 @@ import fs from 'fs-extra'
 
 export default async function (event: H3Event) {
   const query = getQuery(event)
-  const lang = (query.lang === 'en' ? 'en' : 'ru')
+  const supportedLangs = ['en', 'ru', 'hy']
+  const lang = supportedLangs.includes(<string>query.lang) ? query.lang : 'en'
 
   const fileName = `resume-${lang}.pdf`
   const cacheDir = path.resolve('public/resume')
@@ -25,7 +26,7 @@ export default async function (event: H3Event) {
 
   const host = event.node.req.headers.host
   const protocol = host?.includes('localhost') ? 'http' : 'https'
-  const url = `${protocol}://${host}/resume?lang=${lang}`
+  const url = `${protocol}://${host}/${lang}/resume?`
 
   await page.goto(url, { waitUntil: 'networkidle0' })
 

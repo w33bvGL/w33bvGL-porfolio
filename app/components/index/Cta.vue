@@ -5,11 +5,12 @@ const { footer } = useAppConfig()
 const img = useImage()
 
 const resumeOptions = computed(() => [
-  { label: t('cta.resumeRu'), value: 'ru' },
-  { label: t('cta.resumeEn'), value: 'en' }
+  { label: t('cta.resumeEn'), value: 'en' },
+  { label: t('cta.resumeHy'), value: 'hy' },
+  { label: t('cta.resumeRu'), value: 'ru' }
 ])
 
-function downloadResume(lang: 'ru' | 'en') {
+function downloadResume(lang: 'en' | 'hy' | 'ru'): void {
   const url = `/api/resume-pdf?lang=${lang}`
   const link = document.createElement('a')
   link.href = url
