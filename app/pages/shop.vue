@@ -52,7 +52,7 @@ useSeoMeta({
         <div class="w-1/3 aspect-video border border-muted mb-3 rounded-lg bg-muted/80 overflow-hidden">
           <NuxtImg
             :src="project.image"
-            width="380"
+            width="270"
             :alt="project.name"
             format="webp"
             class="w-full h-full object-cover"
@@ -70,8 +70,8 @@ useSeoMeta({
             <div>
               <span
                 v-if="project.price === 0"
-                class="text-success font-semibold italic underline"
-              >Бесплатно</span>
+                class="text-success font-semibold italic"
+              >{{ t('shop.free') }}</span>
               <span
                 v-else
                 class="font-semibold"
@@ -86,7 +86,7 @@ useSeoMeta({
               target="_blank"
               color="neutral"
             >
-              Смотреть
+              {{ t('shop.watch') }}
             </UButton>
 
             <UButton
@@ -96,7 +96,7 @@ useSeoMeta({
               icon="i-simple-icons-github"
               color="neutral"
             >
-              скачать
+              {{ t('shop.download') }}
             </UButton>
           </div>
         </div>

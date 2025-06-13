@@ -55,5 +55,13 @@
     "haveIdea": "Have a project in mind?",
     "whatIOffer": "I’ll gladly help bring your idea to life — from concept to a ready-made solution. Describe what you want, and we’ll discuss everything in detail.",
     "contactTelegram": "Message on Telegram"
+  },
+  "shop": {
+    "title": "Custom Solutions and Projects",
+    "description": "I sell and share my own work — from sleek landing pages to scalable microservice systems and turnkey solutions. Everything you need to launch and grow your product.",
+    "discount": "Discount",
+    "free": "Free",
+    "watch": "View",
+    "download": "Download"
   }
 }
