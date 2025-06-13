@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { TranslatedProjects, Project } from '~/types/project'
+
 const { t } = useI18n()
 
 const img = useImage()
@@ -70,20 +71,6 @@ useSeoMeta({
       </div>
     </section>
 
-    <section class="mt-10 p-6 border border-muted/40 bg-muted/20 rounded-xl text-center shadow-sm">
-      <h2 class="text-2xl font-bold mb-3">
-        {{ $t('projects.haveIdea') }}
-      </h2>
-      <p class="text-muted text-base mb-5 max-w-xl mx-auto">
-        {{ $t('projects.whatIOffer') }}
-      </p>
-      <ULink
-        href="https://t.me/Vahesargsyan2005"
-        target="_blank"
-        class="inline-block bg-primary text-white px-6 py-2 rounded-lg shadow hover:bg-primary/90 transition"
-      >
-        {{ $t('projects.contactTelegram') }}
-      </ULink>
-    </section>
+    <ProjectsCta />
   </UPage>
 </template>
