@@ -3,9 +3,9 @@
 </script>
 
 <template>
-  <div>
-    soon
-  </div>
+  <UPage>
+    wd
+  </UPage>
 </template>
 
 <style scoped>
