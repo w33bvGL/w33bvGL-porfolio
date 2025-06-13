@@ -1,7 +1,5 @@
-const { global } = useAppConfig()
-
-export function getAge() {
-  const birthday = new Date(global.birthday)
+export function calcAge(birthdayString: string): number {
+  const birthday = new Date(birthdayString)
   const today = new Date()
 
   return today.getFullYear() - birthday.getFullYear() - (
