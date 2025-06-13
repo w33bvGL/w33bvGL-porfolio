@@ -3,7 +3,9 @@ export type ShopItem = {
   description: string
   image: string
   price: number
+  discount?: number
   url?: string
+  repository: string
 }
 
 export interface TranslatedShopItems {
