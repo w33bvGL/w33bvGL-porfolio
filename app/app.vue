@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import * as locales from '@nuxt/ui-pro/locale'
+import AppIcons from '~/components/AppIcons.vue'
 
 const colorMode = useColorMode()
-const { locale, t } = useI18n()
+const { locale } = useI18n()
 const color = computed(() => colorMode.value === 'dark' ? '#020618' : 'white')
 
 useHead({
@@ -19,12 +20,11 @@ useHead({
   }
 })
 
-// useSeoMeta({
-//   titleTemplate: 'Nuxt Portfolio Template',
-//   ogImage: 'https://assets.hub.nuxt.com/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodHRwczovL3BvcnRmb2xpby10ZW1wbGF0ZS5udXh0LmRldiIsImlhdCI6MTc0NTkzNDczMX0.XDWnQoyVy3XVtKQD6PLQ8RFUwr4yr1QnVwPxRrjCrro.jpg?theme=light',
-//   twitterImage: 'https://assets.hub.nuxt.com/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodHRwczovL3BvcnRmb2xpby10ZW1wbGF0ZS5udXh0LmRldiIsImlhdCI6MTc0NTkzNDczMX0.XDWnQoyVy3XVtKQD6PLQ8RFUwr4yr1QnVwPxRrjCrro.jpg?theme=light',
-//   twitterCard: 'summary_large_image'
-// })
+useSeoMeta({
+  ogImage: '/avatar-og.jpg',
+  twitterImage: '/avatar-og.jpg',
+  twitterCard: 'summary'
+})
 </script>
 
 <template>
@@ -33,7 +33,7 @@ useHead({
     :toaster="{ expand: false }"
   >
     <NuxtLoadingIndicator
-      color="var(--ui-primary)"
+      color="var(--loading-indicator)"
       :height="2"
     />
     <NuxtLayout>
@@ -42,6 +42,8 @@ useHead({
       </UMain>
     </NuxtLayout>
   </UApp>
+
+  <AppIcons />
 </template>
 
 <style scoped>

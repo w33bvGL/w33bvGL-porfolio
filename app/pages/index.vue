@@ -1,4 +1,18 @@
 <script setup lang="ts">
+const { t } = useI18n()
+
+const title = t('cta.title')
+const description = t('cta.description')
+
+useSeoMeta({
+  title,
+  description,
+  ogTitle: title,
+  ogDescription: description,
+
+  twitterTitle: title,
+  twitterDescription: description
+})
 </script>
 
 <template>

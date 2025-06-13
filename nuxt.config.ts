@@ -57,5 +57,12 @@ export default defineNuxtConfig({
     defaultLocale: 'en',
     strategy: 'prefix_and_default',
     vueI18n: './i18n.config.ts'
+  },
+
+  image: {
+    inject: true,
+    alias: {
+      tech: '/tech'
+    }
   }
 })

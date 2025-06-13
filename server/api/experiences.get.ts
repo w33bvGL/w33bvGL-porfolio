@@ -18,18 +18,18 @@ export default defineEventHandler(() => {
           'Разработал архитектуру микросервисов, создал фронтенд и backend, админ-панель. Обеспечил отказоустойчивость и масштабируемость.'
       },
       {
-        year: '2022 — 2024',
+        year: '2023 — 2024',
         company: 'DevinIt',
         title: 'Middle Full-Stack Developer',
-        period: 'Февраль 2022 — Сентябрь 2024',
+        period: 'Февраль 2023 — Сентябрь 2024',
         description:
           'Разрабатывал внутренние системы: API, админ-панели, интеграции с внешними сервисами. Работал с платёжными шлюзами, Интегрировал платёжные системы (Stripe, BTC, LTC). Отвечал за стабильную интеграцию frontend и backend.'
       },
       {
-        year: '2021 — 2022',
+        year: '2022 — 2023',
         company: 'Фриланс / Стартапы',
         title: 'Full-Stack Разработчик',
-        period: 'Январь 2021 — Февраль 2022',
+        period: 'Январь 2022 — Февраль 2023',
         description:
           'Создавал MVP под ключ для стартапов: от дизайна до продакшена. Работал с CI/CD, деплоем, UX и поддержкой. Напрямую общался с заказчиками, улучшал бизнес-процессы через технологические решения.'
       }
@@ -52,18 +52,18 @@ export default defineEventHandler(() => {
           'Developed microservice architecture, created frontend, backend, and admin panel. Ensured fault tolerance and scalability.'
       },
       {
-        year: '2022 — 2024',
+        year: '2023 — 2024',
         company: 'DevinIt',
         title: 'Middle Full-Stack Developer',
-        period: 'February 2022 — September 2024',
+        period: 'February 2023 — September 2024',
         description:
           'Developed internal systems: APIs, admin panels, integrations with third-party services. Worked with payment gateways, integrated Stripe, BTC, LTC. Responsible for smooth frontend-backend integration.'
       },
       {
-        year: '2021 — 2022',
+        year: '2022 — 2023',
         company: 'Freelance / Startups',
         title: 'Full-Stack Developer',
-        period: 'January 2021 — February 2022',
+        period: 'January 2022 — February 2023',
         description:
           'Built MVPs from scratch for startups: from design to production. Handled CI/CD, deployment, UX, and support. Communicated directly with clients and improved business processes through tech solutions.'
       }
@@ -86,18 +86,18 @@ export default defineEventHandler(() => {
           'Մշակել եմ միկրոսերվիսների ճարտարապետություն, frontend, backend և ադմին պանել։ Ապահովել եմ կայունություն և մասշտաբելիություն։'
       },
       {
-        year: '2022 — 2024',
+        year: '2023 — 2024',
         company: 'DevinIt',
         title: 'Middle Full-Stack ծրագրավորող',
-        period: 'Փետրվար 2022 — Սեպտեմբեր 2024',
+        period: 'Փետրվար 2023 — Սեպտեմբեր 2024',
         description:
           'Մշակել եմ ներքին համակարգեր՝ API-ներ, ադմին պանելի ինտեգրացիաներ այլ ծառայությունների հետ։ Աշխատել եմ վճարային համակարգերի հետ՝ Stripe, BTC, LTC։ Պատասխանատու էի frontend-ի և backend-ի սահուն ինտեգրման համար։'
       },
       {
-        year: '2021 — 2022',
+        year: '2022 — 2023',
         company: 'Freelance / Սթարթափներ',
         title: 'Full-Stack ծրագրավորող',
-        period: 'Հունվար 2021 — Փետրվար 2022',
+        period: 'Հունվար 2022 — Փետրվար 2023',
         description:
           'Ստեղծել եմ MVP-ներ ամբողջությամբ՝ դիզայնից մինչև արտադրություն։ Աշխատել եմ CI/CD-ի, տեղադրման, UX-ի և աջակցության վրա։ Ունեցել եմ ուղիղ կապ հաճախորդների հետ՝ տեխնոլոգիական լուծումների միջոցով բարելավելով բիզնես գործընթացները։'
       }
