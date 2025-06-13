@@ -1,7 +1,6 @@
 <script setup lang="ts">
 const { t } = useI18n()
-
-const age = getAge()
+const age = useAge()
 const title = t('about.title')
 const description = t('about.intro', { age })
 

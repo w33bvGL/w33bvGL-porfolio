@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const { global } = useAppConfig()
 const img = useImage()
-const age = getAge()
+const age = useAge()
 </script>
 
 <template>
