@@ -3,9 +3,9 @@
 </script>
 
 <template>
-<div>
-  soon
-</div>
+  <div>
+    soon
+  </div>
 </template>
 
 <style scoped>
