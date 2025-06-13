@@ -24,7 +24,7 @@ export default async function (event: H3Event) {
 
   const page = await browser.newPage()
 
-  const host = event.node.req.headers.host
+  const host = 'vahe.anidzen.com'
   const protocol = host?.includes('localhost') ? 'http' : 'https'
   const url = `${protocol}://${host}/${lang}/resume?`
 
