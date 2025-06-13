@@ -22,7 +22,7 @@
   },
   "experience": {
     "title": "Experience",
-    "description": "Experience description",
+    "description": "My professional journey, key roles, and achievements in various companies.",
     "years": ["year", "years", "years"],
     "months": ["month", "months", "months"]
   },
@@ -63,5 +63,14 @@
     "free": "Free",
     "watch": "View",
     "download": "Download"
+  },
+  "resume": {
+    "name": "Vahe",
+    "surname": "Sargsyan",
+    "position": "Full Stack Developer",
+    "stack": "Nuxt.js Laravel",
+    "contacts": "Contacts",
+    "portfolio": "Portfolio",
+    "skills": "Skills"
   }
 }

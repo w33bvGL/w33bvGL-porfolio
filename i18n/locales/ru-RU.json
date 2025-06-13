@@ -63,5 +63,14 @@
     "free": "Бесплатно",
     "watch": "Смотреть",
     "download": "Скачать"
+  },
+  "resume": {
+    "name": "Vahe",
+    "surname": "Sargsyan",
+    "position": "Full Stack разработчик",
+    "stack": "Nuxt.js Laravel",
+    "contacts": "Контакты",
+    "portfolio": "Портфолио",
+    "skills": "Навыки"
   }
 }
