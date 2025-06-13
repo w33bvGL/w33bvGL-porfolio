@@ -1,0 +1,1 @@
+import{a1 as t,i as o,o as s,z as a}from"./LwA6Z3Eo.js";const c={},n={class:"container mx-auto max-w-4xl bg-white h-dvh text-black px-10 py-15"};function r(e,l){return s(),o("section",n,[a(e.$slots,"default")])}const i=t(c,[["render",r]]);export{i as default};

@@ -1,0 +1,1 @@
+import{d as n,u as o,i as t,h as e,o as a}from"./LwA6Z3Eo.js";import{u as r}from"./CjABlRTx.js";const d=n({__name:"resume",setup(u){const{t:m}=o();return r(),(i,s)=>(a(),t("main",null,s[0]||(s[0]=[e("header",null,[e("div"),e("div")],-1)])))}});export{d as default};
