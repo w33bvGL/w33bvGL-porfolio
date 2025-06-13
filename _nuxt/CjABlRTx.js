@@ -1,1 +1,0 @@
-import{T as o}from"./LwA6Z3Eo.js";function a(n){const t=new Date(n),e=new Date;return e.getFullYear()-t.getFullYear()-(e.getMonth()<t.getMonth()||e.getMonth()===t.getMonth()&&e.getDate()<t.getDate()?1:0)}function r(){const{global:n}=o();return a(n.birthday)}export{r as u};
