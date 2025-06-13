@@ -55,7 +55,7 @@ useSeoMeta({
             width="380"
             :alt="project.name"
             format="webp"
-            class="w-full  object-cover"
+            class="w-full h-full object-cover"
             :placeholder="img(project.image, { h: 10, f: 'png', blur: 0.3, q: 50 })"
           />
         </div>
@@ -70,13 +70,13 @@ useSeoMeta({
             <div>
               <span
                 v-if="project.price === 0"
-                class="text-success font-semibold"
+                class="text-success font-semibold italic underline"
               >Бесплатно</span>
               <span
                 v-else
                 class="font-semibold"
               >
-                <span v-if="project.discount">$ {{ project.price * (1 - (project.discount / 100)).toFixed(1) }} / <span class="text-xs text-error underline">$ {{ project.price }}</span></span>
+                <span v-if="project.discount">$ {{ project.price * (1 - (project.discount / 100)).toFixed(1) }} / <span class="text-xs text-muted italic underline">$ {{ project.price }}</span></span>
                 <span v-else>$ {{ project.price }}</span>
               </span>
             </div>
