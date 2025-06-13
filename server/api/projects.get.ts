@@ -47,7 +47,7 @@ export default defineEventHandler(() => {
         name: 'Mari Karkas',
         image: '/projects/mari-karkas.png',
         description: 'A company specializing in building frame houses and baths turnkey with quality guarantees. Construction time — up to 30 days.',
-        url: 'https://quiz.mari-karkas.ru/'
+        url: 'https://quiz.mari-karkas.ru'
       },
       {
         name: 'Drive Fit',
@@ -129,7 +129,7 @@ export default defineEventHandler(() => {
         name: 'Mari Karkas',
         image: '/projects/mari-karkas.png',
         description: 'Ընկերություն, որը զբաղվում է կոնստրուկցիոն տների և լողատուների կառուցմամբ ամբողջությամբ՝ որակի երաշխիքով։ Կառուցման ժամկետը մինչև 30 օր։',
-        url: 'https://quiz.mari-karkas.ru/'
+        url: 'https://quiz.mari-karkas.ru'
       },
       {
         name: 'Drive Fit',
@@ -199,7 +199,7 @@ export default defineEventHandler(() => {
         name: 'Age of Astir',
         image: '/projects/age-of-astir.png',
         description: 'MMORPG-сервер по мотивам Pandora Saga с тремя нациями, массовыми PvP-сражениями, подземельями, боссами и переработанной системой прогрессии.',
-        url: 'https://https://ageofastir.com'
+        url: 'https://ageofastir.com'
       },
       {
         name: 'Omex Proxy',
@@ -211,7 +211,7 @@ export default defineEventHandler(() => {
         name: 'Mari Karkas',
         image: '/projects/mari-karkas.png',
         description: 'Компания занимается строительством каркасных домов и бань под ключ с гарантией качества. Срок возведения — до 30 дней.',
-        url: 'https://quiz.mari-karkas.ru/'
+        url: 'https://quiz.mari-karkas.ru'
       },
       {
         name: 'Drive Fit',
