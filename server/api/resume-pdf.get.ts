@@ -10,8 +10,6 @@ import {
 import puppeteer from 'puppeteer'
 import fs from 'fs-extra'
 
-const config = useRuntimeConfig()
-
 export default eventHandler(async (event: H3Event) => {
   try {
     console.log('🚀 Старт генерации/отдачи резюме PDF')
@@ -22,34 +20,9 @@ export default eventHandler(async (event: H3Event) => {
     console.log('🌐 Язык:', lang)
 
     const fileName = `resume-${lang}.pdf`
+    const filePath = path.resolve(process.cwd(), 'public/resume', fileName)
 
-    let filePath: string
-
-    // === PRODUCTION ===
-    if (config.appEnv === 'production') {
-      filePath = path.resolve(process.cwd(), '.output/public/resume', fileName)
-      console.log('📁 Ищем файл в проде:', filePath)
-
-      if (!fs.existsSync(filePath)) {
-        console.warn(`❌ PDF не найден в ${filePath}`)
-        return sendError(
-          event,
-          createError({ statusCode: 404, message: 'PDF not found' })
-        )
-      }
-
-      console.log('📤 PDF найден и будет отдан')
-      return sendPDF(event, filePath)
-    }
-
-    // === DEVELOPMENT ===
-    filePath = path.resolve(process.cwd(), 'public/resume', fileName)
     console.log('📁 Ищем файл в dev:', filePath)
-
-    if (fs.existsSync(filePath)) {
-      console.log('📤 Отдаём уже сгенерированный PDF')
-      return sendPDF(event, filePath)
-    }
 
     console.log('🛠 Генерируем PDF (режим разработки)')
     await fs.ensureDir(path.dirname(filePath))

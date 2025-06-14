@@ -18,11 +18,14 @@ export default defineNuxtConfig({
     pageTransition: { name: 'page', mode: 'out-in' }
   },
 
-  runtimeConfig: {
-    appEnv: process.env.APP_ENV,
-  },
-
   css: ['~/assets/css/main.css'],
+
+  runtimeConfig: {
+    appEnv: process.env.APP_ENV || 'development',
+    public: {
+      appEnv: process.env.APP_ENV || 'development'
+    }
+  },
 
   future: {
     compatibilityVersion: 4
