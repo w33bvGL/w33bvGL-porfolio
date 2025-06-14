@@ -3,6 +3,7 @@ import { spawn } from 'child_process'
 import http from 'http'
 import { launch } from 'puppeteer'
 import fs from 'fs-extra'
+import kill from 'tree-kill'
 
 const langs = ['en', 'ru', 'hy']
 const baseUrl = 'http://localhost:3000'
@@ -33,43 +34,51 @@ async function generatePDFs() {
     shell: true
   })
 
-  await waitForServerReady(`${baseUrl}/en/resume`)
+  try {
+    await waitForServerReady(`${baseUrl}/en/resume`)
 
-  const browser = await launch({
-    args: ['--no-sandbox', '--disable-setuid-sandbox']
-  })
-
-  const page = await browser.newPage()
-
-  for (const lang of langs) {
-    const url = `${baseUrl}/${lang}/resume`
-    const filename = `resume-${lang}.pdf`
-
-    const localPath = _resolve('public/resume', filename)
-    const outputPath = _resolve('.output/public/resume', filename)
-
-    await page.goto(url, { waitUntil: 'networkidle0' })
-
-    const pdfBuffer = await page.pdf({
-      format: 'A4',
-      printBackground: true,
-      margin: { top: '0mm', bottom: '0mm', left: '0mm', right: '0mm' }
+    const browser = await launch({
+      args: ['--no-sandbox', '--disable-setuid-sandbox']
     })
 
-    await fs.ensureDir(dirname(localPath))
-    await fs.ensureDir(dirname(outputPath))
+    const page = await browser.newPage()
 
-    await fs.writeFile(localPath, pdfBuffer)
-    await fs.writeFile(outputPath, pdfBuffer)
+    for (const lang of langs) {
+      const url = `${baseUrl}/${lang}/resume`
+      const filename = `resume-${lang}.pdf`
 
-    console.log(`✅ PDF для [${lang}] сохранён в:\n - ${localPath}\n - ${outputPath}`)
+      const outputPath = _resolve('.output/public/resume', filename)
+
+      await page.goto(url, { waitUntil: 'networkidle0' })
+
+      const pdfBuffer = await page.pdf({
+        format: 'A4',
+        printBackground: true,
+        margin: { top: '0mm', bottom: '0mm', left: '0mm', right: '0mm' }
+      })
+
+      await fs.ensureDir(dirname(outputPath))
+      await fs.writeFile(outputPath, pdfBuffer)
+
+      console.log(`✅ PDF для [${lang}] сохранён в:\n - ${localPath}\n - ${outputPath}`)
+    }
+
+    await browser.close()
+
+  } catch (err) {
+    console.error('❌ Ошибка при генерации PDF:', err)
+    throw err
+  } finally {
+    if (!serve.killed) {
+      kill(serve.pid, 'SIGTERM', (err) => {
+        if (err) {
+          console.error('Ошибка при остановке сервера:', err)
+        } else {
+          console.log('🛑 Сервер остановлен')
+        }
+      })
+    }
   }
-
-  await browser.close()
-  serve.kill()
 }
 
-generatePDFs().catch((err) => {
-  console.error('❌ Ошибка при генерации PDF:', err)
-  process.exit(1)
-})
+generatePDFs().catch(() => process.exit(1))

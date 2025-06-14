@@ -12,19 +12,17 @@ import fs from 'fs-extra'
 
 export default eventHandler(async (event: H3Event) => {
   try {
-    console.log('🚀 Старт генерации/отдачи резюме PDF')
+    console.log('🚀 Starting resume PDF generation/delivery')
 
     const query = getQuery(event)
     const supportedLangs = ['en', 'ru', 'hy']
     const lang = supportedLangs.includes(<string>query.lang) ? query.lang : 'en'
-    console.log('🌐 Язык:', lang)
+    console.log('🌐 Language:', lang)
 
     const fileName = `resume-${lang}.pdf`
     const filePath = path.resolve(process.cwd(), 'public/resume', fileName)
 
-    console.log('📁 Ищем файл в dev:', filePath)
-
-    console.log('🛠 Генерируем PDF (режим разработки)')
+    console.log('🛠 Generating PDF (development mode)')
     await fs.ensureDir(path.dirname(filePath))
 
     const browser = await puppeteer.launch({
@@ -33,7 +31,7 @@ export default eventHandler(async (event: H3Event) => {
 
     const page = await browser.newPage()
     const url = `http://localhost:3000/${lang}/resume`
-    console.log('🌐 Открываем страницу:', url)
+    console.log('🌐 Opening page:', url)
 
     await page.goto(url, { waitUntil: 'networkidle0' })
 
@@ -45,11 +43,11 @@ export default eventHandler(async (event: H3Event) => {
     })
 
     await browser.close()
-    console.log('✅ PDF сгенерирован:', filePath)
+    console.log('✅ PDF generated:', filePath)
 
     return sendPDF(event, filePath)
   } catch (error) {
-    console.error('❌ Ошибка при обработке PDF:', error)
+    console.error('❌ Error processing PDF:', error)
     return sendError(
       event,
       createError({ statusCode: 500, message: 'Internal Server Error' })
