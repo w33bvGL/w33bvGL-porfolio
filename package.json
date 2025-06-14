@@ -9,7 +9,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "gh-build": "npx nuxt build --preset github_pages",
+    "generate-resumes": "node scripts/generate-resumes.js",
+    "gh-build": "npx nuxt build --preset github_pages && node scripts/generate-resumes.js",
     "gh-publish": "npx gh-pages --dotfiles -d .output/public",
     "lint-fix": "eslint . --fix",
     "typecheck": "nuxt typecheck",
@@ -27,7 +28,8 @@
     "nuxt": "^3.17.5",
     "nuxt-og-image": "^5.1.4",
     "nuxt-ui-pro-plugin": "file:ui-pro-plugin",
-    "puppeteer": "^24.10.1"
+    "puppeteer": "^24.10.1",
+    "undici": "^7.10.0"
   },
   "devDependencies": {
     "@nuxt/eslint": "^1.4.1",
