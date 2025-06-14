@@ -20,7 +20,7 @@ function waitForServerReady(url, timeout = 10000) {
     }
 
     const retry = () => {
-      if (Date.now() - start > timeout) reject(new Error('Сервер не поднялся за 10 секунд'))
+      if (Date.now() - start > timeout) reject(new Error('Server did not start within 10 seconds'))
       else setTimeout(check, 500)
     }
 
@@ -60,21 +60,21 @@ async function generatePDFs() {
       await fs.ensureDir(dirname(outputPath))
       await fs.writeFile(outputPath, pdfBuffer)
 
-      console.log(`✅ PDF для [${lang}] сохранён в:\n - ${localPath}\n - ${outputPath}`)
+      console.log(`✅ Resume generated and saved for [${lang}] language:\n - ${outputPath}`)
     }
 
+    console.log('🎉 All resumes generated successfully!')
     await browser.close()
-
   } catch (err) {
-    console.error('❌ Ошибка при генерации PDF:', err)
+    console.error('❌ Error generating resumes:', err)
     throw err
   } finally {
     if (!serve.killed) {
       kill(serve.pid, 'SIGTERM', (err) => {
         if (err) {
-          console.error('Ошибка при остановке сервера:', err)
+          console.error('Error stopping the server:', err)
         } else {
-          console.log('🛑 Сервер остановлен')
+          console.log('🛑 Resume generation server stopped')
         }
       })
     }
