@@ -9,8 +9,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "generate-resumes": "node scripts/generate-resumes.js",
-    "gh-build": "npx nuxt build --preset github_pages && npm run generate-resumes",
+    "generate-resumes": "dotenv -e .env.prod -- node scripts/generate-resumes.js",
+    "gh-build": "dotenv -e .env.prod -- npx nuxt build --preset github_pages && npm run generate-resumes",
     "gh-publish": "npx gh-pages --dotfiles -d .output/public",
     "lint-fix": "eslint . --fix",
     "typecheck": "nuxt typecheck",
@@ -35,6 +35,7 @@
     "@nuxt/eslint": "^1.4.1",
     "@nuxtjs/i18n": "^9.5.5",
     "@types/fs-extra": "^11.0.4",
+    "dotenv-cli": "^8.0.0",
     "eslint": "^9.27.0",
     "typescript": "^5.8.3",
     "vue-tsc": "^2.2.10"
