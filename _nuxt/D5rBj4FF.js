@@ -1,1 +1,0 @@
-import{a1 as t,i as a,o as s,z as o}from"./Dou5aNCn.js";const c={},n={class:"resume container mx-auto max-w-3xl bg-white text-black px-3 py-3"};function r(e,_){return s(),a("section",n,[o(e.$slots,"default",{},void 0,!0)])}const f=t(c,[["render",r],["__scopeId","data-v-19fcfaa3"]]);export{f as default};
