@@ -1,0 +1,1 @@
+import{a1 as s,i as _,o as c,g as e,f as r,h as d,aS as l,z as p,aT as m,aA as f}from"./Dou5aNCn.js";const i={},u={class:"py-10"};function x(o,h){const t=l,a=m,n=f;return c(),_("div",null,[e(n,{class:"sm:border-x border-default max-w-4xl sm:pt-10"},{default:r(()=>[e(t),d("div",u,[p(o.$slots,"default")]),e(a)]),_:3})])}const B=s(i,[["render",x]]);export{B as default};
