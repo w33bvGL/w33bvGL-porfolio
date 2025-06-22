@@ -24,7 +24,8 @@
     "title": "Experience",
     "description": "My professional journey, key roles, and achievements in various companies.",
     "years": ["year", "years", "years"],
-    "months": ["month", "months", "months"]
+    "months": ["month", "months", "months"],
+    "lessThanMonth": "less than a month"
   },
   "education": {
     "title": "Education",

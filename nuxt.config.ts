@@ -7,7 +7,8 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     'nuxt-og-image',
     'motion-v/nuxt',
-    '@nuxtjs/i18n'
+    '@nuxtjs/i18n',
+    'nuxt-gtag'
   ],
 
   devtools: {
@@ -19,6 +20,13 @@ export default defineNuxtConfig({
   },
 
   css: ['~/assets/css/main.css'],
+
+  runtimeConfig: {
+    appEnv: process.env.APP_ENV || 'development',
+    public: {
+      appEnv: process.env.APP_ENV || 'development'
+    }
+  },
 
   future: {
     compatibilityVersion: 4

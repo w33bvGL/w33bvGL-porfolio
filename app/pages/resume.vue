@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { Experience, TranslatedExperiences } from '~/types/experience'
-import type {Education, TranslatedEducation} from "~/types/education"
+import type { Education, TranslatedEducation } from '~/types/education'
 
 definePageMeta({
   layout: 'resume'
@@ -144,8 +144,12 @@ const educations = computed<Education[]>(() => {
         <div class="w-full flex">
           <div class="space-y-4">
             <div>
-              <h4 class="font-semibold text-xl"> {{ t('experience.title') }} — {{ experienceString }}</h4>
-              <h6 class="text-neutral-700 text-sm">{{ t('experience.description') }}</h6>
+              <h4 class="font-semibold text-xl">
+                {{ t('experience.title') }} — {{ experienceString }}
+              </h4>
+              <h6 class="text-neutral-700 text-sm">
+                {{ t('experience.description') }}
+              </h6>
             </div>
             <ul class="space-y-3">
               <li
@@ -153,13 +157,13 @@ const educations = computed<Education[]>(() => {
                 :key="index"
               >
                 <div class="text-sm text-neutral-700 flex flex-row justify-between mb-2 items-center gap-5">
-                <span class="font-medium text-nowrap">
-                  {{ exp.company }}
-                </span>
+                  <span class="font-medium text-nowrap">
+                    {{ exp.company }}
+                  </span>
                   <hr class="w-full border-neutral-200 hidden lg:block">
                   <span class="text-nowrap">
-                  {{ exp.period }}
-                </span>
+                    {{ exp.period }}
+                  </span>
                 </div>
                 <h3 class="font-semibold text-xl">
                   {{ exp.title }}
@@ -188,10 +192,14 @@ const educations = computed<Education[]>(() => {
       </div>
       <div class="mt-4 border-t-1 border-neutral-200 pt-4 grid md:grid-cols-2 md:gap-5">
         <div class="space-y-4 border-r-1 border-neutral-200">
-         <div>
-           <h4 class="font-semibold text-xl">{{ t('education.title') }}</h4>
-           <h6 class="text-neutral-700 text-sm">{{ t('education.description') }}</h6>
-         </div>
+          <div>
+            <h4 class="font-semibold text-xl">
+              {{ t('education.title') }}
+            </h4>
+            <h6 class="text-neutral-700 text-sm">
+              {{ t('education.description') }}
+            </h6>
+          </div>
           <div
             v-for="(item, index) in educations"
             :key="'edu-' + index"
@@ -207,17 +215,21 @@ const educations = computed<Education[]>(() => {
         </div>
         <div class="space-y-4">
           <div>
-            <h4 class="font-semibold text-xl">{{ t('activity.title') }}</h4>
-            <h6 class="text-neutral-700 text-sm">{{ t('activity.description') }}</h6>
+            <h4 class="font-semibold text-xl">
+              {{ t('activity.title') }}
+            </h4>
+            <h6 class="text-neutral-700 text-sm">
+              {{ t('activity.description') }}
+            </h6>
           </div>
-         <div class="space-y-2 text-neutral-700 text-sm">
-           <p>
-             {{ t('activity.description1') }}
-           </p>
-           <p>
-             {{ t('activity.description2') }}
-           </p>
-         </div>
+          <div class="space-y-2 text-neutral-700 text-sm">
+            <p>
+              {{ t('activity.description1') }}
+            </p>
+            <p>
+              {{ t('activity.description2') }}
+            </p>
+          </div>
         </div>
       </div>
     </section>

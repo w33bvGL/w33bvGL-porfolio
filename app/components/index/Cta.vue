@@ -3,6 +3,7 @@ const { global } = useAppConfig()
 const { t } = useI18n()
 const { footer } = useAppConfig()
 const img = useImage()
+const config = useRuntimeConfig()
 
 const resumeOptions = computed(() => [
   { label: t('cta.resumeEn'), value: 'en' },
@@ -11,7 +12,12 @@ const resumeOptions = computed(() => [
 ])
 
 function downloadResume(lang: 'en' | 'hy' | 'ru'): void {
-  const url = `/api/resume-pdf?lang=${lang}`
+  const isStaticHosting = config.public.appEnv === 'production'
+
+  const url = isStaticHosting
+    ? `/resume/resume-${lang}.pdf`
+    : `/api/resume-pdf?lang=${lang}`
+
   const link = document.createElement('a')
   link.href = url
   link.download = `resume-${lang}.pdf`

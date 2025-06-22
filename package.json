@@ -9,7 +9,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "gh-build": "npx nuxt build --preset github_pages",
+    "generate-resumes": "dotenv -e .env.prod -- node scripts/generate-resumes.js",
+    "gh-build": "dotenv -e .env.prod -- npx nuxt build --preset github_pages && npm run generate-resumes",
     "gh-publish": "npx gh-pages --dotfiles -d .output/public",
     "lint-fix": "eslint . --fix",
     "typecheck": "nuxt typecheck",
@@ -25,14 +26,18 @@
     "fs-extra": "^11.3.0",
     "motion-v": "^1.1.1",
     "nuxt": "^3.17.5",
+    "nuxt-gtag": "^3.0.3",
     "nuxt-og-image": "^5.1.4",
     "nuxt-ui-pro-plugin": "file:ui-pro-plugin",
-    "puppeteer": "^24.10.1"
+    "puppeteer": "^24.10.1",
+    "tree-kill": "^1.2.2",
+    "undici": "^7.10.0"
   },
   "devDependencies": {
     "@nuxt/eslint": "^1.4.1",
     "@nuxtjs/i18n": "^9.5.5",
     "@types/fs-extra": "^11.0.4",
+    "dotenv-cli": "^8.0.0",
     "eslint": "^9.27.0",
     "typescript": "^5.8.3",
     "vue-tsc": "^2.2.10"
