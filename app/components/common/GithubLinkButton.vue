@@ -1,11 +1,11 @@
 <script setup lang="ts">
-
+const { global } = useAppConfig()
 </script>
 
 <template>
   <div class="absolute top-0 -translate-x-19 fixed pt-4">
     <UTooltip text="Open in Github">
-      <UButton icon="i-simple-icons-github" color="neutral" target="_blank" to="https://github.com/w33bvGL/w33bvGL-porfolio" />
+      <UButton icon="i-simple-icons-github" color="neutral" target="_blank" :to="global.projectRepository" />
     </UTooltip>
   </div>
 </template>

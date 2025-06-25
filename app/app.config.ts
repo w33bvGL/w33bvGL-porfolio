@@ -7,6 +7,7 @@ export default defineAppConfig({
     email: 'w33bv.gl@gmail.com',
     phone: '+374(94) 161-331',
     address: 'Armenia, Ararat Vedi.vosketap i.hakobyan 28',
+    projectRepository: 'https://github.com/w33bvGL/w33bvGL-porfolio',
     telegram: '@Vahesargsyan2005',
     available: true,
     birthday: '2005-03-30',
