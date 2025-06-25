@@ -9,7 +9,7 @@
         <slot />
       </div>
       <AppFooter />
-      <CommonGithubLinkButton/>
+      <CommonGithubLinkButton />
     </UContainer>
   </div>
 </template>
