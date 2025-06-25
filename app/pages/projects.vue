@@ -50,7 +50,7 @@ useSeoMeta({
             width="380"
             :alt="project.name"
             format="webp"
-            class=" aspect-video object-cover"
+            class="aspect-video object-cover w-full"
             :placeholder="img(project.image, { h: 10, f: 'png', blur: 0.3, q: 50 })"
           />
         </div>
