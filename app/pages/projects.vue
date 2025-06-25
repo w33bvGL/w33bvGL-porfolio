@@ -42,7 +42,7 @@ useSeoMeta({
       <div
         v-for="project in projects"
         :key="project.name"
-        class="group border border-muted/40 bg-muted/30 hover:bg-muted/70 p-4 rounded-xl transition-all shadow-sm hover:shadow-md backdrop-blur-sm"
+        class="group border border-muted/40 bg-muted/30 hover:bg-muted/70 p-4 rounded-xl transition-all shadow-sm hover:shadow-md backdrop-blur-sm group"
       >
         <div class="aspect-video border border-muted mb-3 rounded-lg bg-muted/80 overflow-hidden">
           <NuxtImg
@@ -50,7 +50,7 @@ useSeoMeta({
             width="380"
             :alt="project.name"
             format="webp"
-            class=" aspect-video object-cover"
+            class="aspect-video object-cover w-full"
             :placeholder="img(project.image, { h: 10, f: 'png', blur: 0.3, q: 50 })"
           />
         </div>
